@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Text;
 using Ionic.Zlib;
 
@@ -55,18 +56,50 @@ public static class ChunkEditor
         File.WriteAllBytes(Filename, outputFileBytes);
     }
 
+    public static void ExportFile(string filename)
+    {
+        var outputFileBytes = new byte[HeaderLength + _uncompressedBytes.Length];
+
+        Array.Copy(_headerBytes, outputFileBytes, HeaderLength);
+        Array.Copy(_uncompressedBytes, 0, outputFileBytes, HeaderLength, _uncompressedBytes.Length);
+
+        File.WriteAllBytes(filename, outputFileBytes);
+    }
+
+    public static void ImportFile(string filename)
+    {
+        var fileBytes = File.ReadAllBytes(filename);
+        var headerBytes = new byte[4];
+        Array.Copy(fileBytes, 0, headerBytes, 0, 4);
+
+        var actualHeader = Encoding.UTF8.GetString(headerBytes);
+
+        if (ExpectedFileHeader != actualHeader)
+        {
+            return;
+        }
+
+        _uncompressedBytes = new byte[fileBytes.Length - HeaderLength];
+
+        Array.Copy(fileBytes, HeaderLength, _uncompressedBytes, 0, _uncompressedBytes.Length);
+        Array.Copy(fileBytes, _headerBytes, HeaderLength);
+
+        var compressedBytes = ZlibStream.CompressBuffer(_uncompressedBytes);
+
+        ChunkCount = (short)(_uncompressedBytes.Length / ChunkSize);
+        Filename = filename;
+    }
     private static uint GetByteIndex(short chunk, byte layer, short tile)
     {
         return (uint)(BlockStart + (chunk * ChunkSize) + (layer * LayerSize) + (tile * 2));
     }
-
     public static ushort GetBlockValue(short chunk, byte layer, short tile)
     {
         var index = GetByteIndex(chunk, layer, tile);
 
         var blockBytes = new byte[2];
         blockBytes[0] = _uncompressedBytes[index];
-        blockBytes[1] = _uncompressedBytes[index + 1];
+        blockBytes[1] = _uncompressedBytes[index+1];
 
         return BitConverter.ToUInt16(blockBytes);
     }
@@ -74,8 +107,8 @@ public static class ChunkEditor
     public static void SetBlockValue(short chunk, byte layer, short tile, short blockId)
     {
         var index = GetByteIndex(chunk, layer, tile);
-
-        _uncompressedBytes[index] = (byte)blockId;
+        
+        _uncompressedBytes[index] = (byte)(blockId%2048);
         _uncompressedBytes[index + 1] = (byte)(blockId >> 8);
     }
 }
