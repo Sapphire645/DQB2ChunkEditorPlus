@@ -13,8 +13,20 @@ I assume since it hasn't been updated for years that it will not be.
 - Changed the way the blocks display in the map for a better visual interface (In-game textures instead of block icons).
 - Blocks seem to overflow at index 2048. Added functionality to read and insert blocks with their normal and overflowed indices.
   
+For all undocumented blocks, here is a link with all IDs identified. https://www.tumblr.com/sapphire-rb/751291945137078272/all-of-dqb2s-blocks-with-their-ids
 
-**To add:**
+Do not try to set unidentified blocks (the ones that make the selection say '-1 not on list') because I don't know if it will work or not.
+
+**Note: Has not been fully tested yet. ALWAYS BACK UP YOUR SAVE.**
+
+Updated screenshots.
+
+<img src="./src/Images/ScreenshotPlus.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" /> <img src="./src/Images/ScreenshotPlus2.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" />
+<img src="./src/Images/ScreenshotPlus3.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" />
+
+Items are still unrecognized. 
+
+**Features to add:**
 - Optimize images from the dropdown menu (lags a little).
 - Better filtering for the dropdown menu.
 - Decorative items.
@@ -27,9 +39,6 @@ I assume since it hasn't been updated for years that it will not be.
 - Colored blocks are not implemented yet. I'm debating between adding colored icons for each variant or just doing what the game does and add a color tag beside it.
 - All liquid blocks are not in yet. There are too many of them, will do eventually.
 - Mapping of all chunks in each island (They are really big.)
-
-  
-**Note: Has not been fully tested yet. ALWAYS BACK UP YOUR SAVE.**
 
 
 Main branch text below.
