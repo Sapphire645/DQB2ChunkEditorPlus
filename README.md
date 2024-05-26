@@ -23,6 +23,8 @@ I assume since it hasn't been updated for years that it will not be.
 
 **External info to add:**
 - Full block descriptions.
+- Colored blocks are not implemented yet. I'm debating between adding colored icons for each variant or just doing what the game does and add a color tag beside it.
+- All liquid blocks are not in yet. There are too many of them, will do eventually.
 - Mapping of all chunks in each island (They are really big.)
 
   
