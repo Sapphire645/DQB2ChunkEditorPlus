@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:DQB2ChunkEditor.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="28"
-             d:DesignWidth="280"
+             d:DesignWidth="260"
              SnapsToDevicePixels="True">
   <UserControl.Resources>
     <Style TargetType="Image">
@@ -17,8 +17,10 @@
     <Grid.ColumnDefinitions>
       <ColumnDefinition />
       <ColumnDefinition />
+      <ColumnDefinition />
     </Grid.ColumnDefinitions>
     <Image Grid.Column="0" Width="28" Source="{Binding Path=Tile.Image, RelativeSource={RelativeSource AncestorType=UserControl}}" />
-    <Label Grid.Column="1" VerticalAlignment="Center" Content="{Binding Path=Tile.Name, RelativeSource={RelativeSource AncestorType=UserControl}}" />
+    <Label Grid.Column="1" Width="Auto" VerticalAlignment="Center" Content="{Binding Path=Tile.Name, RelativeSource={RelativeSource AncestorType=UserControl}}" />
+    <Label Grid.Column="2" Width="Auto" VerticalAlignment="Top" Content="{Binding Path=Tile.Id, RelativeSource={RelativeSource AncestorType=UserControl}}" />
   </Grid>
 </UserControl>
