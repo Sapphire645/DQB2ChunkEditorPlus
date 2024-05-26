@@ -1,5 +1,5 @@
-
-**WILL BE UPLOADED SOON, PROGRAM IS MISSING SOME IMAGES**
+Many thanks to Mugafo (https://github.com/Mugafo/DQB2ChunkEditor) and his work! Without him this fork wouldn't exist. Many many thanks.
+And of course to turtle-insect (https://github.com/turtle-insect/DQB2), the one who paved the way in DQB2 technical knowledge.
 
 ## DQB2 Chunk Editor Plus
 
