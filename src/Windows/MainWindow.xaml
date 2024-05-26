@@ -3,8 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:control="clr-namespace:DQB2ChunkEditor.Controls"
         mc:Ignorable="d"
-        Title="DQB2 Chunk Editor" Height="600" MinHeight="600" Width="900" MinWidth="900" WindowStartupLocation="CenterScreen" WindowState="Normal" SnapsToDevicePixels="True">
+        Title="DQB2 Chunk Editor+" Height="600" MinHeight="600" Width="1000" MinWidth="1000" WindowStartupLocation="CenterScreen" WindowState="Normal" SnapsToDevicePixels="True"
+        Icon="/Images/Icon.png">
   <Window.Resources>
     <Style TargetType="Image">
       <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality" />
@@ -24,6 +26,13 @@
           <Image Source="/Images/Save.png" />
         </Button>
         <Separator/>
+        <Button Name="ExportFile"  Height="24" Width="24" ToolTip="Export" Click="ExportFile_OnClick">
+          <Image Source="/Images/Export.png" />
+        </Button>
+        <Button Name="ImportFile"  Height="24" Width="24" ToolTip="Import" Click="ImportFile_OnClick">
+          <Image Source="/Images/Import.png" />
+        </Button>
+        <Separator/>
         <RadioButton Name="SelectButton" Height="24" Width="24" ToolTip="Select" IsChecked="True">
           <Image Source="/Images/Select.png" />
         </RadioButton>
@@ -32,13 +41,13 @@
         </RadioButton>
         <Separator/>
       </ToolBar>
-      <Grid HorizontalAlignment="Center">
+      <Grid HorizontalAlignment="Center" Margin="10,0,10,0">
         <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="300" />
+          <ColumnDefinition Width="auto" MinWidth = "350" />
           <ColumnDefinition Width="auto" MinWidth="600" />
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,0,10,0" DockPanel.Dock="Left">
-          <StackPanel Width="280" HorizontalAlignment="Left">
+        <Grid Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,10,0" DockPanel.Dock="Left">
+          <StackPanel Width="350" HorizontalAlignment="Left">
             <TextBlock Height="10"/>
             <StackPanel Width="280" VerticalAlignment="Center" Orientation="Horizontal">
               <TextBlock Text="Chunk" Width="50" TextAlignment="Center" />
@@ -56,14 +65,21 @@
               <Button Name="SubLayer" Width="20" FontWeight="Bold" Click="SubLayer_OnClick">-</Button>
             </StackPanel>
             <TextBlock Height="10"/>
-            <ComboBox Name="TileComboBox" Height="34" SelectedItem="{Binding SelectedTile, RelativeSource={RelativeSource AncestorType=Window}}" SelectionChanged="TileComboBox_OnSelectionChange" ItemsSource="{Binding TileComboBoxList, RelativeSource={RelativeSource AncestorType=Window}}" />
-            <TextBlock Text="{Binding StringFormat=ID: {0}, Path=SelectedTile.Value.Id, RelativeSource={RelativeSource AncestorType=Window}}" />
+            <StackPanel Width="350" VerticalAlignment="Center" Orientation="Horizontal">
+              <ComboBox Name="TileComboBox" Height="34" Width = "265" SelectedItem="{Binding SelectedTile, RelativeSource={RelativeSource AncestorType=Window}}" SelectionChanged="TileComboBox_OnSelectionChange" ItemsSource="{Binding TileComboBoxList, RelativeSource={RelativeSource AncestorType=Window}}" />
+              <control:overflowCheckbox x:Name="overflowCheckboxName" CheckedChanged="UpdateIdSelected_OnClick" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,0,10,0"/>
+            </StackPanel>
+            <TextBlock Text="{Binding StringFormat=ID: {0}, Path=SelectedTile.Value.ListId,RelativeSource={RelativeSource AncestorType=Window}}" />
             <TextBlock Text="{Binding StringFormat=Type: {0}, Path=SelectedTile.Value.Type, RelativeSource={RelativeSource AncestorType=Window}}" />
             <TextBlock Text="{Binding StringFormat=Name: {0}, Path=SelectedTile.Value.Name, RelativeSource={RelativeSource AncestorType=Window}}" />
             <TextBlock Text="{Binding StringFormat=Description: {0}, Path=SelectedTile.Value.Description, RelativeSource={RelativeSource AncestorType=Window}}" />
+            <TextBlock Text="{Binding StringFormat=Overflow?: {0}, Path=SelectedTile.Value.Overflow, RelativeSource={RelativeSource AncestorType=Window}}" />
+            <TextBlock Text="{Binding StringFormat=Can be broken by: {0}, Path=SelectedTile.Value.Break, RelativeSource={RelativeSource AncestorType=Window}}" />
+            <TextBlock Text="{Binding StringFormat=Used: {0}, Path=SelectedTile.Value.Used, RelativeSource={RelativeSource AncestorType=Window}}" />
+            <TextBlock Text="{Binding StringFormat=Raw ID: {0}, Path=SelectedTile.Value.Id, RelativeSource={RelativeSource AncestorType=Window}}" />
           </StackPanel>
         </Grid>
-        <Grid Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Right">
+        <Grid Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" DockPanel.Dock="Right">
           <Viewbox Stretch="Uniform">
             <UniformGrid Name="LayerTiles" Columns="32" Rows="32" />
           </Viewbox>
