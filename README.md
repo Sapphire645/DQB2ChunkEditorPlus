@@ -1,4 +1,37 @@
-## DQB2 Chunk Editor
+
+**WILL BE UPLOADED SOON, PROGRAM IS MISSING SOME IMAGES**
+
+## DQB2 Chunk Editor Plus
+
+This is my first time uploading to GitHub. I am unsure of the standard procedure. This fork adds more functionality to the original program.
+I assume since it hasn't been updated for years that it will not be.
+
+**Added functionality:**
+- Import and Export buttons for raw hex editing.
+- Updated block list with new blocks.
+- Changed the way the blocks display in the map for a better visual interface (In-game textures instead of block icons).
+- Blocks seem to overflow at index 2048. Added functionality to read and insert blocks with their normal and overflowed indices.
+  
+
+**To add:**
+- Optimize images from the dropdown menu (lags a little).
+- Better filtering for the dropdown menu.
+- Decorative items.
+- More tools for editing (perhaps a bucket fill option or something along those lines).
+- Automatic backup.
+- Importing, then saving saves over the imported file. A 'save as' option needs to be implemented.
+
+**External info to add:**
+- Full block descriptions.
+- Mapping of all chunks in each island (They are really big.)
+
+  
+**Note: Has not been fully tested yet. ALWAYS BACK UP YOUR SAVE.**
+
+
+Main branch text below.
+
+## DQB2 Chunk Editor 
 
 Dragon Quest Builders 2 Map Chunk Editor based on the map flattener from https://github.com/turtle-insect/DQB2
 
