@@ -2,5 +2,6 @@
 
 public enum Type
 {
-    Block = 0
+    Block = 0,
+    Item = 1
 }
