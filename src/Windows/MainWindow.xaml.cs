@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Windows.Shapes;
 using System.IO;
 using System.Linq;
 using System.Printing;
@@ -9,6 +10,7 @@ using System.Text.Json.Serialization;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 using DQB2ChunkEditor.Controls;
 using DQB2ChunkEditor.Models;
 using Microsoft.VisualBasic;
@@ -19,10 +21,11 @@ namespace DQB2ChunkEditor.Windows;
 public partial class MainWindow : Window
 {
     public List<Tile> TileList { get; } = new();
-    public ObservableCollection<ComboBoxTile> TileComboBoxList { get; set; } = new();
+    public static ObservableCollection<ComboBoxTile> TileComboBoxList { get; set; } = new();
     public ObservableProperty<Tile> SelectedTile { get; set; } = new();
     public Tile selectedTileDrop;
     public ObservableProperty<LayerTile> SelectedLayerTile { get; set; } = new();
+    public SelectionPencilClass SelectedArea { get; set; } = new();
     public ObservableProperty<short> ChunkValue { get; set; } = new() { Value = 0};
     public ObservableProperty<byte> LayerValue { get; set; } = new() { Value = 0 };
 
@@ -32,6 +35,7 @@ public partial class MainWindow : Window
         CreateDefaultTiles();
         CreateComboBoxTiles();
         DataContext = this;
+        NotSupported.Visibility = Visibility.Collapsed;
     }
 
     /// <summary>
@@ -126,6 +130,114 @@ public partial class MainWindow : Window
     }
 
     /// <summary>
+    /// Here is the selection handler with the magic pencil. First is the line.
+    /// </summary>
+
+    private void DrawLine(double x0, double y0, double x1, double y1, List<Line> List,bool yellow)
+        {
+            Line line = new Line
+            {
+                X1 = x0,
+                Y1 = y0,
+                X2 = x1,
+                Y2 = y1,
+                Stroke = Brushes.Orange,
+                StrokeThickness = 5,
+            };
+            if(yellow) line.Stroke = Brushes.Yellow;
+
+            SelectionCanvas.Children.Add(line);
+            List.Add(line);
+        }
+
+    /// <summary>
+    /// Erases lines.
+    /// </summary>
+    private void EraseRect_OnClick(Object sender, RoutedEventArgs e)
+    {
+        EraseLine(SelectedArea.EndList);
+        EraseLine(SelectedArea.BegList);
+        EraseLine(SelectedArea.RectList);
+        SelectedArea.TileIdBeg = -1;
+        SelectedArea.TileIdEnd = -1;
+        if (PencilButton.IsChecked == true)
+        {
+            overflowCheckboxName.Visibility = Visibility.Collapsed;
+            NotSupported.Visibility = Visibility.Visible;
+        }
+        else
+        {
+            overflowCheckboxName.Visibility = Visibility.Visible;
+            NotSupported.Visibility = Visibility.Collapsed;
+        }
+    }
+    private void EraseLine(List<Line> List)
+    {
+        foreach (var line in List)
+            SelectionCanvas.Children.Remove(line);
+        List.Clear();
+    }
+    /// <summary>
+    /// Completes selection and rotates to the orientation chosen.
+    /// </summary>
+    private void DrawRectangle(double ActualSize)
+        {
+            var x0 = SelectedArea.x0 * ActualSize;
+            var y0 = SelectedArea.y0 * ActualSize;
+            var x1 = SelectedArea.x1 * ActualSize;
+            var y1 = SelectedArea.y1 * ActualSize;
+            var changex = false;
+            var changey = false;
+
+        EraseLine(SelectedArea.EndList);
+        EraseLine(SelectedArea.BegList);
+        if (x0 > x1)
+        {
+            changex = true;
+            DrawLine(x0 + ActualSize, y0, x0 + ActualSize, y0 + ActualSize, SelectedArea.BegList, false);
+            DrawLine(x1, y1 + ActualSize, x1, y1, SelectedArea.EndList, false);
+        }
+        else
+        {
+            DrawLine(x0, y0, x0, y0 + ActualSize, SelectedArea.BegList, false);
+            DrawLine(x1 + ActualSize, y1 + ActualSize, x1 + ActualSize, y1, SelectedArea.EndList, false);
+        }
+        if (y0 > y1)
+        {
+            changey = true;
+            DrawLine(x0, y0 + ActualSize, x0 + ActualSize, y0 + ActualSize, SelectedArea.BegList, false);
+            DrawLine(x1 + ActualSize, y1, x1, y1, SelectedArea.EndList, false);
+        }
+        else
+        {
+            DrawLine(x0, y0, x0 + ActualSize, y0, SelectedArea.BegList, false);
+            DrawLine(x1 + ActualSize, y1+ ActualSize, x1, y1+ ActualSize, SelectedArea.EndList, false);
+        }
+
+        if (changey == changex){
+                if(changex == true){
+                    var xa = x0; x0 = x1;  x1 = xa;
+                        xa = y0; y0 = y1;  y1 = xa;
+                }
+                DrawLine(x0+ActualSize,y0,x1+ActualSize,y0,SelectedArea.RectList,true);
+                DrawLine(x0,y1+ActualSize,x1,y1+ActualSize,SelectedArea.RectList,true);
+                DrawLine(x0,y0+ActualSize,x0,y1+ActualSize,SelectedArea.RectList,true);
+                DrawLine(x1+ActualSize,y0,x1+ActualSize,y1,SelectedArea.RectList,true);
+
+            }
+            else{
+                if(changex == true){
+                    var xa = x0; x0 = x1;  x1 = xa;
+                        xa = y0; y0 = y1;  y1 = xa;
+                }
+                DrawLine(x0+ActualSize,y0+ActualSize,x1+ActualSize,y0+ActualSize,SelectedArea.RectList,true);
+                DrawLine(x0,y1,x1,y1,SelectedArea.RectList,true);
+                DrawLine(x0,y0,x0,y1,SelectedArea.RectList,true);
+                DrawLine(x1+ActualSize,y0+ActualSize,x1+ActualSize,y1+ActualSize,SelectedArea.RectList,true);
+            }
+        }
+
+    /// <summary>
     /// Event handler for when a layer tile is clicked.
     /// </summary>
     private void LayerTile_OnClick(LayerTile layerTile)
@@ -149,11 +261,43 @@ public partial class MainWindow : Window
                 overflowCheckboxName.IsChecked = SelectedTile.Value.Overflow;
                 
             }
-            // otherwise just update the tile with the current selected value
-            else
+            // If it's the paste button just update the tile with the current selected value
+            else if(PasteButton.IsChecked == true)
             {
                 ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value!.Id]).Tile.Value = SelectedTile.Value;
                 ChunkEditor.SetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id, SelectedTile.Value.Id);
+            }
+            // If it's the select button do select logic
+            else if(PencilButton.IsChecked == true){
+                var coordLine = ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value!.Id]).ActualHeight;
+                var x0 = (SelectedLayerTile.Value.Id%32) * coordLine;
+                var y0 = (SelectedLayerTile.Value.Id/32) * coordLine;
+
+                if(SelectedArea.TileIdBeg == SelectedLayerTile.Value.Id) {
+
+                    SelectedArea.TileIdBeg = -1;
+                    EraseLine(SelectedArea.BegList);
+                }
+                else if(SelectedArea.TileIdEnd == SelectedLayerTile.Value.Id){
+
+                    SelectedArea.TileIdEnd = -1;
+                    EraseLine(SelectedArea.EndList);
+                }
+                else if(SelectedArea.TileIdBeg == -1){
+
+                    DrawLine(x0, y0, x0, y0+coordLine,SelectedArea.BegList,false);
+                    DrawLine(x0, y0, x0+coordLine, y0,SelectedArea.BegList,false);
+                    SelectedArea.TileIdBeg = SelectedLayerTile.Value.Id;
+                }
+                else{
+                    EraseLine(SelectedArea.EndList);
+                    EraseLine(SelectedArea.RectList);
+                    DrawLine(x0+coordLine, y0+coordLine, x0, y0+coordLine,SelectedArea.EndList,false);
+                    DrawLine(x0+coordLine, y0+coordLine, x0+coordLine, y0,SelectedArea.EndList,false);
+                    SelectedArea.TileIdEnd = SelectedLayerTile.Value.Id;
+                }
+                if(SelectedArea.TileIdEnd > -1 && SelectedArea.TileIdBeg > -1) DrawRectangle(coordLine);
+                else EraseLine(SelectedArea.RectList);
             }
         }
         catch (Exception ex)
@@ -209,6 +353,10 @@ public partial class MainWindow : Window
 
             ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value.Id]).Tile.Value = selectedTileDrop;
 
+            if(PencilButton.IsChecked == true){
+                ChunkEditor.SetAreaValue(ChunkValue.Value, LayerValue.Value, SelectedArea.TileIdBeg,SelectedArea.TileIdEnd, selectedTileDrop.Id);
+                RefreshTiles(ChunkValue.Value, LayerValue.Value);
+            }
             ChunkEditor.SetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id, selectedTileDrop.Id);
         }
         catch (Exception ex)
@@ -263,6 +411,16 @@ public partial class MainWindow : Window
                 return;
             }
 
+            var saveFileDialog = new SaveFileDialog
+            {
+                Filter = "*.BIN|*.BIN"
+            };
+            if (saveFileDialog.ShowDialog() == false)
+            {
+                return;
+            }
+            ChunkEditor.Filename = saveFileDialog.FileName;
+
             ChunkEditor.SaveFile();
         }
         catch (Exception ex)
@@ -303,7 +461,7 @@ public partial class MainWindow : Window
         }
     }
 
-        private void ImportFile_OnClick(object sender, RoutedEventArgs e)
+    private void ImportFile_OnClick(object sender, RoutedEventArgs e)
     {
         try
         {
@@ -430,4 +588,68 @@ public partial class MainWindow : Window
 
         RefreshTiles(ChunkValue.Value, LayerValue.Value);
     }
+
+    private void ReplaceBlocks_OnClick(Object sender, RoutedEventArgs e){
+    try
+        {
+            var replaceBlockWindow = new ReplaceBlock
+            {
+                FirstId = -1,
+                SecondId = -1
+            };
+
+            if (replaceBlockWindow.ShowDialog() == false)
+            {
+                return;
+            }
+            string TextM = "N/A";
+            if(PencilButton.IsChecked == true){
+                TextM = "This will replace all blocks inside the selection. Continue?";
+            }
+            else TextM = "This will replace ALL blocks in the map with the new Id. Are you sure you want to continue?";
+
+            var ConfirmR = new ConfirmChoice
+            {
+                Text = TextM
+            };
+
+            if (ConfirmR.ShowDialog() == false)
+            {
+                return;
+            }
+            if(ConfirmR.Confirmed == true){
+                if(PencilButton.IsChecked == true) ChunkEditor.ReplaceAreaValue(ChunkValue.Value, LayerValue.Value, SelectedArea.TileIdBeg,SelectedArea.TileIdEnd,replaceBlockWindow.FirstId,replaceBlockWindow.SecondId);
+                else ChunkEditor.ReplaceBlockValue(replaceBlockWindow.FirstId,replaceBlockWindow.SecondId);
+                RefreshTiles(ChunkValue.Value, LayerValue.Value);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+
+    //For some reason Turtle's flattener doesn't work for me... And I need it for testing. 
+    private void Flattener_OnClick(Object sender, RoutedEventArgs e){
+        try
+        {
+            var ConfirmF = new ConfirmChoice
+            {
+                Text = "This will leave the map on bare bedrock.  Are you sure you want to continue?"
+            };
+
+            if (ConfirmF.ShowDialog() == false)
+            {
+                return;
+            }
+
+            ChunkEditor.Flatten();
+            RefreshTiles(ChunkValue.Value, LayerValue.Value);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+
 }

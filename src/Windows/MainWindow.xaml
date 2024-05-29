@@ -33,12 +33,23 @@
           <Image Source="/Images/Import.png" />
         </Button>
         <Separator/>
-        <RadioButton Name="SelectButton" Height="24" Width="24" ToolTip="Select" IsChecked="True">
+        <RadioButton Name="SelectButton" Height="24" Width="24" ToolTip="Select" IsChecked="True" Click="EraseRect_OnClick">
           <Image Source="/Images/Select.png" />
         </RadioButton>
-        <RadioButton Name="PasteButton" Height="24" Width="24" ToolTip="Paste">
+        <RadioButton Name="PasteButton" Height="24" Width="24" ToolTip="Paste" Click="EraseRect_OnClick">
           <Image Source="/Images/Paste.png" />
         </RadioButton>
+        <RadioButton Name="PencilButton"  Height="24" Width="24" ToolTip="Select Area" Click="EraseRect_OnClick">
+          <Image Source="/Images/Pencil.png" />
+        </RadioButton>
+        <Separator/>
+        <Button Name="ReplaceButton"  Height="24" Width="24" ToolTip="Replace Blocks" Click="ReplaceBlocks_OnClick">
+          <Image Source="/Images/Replace.png" />
+        </Button>
+        <Separator/>
+        <Button Name="FlattenerButton"  Height="24" Width="24" ToolTip="Flatten Island" Click="Flattener_OnClick">
+          <Image Source="/Images/Flat.png" />
+        </Button>
         <Separator/>
       </ToolBar>
       <Grid HorizontalAlignment="Center" Margin="10,0,10,0">
@@ -46,8 +57,8 @@
           <ColumnDefinition Width="auto" MinWidth = "350" />
           <ColumnDefinition Width="auto" MinWidth="600" />
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,10,0" DockPanel.Dock="Left">
-          <StackPanel Width="350" HorizontalAlignment="Left">
+        <Grid Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,0,20,0" DockPanel.Dock="Left">
+          <StackPanel Width="360" HorizontalAlignment="Left">
             <TextBlock Height="10"/>
             <StackPanel Width="280" VerticalAlignment="Center" Orientation="Horizontal">
               <TextBlock Text="Chunk" Width="50" TextAlignment="Center" />
@@ -65,9 +76,12 @@
               <Button Name="SubLayer" Width="20" FontWeight="Bold" Click="SubLayer_OnClick">-</Button>
             </StackPanel>
             <TextBlock Height="10"/>
-            <StackPanel Width="350" VerticalAlignment="Center" Orientation="Horizontal">
+            <StackPanel Width="420" VerticalAlignment="Center" Orientation="Horizontal">
               <ComboBox Name="TileComboBox" Height="34" Width = "265" SelectedItem="{Binding SelectedTile, RelativeSource={RelativeSource AncestorType=Window}}" SelectionChanged="TileComboBox_OnSelectionChange" ItemsSource="{Binding TileComboBoxList, RelativeSource={RelativeSource AncestorType=Window}}" />
-              <control:overflowCheckbox x:Name="overflowCheckboxName" CheckedChanged="UpdateIdSelected_OnClick" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,0,10,0"/>
+               <Grid Grid.Column="0" Width = "145">
+                <control:overflowCheckbox x:Name="overflowCheckboxName" CheckedChanged="UpdateIdSelected_OnClick" VerticalAlignment="Top" Margin="10,0,10,0"/>
+                <TextBlock x:Name="NotSupported" Text="Overflow not supported yet!" TextWrapping="WrapWithOverflow" Margin="10,0,10,0" IsHitTestVisible = "false"/>
+              </Grid>
             </StackPanel>
             <TextBlock Text="{Binding StringFormat=ID: {0}, Path=SelectedTile.Value.ListId,RelativeSource={RelativeSource AncestorType=Window}}" />
             <TextBlock Text="{Binding StringFormat=Type: {0}, Path=SelectedTile.Value.Type, RelativeSource={RelativeSource AncestorType=Window}}" />
@@ -81,7 +95,10 @@
         </Grid>
         <Grid Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" DockPanel.Dock="Right">
           <Viewbox Stretch="Uniform">
-            <UniformGrid Name="LayerTiles" Columns="32" Rows="32" />
+          <Grid>
+            <UniformGrid Name="LayerTiles" Columns="32" Rows="32" Grid.ZIndex="0"/>
+            <Canvas x:Name="SelectionCanvas" Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ZIndex="1" IsHitTestVisible="False"/>
+          </Grid>
           </Viewbox>
         </Grid>
       </Grid>
