@@ -15,8 +15,8 @@ Do not try to set unidentified blocks (the ones that make the selection say '-1 
 
 Updated screenshots.
 
-<img src="./src/Images/ScreenshotPlus.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" /> <img src="./src/Images/ScreenshotPlus2.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" />
-<img src="./src/Images/ScreenshotPlus3.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" />
+<img src="./src/Images/ScreenshotPlus.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" /> <img src="./src/Images/ScreenshotPlus2.png" data-canonical-src="./src/Images/ScreenshotPlus2.png" width="479" height="258" />
+<img src="./src/Images/ScreenshotPlus3.png" data-canonical-src="./src/Images/ScreenshotPlus3.png" width="479" height="258" />
 
 Items are still unrecognized. 
 
@@ -31,7 +31,11 @@ Items are still unrecognized.
 - Added a Magic Pencil tool that will select a whole area in the current layer. By choosing a new block the entire area will be set to that block.
 - Added a 'Replace block' tool that will replace every instance of that block in the map for a different one. If there is a selection active with the Pencil it will only affect the selected area.
 - Changed a water block that seemed to have the wrong name (It was *too* obviously wrong to ignore)
-- Changed the way the chunk number is fetched. 
+- Changed the way the chunk number is fetched.
+
+Screenshots of 2.1:
+
+<img src="./src/Images/ScreenshotFill.png" data-canonical-src="./src/Images/ScreenshotFill.png" width="479" height="258" /> <img src="./src/Images/ScreenshotReplace.png" data-canonical-src="./src/Images/ScreenshotReplace.png" width="479" height="258" />
 
 **Features to add:**
 - Optimize images from the dropdown menu (lags a little).
