@@ -1472,8 +1472,9 @@
     },
     {
       "Id": 341,
-      "Name": "Clear water full block",
-      "ImageId": 120
+      "Name": "Sea water full block",
+      "Description": "Rest of the ids near might be sea too",
+      "ImageId": 349
     },
     {
       "Id": 342,

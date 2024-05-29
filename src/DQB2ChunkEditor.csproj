@@ -18,6 +18,9 @@
     <None Remove="Images\Blocks\*.png" />
     <None Remove="Images\Tiles\*.png" />
     <None Remove="Images\Icon.png" />
+    <None Remove="Images\Replace.png" />
+    <None Remove="Images\Flat.png" />
+    <None Remove="Images\Pencil.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +37,9 @@
     <Resource Include="Images\Blocks\*.png" />
     <Resource Include="Images\Tiles\*.png" />
     <Resource Include="Images\Icon.png" />
+    <Resource Include="Images\Replace.png" />
+    <Resource Include="Images\Flat.png" />
+    <Resource Include="Images\Pencil.png" />
   </ItemGroup>
 
   <ItemGroup>
