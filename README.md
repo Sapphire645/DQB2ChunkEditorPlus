@@ -7,12 +7,6 @@ And of course to turtle-insect (https://github.com/turtle-insect/DQB2), the one 
 This is my first time uploading to GitHub. I am unsure of the standard procedure. This fork adds more functionality to the original program.
 I assume since it hasn't been updated for years that it will not be.
 
-**Added functionality:**
-- Import and Export buttons for raw hex editing.
-- Updated block list with new blocks.
-- Changed the way the blocks display in the map for a better visual interface (In-game textures instead of block icons).
-- Blocks seem to overflow at index 2048. Added functionality to read and insert blocks with their normal and overflowed indices.
-  
 For all undocumented blocks, here is a link with all IDs identified. https://www.tumblr.com/sapphire-rb/751291945137078272/all-of-dqb2s-blocks-with-their-ids
 
 Do not try to set unidentified blocks (the ones that make the selection say '-1 not on list') because I don't know if it will work or not.
@@ -26,20 +20,31 @@ Updated screenshots.
 
 Items are still unrecognized. 
 
+**0.2.0:**
+- Import and Export buttons for raw hex editing.
+- Updated block list with new blocks.
+- Changed the way the blocks display in the map for a better visual interface (In-game textures instead of block icons).
+- Blocks seem to overflow at index 2048. Added functionality to read and insert blocks with their normal and overflowed indices.
+
+**0.2.1:**
+- Added a 'flatten island' option (Turtle's one wasn't working for me and I needed it for testing)
+- Added a Magic Pencil tool that will select a whole area in the current layer. By choosing a new block the entire area will be set to that block.
+- Added a 'Replace block' tool that will replace every instance of that block in the map for a different one. If there is a selection active with the Pencil it will only affect the selected area.
+- Changed a water block that seemed to have the wrong name (It was *too* obviously wrong to ignore)
+- Changed the way the chunk number is fetched. 
+
 **Features to add:**
 - Optimize images from the dropdown menu (lags a little).
 - Better filtering for the dropdown menu.
 - Decorative items.
-- More tools for editing (perhaps a bucket fill option or something along those lines).
+- Fill bucket mayhaps.
 - Automatic backup.
-- Importing, then saving saves over the imported file. A 'save as' option needs to be implemented.
 
 **External info to add:**
 - Full block descriptions.
 - Colored blocks are not implemented yet. I'm debating between adding colored icons for each variant or just doing what the game does and add a color tag beside it.
 - All liquid blocks are not in yet. There are too many of them, will do eventually.
 - Mapping of all chunks in each island (They are really big.)
-
 
 Main branch text below.
 
