@@ -91,7 +91,11 @@ public static class ChunkEditor
 
         var compressedBytes = ZlibStream.CompressBuffer(_uncompressedBytes);
 
-        ChunkCount = (short)(_uncompressedBytes.Length / ChunkSize);
+        var chunkBytes = new byte[2];
+        chunkBytes[0] = _uncompressedBytes[1331903-HeaderLength];
+        chunkBytes[1] = _uncompressedBytes[1331904-HeaderLength];
+        ChunkCount = (short)(BitConverter.ToUInt16(chunkBytes));
+
         Filename = filename;
     }
     private static uint GetByteIndex(short chunk, byte layer, short tile)
