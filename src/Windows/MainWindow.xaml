@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:control="clr-namespace:DQB2ChunkEditor.Controls"
         mc:Ignorable="d"
-        Title="DQB2 Chunk Editor+" Height="600" MinHeight="600" Width="1000" MinWidth="1000" WindowStartupLocation="CenterScreen" WindowState="Normal" SnapsToDevicePixels="True"
+        Title="DQB2 Chunk Editor+" Height="600" MinHeight="600" Width="1100" MinWidth="1100" WindowStartupLocation="CenterScreen" WindowState="Normal" SnapsToDevicePixels="True"
         Icon="/Images/Icon.png">
   <Window.Resources>
     <Style TargetType="Image">
@@ -84,13 +84,16 @@
               </Grid>
             </StackPanel>
             <TextBlock Text="{Binding StringFormat=ID: {0}, Path=SelectedTile.Value.ListId,RelativeSource={RelativeSource AncestorType=Window}}" />
+            <TextBlock Text="{Binding StringFormat=Raw ID: {0}, Path=SelectedTile.Value.Id, RelativeSource={RelativeSource AncestorType=Window}}" />
+            <TextBlock Text="{Binding StringFormat=Overflow?: {0}, Path=SelectedTile.Value.Overflow, RelativeSource={RelativeSource AncestorType=Window}}" />
+            <TextBlock/>
             <TextBlock Text="{Binding StringFormat=Type: {0}, Path=SelectedTile.Value.Type, RelativeSource={RelativeSource AncestorType=Window}}" />
             <TextBlock Text="{Binding StringFormat=Name: {0}, Path=SelectedTile.Value.Name, RelativeSource={RelativeSource AncestorType=Window}}" />
             <TextBlock Text="{Binding StringFormat=Description: {0}, Path=SelectedTile.Value.Description, RelativeSource={RelativeSource AncestorType=Window}}" />
-            <TextBlock Text="{Binding StringFormat=Overflow?: {0}, Path=SelectedTile.Value.Overflow, RelativeSource={RelativeSource AncestorType=Window}}" />
             <TextBlock Text="{Binding StringFormat=Can be broken by: {0}, Path=SelectedTile.Value.Break, RelativeSource={RelativeSource AncestorType=Window}}" />
+            <TextBlock Text="{Binding StringFormat=Drops: {0}, Path=SelectedTile.Value.NormalDrop, RelativeSource={RelativeSource AncestorType=Window}}" />
+            <TextBlock Text="{Binding StringFormat=Ultimallet Drops: {0}, Path=SelectedTile.Value.UltimalletDrop, RelativeSource={RelativeSource AncestorType=Window}}" />
             <TextBlock Text="{Binding StringFormat=Used: {0}, Path=SelectedTile.Value.Used, RelativeSource={RelativeSource AncestorType=Window}}" />
-            <TextBlock Text="{Binding StringFormat=Raw ID: {0}, Path=SelectedTile.Value.Id, RelativeSource={RelativeSource AncestorType=Window}}" />
           </StackPanel>
         </Grid>
         <Grid Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" DockPanel.Dock="Right">
