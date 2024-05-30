@@ -33,6 +33,11 @@ Items are still unrecognized.
 - Changed a water block that seemed to have the wrong name (It was *too* obviously wrong to ignore)
 - Changed the way the chunk number is fetched.
 
+**0.2.2:**
+- Completed the whole block list from ID 0 to 2047. Added colors (Still missing images)
+- New info added: What items do the blocks drop and the hammer requirement of the blocks. 'Used' property added as well (Not accurate)
+- Fixed oversight on the way the chunk number is fetched when importing a file
+
 Screenshots of 2.1:
 
 <img src="./src/Images/ScreenshotFill.png" data-canonical-src="./src/Images/ScreenshotFill.png" width="479" height="258" /> <img src="./src/Images/ScreenshotReplace.png" data-canonical-src="./src/Images/ScreenshotReplace.png" width="479" height="258" />
@@ -45,9 +50,7 @@ Screenshots of 2.1:
 - Automatic backup.
 
 **External info to add:**
-- Full block descriptions.
-- Colored blocks are not implemented yet. I'm debating between adding colored icons for each variant or just doing what the game does and add a color tag beside it.
-- All liquid blocks are not in yet. There are too many of them, will do eventually.
+- Colored block images are not implemented yet.
 - Mapping of all chunks in each island (They are really big.)
 
 Main branch text below.
