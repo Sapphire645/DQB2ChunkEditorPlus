@@ -25,6 +25,7 @@ public partial class MainWindow : Window
     public ObservableProperty<Tile> SelectedTile { get; set; } = new();
     public Tile selectedTileDrop;
     public ObservableProperty<LayerTile> SelectedLayerTile { get; set; } = new();
+    public List<ItemData> ItemDataList { get; set; } = new();
     public SelectionPencilClass SelectedArea { get; set; } = new();
     public ObservableProperty<short> ChunkValue { get; set; } = new() { Value = 0};
     public ObservableProperty<byte> LayerValue { get; set; } = new() { Value = 0 };
@@ -121,6 +122,22 @@ public partial class MainWindow : Window
                 var TileValue = TileList.FirstOrDefault(t => t.Id % 2048 == blockId % 2048) ?? TileList[0];
                 TileValue.Id = (short)blockId;
                 ((LayerTile)LayerTiles.Children[i]).Tile.Value = TileValue;
+            }
+            
+            ItemDataList = new();
+            for (short i = 0; i < ChunkEditor.ItemCount; i++)
+            {
+                var ChunkItem = ChunkEditor.GetItemChunk((uint)(0x150E7D1+i*4));
+                if((short)ChunkItem == chunk){
+                    var ItemData = new ItemData((uint)( 0x150E7D1 + i * 4));
+                    if(ItemData.PosY == (uint)layer){
+                        ItemDataList.Add(ItemData);
+                    }
+                }
+                //var blockId = ChunkEditor.GetBlockValue(chunk, layer, i);
+                //var TileValue = TileList.FirstOrDefault(t => t.Id % 2048 == blockId % 2048) ?? TileList[0];
+                //TileValue.Id = (short)blockId;
+                //((LayerTile)LayerTiles.Children[i]).Tile.Value = TileValue;
             }
         }
         catch (Exception ex)
@@ -645,6 +662,130 @@ public partial class MainWindow : Window
 
             ChunkEditor.Flatten();
             RefreshTiles(ChunkValue.Value, LayerValue.Value);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+    private void Gratitude_OnClick(Object sender, RoutedEventArgs e){
+        try
+        {
+            var ValueEditor = new ValueEditor{
+                Value = ChunkEditor.GratitudePoints,
+                Text = "Gratitude Points",
+                ImagePath = "/Images/Gratitude.png"
+            };
+
+            if (ValueEditor.ShowDialog() == false || !UInt32.TryParse(ValueEditor.ResponseText, out var value))
+            {
+                
+                return;
+            }
+            ChunkEditor.GratitudePoints = value;
+            ChunkEditor.UpdateExtra();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+    private void Clock_OnClick(Object sender, RoutedEventArgs e){
+        try
+        {
+            var ValueEditor = new ValueEditor{
+                Value = (uint)ChunkEditor.Clock,
+                Text = "Time [From 0 to 12000]",
+                ImagePath = "/Images/Clock.png"
+            };
+
+            if (ValueEditor.ShowDialog() == false || !float.TryParse(ValueEditor.ResponseText, out var value))
+            {
+                return;
+            }
+            ChunkEditor.Clock = value;
+            ChunkEditor.UpdateExtra();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+    private void Weather_OnClick(Object sender, RoutedEventArgs e){
+        try
+        {
+            var ValueEditor = new ValueEditor{
+                Value = ChunkEditor.Weather,
+                Text = "Weather",
+                ImagePath = "/Images/Weather.png"
+            };
+
+            if (ValueEditor.ShowDialog() == false || !ushort.TryParse(ValueEditor.ResponseText, out var value))
+            {
+                
+                return;
+            }
+            ChunkEditor.Weather = value;
+            ChunkEditor.UpdateExtra();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+
+    //PRIMITIVE FILTERING
+    private void FilterByName(string TextKey)
+    {
+        try
+        {
+            var options = new JsonSerializerOptions
+            {
+                Converters =
+                {
+                    new JsonStringEnumConverter(JsonNamingPolicy.CamelCase)
+                }
+            };
+
+            var json = File.ReadAllText(@"Data\Tiles.json");
+
+            var tiles = JsonSerializer.Deserialize<TileList>(json, options);
+
+            TileComboBoxList.Clear();
+
+            for (var i = 0; i < tiles!.Tiles.Count; i++)
+            {
+                if( ((tiles.Tiles[i].Name).ToLower()).Contains(TextKey)){
+                    TileComboBoxList.Add(new ComboBoxTile
+                    {
+                        Id = i,
+                        Tile = tiles.Tiles[i]
+                    });
+                    TileList.Add(tiles.Tiles[i]);
+                }
+                
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+        private void Search_OnClick(Object sender, RoutedEventArgs e){
+        try
+        {
+            var ValueEditor = new ValueEditor{
+                Value = 0,
+                Text = "[PLACEHOLDER] Write name of block (or part of the name)",
+                ImagePath = "/Images/Search.png"
+            };
+
+            if (ValueEditor.ShowDialog() == false )
+            {
+                
+                return;
+            }
+            FilterByName((ValueEditor.ResponseText).ToLower());
         }
         catch (Exception ex)
         {

@@ -51,6 +51,19 @@
           <Image Source="/Images/Flat.png" />
         </Button>
         <Separator/>
+        <Button Name="GratitudePoints"  Height="24" Width="24" ToolTip="Edit Gratitude Points" Click="Gratitude_OnClick">
+          <Image Source="/Images/Gratitude.png" />
+        </Button>
+        <Button Name="Clock"  Height="24" Width="24" ToolTip="Edit time of day" Click="Clock_OnClick">
+          <Image Source="/Images/Clock.png" />
+        </Button>
+        <Button Name="Weather"  Height="24" Width="24" ToolTip="Edit weather" Click="Weather_OnClick">
+          <Image Source="/Images/Weather.png" />
+        </Button>
+        <Separator/>
+        <Button Name="Search"  Height="24" Width="24" ToolTip="PLACEHOLDER Filter" Click="Search_OnClick">
+          <Image Source="/Images/Search.png" />
+        </Button>
       </ToolBar>
       <Grid HorizontalAlignment="Center" Margin="10,0,10,0">
         <Grid.ColumnDefinitions>
