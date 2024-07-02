@@ -21,6 +21,10 @@
     <None Remove="Images\Replace.png" />
     <None Remove="Images\Flat.png" />
     <None Remove="Images\Pencil.png" />
+    <None Remove="Images\Gratitude.png" />
+    <None Remove="Images\Clock.png" />
+    <None Remove="Images\Weather.png" />
+    <None Remove="Images\Search.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +44,10 @@
     <Resource Include="Images\Replace.png" />
     <Resource Include="Images\Flat.png" />
     <Resource Include="Images\Pencil.png" />
+    <Resource Include="Images\Gratitude.png" />
+    <Resource Include="Images\Clock.png" />
+    <Resource Include="Images\Weather.png" />
+    <Resource Include="Images\Search.png" />
   </ItemGroup>
 
   <ItemGroup>
