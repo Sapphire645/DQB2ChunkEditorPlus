@@ -38,9 +38,17 @@ Items are still unrecognized.
 - New info added: What items do the blocks drop and the hammer requirement of the blocks. 'Used' property added as well (Not accurate)
 - Fixed oversight on the way the chunk number is fetched when importing a file
 
+**0.2.3:**
+- Added placeholder filter option to filter blocks by name (Thank goodness)
+- Added support for editing Gratitude Points, Time and Weather (Not fully tested, weather is not documented yet)
+
 Screenshots of 2.1:
 
 <img src="./src/Images/ScreenshotFill.png" data-canonical-src="./src/Images/ScreenshotFill.png" width="479" height="258" /> <img src="./src/Images/ScreenshotReplace.png" data-canonical-src="./src/Images/ScreenshotReplace.png" width="479" height="258" />
+
+Screenshot of 2.2:
+![image](https://github.com/Sapphire645/DQB2ChunkEditorPlus/assets/167467641/853747c0-7ca9-48db-9004-e07148a04024)
+
 
 **Features to add:**
 - Optimize images from the dropdown menu (lags a little).
