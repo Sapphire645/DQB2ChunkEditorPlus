@@ -1123,7 +1123,7 @@
       "Can be broken by": "Giant Mallet",
       "Normal Drop": "Earth x1 {1001}",
       "Ultimallet Drop": "Witchgrassy Earth x1 {1080}",
-      "ImageId": -1
+      "ImageId": 124
     },
     {
       "Id": 125,
@@ -1132,7 +1132,7 @@
       "Can be broken by": "Giant Mallet",
       "Normal Drop": "Earth x1 {1001}",
       "Ultimallet Drop": "Lemongrassy Earth x1 {1081}",
-      "ImageId": -1
+      "ImageId": 125
     },
     {
       "Id": 126,
@@ -1141,7 +1141,7 @@
       "Can be broken by": "Giant Mallet",
       "Normal Drop": "Earth x1 {1001}",
       "Ultimallet Drop": "Grassy Earth x1 {1002}",
-      "ImageId": -1
+      "ImageId": 126
     },
     {
       "Id": 127,
@@ -1150,7 +1150,7 @@
       "Can be broken by": "Giant Mallet",
       "Normal Drop": "Earth x1 {1001}",
       "Ultimallet Drop": "Limegrassy Earth x1 {1003}",
-      "ImageId": -1
+      "ImageId": 127
     },
     {
       "Id": 128,
@@ -1564,8 +1564,10 @@
     {
       "Id": 174,
       "Name": "Chert",
+      "Description": "Is used in the IoA Temple Mountain. The villagers display an empty name when building a blueprint.",
       "Used": "Used",
       "Normal Drop": "Chert x1 {1770}",
+      "Ultimallet Drop": "Chert x1 {1770}",
       "Can be broken by": "War Hammer",
       "ImageId": 149
     },
@@ -4441,7 +4443,7 @@
       "Normal Drop": "Spoiled Soil x1 {1784}",
       "Ultimallet Drop": "Leafy Spoiled Soil x1 {2084}",
       "Can be broken by": "Giant Mallet",
-      "ImageId": -1
+      "ImageId": 501
     },
     {
       "Id": 502,
@@ -5216,7 +5218,7 @@
       "Can be broken by": "Giant Mallet",
       "Normal Drop": "Nothing {-1}",
       "Ultimallet Drop": "Stony Soil {1759}",
-      "ImageId": -1
+      "ImageId": 587
     },
     {
       "Id": 588,
@@ -10962,9 +10964,9 @@
     },
     {
       "Id": 1246,
-      "Name": "Air?",
+      "Name": "Item",
       "Used": "Used",
-      "ImageId": -1
+      "ImageId": 2047
     },
     {
       "Id": 1247,
@@ -11584,9 +11586,9 @@
     },
     {
       "Id": 1335,
-      "Name": "Air?",
+      "Name": "Item",
       "Used": "Used",
-      "ImageId": -1
+      "ImageId": 2047
     },
     {
       "Id": 1336,
@@ -12206,9 +12208,9 @@
     },
     {
       "Id": 1424,
-      "Name": "Air?",
+      "Name": "Item",
       "Used": "Used",
-      "ImageId": -1
+      "ImageId": 2047
     },
     {
       "Id": 1425,
@@ -12828,9 +12830,9 @@
     },
     {
       "Id": 1513,
-      "Name": "Air?",
+      "Name": "Item",
       "Used": "Used",
-      "ImageId": -1
+      "ImageId": 2047
     },
     {
       "Id": 1514,
@@ -13450,9 +13452,9 @@
     },
     {
       "Id": 1602,
-      "Name": "Air?",
+      "Name": "Item",
       "Used": "Used",
-      "ImageId": -1
+      "ImageId": 2047
     },
     {
       "Id": 1603,
@@ -14072,9 +14074,9 @@
     },
     {
       "Id": 1691,
-      "Name": "Air?",
+      "Name": "Item",
       "Used": "Used",
-      "ImageId": -1
+      "ImageId": 2047
     },
     {
       "Id": 1692,
@@ -14694,9 +14696,9 @@
     },
     {
       "Id": 1780,
-      "Name": "Air?",
+      "Name": "Item",
       "Used": "Used",
-      "ImageId": -1
+      "ImageId": 2047
     },
     {
       "Id": 1781,
@@ -15316,9 +15318,9 @@
     },
     {
       "Id": 1869,
-      "Name": "Air?",
+      "Name": "Item",
       "Used": "Used",
-      "ImageId": -1
+      "ImageId": 2047
     },
     {
       "Id": 1870,
@@ -15938,9 +15940,9 @@
     },
     {
       "Id": 1958,
-      "Name": "Air?",
+      "Name": "Item",
       "Used": "Used",
-      "ImageId": -1
+      "ImageId": 2047
     },
     {
       "Id": 1959,

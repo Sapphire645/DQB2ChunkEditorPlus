@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="Values" SizeToContent="WidthAndHeight" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
   <Grid Width="420">
-    <StackPanel Width="400" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center">
-      <Grid Width="420" Height = "40" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,10,0" DockPanel.Dock="Left">
+    <StackPanel Width="400" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center">
+      <Grid Width="420" Height = "80" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,10,0" DockPanel.Dock="Left">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="40"/>
           <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Image Source="{Binding ImagePath}" Height="30" Width="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <TextBlock Grid.Column="1" Height="20" Width="420" VerticalAlignment="Center">
+        <Image Source="{Binding ImagePath}" Height="60" Width="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock TextWrapping="WrapWithOverflow" Grid.Column="1" Height="70" Width="300" VerticalAlignment="Bottom">
           <TextBlock.Text>
             <MultiBinding StringFormat="Edit {0} : {1}">
               <Binding Path="Text" RelativeSource="{RelativeSource AncestorType=Window}" />

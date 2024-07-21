@@ -430,7 +430,8 @@ public partial class MainWindow : Window
 
             var saveFileDialog = new SaveFileDialog
             {
-                Filter = "*.BIN|*.BIN"
+                Filter = "*.BIN|*.BIN",
+                FileName = "STGDAT" + Convert.ToString(ChunkEditor.Island)
             };
             if (saveFileDialog.ShowDialog() == false)
             {
@@ -458,10 +459,10 @@ public partial class MainWindow : Window
             {
                 return;
             }
-
             var saveFileDialog = new SaveFileDialog
             {
-                Filter = "*.BINE|*.BINE"
+                Filter = "*.BINE|*.BINE",
+                FileName = "STGDAT" + Convert.ToString(ChunkEditor.Island)
             };
 
             if (saveFileDialog.ShowDialog() == false)
@@ -673,7 +674,7 @@ public partial class MainWindow : Window
         {
             var ValueEditor = new ValueEditor{
                 Value = ChunkEditor.GratitudePoints,
-                Text = "Gratitude Points",
+                Text = "Gratitude Points [WARNING: MIGHT NOT WORK]",
                 ImagePath = "/Images/Gratitude.png"
             };
 
@@ -695,7 +696,7 @@ public partial class MainWindow : Window
         {
             var ValueEditor = new ValueEditor{
                 Value = (uint)ChunkEditor.Clock,
-                Text = "Time [From 0 to 12000]",
+                Text = "Time [From 0 to 1200]",
                 ImagePath = "/Images/Clock.png"
             };
 
@@ -703,8 +704,10 @@ public partial class MainWindow : Window
             {
                 return;
             }
-            ChunkEditor.Clock = value;
-            ChunkEditor.UpdateExtra();
+            if (value >= 0 && value <= 1200){
+                ChunkEditor.Clock = value;
+                ChunkEditor.UpdateExtra();
+            }
         }
         catch (Exception ex)
         {
@@ -714,19 +717,40 @@ public partial class MainWindow : Window
     private void Weather_OnClick(Object sender, RoutedEventArgs e){
         try
         {
-            var ValueEditor = new ValueEditor{
-                Value = ChunkEditor.Weather,
-                Text = "Weather",
-                ImagePath = "/Images/Weather.png"
+            var ChangeWeather = new ChangeWeather{
+                Id = ChunkEditor.Weather
             };
 
-            if (ValueEditor.ShowDialog() == false || !ushort.TryParse(ValueEditor.ResponseText, out var value))
+            if (ChangeWeather.ShowDialog() == false)
+            {
+                return;
+            }
+            ChunkEditor.Weather = ChangeWeather.Id;
+            ChunkEditor.UpdateExtra();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+
+    private void Size_OnClick(Object sender, RoutedEventArgs e){
+        try
+        {
+            var ValueEditor = new ValueEditor{
+                Value = (uint)ChunkEditor.ChunkCount,
+                Text = "Chunk Count [TEMPORAL FIX, ONLY CHANGE THIS IF YOU KNOW THE VALUE IS WRONG. 'REPLACE ALL' AND 'FLATTENER' WILL CORRUPT THE SAVE IF THE CHUNK COUNT IS BIGGER THAN THE REAL VALUE]",
+                ImagePath = ""
+            };
+
+            if (ValueEditor.ShowDialog() == false || !short.TryParse(ValueEditor.ResponseText, out var value))
             {
                 
                 return;
             }
-            ChunkEditor.Weather = value;
-            ChunkEditor.UpdateExtra();
+            if (value >= 1 && value <= 800){
+                ChunkEditor.ChunkCount = value;
+            }
         }
         catch (Exception ex)
         {

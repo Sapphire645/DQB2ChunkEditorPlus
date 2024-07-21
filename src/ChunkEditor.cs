@@ -30,6 +30,8 @@ public static class ChunkEditor
     public static float Clock { get; set; } = 0; //clock
     public static ushort Weather{ get; set; } = 1; //weather
 
+    public static byte Island{ get; set; } = 0x00; //Island Number
+
     public static void LoadFile(string filename)
     {
         var fileBytes = File.ReadAllBytes(filename);
@@ -59,6 +61,7 @@ public static class ChunkEditor
         chunkBytes[1] = _uncompressedBytes[0x24E7CE];
         ItemCount = (short)(BitConverter.ToUInt16(chunkBytes));
         Filename = filename;
+        Island = _uncompressedBytes[0xC0FE6-HeaderLength];
         //extra
         var GratitudeBytes = new byte[4];
         GratitudeBytes[0] = _uncompressedBytes[0xC0FDC-HeaderLength];
@@ -123,19 +126,21 @@ public static class ChunkEditor
         ChunkCount = (short)(BitConverter.ToUInt16(chunkBytes));
 
         Filename = filename;
+
+        Island = _uncompressedBytes[0xC0FE6-HeaderLength];
         //extra
         var GratitudeBytes = new byte[4];
         GratitudeBytes[0] = _uncompressedBytes[0xC0FDC-HeaderLength];
         GratitudeBytes[1] = _uncompressedBytes[0xC0FDD-HeaderLength];
         GratitudeBytes[2] = _uncompressedBytes[0xC0FDE-HeaderLength];
         GratitudeBytes[3] = _uncompressedBytes[0xC0FDF-HeaderLength];
-        GratitudePoints = BitConverter.ToUInt32(chunkBytes);
+        GratitudePoints = BitConverter.ToUInt32(GratitudeBytes);
         
         GratitudeBytes[0] = _uncompressedBytes[0xC1060-HeaderLength];
         GratitudeBytes[1] = _uncompressedBytes[0xC1061-HeaderLength];
         GratitudeBytes[2] = _uncompressedBytes[0xC1062-HeaderLength];
         GratitudeBytes[3] = _uncompressedBytes[0xC1063-HeaderLength];
-        Clock = BitConverter.ToSingle(chunkBytes);
+        Clock = BitConverter.ToSingle(GratitudeBytes);
 
         Weather = _uncompressedBytes[0xC1064-HeaderLength];
     }
