@@ -8,7 +8,6 @@ namespace DQB2ChunkEditor.Windows;
 public partial class ValueEditor : Window
 {
     public uint Value{ get; set; } = 0;
-    public uint MaxClock {get;} = 1200;
     public string ResponseText => ValueText.Text;
 
     public string ImagePath  { get; set; } = "/Images/Gratitude.png";

@@ -64,6 +64,10 @@
         <Button Name="Search"  Height="24" Width="24" ToolTip="PLACEHOLDER Filter" Click="Search_OnClick">
           <Image Source="/Images/Search.png" />
         </Button>
+        <Separator/>
+        <Button Name="ChangeSize"  Height="24" Width="24" ToolTip="Edit Chunk Count (TEMPORAL)" Click="Size_OnClick">
+          <Image Source="/Images/Temporal.png" />
+        </Button>
       </ToolBar>
       <Grid HorizontalAlignment="Center" Margin="10,0,10,0">
         <Grid.ColumnDefinitions>
