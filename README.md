@@ -15,8 +15,7 @@ Do not try to set unidentified blocks (the ones that make the selection say '-1 
 
 Updated screenshots.
 
-<img src="./src/Images/ScreenshotPlus.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" /> <img src="./src/Images/ScreenshotPlus2.png" data-canonical-src="./src/Images/ScreenshotPlus2.png" width="479" height="258" />
-<img src="./src/Images/ScreenshotPlus3.png" data-canonical-src="./src/Images/ScreenshotPlus3.png" width="479" height="258" />
+<img src="./src/Images/ScreenshotPlus.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" />
 
 Items are still unrecognized. 
 
@@ -42,13 +41,32 @@ Items are still unrecognized.
 - Added placeholder filter option to filter blocks by name (Thank goodness)
 - Added support for editing Gratitude Points, Time and Weather (Not fully tested, weather is not documented yet)
 
+**0.2.3a:**
+- Fixed import option (That was broken in 0.2.3)
+- Added ability to change chunk count manually (since it sometimes doesn't work?)
+- Tile update, some images were added, water and snow cover was updated, and item tiles were also better identified
+- Clock displayed wrong max number (12000 instead of 1200)
+- Changed 'replace' icon to an in-game one (finally)
+- Save option will now display the proper file name, even if the name of the file was something completely different when it was opened.
+- Better weather editor, all 30 weather tipes are named and can be chosen from a dropdown. Which weathers work where is untested.
+
+**Mayor glitches:**
+- Gratitude editor is still broken. I'm not sure where the problem is
+- For some reason sometimes the blocks will not be recognised despite being in the dropdown? I have no idea why this happens I did not touch that... If this happens just save, close and reopen the program, the file won't be affected by this.
+- Filtering seems to cause some chaos in the dropdown thing. Not recommended.
+
+
 Screenshots of 2.1:
 
 <img src="./src/Images/ScreenshotFill.png" data-canonical-src="./src/Images/ScreenshotFill.png" width="479" height="258" /> <img src="./src/Images/ScreenshotReplace.png" data-canonical-src="./src/Images/ScreenshotReplace.png" width="479" height="258" />
 
 Screenshot of 2.2:
+
 ![image](https://github.com/Sapphire645/DQB2ChunkEditorPlus/assets/167467641/853747c0-7ca9-48db-9004-e07148a04024)
 
+Screenshot of 2.3:
+
+![image](https://github.com/user-attachments/assets/277beef3-b3e9-4fdd-8977-a978ef831f4a)
 
 **Features to add:**
 - Optimize images from the dropdown menu (lags a little).
