@@ -94,7 +94,11 @@ Screenshot of 2.3:
 <img src="./src/Data/Masks/Furrowfield_Square.png" data-canonical-src="./src/Data/Masks/Furrowfield_Square.png">
 <img src="./src/Data/Masks/Furrowfield_Mask.png" data-canonical-src="./src/Data/Masks/Furrowfield_Mask.png">
 
+**-Khrumbul-Dun (STGDAT03)**
 
+<img src="./src/Data/Masks/Khrumbul-Dun_Map.png" data-canonical-src="./src/Data/Masks/Khrumbul-Dun_Map.png">
+<img src="./src/Data/Masks/Khrumbul-Dun_Square.png" data-canonical-src="./src/Data/Masks/Khrumbul-Dun_Square.png">
+<img src="./src/Data/Masks/Khrumbul-Dun_Mask.png" data-canonical-src="./src/Data/Masks/Khrumbul-Dun_Mask.png">
 
 Main branch text below.
 
