@@ -15,15 +15,6 @@ Do not try to set unidentified blocks (the ones that make the selection say '-1 
 
 **Note: Has not been fully tested yet. ALWAYS BACK UP YOUR SAVE.**
 
-### Island Chunk Maps
-*Will be updated with all main islands. There are plans for a "Chunk selector" in the app itself with the save file minimaps, but as of now this will do.*
-*Use the green BG one to mask to your own island.*
-
-**-Isle of Awakening (STGDAT01)**
-
-<img src="https://github.com/user-attachments/assets/ae783d36-a096-498d-8ee1-602268a17ad2">
-<img src="https://github.com/user-attachments/assets/3fe62a20-0552-4127-849d-c1428334f0af" width="500"> <img src="https://github.com/user-attachments/assets/34b415ae-4906-4883-a976-28b61782af2a" width="500">
-
 **0.2.0:**
 - Import and Export buttons for raw hex editing.
 - Updated block list with new blocks.
@@ -86,6 +77,24 @@ Screenshot of 2.3:
 **External info to add:**
 - Colored block images are not implemented yet.
 - Mapping of all chunks in each island (They are really big.)
+
+## Island Chunk Maps
+*Will be updated with all main islands. There are plans for a "Chunk selector" in the app itself with the save file minimaps, but as of now this will do.*
+*Use the green BG one to mask to your own island.*
+
+**-Isle of Awakening (STGDAT01)**
+
+<img src="./src/Data/Masks/IoA_Map.png" data-canonical-src="./src/Data/Masks/IoA_Map.png">
+<img src="./src/Data/Masks/IoA_Square.png" data-canonical-src="./src/Data/Masks/IoA_Square.png">
+<img src="./src/Data/Masks/IoA_Mask.png" data-canonical-src="./src/Data/Masks/IoA_Mask.png">
+
+**-Furrowfield (STGDAT02)**
+
+<img src="./src/Data/Masks/Furrowfield_Map.png" data-canonical-src="./src/Data/Masks/Furrowfield_Map.png">
+<img src="./src/Data/Masks/Furrowfield_Square.png" data-canonical-src="./src/Data/Masks/Furrowfield_Square.png">
+<img src="./src/Data/Masks/Furrowfield_Mask.png" data-canonical-src="./src/Data/Masks/Furrowfield_Mask.png">
+
+
 
 Main branch text below.
 
