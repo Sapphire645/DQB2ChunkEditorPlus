@@ -11,13 +11,18 @@ For all undocumented blocks, here is a link with all IDs identified. https://www
 
 Do not try to set unidentified blocks (the ones that make the selection say '-1 not on list') because I don't know if it will work or not.
 
+*Items are still unrecognized.*
+
 **Note: Has not been fully tested yet. ALWAYS BACK UP YOUR SAVE.**
 
-Updated screenshots.
+### Island Chunk Maps
+*Will be updated with all main islands. There are plans for a "Chunk selector" in the app itself with the save file minimaps, but as of now this will do.*
+*Use the green BG one to mask to your own island.*
 
-<img src="./src/Images/ScreenshotPlus.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" />
+**-Isle of Awakening (STGDAT01)**
 
-Items are still unrecognized. 
+<img src="https://github.com/user-attachments/assets/ae783d36-a096-498d-8ee1-602268a17ad2">
+<img src="https://github.com/user-attachments/assets/3fe62a20-0552-4127-849d-c1428334f0af" width="500"> <img src="https://github.com/user-attachments/assets/34b415ae-4906-4883-a976-28b61782af2a" width="500">
 
 **0.2.0:**
 - Import and Export buttons for raw hex editing.
@@ -55,6 +60,9 @@ Items are still unrecognized.
 - For some reason sometimes the blocks will not be recognised despite being in the dropdown? I have no idea why this happens I did not touch that... If this happens just save, close and reopen the program, the file won't be affected by this.
 - Filtering seems to cause some chaos in the dropdown thing. Not recommended.
 
+Screenshots of 2.0:
+
+<img src="./src/Images/ScreenshotPlus.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" />
 
 Screenshots of 2.1:
 
