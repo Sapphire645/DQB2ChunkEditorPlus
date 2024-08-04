@@ -106,6 +106,12 @@ Screenshot of 2.3:
 <img src="./src/Data/Masks/Moonbrooke_Square.png" data-canonical-src="./src/Data/Masks/Moonbrooke_Square.png">
 <img src="./src/Data/Masks/Moonbrooke_Mask.png" data-canonical-src="./src/Data/Masks/Moonbrooke_Mask.png">
 
+**-Malhalla (STGDAT05)**
+
+<img src="./src/Data/Masks/Malhalla_Map.png" data-canonical-src="./src/Data/Masks/Malhalla_Map.png">
+<img src="./src/Data/Masks/Malhalla_Square.png" data-canonical-src="./src/Data/Masks/Malhalla_Square.png">
+<img src="./src/Data/Masks/Malhalla_Mask.png" data-canonical-src="./src/Data/Masks/Malhalla_Mask.png">
+
 **-Skelkatraz (STGDAT10)**
 
 <img src="./src/Data/Masks/Skelkatraz_Map.png" data-canonical-src="./src/Data/Masks/Skelkatraz_Map.png">
