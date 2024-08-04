@@ -112,6 +112,12 @@ Screenshot of 2.3:
 <img src="./src/Data/Masks/Malhalla_Square.png" data-canonical-src="./src/Data/Masks/Malhalla_Square.png">
 <img src="./src/Data/Masks/Malhalla_Mask.png" data-canonical-src="./src/Data/Masks/Malhalla_Mask.png">
 
+**-Angler's Isle (STGDAT09)**
+
+<img src="./src/Data/Masks/Angler_Map.png" data-canonical-src="./src/Data/Masks/Angler_Map.png">
+<img src="./src/Data/Masks/Angler_Square.png" data-canonical-src="./src/Data/Masks/Angler_Square.png">
+<img src="./src/Data/Masks/Angler_Mask.png" data-canonical-src="./src/Data/Masks/Angler_Mask.png">
+
 **-Skelkatraz (STGDAT10)**
 
 <img src="./src/Data/Masks/Skelkatraz_Map.png" data-canonical-src="./src/Data/Masks/Skelkatraz_Map.png">
