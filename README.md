@@ -100,6 +100,12 @@ Screenshot of 2.3:
 <img src="./src/Data/Masks/Khrumbul-Dun_Square.png" data-canonical-src="./src/Data/Masks/Khrumbul-Dun_Square.png">
 <img src="./src/Data/Masks/Khrumbul-Dun_Mask.png" data-canonical-src="./src/Data/Masks/Khrumbul-Dun_Mask.png">
 
+**-Moonbrooke (STGDAT04)**
+
+<img src="./src/Data/Masks/Moonbrooke_Map.png" data-canonical-src="./src/Data/Masks/Moonbrooke_Map.png">
+<img src="./src/Data/Masks/Moonbrooke_Square.png" data-canonical-src="./src/Data/Masks/Moonbrooke_Square.png">
+<img src="./src/Data/Masks/Moonbrooke_Mask.png" data-canonical-src="./src/Data/Masks/Moonbrooke_Mask.png">
+
 Main branch text below.
 
 ## DQB2 Chunk Editor 
