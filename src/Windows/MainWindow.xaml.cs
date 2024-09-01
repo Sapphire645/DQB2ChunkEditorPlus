@@ -200,7 +200,7 @@ public partial class MainWindow : Window
             ChunkEditor.LoadFile(openFileDialog.FileName);
 
             // if we are above the max chunk, reset to the highest chunk
-            if (ChunkValue.Value > ChunkEditor.ChunkCount)
+            if (ChunkValue.Value >= ChunkEditor.ChunkCount)
             {
                 ChunkValue.Value = ChunkEditor.ChunkCount;
             }
@@ -248,8 +248,7 @@ public partial class MainWindow : Window
                 CurrentValue = ChunkValue.Value
             };
 
-            if (inputValueDialog.ShowDialog() == false ||
-                !short.TryParse(inputValueDialog.ResponseText, out var value))
+            if (inputValueDialog.ShowDialog() == false || !short.TryParse(inputValueDialog.ResponseText, out var value))
             {
                 return;
             }
@@ -274,8 +273,7 @@ public partial class MainWindow : Window
                 CurrentValue = LayerValue.Value
             };
 
-            if (inputValueDialog.ShowDialog() == false ||
-                !byte.TryParse(inputValueDialog.ResponseText, out var value))
+            if (inputValueDialog.ShowDialog() == false || !byte.TryParse(inputValueDialog.ResponseText, out var value))
             {
                 return;
             }
