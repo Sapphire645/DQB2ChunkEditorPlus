@@ -402,7 +402,7 @@ public partial class MainWindow : Window
             ChunkEditor.LoadFile(openFileDialog.FileName);
 
             // if we are above the max chunk, reset to the highest chunk
-            if (ChunkValue.Value > ChunkEditor.ChunkCount)
+            if (ChunkValue.Value >= ChunkEditor.ChunkCount)
             {
                 ChunkValue.Value = ChunkEditor.ChunkCount;
             }
