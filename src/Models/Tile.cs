@@ -11,9 +11,6 @@ public class Tile
     [JsonPropertyName("Type")]
     public Type Type { get; set; } = Type.Block;
 
-    [JsonPropertyName("Is Overflowed")]
-    public bool Overflow => Id > 2047;
-
     [JsonPropertyName("Id")]
     public short Id { get; set; } = -1;
 
@@ -23,10 +20,13 @@ public class Tile
     [JsonPropertyName("Description")]
     public string Description { get; set; } = "N/A";
 
-    //----------- Filtering ------------------
+    [JsonPropertyName("Normal Drop")]
+    public string NormalDrop { get; set; } = "Nothing {-1}";
 
-    [JsonPropertyName("ListId")]
-    public short ListId => (short)(Id % 2048);
+    [JsonPropertyName("Ultimallet Drop")]
+    public string UltimalletDrop { get; set; } = "Nothing {-1}";
+
+    //----------- Filtering ------------------
 
     [JsonPropertyName("Can be broken by")]
     public string Break { get; set; } = "N/A";
