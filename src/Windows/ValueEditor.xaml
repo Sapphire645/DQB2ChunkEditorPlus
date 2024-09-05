@@ -24,7 +24,7 @@
         </TextBlock>
       </Grid>
       <TextBox Name="ValueText" KeyDown="ValueText_OnKeyDown" Height="25" />
-      <Button Content="OK" Click="OkButton_OnClick" Height="25" />
+      <Button Content="OK" Click="OkButton_OnClick" Height="25"/>
     </StackPanel>
   </Grid>
 </Window>
