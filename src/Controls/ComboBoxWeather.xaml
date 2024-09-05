@@ -21,6 +21,6 @@
     </Grid.ColumnDefinitions>
     <Image Grid.Column="0" Width="28" Source="{Binding Path=Weather.Image, RelativeSource={RelativeSource AncestorType=UserControl}}" />
     <Label Grid.Column="1" Width="Auto" VerticalAlignment="Center" Content="{Binding Path=Weather.Name, RelativeSource={RelativeSource AncestorType=UserControl}}" />
-    <Label Grid.Column="2" Width="Auto" VerticalAlignment="Top" Content="{Binding Path=Weather.Id, RelativeSource={RelativeSource AncestorType=UserControl}}" />
+    <Label Grid.Column="2" Width="Auto" VerticalAlignment="Center" Content="{Binding Path=Weather.Id, RelativeSource={RelativeSource AncestorType=UserControl}}" />
   </Grid>
 </UserControl>

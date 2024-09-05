@@ -25,7 +25,7 @@
     <None Remove="Images\Gratitude.png" />
     <None Remove="Images\Clock.png" />
     <None Remove="Images\Weather.png" />
-    <None Remove="Images\Search.png" />
+    <None Remove="Images\SelectionTool.png" />
     <None Remove="Images\Temporal.png" />
   </ItemGroup>
 
@@ -43,6 +43,8 @@
     <Resource Include="Images\Blocks\*.png" />
     <Resource Include="Images\Weather\*.png" />
     <Resource Include="Images\Tiles\*.png" />
+    <Compile Remove="Windows\BlockSelector.xaml.cs" />
+    <Page Remove="Windows\BlockSelector.xaml" />
     <Resource Include="Images\Icon.png" />
     <Resource Include="Images\Replace.png" />
     <Resource Include="Images\Flat.png" />
@@ -50,11 +52,14 @@
     <Resource Include="Images\Gratitude.png" />
     <Resource Include="Images\Clock.png" />
     <Resource Include="Images\Weather.png" />
-    <Resource Include="Images\Search.png" />
+    <Resource Include="Images\SelectionTool.png" />
     <Resource Include="Images\Temporal.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Controls\BlockTile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Controls\ComboBoxTile.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -70,9 +75,15 @@
     <None Update="Data\Weather.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Images\SelectionTool.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
+    <Page Update="Controls\BlockTile.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
     <Page Update="Controls\ComboBoxTile.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>

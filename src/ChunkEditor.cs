@@ -30,7 +30,7 @@ public static class ChunkEditor
     public static float Clock { get; set; } = 0; //clock
     public static ushort Weather{ get; set; } = 1; //weather
 
-    public static byte Island{ get; set; } = 0x00; //Island Number
+    public static byte Island{ get; set; } = 0xFF; //Island Number
 
     public static void LoadFile(string filename)
     {
@@ -203,12 +203,13 @@ public static class ChunkEditor
         }
     }
 
-    public static void ReplaceBlockValue(short blockOldId, short blockNewId)
+    public static void ReplaceBlockValue(short chunkBeg, short chunkEnd, byte layerBeg, short layerEnd, short blockOldId, short blockNewId)
     {
-        short chunk = 0;
+        short chunk = chunkBeg;
         uint index = 0;
-        while(chunk < ChunkCount){
-            for(byte layer = 0x00; layer < 0x60; layer += 0x01){
+        while(chunk < chunkEnd)
+        {
+            for(byte layer = layerBeg; layer < layerEnd; layer += 0x01){
                 for(short tile = 0; tile < 1024; tile ++){
                     index = GetBlockValue(chunk, layer, tile);
                     if(index%2048 == blockOldId){
@@ -243,6 +244,24 @@ public static class ChunkEditor
                         SetBlockValue(chunk, layer, TileOrd, blockNewId);
                     }
             }
+        }
+    }
+
+    public static void MassSetBlockValue(short chunkBeg, short chunkEnd, byte layerBeg, short layerEnd, short blockNewId)
+    {
+        short chunk = chunkBeg;
+        uint index = 0;
+        while (chunk <= chunkEnd)
+        {
+            for (byte layer = layerBeg; layer <= layerEnd; layer += 0x01)
+            {
+                for (short tile = 0; tile < 1024; tile++)
+                {
+                    SetBlockValue(chunk, layer, tile, blockNewId);
+                }
+            }
+            chunk++;
+
         }
     }
 

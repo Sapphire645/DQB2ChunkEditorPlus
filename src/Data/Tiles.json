@@ -6088,6 +6088,7 @@
     {
       "Id": 684,
       "Name": "Seeded Snow",
+      "Used": "Used",
       "Can be broken by": "Cypress Stick",
       "Normal Drop": "Leek Seed x2 {1828}",
       "Ultimallet Drop": "Leek Seed x2 {1828}",
@@ -9039,6 +9040,7 @@
     {
       "Id": 1012,
       "Name": "Black Void",
+      "Used": "Unused",
       "ImageId": -1
     },
     {
