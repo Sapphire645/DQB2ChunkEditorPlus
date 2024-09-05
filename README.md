@@ -5,7 +5,7 @@ And of course to turtle-insect (https://github.com/turtle-insect/DQB2), the one 
 ## DQB2 Chunk Editor Plus
 
 This is my first time uploading to GitHub. I am unsure of the standard procedure. This fork adds more functionality to the original program.
-I assume since it hasn't been updated for years that it will not be.
+I assume since it hasn't been updated for years that it will not be. (UPDATE- The original editor has been updated for NET 8.0 support. This one is still at NET 6.0)
 
 For all undocumented blocks, here is a link with all IDs identified. https://www.tumblr.com/sapphire-rb/751291945137078272/all-of-dqb2s-blocks-with-their-ids
 
@@ -15,43 +15,25 @@ Do not try to set unidentified blocks (the ones that make the selection say '-1 
 
 **Note: Has not been fully tested yet. ALWAYS BACK UP YOUR SAVE.**
 
-**0.2.0:**
+## Features
+
 - Import and Export buttons for raw hex editing.
 - Updated block list with new blocks.
 - Changed the way the blocks display in the map for a better visual interface (In-game textures instead of block icons).
 - Blocks seem to overflow at index 2048. Added functionality to read and insert blocks with their normal and overflowed indices.
-
-**0.2.1:**
-- Added a 'flatten island' option (Turtle's one wasn't working for me and I needed it for testing)
-- Added a Magic Pencil tool that will select a whole area in the current layer. By choosing a new block the entire area will be set to that block.
-- Added a 'Replace block' tool that will replace every instance of that block in the map for a different one. If there is a selection active with the Pencil it will only affect the selected area.
-- Changed a water block that seemed to have the wrong name (It was *too* obviously wrong to ignore)
-- Changed the way the chunk number is fetched.
-
-**0.2.2:**
-- Completed the whole block list from ID 0 to 2047. Added colors (Still missing images)
+- 'flatten island' option (Turtle's one wasn't working for me and I needed it for testing)
+- Magic Pencil tool that will select a whole area in the current layer. By choosing a new block the entire area will be set to that block.
+- 'Replace block' tool that will replace every instance of that block in the map for a different one. If there is a selection active with the Pencil it will only affect the selected area.
 - New info added: What items do the blocks drop and the hammer requirement of the blocks. 'Used' property added as well (Not accurate)
-- Fixed oversight on the way the chunk number is fetched when importing a file
+- Added support for editing Gratitude Points, Time and all 30 Weathers (Not fully tested, gratitude does not work)
+  
+  
+**Alpha-Temporal**
+- Filter "used", "unused", "liquids" and "default blocks (non=valid IDs)
+- Better block selector
+- Primitive mass select tool and mass place tool
+- Ability to change chunk count manually (since it sometimes doesn't work?)
 
-**0.2.3:**
-- Added placeholder filter option to filter blocks by name (Thank goodness)
-- Added support for editing Gratitude Points, Time and Weather (Not fully tested, weather is not documented yet)
-
-**0.2.3a:**
-- Fixed import option (That was broken in 0.2.3)
-- Added ability to change chunk count manually (since it sometimes doesn't work?)
-- Tile update, some images were added, water and snow cover was updated, and item tiles were also better identified
-- Clock displayed wrong max number (12000 instead of 1200)
-- Changed 'replace' icon to an in-game one (finally)
-- Save option will now display the proper file name, even if the name of the file was something completely different when it was opened.
-- Better weather editor, all 30 weather tipes are named and can be chosen from a dropdown. Which weathers work where is untested.
-
-**Mayor glitches:**
-- Gratitude editor is still broken. I'm not sure where the problem is
-- For some reason sometimes the blocks will not be recognised despite being in the dropdown? I have no idea why this happens I did not touch that... If this happens just save, close and reopen the program, the file won't be affected by this.
-- Filtering seems to cause some chaos in the dropdown thing. Not recommended.
-
-Screenshots of 2.0:
 
 <img src="./src/Images/ScreenshotPlus.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" />
 
@@ -59,20 +41,19 @@ Screenshots of 2.1:
 
 <img src="./src/Images/ScreenshotFill.png" data-canonical-src="./src/Images/ScreenshotFill.png" width="479" height="258" /> <img src="./src/Images/ScreenshotReplace.png" data-canonical-src="./src/Images/ScreenshotReplace.png" width="479" height="258" />
 
-Screenshot of 2.2:
-
-![image](https://github.com/Sapphire645/DQB2ChunkEditorPlus/assets/167467641/853747c0-7ca9-48db-9004-e07148a04024)
-
 Screenshot of 2.3:
 
 ![image](https://github.com/user-attachments/assets/277beef3-b3e9-4fdd-8977-a978ef831f4a)
 
 **Features to add:**
-- Optimize images from the dropdown menu (lags a little).
-- Better filtering for the dropdown menu.
 - Decorative items.
 - Fill bucket mayhaps.
 - Automatic backup.
+- "Favourite" toolbar for saving and fast selection of blocks
+- Sign and salutation station text editor
+- Warp editor (if possible)
+- Chunk remapping (if possible)
+- Minimap to chunk tab (if possible)
 
 **External info to add:**
 - Colored block images are not implemented yet.
@@ -124,6 +105,43 @@ Screenshot of 2.3:
 <img src="./src/Data/Masks/Skelkatraz_Square.png" data-canonical-src="./src/Data/Masks/Skelkatraz_Square.png">
 <img src="./src/Data/Masks/Skelkatraz_Mask.png" data-canonical-src="./src/Data/Masks/Skelkatraz_Mask.png">
 
+## Patch Notes
+
+**0.2.0:**
+- Import and Export buttons for raw hex editing.
+- Updated block list with new blocks.
+- Changed the way the blocks display in the map for a better visual interface (In-game textures instead of block icons).
+- Blocks seem to overflow at index 2048. Added functionality to read and insert blocks with their normal and overflowed indices.
+
+**0.2.1:**
+- Added a 'flatten island' option (Turtle's one wasn't working for me and I needed it for testing)
+- Added a Magic Pencil tool that will select a whole area in the current layer. By choosing a new block the entire area will be set to that block.
+- Added a 'Replace block' tool that will replace every instance of that block in the map for a different one. If there is a selection active with the Pencil it will only affect the selected area.
+- Changed a water block that seemed to have the wrong name (It was *too* obviously wrong to ignore)
+- Changed the way the chunk number is fetched.
+
+**0.2.2:**
+- Completed the whole block list from ID 0 to 2047. Added colors (Still missing images)
+- New info added: What items do the blocks drop and the hammer requirement of the blocks. 'Used' property added as well (Not accurate)
+- Fixed oversight on the way the chunk number is fetched when importing a file
+
+**0.2.3:**
+- Added placeholder filter option to filter blocks by name (Thank goodness)
+- Added support for editing Gratitude Points, Time and Weather (Not fully tested, weather is not documented yet)
+
+**0.2.3a:**
+- Fixed import option (That was broken in 0.2.3)
+- Added ability to change chunk count manually (since it sometimes doesn't work?)
+- Tile update, some images were added, water and snow cover was updated, and item tiles were also better identified
+- Clock displayed wrong max number (12000 instead of 1200)
+- Changed 'replace' icon to an in-game one (finally)
+- Save option will now display the proper file name, even if the name of the file was something completely different when it was opened.
+- Better weather editor, all 30 weather tipes are named and can be chosen from a dropdown. Which weathers work where is untested.
+
+**Mayor glitches:**
+- Gratitude editor is still broken. I'm not sure where the problem is
+- For some reason sometimes the blocks will not be recognised despite being in the dropdown? I have no idea why this happens I did not touch that... If this happens just save, close and reopen the program, the file won't be affected by this.
+- Filtering seems to cause some chaos in the dropdown thing. Not recommended.
 Main branch text below.
 
 ## DQB2 Chunk Editor 
