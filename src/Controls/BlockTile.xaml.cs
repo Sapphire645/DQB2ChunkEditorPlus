@@ -15,6 +15,12 @@ public partial class BlockTile : UserControl
         InitializeComponent();
         DataContext = this;
     }
+    public BlockTile(Tile Tile)
+    {
+        InitializeComponent();
+        DataContext = this;
+        this.Tile = Tile;
+    }
 }
 
 

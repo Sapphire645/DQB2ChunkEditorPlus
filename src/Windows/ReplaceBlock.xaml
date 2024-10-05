@@ -6,18 +6,34 @@
         xmlns:local="clr-namespace:DQB2ChunkEditor.Windows"
         xmlns:control="clr-namespace:DQB2ChunkEditor.Controls"
         mc:Ignorable="d"
-        Height="250" MinHeight="250" Width="400" MinWidth="400"
-        Title="Replace Block Tool" SizeToContent="WidthAndHeight" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,0,10,0" DockPanel.Dock="Left">
-      <StackPanel Width="280" VerticalAlignment="Center" Orientation="Vertical">
-        <TextBlock Height="20"/>
-        <TextBlock Text= "Block to be replaced: " Width="120"/>
-        <ComboBox Name="TileComboBoxFirst" Height="34" Width = "265" SelectedItem="{Binding SelectedTileFirst, RelativeSource={RelativeSource AncestorType=Window}}" SelectionChanged="SetFirstBlock_OnClick" ItemsSource="{Binding TileComboBoxListCopy, RelativeSource={RelativeSource AncestorType=Window}}" />
-        <TextBlock Height="20"/>
-        <TextBlock Text= "New block: " Width="60"/>
-        <ComboBox Name="TileComboBoxSecond" Height="34" Width = "265" SelectedItem="{Binding SelectedTileSecond, RelativeSource={RelativeSource AncestorType=Window}}" SelectionChanged="SetSecondBlock_OnClick" ItemsSource="{Binding TileComboBoxListCopy, RelativeSource={RelativeSource AncestorType=Window}}" />
-      <TextBlock Height="20"/>
-      <Button Content="OK" Click="OkButton_OnClick" Height="25" />
-     </StackPanel>
+        Height="300" MinHeight="300" Width="500" MinWidth="500"
+        Title="Replace Block Tool" SizeToContent="WidthAndHeight" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+  <Grid x:Name="GridAdd" Margin="10,0,10,0" DockPanel.Dock="Left" Height="290" Width="500" HorizontalAlignment="Center">
+    <Grid.RowDefinitions>
+      <RowDefinition x:Name="Row1" Height="170"/>
+      <RowDefinition Height="80"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="500"/>
+    </Grid.ColumnDefinitions>
+    <StackPanel Grid.Row ="1" VerticalAlignment="Center" Orientation="Vertical" Width="500">
+      <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+        <StackPanel x:Name="Stack1" VerticalAlignment="Center" Orientation="Vertical" HorizontalAlignment="Center" Margin="10,0,10,0">
+          <TextBlock Text= "Block to be replaced" HorizontalAlignment="Center" Height="20"/>
+        </StackPanel>
+        <StackPanel x:Name="Stack2" VerticalAlignment="Center" Orientation="Vertical" Margin="10,0,10,0">
+          <TextBlock Text= "New Block" HorizontalAlignment="Center" Height="20"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" Orientation="Vertical" Margin="10,0,10,0" Width="180">
+          <TextBlock Text= "Confirm" HorizontalAlignment="Center" Height="20"/>
+          <Button Content="OK" Click="OkButton_OnClick" Height="25" />
+      </StackPanel>
+        <Button x:Name="Darnit" Click="Resize_OnClick" Height="20" FontSize="5" >
+          <TextBlock>
+        Enable<LineBreak/>resize
+          </TextBlock>
+        </Button>
+      </StackPanel>
+    </StackPanel>
     </Grid>
 </Window>

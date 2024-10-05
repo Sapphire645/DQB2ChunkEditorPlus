@@ -21,6 +21,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Controls.Primitives;
 using System.Windows.Documents;
+using System.Threading.Tasks;
 
 namespace DQB2ChunkEditor.Windows;
 
@@ -30,10 +31,9 @@ public partial class MainWindow : Window
     public static ObservableCollection<ComboBoxTile> TileComboBoxList { get; set; } = new();
     public List<Weather> WeatherList { get; set; } = new();
     public ObservableCollection<ComboBoxWeather> WeatherComboBox { get; set; } = new();
-    public static List<BlockTile> BlockList { get; } = new();
     public static ObservableProperty<Tile> SelectedTile { get; set; } = new();
 
-    public Tile selectedTileDrop;
+    public Tile selectedTileDrop { get; set; } = new();
     public ObservableProperty<LayerTile> SelectedLayerTile { get; set; } = new();
     public List<ItemData> ItemDataList { get; set; } = new();
     public SelectionPencilClass SelectedArea { get; set; } = new();
@@ -43,7 +43,11 @@ public partial class MainWindow : Window
     public static short Overflow { get; set; } = 0;
     public static short RawID { get; set; } = 0;
 
-    public static byte[] LimitSelector { get; set; } = new byte[4];
+    public static short[] LimitSelector { get; set; } = new short[4];
+
+    public static BlockGrid ButtonGridReplace = new BlockGrid();
+
+    public ObservableCollection<SignText> SignTextList { get; set; } = new ObservableCollection<SignText>();
 
     public MainWindow()
     {
@@ -51,41 +55,38 @@ public partial class MainWindow : Window
         CreateDefaultTiles();
         CreateComboBoxTiles();
         CreateComboBoxTilesWeather();
-        CreateButtons();
         DataContext = this;
         this.SizeChanged += OnWindowSizeChanged;
+        ButtonGrid.ButtonClicked += ButtonClick;
     }
-    /// <summary>
-    /// Creates the blocks on the selector
-    /// </summary>
-    private void CreateButtons()
-    {
-        for (int i = 0; i < TileList.Count; i++)
-        {
-            var blockTile = new BlockTile
-            {
-                Id = i,
-                Tile = TileList[i]
-            };
 
-            blockTile.TileButton.Click += (_, _) => { Button_Click(blockTile); };
-            blockTile.TileButton.Height = 40;
-            BlockList.Add(blockTile);
-            ButtonGrid.Children.Add(blockTile);
+    public void CommandPreview(object sender, EventArgs e)
+    {
+        string Line = (sender as Button).Tag.ToString();
+        if (Line != null)
+        {
+            var elementsToRemove = Pain.Children.OfType<UserControl>()
+                                                  .Where(e => e.GetType() == typeof(Preview))
+                                                  .ToList();  // Create a list to avoid collection modification issues
+
+            // Remove each element from the Grid
+            foreach (var element in elementsToRemove)
+            {
+                Pain.Children.Remove(element);
+            }
+            var TextBox = new Preview(Line);
+            Grid.SetColumn(TextBox, 1);
+            Grid.SetRow(TextBox, 1);
+            Pain.Children.Add(TextBox);
         }
     }
     /// <summary>
     /// Selection to combobox (temporal)
     /// </summary>
-    public void Button_Click(object sender)
+    public void ButtonClick(object sender, EventArgs e)
     {
-        BlockTile clickedButton = sender as BlockTile;
-
-        if (clickedButton != null)
-        {
-            TileComboBox.SelectedIndex = (short)TileComboBoxList.FirstOrDefault(t => t.Tile.Id == clickedButton.Tile.Id)!.Id;
-
-        }
+        var clickedButton = (sender as BlockGrid).clickedButton;
+        TileComboBox.SelectedIndex = (short)TileComboBoxList.FirstOrDefault(t => t.Tile.Id == clickedButton.Tile.Id)!.Id;
     }
     /// <summary>
     /// Resize of everything
@@ -97,10 +98,17 @@ public partial class MainWindow : Window
         One.Width = new GridLength((newWindowWidth-newWindowHeight), GridUnitType.Pixel);
         Two.Width = new GridLength(newWindowHeight-50, GridUnitType.Pixel);
         Select.Height = new GridLength((newWindowHeight-380), GridUnitType.Pixel);
-        ScrollView.Height = (newWindowHeight - 380);
-        ButtonGrid.Columns = Convert.ToInt16(newWindowWidth - newWindowHeight) / 100;
+        ButtonGrid.ScrollView.Height = (newWindowHeight - 400);
+        ButtonGrid.Grid.Columns = Convert.ToInt16(newWindowWidth - newWindowHeight) / 100;
     }
 
+
+    private void ReadSign()
+    {
+        SignTextList = ChunkEditor.LoadSign();
+        List.ItemsSource = SignTextList;
+
+    }
     /// <summary>
     /// Creates the default tile grid used for the chunk layers and their click event
     /// </summary>
@@ -159,6 +167,8 @@ public partial class MainWindow : Window
 
                 TileList.Add(tiles.Tiles[i]);
             }
+            ButtonGrid.CreateButtons();
+            ButtonGridReplace.CreateButtons();
         }
         catch (Exception ex)
         {
@@ -519,10 +529,11 @@ public partial class MainWindow : Window
             TimeInput.Text = Convert.ToString(ChunkEditor.Clock);
             WeatherComboBoxX.SelectedIndex = ChunkEditor.Weather;
             LimitSelector[0] = 0;
-            LimitSelector[1] = (byte)ChunkEditor.ChunkCount;
+            LimitSelector[1] = (short)ChunkEditor.ChunkCount;
             LimitSelector[2] = 0;
-            LimitSelector[3] = (byte)ChunkEditor.LayerHeight;
-
+            LimitSelector[3] = (short)ChunkEditor.LayerHeight;
+            ReadSign();
+            LayerTiles.Visibility = Visibility.Visible;
         }
         catch (Exception ex)
         {
@@ -534,7 +545,7 @@ public partial class MainWindow : Window
     /// <summary>
     /// Saves the current map bytes to file
     /// </summary>
-    private void SaveFile_OnClick(object sender, RoutedEventArgs e)
+    private async void SaveFile_OnClick(object sender, RoutedEventArgs e)
     {
         try
         {
@@ -552,9 +563,13 @@ public partial class MainWindow : Window
             {
                 return;
             }
+            Saving.Visibility = Visibility.Visible;
+            MainGrid.IsEnabled = false;
             ChunkEditor.Filename = saveFileDialog.FileName;
-
-            ChunkEditor.SaveFile();
+            ChunkEditor.SaveSign(SignTextList);
+            await Task.Run(() => ChunkEditor.SaveFile());
+            MainGrid.IsEnabled = true;
+            Saving.Visibility = Visibility.Collapsed;
         }
         catch (Exception ex)
         {
@@ -585,6 +600,7 @@ public partial class MainWindow : Window
                 return;
             }
 
+            ChunkEditor.SaveSign(SignTextList);
             ChunkEditor.ExportFile(saveFileDialog.FileName);
         }
         catch (Exception ex)
@@ -620,6 +636,8 @@ public partial class MainWindow : Window
             GratitudeInput.Text = Convert.ToString(ChunkEditor.GratitudePoints);
             TimeInput.Text = Convert.ToString(ChunkEditor.Clock);
             WeatherComboBoxX.SelectedIndex = ChunkEditor.Weather;
+            ReadSign();
+            LayerTiles.Visibility = Visibility.Visible;
         }
         catch (Exception ex)
         {
@@ -739,7 +757,7 @@ public partial class MainWindow : Window
         }
         if (ConfirmR.Confirmed == true)
         {
-            ChunkEditor.MassSetBlockValue(LimitSelector[0], LimitSelector[1], LimitSelector[2], LimitSelector[3], SelectedTile.Value.Id);
+            ChunkEditor.MassSetBlockValue(LimitSelector[0], LimitSelector[1], (byte)LimitSelector[2], LimitSelector[3], SelectedTile.Value.Id);
             RefreshTiles(ChunkValue.Value, LayerValue.Value);
         }
         }
@@ -753,16 +771,18 @@ public partial class MainWindow : Window
     {
         try
         {
-            var replaceBlockWindow = new ReplaceBlock
+            var ReplaceBlockWindow = new ReplaceBlock(ButtonGridReplace)
             {
                 FirstId = -1,
                 SecondId = -1
             };
 
-            if (replaceBlockWindow.ShowDialog() == false)
+            if (ReplaceBlockWindow.ShowDialog() == false)
             {
+                ReplaceBlockWindow.GridAdd.Children.Clear();
                 return;
             }
+            ReplaceBlockWindow.GridAdd.Children.Clear();
             string TextM = "N/A";
             if (PencilButton.IsChecked == true)
             {
@@ -781,8 +801,8 @@ public partial class MainWindow : Window
             }
             if (ConfirmR.Confirmed == true)
             {
-                if (PencilButton.IsChecked == true) ChunkEditor.ReplaceAreaValue(ChunkValue.Value, LayerValue.Value, SelectedArea.TileIdBeg, SelectedArea.TileIdEnd, replaceBlockWindow.FirstId, replaceBlockWindow.SecondId);
-                else ChunkEditor.ReplaceBlockValue(LimitSelector[0], LimitSelector[1], LimitSelector[2], LimitSelector[3],replaceBlockWindow.FirstId, replaceBlockWindow.SecondId);
+                if (PencilButton.IsChecked == true) ChunkEditor.ReplaceAreaValue(ChunkValue.Value, LayerValue.Value, SelectedArea.TileIdBeg, SelectedArea.TileIdEnd, ReplaceBlockWindow.FirstId, ReplaceBlockWindow.SecondId);
+                else ChunkEditor.ReplaceBlockValue(LimitSelector[0], LimitSelector[1], (byte)LimitSelector[2], LimitSelector[3], ReplaceBlockWindow.FirstId, ReplaceBlockWindow.SecondId);
                 RefreshTiles(ChunkValue.Value, LayerValue.Value);
             }
         }
@@ -809,6 +829,96 @@ public partial class MainWindow : Window
 
             ChunkEditor.Flatten();
             RefreshTiles(ChunkValue.Value, LayerValue.Value);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+    private bool IsLiquid(Tile block)
+    {
+            if ((block.Name.ToLower().Contains("water") || block.Name.Contains("Plasma") || block.Name.Contains("Bottomless") || block.Name.Contains("Poison ") || block.Name.Contains("Lava "))
+                && block.Id != 593 && block.Id != 17 && block.Id != 86) { return true; }
+            else { return false; }
+    }
+    private async void Drainer_OnClick(Object sender, RoutedEventArgs e)
+    {
+        try
+        {
+            var ConfirmF = new ConfirmChoice
+            {
+                Text = "This will delete all liquid, and leave items inside liquid as ghost items. It will also take a loooong time.  Are you sure you want to continue?"
+            };
+
+            if (ConfirmF.ShowDialog() == false)
+            {
+                return;
+            }
+            Loading.Visibility = Visibility.Visible;
+            MainGrid.IsEnabled = false;
+            var a= PencilButton.IsChecked;
+            await Task.Run(() => ReplaceLiquidOperation(a));
+            RefreshTiles(ChunkValue.Value, LayerValue.Value);
+            MainGrid.IsEnabled = true; 
+            Loading.Visibility = Visibility.Collapsed;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+    private void ReplaceLiquidOperation(bool? penButton)
+    {
+        List<short> Lis = new List<short>();
+        foreach (var tile in TileList)
+        {
+            if (IsLiquid(tile))
+            {
+                Lis.Add(tile.Id);
+            }
+        }
+        if (penButton == true)
+        {
+                ChunkEditor.KillLiquid(LimitSelector[0], LimitSelector[1], LayerValue.Value, LayerValue.Value, Lis);
+        }
+        else
+        {
+                ChunkEditor.KillLiquid(LimitSelector[0], LimitSelector[1], (byte)LimitSelector[2], LimitSelector[3], Lis);
+        }
+    }
+
+        private void Print_OnClick(Object sender, RoutedEventArgs e)
+    {
+        try
+        {
+            var ConfirmF = new ConfirmChoice
+            {
+                Text = "This prints out the block counts into a TXT file."
+            };
+
+            if (ConfirmF.ShowDialog() == false)
+            {
+                return;
+            }
+
+            var saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Text file (*.txt)|*.txt|All files (*.*)|*.*"
+            };
+
+            if (saveFileDialog.ShowDialog() == false)
+            {
+                return;
+            }
+
+            var List = ChunkEditor.CountBlockData();
+            using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
+            {
+                for (int i = 0; i < 2048; i++)
+                {
+                    writer.WriteLine(List[i] + "\t" + TileList[i].Name);
+                }
+            }
         }
         catch (Exception ex)
         {
@@ -896,128 +1006,6 @@ public partial class MainWindow : Window
             ChunkEditor.UpdateExtra();
         }
     }
-    private bool IsLiquid(BlockTile block)
-    {
-        if ((block.Tile.Name.ToLower().Contains("water") || block.Tile.Name.Contains("Plasma") || block.Tile.Name.Contains("Bottomless") || block.Tile.Name.Contains("Poison ") || block.Tile.Name.Contains("Lava "))
-                && block.Tile.Id != 593 && block.Tile.Id != 17 && block.Tile.Id != 86) { return true; }
-        else { return false; }
-    }
-
-    private void CheckUsed_Unchecked(object sender, RoutedEventArgs e)
-    {
-        foreach (var block in BlockList)
-        {
-            if (block.Tile.Used == "Used")
-            {
-                ButtonGrid.Children.Remove(block);
-            }
-        }
-    }
-    private void CheckUsed_Checked(object sender, RoutedEventArgs e)
-    {
-
-        foreach (var block in BlockList)
-        {
-            if (ButtonGrid.Children.Contains(block))
-            {
-                ButtonGrid.Children.Remove(block);
-                ButtonGrid.Children.Add(block);
-            }
-            else if (block.Tile.Used == "Used")
-            {
-                if (CheckLiquid.IsChecked == true || IsLiquid(block) == false)
-                {
-                    ButtonGrid.Children.Add(block);
-                }
-
-            }
-        }
-    }
-    private void CheckUnused_Unchecked(object sender, RoutedEventArgs e)
-    {
-        foreach (var block in BlockList)
-        {
-            if (block.Tile.Used == "Unused")
-            {
-                ButtonGrid.Children.Remove(block);
-            }
-        }
-    }
-    private void CheckUnused_Checked(object sender, RoutedEventArgs e)
-    {
-        foreach (var block in BlockList)
-        {
-            if (ButtonGrid.Children.Contains(block))
-            {
-                ButtonGrid.Children.Remove(block);
-                ButtonGrid.Children.Add(block);
-            }
-            else if (block.Tile.Used == "Unused")
-            {
-                if ((CheckLiquid.IsChecked == true || IsLiquid(block) == false) && (CheckDefault.IsChecked == true || block.Tile.Name.Contains("Default Block") == false))
-                {
-                    ButtonGrid.Children.Add(block);
-                }
-
-            }
-        }
-    }
-    private void CheckLiquid_Unchecked(object sender, RoutedEventArgs e)
-    {
-        foreach (var block in BlockList)
-        {
-            if (IsLiquid(block))
-            {
-                ButtonGrid.Children.Remove(block);
-            }
-        }
-    }
-    private void CheckLiquid_Checked(object sender, RoutedEventArgs e)
-    {
-        foreach (var block in BlockList)
-        {
-            if (ButtonGrid.Children.Contains(block))
-            {
-                ButtonGrid.Children.Remove(block);
-                ButtonGrid.Children.Add(block);
-            }
-            else if (IsLiquid(block))
-            {
-                if ((CheckDefault.IsChecked == true || block.Tile.Name.Contains("Default Block") == false) && (CheckUsed.IsChecked == true || block.Tile.Used != "Used" ) && (CheckUnused.IsChecked == true || block.Tile.Used != "Unused"))
-                {
-                    ButtonGrid.Children.Add(block);
-                }
-            }
-        }
-    }
-    private void CheckDefault_Unchecked(object sender, RoutedEventArgs e)
-    {
-        foreach (var block in BlockList)
-        {
-            if (block.Tile.Name.Contains("Default Block"))
-            {
-                ButtonGrid.Children.Remove(block);
-            }
-        }
-    }
-    private void CheckDefault_Checked(object sender, RoutedEventArgs e)
-    {
-        foreach (var block in BlockList)
-        {
-            if (ButtonGrid.Children.Contains(block))
-            {
-                ButtonGrid.Children.Remove(block);
-                ButtonGrid.Children.Add(block);
-            }
-            else if (block.Tile.Name.Contains("Default Block"))
-            {
-                if ((CheckDefault.IsChecked == true || block.Tile.Name.Contains("Default Block") == false) && (CheckUsed.IsChecked == true || block.Tile.Used != "Used") && (CheckUnused.IsChecked == true || block.Tile.Used != "Unused"))
-                {
-                    ButtonGrid.Children.Add(block);
-                }
-            }
-        }
-    }
 
     private void MassSelect_OnClick(object sender, RoutedEventArgs e)
     {
@@ -1029,10 +1017,10 @@ public partial class MainWindow : Window
         {
             return;
         }
-        byte.TryParse(Select.BegC, out LimitSelector[0]);
-        byte.TryParse(Select.EndC, out LimitSelector[1]);
-        byte.TryParse(Select.BegY, out LimitSelector[2]);
-        byte.TryParse(Select.EndY, out LimitSelector[3]);
+        short.TryParse(Select.BegC, out LimitSelector[0]);
+        short.TryParse(Select.EndC, out LimitSelector[1]);
+        short.TryParse(Select.BegY, out LimitSelector[2]);
+        short.TryParse(Select.EndY, out LimitSelector[3]);
     }
 }
 

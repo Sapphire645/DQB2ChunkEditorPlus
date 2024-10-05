@@ -5,13 +5,20 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Images\icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\Drain.png" />
+    <None Remove="Images\icon.ico" />
+    <None Remove="Images\Info.png" />
+    <None Remove="Images\Loading.png" />
+    <None Remove="Images\Loading2.png" />
     <None Remove="Images\Open.png" />
     <None Remove="Images\Save.png" />
     <None Remove="Images\Brush.png" />
     <None Remove="Images\Paste.png" />
+    <None Remove="Images\Saving.png" />
     <None Remove="Images\Select.png" />
     <None Remove="Images\Export.png" />
     <None Remove="Images\Import.png" />
@@ -34,9 +41,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\Drain.png" />
+    <Resource Include="Images\Info.png" />
+    <Resource Include="Images\Loading.png" />
+    <Resource Include="Images\Loading2.png" />
     <Resource Include="Images\Open.png" />
     <Resource Include="Images\Paste.png" />
     <Resource Include="Images\Save.png" />
+    <Resource Include="Images\Saving.png" />
     <Resource Include="Images\Select.png" />
     <Resource Include="Images\Export.png" />
     <Resource Include="Images\Import.png" />
@@ -45,6 +57,8 @@
     <Resource Include="Images\Tiles\*.png" />
     <Compile Remove="Windows\BlockSelector.xaml.cs" />
     <Page Remove="Windows\BlockSelector.xaml" />
+    <Content Include="Images\icon.ico" />
+    <Resource Include="Images\icon.ico" />
     <Resource Include="Images\Icon.png" />
     <Resource Include="Images\Replace.png" />
     <Resource Include="Images\Flat.png" />
@@ -66,6 +80,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Data\color.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\item.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Data\Tiles.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

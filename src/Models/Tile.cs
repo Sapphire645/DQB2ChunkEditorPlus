@@ -47,4 +47,13 @@ public class Tile
 
     [JsonIgnore]
     public string Image => $"/Images/Blocks/{ImageId:0000}.png";
+
+    public Tile() { }
+    public void edit(Tile c)
+    {
+        ImageId = c.ImageId;
+        Name = c.Name;
+        Description = c.Description;
+        NormalDrop = c.NormalDrop;
+    }
 }

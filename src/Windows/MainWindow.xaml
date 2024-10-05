@@ -16,9 +16,9 @@
             <Setter Property="BorderThickness" Value="0.5" />
         </Style>
     </Window.Resources>
-    <Grid>
+    <Grid x:Name="MainGrid">
         <DockPanel>
-            <ToolBar DockPanel.Dock="Top" ToolBarTray.IsLocked="True" Margin="-5,0,-13,0" Padding="5,0,0,0">
+            <ToolBar DockPanel.Dock="Top" ToolBarTray.IsLocked="True" Padding="5,0,0,0" Height="30">
                 <Button Name="OpenFile" Height="24" Width="24" ToolTip="Open" Click="OpenFile_OnClick">
                     <Image Source="/Images/Open.png" />
                 </Button>
@@ -50,7 +50,10 @@
                 <Button Name="FlattenerButton"  Height="24" Width="24" ToolTip="Flatten Island" Click="Flattener_OnClick">
                     <Image Source="/Images/Flat.png" />
                 </Button>
-                <Button Name="MassSelectButton"  Height="24" Width="24" ToolTip="Mass Select (TEMPORAL)" Click="MassSelect_OnClick">
+        <Button Name="DrainButton"  Height="24" Width="24" ToolTip="Remove all Liquid" Click="Drainer_OnClick">
+          <Image Source="/Images/Drain.png" />
+        </Button>
+        <Button Name="MassSelectButton"  Height="24" Width="24" ToolTip="Mass Select (TEMPORAL)" Click="MassSelect_OnClick">
                     <Image Source="/Images/SelectionTool.png" />
                 </Button>
                 <Button Name="MassSet"  Height="24" Width="24" ToolTip="Mass Set (TEMPORAL)" Click="MassSet_OnClick">
@@ -60,61 +63,47 @@
                 <Button Name="ChangeSize"  Height="24" Width="24" ToolTip="Edit Chunk Count (TEMPORAL)" Click="Size_OnClick">
                     <Image Source="/Images/Temporal.png" />
                 </Button>
-            </ToolBar>
+        <Separator/>
+        <Button Name="InfoButton"  Height="24" Width="28" ToolTip="Print out data" Click="Print_OnClick">
+          <Image Source="/Images/Info.png"/>
+        </Button>
+        <Image x:Name="Loading" Source="/Images/Loading2.png" Height="24" MaxHeight="24" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Image x:Name="Saving" Source="/Images/Saving.png" Height="24" MaxHeight="24" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+      </ToolBar>
             <TabControl>
                 <TabItem Header="Chunk Editor">
                     <Grid Name="CentralGrid" Margin="0,0,10,0">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Name="One" Width="auto" MinWidth = "450"/>
+                            <ColumnDefinition Name="One" Width="auto" MinWidth = "500"/>
                             <ColumnDefinition Name="Two" Width="auto" MinWidth="550" />
                         </Grid.ColumnDefinitions>
                         <Grid Grid.Column="0" Margin="20,10,0,0" DockPanel.Dock="Left">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Name="Select" Height="200"/>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Name="Select" Height="270*"/>
                                 <RowDefinition Height="50"/>
                                 <RowDefinition Height="210"/>
                             </Grid.RowDefinitions>
-                            <TextBlock Height="10"/>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width = "250"/>
-                                    <ColumnDefinition Width="auto" MinWidth="200.79"/>
-                                </Grid.ColumnDefinitions>
-                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Grid.Column="0" Height="20">
-                                    <TextBlock Text="Chunk" Width="50" TextAlignment="Center" />
-                                    <Button Name="AddChunk" Width="20" FontWeight="Bold" Click="AddChunk_OnClick">+</Button>
-                                    <Border Style="{StaticResource BorderStyle}">
-                                        <TextBlock Name="ChunkInput" Text="{Binding Path=ChunkValue.Value, RelativeSource={RelativeSource AncestorType=Window}}" Width="30" TextAlignment="Center" MouseUp="ChunkInput_OnMouseUp" />
-                                    </Border>
-                                    <Button Name="SubChunk" Width="20" FontWeight="Bold" Click="SubChunk_OnClick">-</Button>
-                                    <TextBlock Width="10"/>
-                                    <TextBlock Text="Layer" Width="40" TextAlignment="Center" />
-                                    <Button Name="AddLayer" Width="20" FontWeight="Bold" Click="AddLayer_OnClick">+</Button>
-                                    <Border Style="{StaticResource BorderStyle}">
-                                        <TextBlock Name="LayerInput" Text="{Binding Path=LayerValue.Value, RelativeSource={RelativeSource AncestorType=Window}}" Width="30" TextAlignment="Center" MouseUp="LayerInput_OnMouseUp" />
-                                    </Border>
-                                    <Button Name="SubLayer" Width="20" FontWeight="Bold" Click="SubLayer_OnClick">-</Button>
-                                </StackPanel>
-                                <StackPanel VerticalAlignment="Center" Orientation="Vertical" Grid.Column="1">
-                                    <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Grid.Column="1" Height="16">
-                                        <CheckBox Name="CheckUsed" Content="Used" Margin="5,0,0,0" Checked="CheckUsed_Checked" Unchecked="CheckUsed_Unchecked" IsChecked="True" Width="100"/>
-                                        <CheckBox Name="CheckLiquid" Content="Liquids" Checked="CheckLiquid_Checked" Unchecked="CheckLiquid_Unchecked" IsChecked="True" Margin="5,0,0,0"/>
-                                    </StackPanel>
-                                    <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Grid.Column="1" Height="16">
-                                        <CheckBox Name="CheckUnused" Content="Unused" Checked="CheckUnused_Checked" Unchecked="CheckUnused_Unchecked" IsChecked="True" Margin="5,0,0,0" Width="100"/>
-                                        <CheckBox Name="CheckDefault" Content="Default Blocks" Checked="CheckDefault_Checked" Unchecked="CheckDefault_Unchecked" Margin="5,0,0,0"/>
-                                    </StackPanel>
-                                </StackPanel>
-                            </Grid>
-                            <StackPanel Grid.Row="1">
-                                <ScrollViewer Name="ScrollView" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled">
-                                    <StackPanel Margin="5,5,5,5" Background="#FFDFDFDF">
-                                        <UniformGrid x:Name="ButtonGrid" Columns="10" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
-                                    </StackPanel>
-                                </ScrollViewer>
-                            </StackPanel>
-                            <StackPanel Grid.Row="2" Width="420" VerticalAlignment="Center" Orientation="Horizontal">
+              <TextBlock Height="10"/>
+              <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Grid.Column="0" Height="20" Margin="0,8,0,0" HorizontalAlignment="Center">
+                <TextBlock Text="Chunk" Width="50" TextAlignment="Center" />
+                <Button Name="AddChunk" Width="20" FontWeight="Bold" Click="AddChunk_OnClick">+</Button>
+                <Border Style="{StaticResource BorderStyle}">
+                  <TextBlock Name="ChunkInput" Text="{Binding Path=ChunkValue.Value, RelativeSource={RelativeSource AncestorType=Window}}" Width="30" TextAlignment="Center" MouseUp="ChunkInput_OnMouseUp" />
+                </Border>
+                <Button Name="SubChunk" Width="20" FontWeight="Bold" Click="SubChunk_OnClick">-</Button>
+                <TextBlock Width="10"/>
+                <TextBlock Text="Layer" Width="40" TextAlignment="Center" />
+                <Button Name="AddLayer" Width="20" FontWeight="Bold" Click="AddLayer_OnClick">+</Button>
+                <Border Style="{StaticResource BorderStyle}">
+                  <TextBlock Name="LayerInput" Text="{Binding Path=LayerValue.Value, RelativeSource={RelativeSource AncestorType=Window}}" Width="30" TextAlignment="Center" MouseUp="LayerInput_OnMouseUp" />
+                </Border>
+                <Button Name="SubLayer" Width="20" FontWeight="Bold" Click="SubLayer_OnClick">-</Button>
+              </StackPanel>
+              <TextBlock Height="10" Grid.Row="1"/>
+              <control:BlockGrid  Grid.Row="1" x:Name="ButtonGrid"/>
+              <TextBlock Height="10" Grid.Row="1"/>
+              <StackPanel Grid.Row="2" Width="420" VerticalAlignment="Center" Orientation="Horizontal">
                                 <ComboBox Name="TileComboBox" Height="34" Width = "265" SelectedItem="{Binding SelectedTile, RelativeSource={RelativeSource AncestorType=Window}}" SelectionChanged="TileComboBox_OnSelectionChange" ItemsSource="{Binding TileComboBoxList, RelativeSource={RelativeSource AncestorType=Window}}" />
                                 <Grid Grid.Column="0" Width = "145">
                                     <control:overflowCheckbox x:Name="overflowCheckboxName" CheckedChanged="UpdateIdSelected_OnClick" VerticalAlignment="Top" Margin="10,0,10,0"/>
@@ -137,7 +126,7 @@
                         <Grid Grid.Column="1" VerticalAlignment="Center" DockPanel.Dock="Right" HorizontalAlignment="Right">
                             <Viewbox Stretch="Uniform">
                                 <Grid>
-                                    <UniformGrid Name="LayerTiles" Columns="32" Rows="32" Grid.ZIndex="0"/>
+                                    <UniformGrid Visibility="Hidden" Name="LayerTiles" Columns="32" Rows="32" Grid.ZIndex="0"/>
                                     <UniformGrid Name="MinimapTileGrid" Columns="4" Rows="4" Grid.ZIndex="0">
                                         <Rectangle Stroke="Black"/>
                                         <Rectangle Stroke="Black"/>
@@ -163,24 +152,46 @@
                     </Grid>
                 </TabItem>
                 <TabItem Header="Value Editors">
-                    <Grid Background="#FFE5E5E5">
-                        <StackPanel Width="500" VerticalAlignment="Top" Orientation="Vertical" HorizontalAlignment="Left" Margin="15,15,0,0">
-                            <StackPanel Width="500" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0" Height="45">
+                    <Grid Background="#FFE5E5E5" x:Name="Pain">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="auto" MinWidth = "400"/>
+              <ColumnDefinition Width="auto" MinWidth="600" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Column="0" Width="450" VerticalAlignment="Top" Orientation="Vertical" HorizontalAlignment="Left" Margin="15,15,0,0">
+              <StackPanel Width="450" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0" Height="45">
                                 <Image Source="/Images/Gratitude.png" Height="60" Width="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,5,0"/>
                                 <TextBlock Text="Gratitude(ERROR): " VerticalAlignment="Center" FontSize="12" Margin="5,0,0,0" Width="55" TextWrapping="WrapWithOverflow"/>
-                                <TextBox Name="GratitudeInput" Text="{Binding ChunkEditor.GratitudePoints, BindsDirectlyToSource=True, FallbackValue=0, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" Height="25" Width="300" Margin="20,0,0,0" Padding="5,0,10,0" TextChanged="GratitudeInput_TextChanged" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" />
+                                <TextBlock Name="GratitudeInput" TextAlignment="Right" Text="{Binding ChunkEditor.GratitudePoints, BindsDirectlyToSource=True, FallbackValue=0, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" Width="297" Margin="20,0,0,0" Padding="5,0,10,0" VerticalAlignment="Center" />
                             </StackPanel>
-                            <StackPanel Width="500" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0" Height="45">
+              <StackPanel Width="450" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0" Height="45">
                                 <Image Source="/Images/Clock.png" Height="60" Width="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,5,0"/>
                                 <TextBlock Text="Time: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Margin="5,0,0,0" Height="20" Width="55"/>
                                 <TextBox Name="TimeInput" Text="{Binding ChunkEditor.Clock, BindsDirectlyToSource=True, FallbackValue=0, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" Height="25" Width="300" Margin="20,0,0,0" Padding="5,0,10,0" TextChanged="TimeInput_TextChanged" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" />
                             </StackPanel>
-                            <StackPanel Width="500" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0" Height="45">
+              <StackPanel Width="450" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0" Height="45">
                                 <Image Source="/Images/Weather.png" Height="60" Width="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,5,0"/>
                                 <TextBlock Text= "Weather: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Margin="5,0,0,0" Width="55" Height="20"/>
                                 <ComboBox Name="WeatherComboBoxX" Height="35" Width = "300" SelectedItem="{Binding SelectedWeather, RelativeSource={RelativeSource AncestorType=Window}}" SelectionChanged="SetWeather_OnClick" ItemsSource="{Binding WeatherComboBox, RelativeSource={RelativeSource AncestorType=Window}}" Margin="20,0,0,0" />
                             </StackPanel>
                         </StackPanel>
+            <ListBox x:Name="List" Grid.Column="1">
+              <ListBox.ItemTemplate>
+                <DataTemplate>
+                  <StackPanel Orientation="Horizontal">
+                    <Label Margin="5,0,0,0" Content="Index"/>
+                    <Label Content="{Binding Index}" Width="40"/>
+                    <Label Content="Line" Margin="5,0,0,0"/>
+                    <TextBox Text="{Binding Line}" TextWrapping="WrapWithOverflow" Width="400" BorderBrush="{x:Null}" SelectionTextBrush="#FFA6F9FF" Background="{x:Null}" CaretBrush="{x:Null}"/>
+                    <Button Content="Preview" Tag="{Binding Line}" Click="CommandPreview"/>
+                  </StackPanel>
+                </DataTemplate>
+              </ListBox.ItemTemplate>
+            </ListBox>
+                        <TextBlock  Grid.Row="0" Grid.RowSpan="2" TextWrapping="Wrap" Margin="5,160,5,0"><Run Text="OP CODES IMPLEMENTED:"/><LineBreak/><Run Text="&lt;pname&gt; : Builder name"/><LineBreak/><Run Text="&lt;cap&gt; : capitalizes next word"/><LineBreak/><Run Text="&lt;off&gt; : Rubiss style textbox"/><LineBreak/><Run Text="&lt;morph(male,female)&gt; changes word depending on gender"/><LineBreak/><Run Text="&lt;key&gt; : waits for you to press A"/><LineBreak/><Run Text="&lt;br&gt; : line break"/><LineBreak/><Run Text="&lt;$iname("/><Run Text="__"/><Run Text=")&gt; : name of item"/><LineBreak/><Run Text="&lt;$iicon("/><Run Language="es-es" Text="__"/><Run Text=")&gt;"/><Run Text=" : icon of item"/><LineBreak/><Run Text="&lt;$cdef(__)&gt;: changes text colour"/><LineBreak/><Run Text="&lt;/color&gt; : returns colour to white"/><LineBreak/><Run Text="&lt;note&gt; : ♩"/><LineBreak/><Run/></TextBlock>
                     </Grid>
                 </TabItem>
             </TabControl>

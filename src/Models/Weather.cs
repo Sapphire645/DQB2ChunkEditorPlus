@@ -22,7 +22,7 @@ public class Weather
 public class WeatherList
 {
     [JsonPropertyName("Weather")]
-    public List<Weather> Weathers { get; set; }
+    public List<Weather> Weathers { get; set; } = new List<Weather>();
 
     public override string ToString()
     {

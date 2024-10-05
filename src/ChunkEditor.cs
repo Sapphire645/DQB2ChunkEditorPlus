@@ -7,6 +7,14 @@ using System.Text;
 using System.Windows.Markup;
 using System.Buffers.Binary;
 using Ionic.Zlib;
+using System.Windows.Documents;
+using System.Collections.Generic;
+using DQB2ChunkEditor.Windows;
+using DQB2ChunkEditor.Models;
+using System.Collections.ObjectModel;
+using System.Windows.Shapes;
+using System.Drawing;
+using System.Collections;
 
 namespace DQB2ChunkEditor;
 
@@ -22,6 +30,8 @@ public static class ChunkEditor
     private static byte[] _uncompressedBytes = null!;
 
     public static string Filename { get; set; } = null!;
+
+    public static string Pname { get; set; } = null!;
     public const uint LayerHeight = 0x60; // layers are up to 96 blocks high
     public static short ChunkCount { get; set; } = 0; // chunk count changes per map
     public static short ItemCount { get; set; } = 0; // chunk count changes per map
@@ -37,6 +47,9 @@ public static class ChunkEditor
         var fileBytes = File.ReadAllBytes(filename);
         var headerBytes = new byte[4];
         Array.Copy(fileBytes, 0, headerBytes, 0, 4);
+        var pnameBytes = new byte[28];
+        Array.Copy(fileBytes, 0xCD, pnameBytes,0, 28);
+        Pname = Encoding.UTF8.GetString(pnameBytes);
 
         var actualHeader = Encoding.UTF8.GetString(headerBytes);
 
@@ -78,7 +91,78 @@ public static class ChunkEditor
 
         Weather = _uncompressedBytes[0xC1064-HeaderLength];
     }
+    public static ObservableCollection<SignText> LoadSign()
+    {
+        ObservableCollection<SignText> LineList = new ObservableCollection<SignText>();
+        var NameBytes = new byte[127];
+        for (int i = 0; i < 20*134; i += 134)
+        {
+            Array.Copy(_uncompressedBytes, 0x14904 + i, NameBytes, 0, 127);
+            if (_uncompressedBytes[0x14904 + i] != 0)
+            {
+                LineList.Add(new SignText()
+                {
+                    Size = 127,
+                    Line = System.Text.Encoding.Default.GetString(NameBytes),
+                    Index = i
 
+                });
+            }
+        }
+        var NameBytes2 = new byte[216];
+        for (int i = 8761; i < 8761 + (60 * 228); i += 228)
+        {
+            Array.Copy(_uncompressedBytes, 0x14904 + i, NameBytes2, 0, 216);
+            if (_uncompressedBytes[0x14904 + i] != 0)
+            {
+                LineList.Add(new SignText()
+                {
+                    Size = 216,
+                    Line = System.Text.Encoding.Default.GetString(NameBytes2),
+                    Index = i
+
+                });
+            }
+        }
+        return LineList;
+    }
+    public static void SaveSign(ObservableCollection<SignText> LineList)
+    {
+        var NameBytes = new byte[216];
+        foreach( SignText line in LineList )
+        {
+            var Bytes = new byte[line.Size];
+            var BytesLen = new byte[line.Size];
+            Bytes = Encoding.Default.GetBytes(line.Line);
+            Array.Copy(Bytes, 0, BytesLen, 0, Bytes.Length);
+            Array.Copy(BytesLen, 0, _uncompressedBytes, 0x14904 + line.Index, line.Size);
+        }
+    }
+    public static void SaveSignColorFind(ObservableCollection<SignText> LineList)
+    {
+        int number = 890;
+        var Line = "<$cdef(" + number + ")>♥" + number + "</color><$cdef(" + (number + 1) + ")>♥" + (number + 1) + "</color><$cdef(" + (number + 2) + ")>♥" + (number + 2) + "</color>";
+        foreach (SignText line in LineList)
+        {
+            var Bytes = new byte[line.Size];
+            var BytesLen = new byte[line.Size];
+            if (line.Size < 200)
+            {
+                number = number + 3;
+                Line = "<$cdef(" + number + ")>♥" + number + "</color><$cdef(" + (number + 1) + ")>♥" + (number + 1) + "</color><$cdef(" + (number + 2) + ")>♥" + (number + 2) + "</color>";
+            }
+            else
+            {
+                number = number + 3;
+                Line = "<$cdef(" + number + ")>♥" + number + "</color><$cdef(" + (number + 1) + ")>♥" + (number + 1) + "</color><$cdef(" + (number + 2) + ")>♥" + (number + 2) + "</color>";
+                number = number + 3;
+                Line += "<$cdef(" + number + ")>♥" + number + "</color><$cdef(" + (number + 1) + ")>♥" + (number + 1) + "</color><$cdef(" + (number + 2) + ")>♥" + (number + 2) + "</color>";
+            }
+            Bytes = Encoding.Default.GetBytes(Line);
+            Array.Copy(Bytes, 0, BytesLen, 0, Bytes.Length);
+            Array.Copy(BytesLen, 0, _uncompressedBytes, 0x14904 + line.Index, line.Size);
+        }
+    }
     public static void SaveFile()
     {
         var compressedBytes = ZlibStream.CompressBuffer(_uncompressedBytes);
@@ -202,7 +286,26 @@ public static class ChunkEditor
             }
         }
     }
-
+    public static void KillLiquid(short chunkBeg, short chunkEnd, byte layerBeg, short layerEnd, List<short> blockId)
+    {
+        short chunk = chunkBeg;
+        uint index = 0;
+        while (chunk < chunkEnd)
+        {
+            for (byte layer = layerBeg; layer < layerEnd; layer += 0x01)
+            {
+                for (short tile = 0; tile < 1024; tile++)
+                {
+                    index = GetBlockValue(chunk, layer, tile);
+                    if (blockId.Contains((short)(index % 2048)))
+                    {
+                        SetBlockValue(chunk, layer, tile, 0);
+                    }
+                }
+            }
+            chunk++;
+        }
+    }
     public static void ReplaceBlockValue(short chunkBeg, short chunkEnd, byte layerBeg, short layerEnd, short blockOldId, short blockNewId)
     {
         short chunk = chunkBeg;
@@ -250,7 +353,6 @@ public static class ChunkEditor
     public static void MassSetBlockValue(short chunkBeg, short chunkEnd, byte layerBeg, short layerEnd, short blockNewId)
     {
         short chunk = chunkBeg;
-        uint index = 0;
         while (chunk <= chunkEnd)
         {
             for (byte layer = layerBeg; layer <= layerEnd; layer += 0x01)
@@ -277,6 +379,26 @@ public static class ChunkEditor
             
             chunk++;
         }
+    }
+    public static uint[] CountBlockData()
+    {
+        uint[] list = new uint[2048];
+        short chunk = 0;
+        for(int i=0; i < 2048; i++)
+        {
+            list[i] = 0;
+        }
+        while (chunk < ChunkCount)
+        {
+            for (byte layer = 0x00; layer < 0x60; layer += 0x01)
+                for (short tile = 0; tile < 1024; tile++)
+                {
+                    var a = GetBlockValue(chunk, layer, tile)%2048;
+                    list[a] = list[a] + 1;
+                }
+            chunk++;
+        }
+        return list;
     }
     public static void UpdateExtra(){
         byte[] GratBytes = new byte[4];
