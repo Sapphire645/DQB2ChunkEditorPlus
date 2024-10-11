@@ -5,7 +5,6 @@ And of course to turtle-insect (https://github.com/turtle-insect/DQB2), the one 
 ## DQB2 Chunk Editor Plus
 
 This is my first time uploading to GitHub. I am unsure of the standard procedure. This fork adds more functionality to the original program.
-I assume since it hasn't been updated for years that it will not be. (UPDATE- The original editor has been updated for NET 8.0 support. This one is still at NET 6.0)
 
 For all undocumented blocks, here is a link with all IDs identified. https://www.tumblr.com/sapphire-rb/751291945137078272/all-of-dqb2s-blocks-with-their-ids
 
@@ -26,14 +25,15 @@ Do not try to set unidentified blocks (the ones that make the selection say '-1 
 - 'Replace block' tool that will replace every instance of that block in the map for a different one. If there is a selection active with the Pencil it will only affect the selected area.
 - New info added: What items do the blocks drop and the hammer requirement of the blocks. 'Used' property added as well (Not accurate)
 - Added support for editing Gratitude Points, Time and all 30 Weathers (Not fully tested, gratitude does not work)
-  
-  
-**Alpha-Temporal**
-- Filter "used", "unused", "liquids" and "default blocks (non=valid IDs)
-- Better block selector
-- Primitive mass select tool and mass place tool
-- Ability to change chunk count manually (since it sometimes doesn't work?)
 
+## Overhaul! (Avaliable as prerelease)
+The newest 2.4 release will overhaul most of my old code. Here's some screenshots
+
+<img src="./src/Images/Screenshots/Overhaul1.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" /><img src="./src/Images/Screenshots/Overhaul2.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" />
+
+<img src="./src/Images/Screenshots/Overhaul3.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" />
+
+Screenshots of old 2.4:
 
 <img src="./src/Images/ScreenshotPlus.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" />
 
