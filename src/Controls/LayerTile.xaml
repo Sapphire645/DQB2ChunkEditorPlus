@@ -5,19 +5,19 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DQB2ChunkEditor.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="32"
-             d:DesignWidth="32"
+             d:DesignHeight="24"
+             d:DesignWidth="24"
              SnapsToDevicePixels="True"
              RenderOptions.BitmapScalingMode="NearestNeighbor">
-  <Grid>
+  <Grid Background="Transparent">
     <RadioButton Name="TileButton"
                  GroupName="Grid"
-                 Height="32"
-                 Width="32"
+                 Height="24"
+                 Width="24"
+                 Background="Transparent"
                  Style="{StaticResource {x:Type ToggleButton}}"
-                 BorderThickness="0"
-                 ToolTip="{Binding Path=Tile.Value.Name, RelativeSource={RelativeSource AncestorType=UserControl}}">
-      <Image Source="{Binding Path=Tile.Value.ImagMap, RelativeSource={RelativeSource AncestorType=UserControl}}" />
+                 ToolTip="{Binding Path=Tile.Value.Name, RelativeSource={RelativeSource AncestorType=UserControl}}" BorderThickness="0,0,0,0">
+      <Image Source="{Binding Path=Tile.Value.ImagMap, RelativeSource={RelativeSource AncestorType=UserControl}}" IsHitTestVisible="False" />
     </RadioButton>
   </Grid>
 </UserControl>

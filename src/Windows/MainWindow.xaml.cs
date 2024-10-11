@@ -1,114 +1,68 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Windows.Shapes;
 using System.IO;
 using System.Linq;
-using System.Printing;
+using System.Reflection.Emit;
+using System.Security.Policy;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Input;
-using System.Windows.Media;
-using DQB2ChunkEditor.Controls;
-using DQB2ChunkEditor.Models;
-using Microsoft.VisualBasic;
-using Microsoft.Win32;
-using System.Globalization;
-using System.Windows.Data;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using System.Windows.Controls.Primitives;
 using System.Windows.Documents;
-using System.Threading.Tasks;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using DQB2ChunkEditor.Controls;
+using DQB2ChunkEditor.Models;
+using Microsoft.Win32;
 
 namespace DQB2ChunkEditor.Windows;
 
 public partial class MainWindow : Window
 {
-    public static List<Tile> TileList { get; } = new();
-    public static ObservableCollection<ComboBoxTile> TileComboBoxList { get; set; } = new();
+    public List<Tile> TileList { get; } = new();
+    public ObservableProperty<Tile> SelectedTile { get; set; } = new();
+    public ObservableProperty<bool> BuilderPlaced { get; set; } = new();
+    public ObservableProperty<ushort> TrueId { get; set; } = new();
+    public ObservableProperty<LayerTile> SelectedLayerTile { get; set; } = new();
+    public ObservableProperty<short> ChunkValue { get; set; } = new() { Value = 0};
+    public ObservableProperty<byte> LayerValue { get; set; } = new() { Value = 0 };
     public List<Weather> WeatherList { get; set; } = new();
     public ObservableCollection<ComboBoxWeather> WeatherComboBox { get; set; } = new();
-    public static ObservableProperty<Tile> SelectedTile { get; set; } = new();
+    public List<ObservableProperty<SignText>> SignTextList { get; set; } = new List<ObservableProperty<SignText>>();
 
-    public Tile selectedTileDrop { get; set; } = new();
-    public ObservableProperty<LayerTile> SelectedLayerTile { get; set; } = new();
-    public List<ItemData> ItemDataList { get; set; } = new();
-    public SelectionPencilClass SelectedArea { get; set; } = new();
-    public ObservableProperty<short> ChunkValue { get; set; } = new() { Value = 0 };
-    public ObservableProperty<byte> LayerValue { get; set; } = new() { Value = 0 };
+    public ObservableProperty<SelectionPencilClass> Test { get; set; } = new() { Value = null};
 
-    public static short Overflow { get; set; } = 0;
-    public static short RawID { get; set; } = 0;
-
-    public static short[] LimitSelector { get; set; } = new short[4];
-
-    public static BlockGrid ButtonGridReplace = new BlockGrid();
-
-    public ObservableCollection<SignText> SignTextList { get; set; } = new ObservableCollection<SignText>();
-
+    public bool paint = false;
+    public CanvasHandler CanvasH { get; set; } = new ();
+    private void MouseDownCheck(object sender, MouseEventArgs e)
+    {
+        if (paint) { paint = false; Mouse.OverrideCursor = null; }
+        }
     public MainWindow()
     {
         InitializeComponent();
         CreateDefaultTiles();
-        CreateComboBoxTiles();
         CreateComboBoxTilesWeather();
+        CreateMenuList();
+        CanvasH.GridProcessing(GridMinimap, 1);
+        CanvasH.Test.Value = CanvasH.SelectedArea;
+        CanvasH.SelectionCanvas = SelectionCanvas;
+        CanvasH.BGCanvas = BGCanvas;
         DataContext = this;
+        ToolBar.ReplaceBlocksCommand += ReplaceBlocks;
+        ToolBar.AreaRemovalCommand += AreaReset;
+        ToolBar.PrintOutCommand += SaveData_OnClick;
+        ToolBar.menuList = SelectionList;
+        this.MouseDown += MouseDownCheck;
         this.SizeChanged += OnWindowSizeChanged;
-        ButtonGrid.ButtonClicked += ButtonClick;
+        SelectionList.ReturnSelectedTile += SelectionTile_OnClick;
     }
 
-    public void CommandPreview(object sender, EventArgs e)
-    {
-        string Line = (sender as Button).Tag.ToString();
-        if (Line != null)
-        {
-            var elementsToRemove = Pain.Children.OfType<UserControl>()
-                                                  .Where(e => e.GetType() == typeof(Preview))
-                                                  .ToList();  // Create a list to avoid collection modification issues
-
-            // Remove each element from the Grid
-            foreach (var element in elementsToRemove)
-            {
-                Pain.Children.Remove(element);
-            }
-            var TextBox = new Preview(Line);
-            Grid.SetColumn(TextBox, 1);
-            Grid.SetRow(TextBox, 1);
-            Pain.Children.Add(TextBox);
-        }
-    }
-    /// <summary>
-    /// Selection to combobox (temporal)
-    /// </summary>
-    public void ButtonClick(object sender, EventArgs e)
-    {
-        var clickedButton = (sender as BlockGrid).clickedButton;
-        TileComboBox.SelectedIndex = (short)TileComboBoxList.FirstOrDefault(t => t.Tile.Id == clickedButton.Tile.Id)!.Id;
-    }
-    /// <summary>
-    /// Resize of everything
-    /// </summary>
-    protected void OnWindowSizeChanged(object sender, SizeChangedEventArgs e)
-    {
-        double newWindowHeight = e.NewSize.Height;
-        double newWindowWidth = e.NewSize.Width;
-        One.Width = new GridLength((newWindowWidth-newWindowHeight), GridUnitType.Pixel);
-        Two.Width = new GridLength(newWindowHeight-50, GridUnitType.Pixel);
-        Select.Height = new GridLength((newWindowHeight-380), GridUnitType.Pixel);
-        ButtonGrid.ScrollView.Height = (newWindowHeight - 400);
-        ButtonGrid.Grid.Columns = Convert.ToInt16(newWindowWidth - newWindowHeight) / 100;
-    }
-
-
-    private void ReadSign()
-    {
-        SignTextList = ChunkEditor.LoadSign();
-        List.ItemsSource = SignTextList;
-
-    }
     /// <summary>
     /// Creates the default tile grid used for the chunk layers and their click event
     /// </summary>
@@ -128,47 +82,10 @@ public partial class MainWindow : Window
                 };
 
                 layerTile.TileButton.Click += (_, _) => { LayerTile_OnClick(layerTile); };
+                layerTile.TileButton.MouseEnter += (_, _) => { LayerTile_OnDrag(layerTile); };
 
                 LayerTiles.Children.Add(layerTile);
             }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
-    }
-
-    /// <summary>
-    /// Creates the dropdown selection tiles for changing a selected tile
-    /// </summary>
-    private void CreateComboBoxTiles()
-    {
-        try
-        {
-            var options = new JsonSerializerOptions
-            {
-                Converters =
-                {
-                    new JsonStringEnumConverter(JsonNamingPolicy.CamelCase)
-                }
-            };
-
-            var json = File.ReadAllText(@"Data\Tiles.json");
-
-            var tiles = JsonSerializer.Deserialize<TileList>(json, options);
-
-            for (var i = 0; i < tiles!.Tiles.Count; i++)
-            {
-                TileComboBoxList.Add(new ComboBoxTile
-                {
-                    Id = i,
-                    Tile = tiles.Tiles[i]
-                });
-
-                TileList.Add(tiles.Tiles[i]);
-            }
-            ButtonGrid.CreateButtons();
-            ButtonGridReplace.CreateButtons();
         }
         catch (Exception ex)
         {
@@ -213,7 +130,87 @@ public partial class MainWindow : Window
     }
 
     /// <summary>
-    /// Refreshes tiles
+    /// Creates the dropdown selection tiles for changing a selected tile
+    /// </summary>
+    private void CreateMenuList()
+    {
+        try
+        {
+            var options = new JsonSerializerOptions
+            {
+                Converters =
+                {
+                    new JsonStringEnumConverter(JsonNamingPolicy.CamelCase)
+                }
+            };
+
+            var json = File.ReadAllText(@"Data\Tiles.json");
+
+            var tiles = JsonSerializer.Deserialize<TileList>(json, options);
+
+            List<Tile> UsedBlocks = new List<Tile>();
+            List<Tile> UnusedBlocks = new List<Tile>();
+            List<Tile> NULLBlocks = new List<Tile>();
+            List<Tile> IndestructibleBlocks = new List<Tile>();
+
+            List<Tile> UsedLiquid = new List<Tile>();
+            List<Tile> UnusedLiquid = new List<Tile>();
+            List<Tile> NULLLiquid = new List<Tile>();
+
+            foreach (var Tile in tiles.Tiles)
+            {
+                if(Tile.Name.Contains("Default Block"))
+                {
+                    NULLBlocks.Add(Tile);
+                }else if (IsLiquid(Tile))
+                {
+                    if (Tile.Used == "Unused")
+                    {
+                        UnusedLiquid.Add(Tile);
+                    }
+                    else
+                    {
+                        UsedLiquid.Add(Tile);
+                    }
+                }
+                else if(Tile.Used == "Unused")
+                {
+                    UnusedBlocks.Add(Tile);
+                }
+                else if (Tile.Break.Contains("Indestructible") || Tile.Break.Contains("Intangible"))
+                {
+                    IndestructibleBlocks.Add(Tile);
+                }
+                else
+                {
+                    UsedBlocks.Add(Tile);
+                }
+                TileList.Add(Tile);
+            }
+            var Temp = new List<List<Tile>>();
+            Temp.Add(UsedBlocks);
+            Temp.Add(UnusedBlocks);
+            Temp.Add(IndestructibleBlocks);
+            Temp.Add(NULLBlocks);
+            SelectionList.BlockList = Temp;
+            Temp = new List<List<Tile>>();
+            Temp.Add(UsedLiquid);
+            Temp.Add(UnusedLiquid);
+            Temp.Add(NULLLiquid);
+            SelectionList.LiquidList = Temp;
+            Temp = new List<List<Tile>>();
+            SelectionList.ObjectList = Temp;
+            SelectionList.createTabList();
+        }
+        
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+
+    /// <summary>
+    /// 
     /// </summary>
     private void RefreshTiles(short chunk, byte layer)
     {
@@ -227,129 +224,13 @@ public partial class MainWindow : Window
             for (short i = 0; i < 1024; i++)
             {
                 var blockId = ChunkEditor.GetBlockValue(chunk, layer, i);
-                var TileValue = TileList.FirstOrDefault(t => t.Id % 2048 == blockId % 2048) ?? TileList[0];
-                ((LayerTile)LayerTiles.Children[i]).Tile.Value = TileValue;
-            }
 
-            ItemDataList = new();
-            for (short i = 0; i < ChunkEditor.ItemCount; i++)
-            {
-                var ChunkItem = ChunkEditor.GetItemChunk((uint)(0x150E7D1 + i * 4));
-                if ((short)ChunkItem == chunk)
-                {
-                    var ItemData = new ItemData((uint)(0x150E7D1 + i * 4));
-                    if (ItemData.PosY == (uint)layer)
-                    {
-                        ItemDataList.Add(ItemData);
-                    }
-                }
+                ((LayerTile)LayerTiles.Children[i]).Tile.Value = TileList.FirstOrDefault(t => t.Id == blockId % 2048) ?? TileList[0];
             }
         }
         catch (Exception ex)
         {
             Console.WriteLine(ex);
-        }
-    }
-
-    /// <summary>
-    /// Here is the selection handler with the magic pencil. First is the line.
-    /// </summary>
-
-    private void DrawLine(double x0, double y0, double x1, double y1, List<Line> List, bool yellow)
-    {
-        Line line = new Line
-        {
-            X1 = x0,
-            Y1 = y0,
-            X2 = x1,
-            Y2 = y1,
-            Stroke = Brushes.Orange,
-            StrokeThickness = 5,
-        };
-        if (yellow) line.Stroke = Brushes.Yellow;
-
-        SelectionCanvas.Children.Add(line);
-        List.Add(line);
-    }
-
-    /// <summary>
-    /// Erases lines.
-    /// </summary>
-    private void EraseRect_OnClick(Object sender, RoutedEventArgs e)
-    {
-        EraseLine(SelectedArea.EndList);
-        EraseLine(SelectedArea.BegList);
-        EraseLine(SelectedArea.RectList);
-        SelectedArea.TileIdBeg = -1;
-        SelectedArea.TileIdEnd = -1;
-    }
-    private void EraseLine(List<Line> List)
-    {
-        foreach (var line in List)
-            SelectionCanvas.Children.Remove(line);
-        List.Clear();
-    }
-    /// <summary>
-    /// Completes selection and rotates to the orientation chosen.
-    /// </summary>
-    private void DrawRectangle(double ActualSize)
-    {
-        var x0 = SelectedArea.x0 * ActualSize;
-        var y0 = SelectedArea.y0 * ActualSize;
-        var x1 = SelectedArea.x1 * ActualSize;
-        var y1 = SelectedArea.y1 * ActualSize;
-        var changex = false;
-        var changey = false;
-
-        EraseLine(SelectedArea.EndList);
-        EraseLine(SelectedArea.BegList);
-        if (x0 > x1)
-        {
-            changex = true;
-            DrawLine(x0 + ActualSize, y0, x0 + ActualSize, y0 + ActualSize, SelectedArea.BegList, false);
-            DrawLine(x1, y1 + ActualSize, x1, y1, SelectedArea.EndList, false);
-        }
-        else
-        {
-            DrawLine(x0, y0, x0, y0 + ActualSize, SelectedArea.BegList, false);
-            DrawLine(x1 + ActualSize, y1 + ActualSize, x1 + ActualSize, y1, SelectedArea.EndList, false);
-        }
-        if (y0 > y1)
-        {
-            changey = true;
-            DrawLine(x0, y0 + ActualSize, x0 + ActualSize, y0 + ActualSize, SelectedArea.BegList, false);
-            DrawLine(x1 + ActualSize, y1, x1, y1, SelectedArea.EndList, false);
-        }
-        else
-        {
-            DrawLine(x0, y0, x0 + ActualSize, y0, SelectedArea.BegList, false);
-            DrawLine(x1 + ActualSize, y1 + ActualSize, x1, y1 + ActualSize, SelectedArea.EndList, false);
-        }
-
-        if (changey == changex)
-        {
-            if (changex == true)
-            {
-                var xa = x0; x0 = x1; x1 = xa;
-                xa = y0; y0 = y1; y1 = xa;
-            }
-            DrawLine(x0 + ActualSize, y0, x1 + ActualSize, y0, SelectedArea.RectList, true);
-            DrawLine(x0, y1 + ActualSize, x1, y1 + ActualSize, SelectedArea.RectList, true);
-            DrawLine(x0, y0 + ActualSize, x0, y1 + ActualSize, SelectedArea.RectList, true);
-            DrawLine(x1 + ActualSize, y0, x1 + ActualSize, y1, SelectedArea.RectList, true);
-
-        }
-        else
-        {
-            if (changex == true)
-            {
-                var xa = x0; x0 = x1; x1 = xa;
-                xa = y0; y0 = y1; y1 = xa;
-            }
-            DrawLine(x0 + ActualSize, y0 + ActualSize, x1 + ActualSize, y0 + ActualSize, SelectedArea.RectList, true);
-            DrawLine(x0, y1, x1, y1, SelectedArea.RectList, true);
-            DrawLine(x0, y0, x0, y1, SelectedArea.RectList, true);
-            DrawLine(x1 + ActualSize, y0 + ActualSize, x1 + ActualSize, y1 + ActualSize, SelectedArea.RectList, true);
         }
     }
 
@@ -366,68 +247,47 @@ public partial class MainWindow : Window
             }
 
             SelectedLayerTile.Value = layerTile;
+
             // if the select button is check, update the dropdown
-            if (SelectButton.IsChecked == true)
+            //if (SelectButton.IsChecked == true)
+            switch (ToolBar.tool)
             {
-                var IDcheck = (short)ChunkEditor.GetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id);
-                if (IDcheck >= 2048)
-                {
-                    overflowCheckboxName.IsChecked = true;
-                    Overflow = 2048;
-                }
-                else
-                {
-                    overflowCheckboxName.IsChecked = false;
-                    Overflow = 0;
-                }
-                TileComboBox.SelectedIndex = (short)TileComboBoxList.FirstOrDefault(t => t.Tile.Id == layerTile.Tile.Value.Id)!.Id;
-                RawID = (short)(SelectedTile.Value.Id + Overflow);
-                RawIDT.Text = "RawID: " + Convert.ToString(RawID);
-                OverflowT.Text = "Overflow: " + Convert.ToString(Overflow);
+                case 0:
+                    var blockId = ChunkEditor.GetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id);
+                    if (blockId > 2047){ BuilderPlaced.Value = true; }
+                    else{ BuilderPlaced.Value = false; }
+                    TrueId.Value = blockId;
+                    SelectedTile.Value = layerTile.Tile.Value;
+                    SelectionList.FavouriteList.SelectedToList(layerTile.Tile,false);
+                    break;
+                case 1:
+                    if (paint) { paint = false; Mouse.OverrideCursor = null; }
+                    else { paint = true; Mouse.OverrideCursor = ToolBar.paintCursor; }
+                    if (!CanvasH.SelectedArea.HasArea || (SelectedLayerTile.Value!.Id >= CanvasH.SelectedArea.TileIdBeg && SelectedLayerTile.Value!.Id <= CanvasH.SelectedArea.TileIdBeg))
+                    {
+                        ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value!.Id]).Tile.Value = SelectedTile.Value;
+                        ChunkEditor.SetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id, (short)TrueId.Value);
+                    }
+                    break;
+                case 2:
+                    var coordLine = ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value!.Id]).ActualHeight;
+                    var x0 = (SelectedLayerTile.Value.Id % 32) * coordLine;
+                    var y0 = (SelectedLayerTile.Value.Id / 32) * coordLine;
+                    CanvasH.LineHandler(x0, y0, coordLine, SelectedLayerTile.Value!.Id, LayerValue.Value);
+                    Test.Value = CanvasH.Test.Value;
+                    break;
+                case 3:
+                    var blockId2 = ChunkEditor.GetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id);
+                    if (blockId2 > 2047) { BuilderPlaced.Value = true; }
+                    else { BuilderPlaced.Value = false; }
+                    TrueId.Value = blockId2;
+                    SelectedTile.Value = layerTile.Tile.Value;
+                    SelectionList.FavouriteList.SelectedToList(layerTile.Tile, false);
+                    ToolBar.AddToList(layerTile.Tile);
+                    break;
+                default:
+                    break;
 
-            }
-            // If it's the paste button just update the tile with the current selected value
-            else if (PasteButton.IsChecked == true)
-            {
-                ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value!.Id]).Tile.Value = SelectedTile.Value;
-                ChunkEditor.SetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id, (short)(SelectedLayerTile.Value.Id + Overflow));
-            }
-            // If it's the select button do select logic
-            else if (PencilButton.IsChecked == true)
-            {
-                var coordLine = ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value!.Id]).ActualHeight;
-                var x0 = (SelectedLayerTile.Value.Id % 32) * coordLine;
-                var y0 = (SelectedLayerTile.Value.Id / 32) * coordLine;
-
-                if (SelectedArea.TileIdBeg == SelectedLayerTile.Value.Id)
-                {
-
-                    SelectedArea.TileIdBeg = -1;
-                    EraseLine(SelectedArea.BegList);
-                }
-                else if (SelectedArea.TileIdEnd == SelectedLayerTile.Value.Id)
-                {
-
-                    SelectedArea.TileIdEnd = -1;
-                    EraseLine(SelectedArea.EndList);
-                }
-                else if (SelectedArea.TileIdBeg == -1)
-                {
-
-                    DrawLine(x0, y0, x0, y0 + coordLine, SelectedArea.BegList, false);
-                    DrawLine(x0, y0, x0 + coordLine, y0, SelectedArea.BegList, false);
-                    SelectedArea.TileIdBeg = SelectedLayerTile.Value.Id;
-                }
-                else
-                {
-                    EraseLine(SelectedArea.EndList);
-                    EraseLine(SelectedArea.RectList);
-                    DrawLine(x0 + coordLine, y0 + coordLine, x0, y0 + coordLine, SelectedArea.EndList, false);
-                    DrawLine(x0 + coordLine, y0 + coordLine, x0 + coordLine, y0, SelectedArea.EndList, false);
-                    SelectedArea.TileIdEnd = SelectedLayerTile.Value.Id;
-                }
-                if (SelectedArea.TileIdEnd > -1 && SelectedArea.TileIdBeg > -1) DrawRectangle(coordLine);
-                else EraseLine(SelectedArea.RectList);
             }
         }
         catch (Exception ex)
@@ -435,68 +295,94 @@ public partial class MainWindow : Window
             Console.WriteLine(ex);
         }
     }
-
-    /// <summary>
-    /// Event handler for when the checkbox for overflow gets clicked by the user. Updates the selected tile.
-    /// </summary>
-    private void UpdateIdSelected_OnClick(object sender, RoutedEventArgs e)
+    private void LayerTile_OnDrag(LayerTile layerTile)
     {
         try
         {
-            var change = ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value.Id]).Tile.Value;
-
-            if (overflowCheckboxName.IsChecked == true)
-            {
-
-                Overflow = 2048;
-            }
-            else Overflow = 0;
-            RawID = (short)(change.Id + Overflow);
-            RawIDT.Text = "RawID: " + Convert.ToString(RawID);
-            OverflowT.Text = "Overflow: " + Convert.ToString(Overflow);
-
-            ChunkEditor.SetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id, (short)(change.Id + Overflow));
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
-
-    }
-
-    /// <summary>
-    /// Event handler for when a new tile is selected from the dropdown. Updates the selected tile.
-    /// </summary>
-    private void TileComboBox_OnSelectionChange(object sender, SelectionChangedEventArgs e)
-    {
-        try
-        {
-            if (SelectedLayerTile.Value == null)
+            if (!paint || ToolBar.tool != 1) { paint = false; return; }
+            if (layerTile.Tile.Value == null || string.IsNullOrWhiteSpace(ChunkEditor.Filename))
             {
                 return;
             }
 
-            selectedTileDrop = ((ComboBoxTile)e.AddedItems[0]!).Tile;
+            SelectedLayerTile.Value = layerTile;
 
-            SelectedTile.Value = selectedTileDrop;
-
-            ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value.Id]).Tile.Value = selectedTileDrop;
-
-
-            if (PencilButton.IsChecked == true)
+            // if the select button is check, update the dropdown
+            //if (SelectButton.IsChecked == true)
+            switch (ToolBar.tool)
             {
-                ChunkEditor.SetAreaValue(ChunkValue.Value, LayerValue.Value, SelectedArea.TileIdBeg, SelectedArea.TileIdEnd, (short)(selectedTileDrop.Id + Overflow));
-                RefreshTiles(ChunkValue.Value, LayerValue.Value);
+                case 0:
+                    break;
+                case 1:
+                    if (!CanvasH.SelectedArea.HasArea || (SelectedLayerTile.Value!.Id >= CanvasH.SelectedArea.TileIdBeg && SelectedLayerTile.Value!.Id <= CanvasH.SelectedArea.TileIdBeg))
+                    {
+                        ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value!.Id]).Tile.Value = SelectedTile.Value;
+                        ChunkEditor.SetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id, (short)TrueId.Value);
+                    }
+                    break;
+                default:
+                    break;
+
             }
-            RawID = (short)(SelectedTile.Value.Id + Overflow);
-            RawIDT.Text = "RawID: " + Convert.ToString(RawID);
-            OverflowT.Text = "Overflow: " + Convert.ToString(Overflow);
-            ChunkEditor.SetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id, (short)(selectedTileDrop.Id + Overflow));
         }
         catch (Exception ex)
         {
             Console.WriteLine(ex);
         }
+    }
+    private void SelectionTile_OnClick(ObservableProperty<Tile> NewSelectedTile)
+    {
+        BuilderPlaced.Value = false;
+        TrueId.Value = (ushort)NewSelectedTile.Value.Id;
+        SelectedTile.Value = NewSelectedTile.Value;
+        if (ToolBar.tool == 3)
+        {
+            ToolBar.AddToList(NewSelectedTile);
+        }
+        else
+        {
+            if (CanvasH.SelectedArea.HasArea)
+            {
+                ChunkEditor.ReplaceBlockValue(ChunkValue.Value, ChunkValue.Value,
+                                               CanvasH.SelectedArea.LayerBeggining, CanvasH.SelectedArea.LayerEnd,
+                                               CanvasH.SelectedArea.TileIdBeg, CanvasH.SelectedArea.TileIdEnd,
+                                               null, (short)TrueId.Value);
+                RefreshTiles(ChunkValue.Value, LayerValue.Value);
+            }
+        }
+    }
+
+    public void ReplaceBlocks(List<BlockTileSquare> BlockList, short newId)
+    {
+        List<short> IdList = new List<short>();
+        foreach(var Id in BlockList)
+        {
+            IdList.Add(Id.Tile.Value.Id);
+        }
+        if (CanvasH.SelectedArea.HasArea)
+        {
+            ChunkEditor.ReplaceBlockValue(ChunkValue.Value, ChunkValue.Value,
+                                           CanvasH.SelectedArea.LayerBeggining, CanvasH.SelectedArea.LayerEnd,
+                                           CanvasH.SelectedArea.TileIdBeg, CanvasH.SelectedArea.TileIdEnd,
+                                           IdList, newId);
+            RefreshTiles(ChunkValue.Value, LayerValue.Value);
+        }
+        else
+        {
+            ChunkEditor.ReplaceBlockValue(0, ChunkEditor.ChunkCount,
+                               0, (short)ChunkEditor.LayerHeight,
+                               0, 1024,
+                               IdList, newId);
+            RefreshTiles(ChunkValue.Value, LayerValue.Value);
+        }
+    }
+    private void AreaReset()
+    {
+        CanvasH.SelectedArea = new();
+        CanvasH.Test.Value = CanvasH.SelectedArea;
+        CanvasH.BGCanvas.Children.Clear();
+        CanvasH.SelectionCanvas.Children.Clear();
+        Test.Value = CanvasH.Test.Value;
     }
 
     /// <summary>
@@ -525,14 +411,10 @@ public partial class MainWindow : Window
             }
 
             RefreshTiles(ChunkValue.Value, LayerValue.Value);
+            ReadSign();
             GratitudeInput.Text = Convert.ToString(ChunkEditor.GratitudePoints);
             TimeInput.Text = Convert.ToString(ChunkEditor.Clock);
             WeatherComboBoxX.SelectedIndex = ChunkEditor.Weather;
-            LimitSelector[0] = 0;
-            LimitSelector[1] = (short)ChunkEditor.ChunkCount;
-            LimitSelector[2] = 0;
-            LimitSelector[3] = (short)ChunkEditor.LayerHeight;
-            ReadSign();
             LayerTiles.Visibility = Visibility.Visible;
         }
         catch (Exception ex)
@@ -577,7 +459,6 @@ public partial class MainWindow : Window
             MessageBox.Show(ex.Message, "Failed to save file", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
-
     /// <summary>
     /// Saves the current map bytes to file
     /// </summary>
@@ -633,10 +514,10 @@ public partial class MainWindow : Window
             }
 
             RefreshTiles(ChunkValue.Value, LayerValue.Value);
+            ReadSign();
             GratitudeInput.Text = Convert.ToString(ChunkEditor.GratitudePoints);
             TimeInput.Text = Convert.ToString(ChunkEditor.Clock);
             WeatherComboBoxX.SelectedIndex = ChunkEditor.Weather;
-            ReadSign();
             LayerTiles.Visibility = Visibility.Visible;
         }
         catch (Exception ex)
@@ -646,58 +527,112 @@ public partial class MainWindow : Window
         }
     }
 
+    private void ReadSign()
+    {
+        SignTextList = ChunkEditor.LoadSign();
+        List.ItemsSource = SignTextList;
+
+    }
+    private void SaveData_OnClick(bool isObject)
+    {
+        try
+        {
+            var saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Text file (*.txt)|*.txt|All files (*.*)|*.*"
+            };
+
+            if (saveFileDialog.ShowDialog() == false)
+            {
+                return;
+            }
+            if (isObject)
+            {
+                var ListI = ChunkEditor.CountItemData();
+                if (ListI == null) return;
+                using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
+                {
+                    for (int i = 0; i < ListI.Length; i++)
+                    {
+                        if (ListI[i] > 0)
+                        {
+                            writer.WriteLine(ListI[i] + "\tItemID" + i);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                var List = ChunkEditor.CountBlockData();
+                if (List == null) return;
+                using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
+                {
+                    for (int i = 0; i < 2048; i++)
+                    {
+                        writer.WriteLine(List[i] + "\t" + i + "\t" + TileList[i + 1].Name);
+                    }
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
+
     /// <summary>
     /// Change the selected chunk area. Updates the layer tiles.
     /// </summary>
-    private void ChunkInput_OnMouseUp(Object sender, MouseButtonEventArgs e)
-    {
-        try
-        {
-            var inputValueDialog = new InputValue
-            {
-                MaxValue = ChunkEditor.ChunkCount - 1,
-                CurrentValue = ChunkValue.Value
-            };
+    //private void ChunkInput_OnMouseUp(Object sender, MouseButtonEventArgs e)
+    //{
+    //    try
+    //    {
+    //        var inputValueDialog = new InputValue
+    //        {
+    //            MaxValue = ChunkEditor.ChunkCount - 1,
+    //            CurrentValue = ChunkValue.Value
+    //        };
 
-            if (inputValueDialog.ShowDialog() == false ||
-                !short.TryParse(inputValueDialog.ResponseText, out var value))
-            {
-                return;
-            }
+    //        if (inputValueDialog.ShowDialog() == false ||
+    //            !short.TryParse(inputValueDialog.ResponseText, out var value))
+    //        {
+    //            return;
+    //        }
 
-            TrySetChunk(value);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
-    }
+    //        TrySetChunk(value);
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        Console.WriteLine(ex);
+    //    }
+    //}
 
-    /// <summary>
-    /// Change the selected layer for a chunk. Updates the layer tiles.
-    /// </summary>
-    private void LayerInput_OnMouseUp(Object sender, MouseButtonEventArgs e)
-    {
-        try
-        {
-            var inputValueDialog = new InputValue
-            {
-                CurrentValue = LayerValue.Value
-            };
+    ///// <summary>
+    ///// Change the selected layer for a chunk. Updates the layer tiles.
+    ///// </summary>
+    //private void LayerInput_OnMouseUp(Object sender, MouseButtonEventArgs e)
+    //{
+    //    try
+    //    {
+    //        var inputValueDialog = new InputValue
+    //        {
+    //            CurrentValue = LayerValue.Value
+    //        };
 
-            if (inputValueDialog.ShowDialog() == false ||
-                !byte.TryParse(inputValueDialog.ResponseText, out var value))
-            {
-                return;
-            }
+    //        if (inputValueDialog.ShowDialog() == false ||
+    //            !byte.TryParse(inputValueDialog.ResponseText, out var value))
+    //        {
+    //            return;
+    //        }
 
-            TrySetLayer(value);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
-    }
+    //        TrySetLayer(value);
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        Console.WriteLine(ex);
+    //    }
+    //}
 
     private void AddChunk_OnClick(Object sender, RoutedEventArgs e)
     {
@@ -730,249 +665,70 @@ public partial class MainWindow : Window
 
         RefreshTiles(ChunkValue.Value, LayerValue.Value);
     }
-
-    private void TrySetLayer(byte value)
+    private void TrySetChunk(object sender, KeyEventArgs e)
     {
-        if (value is < 0 or > 95)
+        if (e.Key == Key.Enter)
         {
-            return;
-        }
+            var box = sender as TextBox;
+            if (!Int32.TryParse(box.Text, out int numValue) || numValue < 0 || numValue >= ChunkEditor.ChunkCount)
+            {
+                return;
+            }
 
-        LayerValue.Value = value;
+            ChunkValue.Value = (byte)numValue;
 
-        RefreshTiles(ChunkValue.Value, LayerValue.Value);
-    }
-    private void MassSet_OnClick(Object sender, RoutedEventArgs e)
-    {
-        try
-        {
-            var ConfirmR = new ConfirmChoice
-        {
-            Text = "Set block on mass selected area?"
-        };
-
-        if (ConfirmR.ShowDialog() == false)
-        {
-            return;
-        }
-        if (ConfirmR.Confirmed == true)
-        {
-            ChunkEditor.MassSetBlockValue(LimitSelector[0], LimitSelector[1], (byte)LimitSelector[2], LimitSelector[3], SelectedTile.Value.Id);
             RefreshTiles(ChunkValue.Value, LayerValue.Value);
         }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
     }
 
-    private void ReplaceBlocks_OnClick(Object sender, RoutedEventArgs e)
+    private void TrySetLayer(object sender, KeyEventArgs e)
     {
-        try
+        if (e.Key == Key.Enter)
         {
-            var ReplaceBlockWindow = new ReplaceBlock(ButtonGridReplace)
-            {
-                FirstId = -1,
-                SecondId = -1
-            };
-
-            if (ReplaceBlockWindow.ShowDialog() == false)
-            {
-                ReplaceBlockWindow.GridAdd.Children.Clear();
-                return;
-            }
-            ReplaceBlockWindow.GridAdd.Children.Clear();
-            string TextM = "N/A";
-            if (PencilButton.IsChecked == true)
-            {
-                TextM = "This will replace all blocks inside the selection. Continue?";
-            }
-            else TextM = "This will replace ALL blocks in the map with the new Id. Are you sure you want to continue?";
-
-            var ConfirmR = new ConfirmChoice
-            {
-                Text = TextM
-            };
-
-            if (ConfirmR.ShowDialog() == false)
-            {
-                return;
-            }
-            if (ConfirmR.Confirmed == true)
-            {
-                if (PencilButton.IsChecked == true) ChunkEditor.ReplaceAreaValue(ChunkValue.Value, LayerValue.Value, SelectedArea.TileIdBeg, SelectedArea.TileIdEnd, ReplaceBlockWindow.FirstId, ReplaceBlockWindow.SecondId);
-                else ChunkEditor.ReplaceBlockValue(LimitSelector[0], LimitSelector[1], (byte)LimitSelector[2], LimitSelector[3], ReplaceBlockWindow.FirstId, ReplaceBlockWindow.SecondId);
-                RefreshTiles(ChunkValue.Value, LayerValue.Value);
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
-    }
-
-    //For some reason Turtle's flattener doesn't work for me... And I need it for testing. 
-    private void Flattener_OnClick(Object sender, RoutedEventArgs e)
-    {
-        try
-        {
-            var ConfirmF = new ConfirmChoice
-            {
-                Text = "This will leave the map on bare bedrock.  Are you sure you want to continue?"
-            };
-
-            if (ConfirmF.ShowDialog() == false)
+            var box = sender as TextBox;
+            if (!Int32.TryParse(box.Text, out int numValue) || numValue is < 0 or > 95)
             {
                 return;
             }
 
-            ChunkEditor.Flatten();
+            LayerValue.Value = (byte)numValue;
+
             RefreshTiles(ChunkValue.Value, LayerValue.Value);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
+            CanvasH.UpdateLayer(LayerValue.Value);
+            Test.Value = CanvasH.Test.Value;
         }
     }
-    private bool IsLiquid(Tile block)
+    private void TrySetLayer(byte Value)
     {
-            if ((block.Name.ToLower().Contains("water") || block.Name.Contains("Plasma") || block.Name.Contains("Bottomless") || block.Name.Contains("Poison ") || block.Name.Contains("Lava "))
-                && block.Id != 593 && block.Id != 17 && block.Id != 86) { return true; }
+            if (Value is < 0 or > 95)
+            {
+                return;
+            }
+
+            LayerValue.Value = Value;
+
+            RefreshTiles(ChunkValue.Value, LayerValue.Value);
+        CanvasH.UpdateLayer(LayerValue.Value);
+        Test.Value = CanvasH.Test.Value;
+    }
+
+    private bool IsLiquid(Tile Tile)
+    {
+        if (Tile != null)
+        {
+            if ((Tile.Name.ToLower().Contains("water") || Tile.Name.Contains("Plasma") || Tile.Name.Contains("Bottomless") || Tile.Name.Contains("Poison ") || Tile.Name.Contains("Lava "))
+                && Tile.Id != 593 && Tile.Id != 17 && Tile.Id != 86) { return true; }
             else { return false; }
+        }
+        return false;
     }
-    private async void Drainer_OnClick(Object sender, RoutedEventArgs e)
+    protected void OnWindowSizeChanged(object sender, SizeChangedEventArgs e)
     {
-        try
-        {
-            var ConfirmF = new ConfirmChoice
-            {
-                Text = "This will delete all liquid, and leave items inside liquid as ghost items. It will also take a loooong time.  Are you sure you want to continue?"
-            };
-
-            if (ConfirmF.ShowDialog() == false)
-            {
-                return;
-            }
-            Loading.Visibility = Visibility.Visible;
-            MainGrid.IsEnabled = false;
-            var a= PencilButton.IsChecked;
-            await Task.Run(() => ReplaceLiquidOperation(a));
-            RefreshTiles(ChunkValue.Value, LayerValue.Value);
-            MainGrid.IsEnabled = true; 
-            Loading.Visibility = Visibility.Collapsed;
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
-    }
-    private void ReplaceLiquidOperation(bool? penButton)
-    {
-        List<short> Lis = new List<short>();
-        foreach (var tile in TileList)
-        {
-            if (IsLiquid(tile))
-            {
-                Lis.Add(tile.Id);
-            }
-        }
-        if (penButton == true)
-        {
-                ChunkEditor.KillLiquid(LimitSelector[0], LimitSelector[1], LayerValue.Value, LayerValue.Value, Lis);
-        }
-        else
-        {
-                ChunkEditor.KillLiquid(LimitSelector[0], LimitSelector[1], (byte)LimitSelector[2], LimitSelector[3], Lis);
-        }
-    }
-
-        private void Print_OnClick(Object sender, RoutedEventArgs e)
-    {
-        try
-        {
-            var ConfirmF = new ConfirmChoice
-            {
-                Text = "This prints out the block counts into a TXT file."
-            };
-
-            if (ConfirmF.ShowDialog() == false)
-            {
-                return;
-            }
-
-            var saveFileDialog = new SaveFileDialog
-            {
-                Filter = "Text file (*.txt)|*.txt|All files (*.*)|*.*"
-            };
-
-            if (saveFileDialog.ShowDialog() == false)
-            {
-                return;
-            }
-
-            var List = ChunkEditor.CountBlockData();
-            using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
-            {
-                for (int i = 0; i < 2048; i++)
-                {
-                    writer.WriteLine(List[i] + "\t" + TileList[i].Name);
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
-    }
-
-    private void Size_OnClick(Object sender, RoutedEventArgs e)
-    {
-        try
-        {
-            var ValueEditor = new ValueEditor
-            {
-                Value = (uint)ChunkEditor.ChunkCount,
-                Text = "Chunk Count [TEMPORAL FIX, ONLY CHANGE THIS IF YOU KNOW THE VALUE IS WRONG. 'REPLACE ALL' AND 'FLATTENER' WILL CORRUPT THE SAVE IF THE CHUNK COUNT IS BIGGER THAN THE REAL VALUE]",
-                ImagePath = ""
-            };
-
-            if (ValueEditor.ShowDialog() == false || !short.TryParse(ValueEditor.ResponseText, out var value))
-            {
-
-                return;
-            }
-            if (value >= 1 && value <= 800)
-            {
-                ChunkEditor.ChunkCount = value;
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
-    }
-    private void GratitudeInput_TextChanged(object sender, TextChangedEventArgs e)
-    {
-        try
-        {
-            if (!UInt32.TryParse(GratitudeInput.Text, out var value))
-            {
-                return;
-            }
-            else
-            {
-                ChunkEditor.GratitudePoints = value;
-                if (ChunkEditor.Island != 0xFF)
-                {
-                    ChunkEditor.UpdateExtra();
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
+        SelectionList.ScrollViewUpdate(SelectionList.ActualHeight);
+        PreviewText.Height = e.NewSize.Width/2;
+        SelectionList.BlockMenu.TextBoxFilter.Width = SelectionList.ActualWidth - 10;
+        SelectionList.LiquidMenu.TextBoxFilter.Width = SelectionList.ActualWidth - 10;
+        //SelectionList.ObjectMenu.TextBoxFilter.Width = SelectionList.ActualWidth - 10;
     }
 
     private void TimeInput_TextChanged(object sender, TextChangedEventArgs e)
@@ -1006,22 +762,26 @@ public partial class MainWindow : Window
             ChunkEditor.UpdateExtra();
         }
     }
-
-    private void MassSelect_OnClick(object sender, RoutedEventArgs e)
+    public void CommandPreview(object sender, EventArgs e)
     {
-        var Select = new MassSelect
+        string Line = (sender as Button).Tag.ToString();
+        if (Line != null)
         {
-        };
+            var elementsToRemove = Pain.Children.OfType<UserControl>()
+                                                  .Where(e => e.GetType() == typeof(Preview))
+                                                  .ToList();  // Create a list to avoid collection modification issues
 
-        if (Select.ShowDialog() == false)
-        {
-            return;
+            // Remove each element from the Grid
+            foreach (var element in elementsToRemove)
+            {
+                Pain.Children.Remove(element);
+            }
+            var TextBox = new Preview();
+            TextBox.LoadPreview(Line);
+            Grid.SetColumn(TextBox, 1);
+            Grid.SetRow(TextBox, 1);
+            Pain.Children.Add(TextBox);
         }
-        short.TryParse(Select.BegC, out LimitSelector[0]);
-        short.TryParse(Select.EndC, out LimitSelector[1]);
-        short.TryParse(Select.BegY, out LimitSelector[2]);
-        short.TryParse(Select.EndY, out LimitSelector[3]);
     }
+    
 }
-
-

@@ -1,15 +1,12 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace DQB2ChunkEditor.Models;
 
 public class Tile
 {
-
-    //----------- Identification ------------------
     [JsonPropertyName("Type")]
-    public Type Type { get; set; } = Type.Block;
+    public bool isObject { get; set; } = false;
 
     [JsonPropertyName("Id")]
     public short Id { get; set; } = -1;
@@ -35,7 +32,7 @@ public class Tile
     public string Used { get; set; } = "N/A";
 
     [JsonPropertyName("Color")]
-    public bool inList { get; set;} = false;
+    public bool inList { get; set; } = false;
 
     //----------- Graphic ------------------
 
@@ -43,17 +40,13 @@ public class Tile
     public short ImageId { get; set; } = -1;
 
     [JsonPropertyName("Map")]
-    public string ImagMap => $"/Images/Tiles/{ImageId:0000}.png";
+    public string ImagMap { get { return isObject ? $"/Images/TilesObject/{ImageId:0000}.png" : $"/Images/Tiles/{ImageId:0000}.png"; } }
 
     [JsonIgnore]
-    public string Image => $"/Images/Blocks/{ImageId:0000}.png";
+    public string Image { get { return isObject ? $"/Images/BlocksObject/{ImageId:0000}.png" : $"/Images/Blocks/{ImageId:0000}.png"; } }
 
-    public Tile() { }
-    public void edit(Tile c)
-    {
-        ImageId = c.ImageId;
-        Name = c.Name;
-        Description = c.Description;
-        NormalDrop = c.NormalDrop;
-    }
+    [JsonPropertyName("BlockId")]
+    public short blockId { get { return isObject ? blockId : (short)-1; } set { blockId = value; } }
+    [JsonIgnore]
+    public short blockIdDisplay { get { return isObject ? blockId : Id; }}
 }

@@ -5,12 +5,12 @@ using DQB2ChunkEditor.Models;
 
 namespace DQB2ChunkEditor.Controls;
 
-public partial class ComboBoxTile : UserControl
+public partial class BlockTileSquare : UserControl
 {
     public int Id { get; set; } = 0;
-    public Tile Tile { get; set; } = new();
+    public ObservableProperty<Tile> Tile { get; set; } = new();
 
-    public ComboBoxTile()
+    public BlockTileSquare()
     {
         InitializeComponent();
         DataContext = this;
