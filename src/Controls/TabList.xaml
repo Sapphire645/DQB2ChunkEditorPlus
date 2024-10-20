@@ -20,7 +20,7 @@
       <TabItem Header="Liquid" FontWeight="Bold">
         <Grid Name="Liquids"/>
       </TabItem>
-      <TabItem Header="Objects" FontWeight="Bold">
+      <TabItem Header="Objects" FontWeight="Bold" Visibility="Collapsed">
         <Grid Name="Objects"/>
       </TabItem>
     </TabControl>

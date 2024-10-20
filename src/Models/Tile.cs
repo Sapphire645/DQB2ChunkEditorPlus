@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace DQB2ChunkEditor.Models;
@@ -52,4 +53,8 @@ public class Tile
     public short blockId { get { return isObject ? mblockId : (short)-1; } set { mblockId = value; } }
     [JsonIgnore]
     public short blockIdDisplay { get { return isObject ? blockId : Id; }}
+    public Tile ShallowCopy()
+    {
+        return (Tile)this.MemberwiseClone();
+    }
 }

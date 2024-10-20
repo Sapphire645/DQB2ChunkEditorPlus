@@ -22,6 +22,9 @@
       <RadioButton Name="ReplaceButton" Height="30" Width="30" ToolTip="Replace Blocks." Checked="Replace_Check">
         <Image Source="/Images/Replace.png" />
       </RadioButton>
+      <RadioButton Name="GlovesButton" Height="30" Width="30" ToolTip="Copy Objects." Checked="Gloves_Check">
+        <Image Source="/Images/CopyTool.png" />
+      </RadioButton>
       <Separator/>
       <RadioButton Name="PencilButton" Height="30" Width="30" ToolTip="Selection an area" Checked="Pencil_Check">
         <Image Source="/Images/Pencil.png" />
@@ -41,7 +44,7 @@
       </Button>
     </ToolBar>
     <Rectangle Name="Acacac" StrokeThickness="1" Stroke="#ACACAC"/>
-    <StackPanel Grid.Row="1" Name="Select" Visibility="Visible" Orientation="Vertical" Margin="30,5,30,5">
+    <StackPanel Grid.Row="1" Name="Select" Visibility="Collapsed" Orientation="Vertical" Margin="30,5,30,5">
       <TextBox Text="Selected Block/Object Information" TextAlignment="Center" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
       <UniformGrid Columns="2" Rows="5">
         <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding StringFormat=ID:    {0}, Path=SelectedTile.Value.Id, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
@@ -128,6 +131,49 @@
             <Rectangle StrokeThickness="1" Stroke="#ACACAC"/>
           </Grid>
         </StackPanel>
+      </Grid>
+    </StackPanel>
+    <StackPanel Grid.Row="1" Name="Gloves" Visibility="Visible" Orientation="Vertical" Margin="30,5,30,5">
+      <UniformGrid Columns="3">
+        <TextBox Text="Selected Object Information" TextAlignment="Center" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+        <RadioButton Style="{StaticResource {x:Type ToggleButton}}" Name="Grab" Content="Grab" Click="Grab_OnClick" IsChecked="True"/>
+        <RadioButton Style="{StaticResource {x:Type ToggleButton}}" Name="Place" Content="Place" Click="Place_OnClick"/>
+      </UniformGrid>
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*"/>
+          <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="1*"/>
+          <RowDefinition Height="1*"/>
+          <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding StringFormat=ID:    {0}, Path=SelectedTile.Value.Id, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+        <TextBox Grid.Row="1" Grid.Column="0" Text="{Binding StringFormat=Name:    {0}, Path=SelectedTile.Value.Name, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding StringFormat=BlockId:    {0}, Path=SelectedTile.Value.blockIdDisplay, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding StringFormat=BYTES:    {0}, Path=BytesObject.Value, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+      </Grid>
+      <UniformGrid Columns="4">
+        <TextBox Grid.Column="0" Text="{Binding StringFormat=X:    {0}, Path=SelectedObject.Value.PosX, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Column="1" Text="{Binding StringFormat=Y:    {0}, Path=SelectedObject.Value.PosY, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Column="2" Text="{Binding StringFormat=Z:    {0}, Path=SelectedObject.Value.PosZ, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Column="3" Text="{Binding StringFormat=Axis:    {0}, Path=SelectedObject.Value.Rotation, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+      </UniformGrid>
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="2*"/>
+          <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Text="{Binding StringFormat=Description:    {0}, Path=SelectedTile.Value.Description, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="70" TextWrapping="WrapWithOverflow"/>
+        <Rectangle StrokeThickness="1" Stroke="#ACACAC" Grid.Column="1"/>
+        <StackPanel Orientation="Horizontal" Grid.Column="1">
+          <Image Width="120" Height="70" Source="{Binding Path=SelectedTile.Value.Image, RelativeSource={RelativeSource AncestorType=Window}}" />
+          <Image Width="120" Height="70" Source="{Binding Path=SelectedTile.Value.ImagMap, RelativeSource={RelativeSource AncestorType=Window}}" />
+        </StackPanel>
+      </Grid>
+      <Grid Height="60">
+        <control:ReducedListHorizontal x:Name="GlovesList"/>
       </Grid>
     </StackPanel>
   </Grid>

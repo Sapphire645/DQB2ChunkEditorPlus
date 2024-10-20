@@ -223,5 +223,15 @@ namespace DQB2ChunkEditor.Models
                 catch { }
             }
         }
+        public bool InsideArea(short Id)
+        {
+            if (SelectedArea == null) return true;
+            if (!SelectedArea.HasArea) return true;
+            if (SelectedArea.x0 <= Id%32 && SelectedArea.x1 >= Id % 32 && SelectedArea.y0 <= Id / 32 && SelectedArea.y1 >= Id / 32)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

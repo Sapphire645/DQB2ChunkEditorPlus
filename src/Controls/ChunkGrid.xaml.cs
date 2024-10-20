@@ -62,7 +62,8 @@ namespace DQB2ChunkEditor.Controls
                             Height = 64,
                             Width = 64,
                             Background = Brushes.Transparent,
-                            FontSize = 40
+                            FontSize = 35,
+                            FontWeight =  FontWeights.Bold
                         };
                         button.Click += (_, _) => { Chunk_Click(button); };
                         if (val == 0xFFFF)
@@ -104,7 +105,8 @@ namespace DQB2ChunkEditor.Controls
                         Height = 64,
                         Width = 64,
                         Background = Brushes.Transparent,
-                        FontSize = 40
+                        FontSize = 35,
+                        FontWeight = FontWeights.Bold
                     };
                     button.Click += (_, _) => { Chunk_Click(button); };
                     ChunkGridList.Add(val);

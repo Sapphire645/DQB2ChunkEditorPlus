@@ -41,6 +41,7 @@ namespace DQB2ChunkEditor.Controls
             LoadCustomCursor();
             NewBlock.TileButton.Click += (_,_) => { Replace2_Click(NewBlock); } ;
             ReplaceList.SelectedTileUpdate += OnSelectedTileUpdate;
+            GlovesList.SelectedTileUpdate += OnSelectedTileUpdate;
         }
 
         private void Select_Check(object sender, RoutedEventArgs e)
@@ -49,9 +50,10 @@ namespace DQB2ChunkEditor.Controls
             Mouse.OverrideCursor = null;
             if (Pencil != null)
             {
-                Pencil.Visibility = Visibility.Collapsed;
                 Select.Visibility = Visibility.Visible;
+                Pencil.Visibility = Visibility.Collapsed;
                 Replace.Visibility = Visibility.Collapsed;
+                Gloves.Visibility = Visibility.Collapsed;
             }
 
 
@@ -59,9 +61,10 @@ namespace DQB2ChunkEditor.Controls
         private void Paint_Check(object sender, RoutedEventArgs e)
         {
             tool = 1;
-            Pencil.Visibility = Visibility.Collapsed;
             Select.Visibility = Visibility.Visible;
+            Pencil.Visibility = Visibility.Collapsed;
             Replace.Visibility = Visibility.Collapsed;
+            Gloves.Visibility = Visibility.Collapsed;
         }
         private void Pencil_Check(object sender, RoutedEventArgs e)
         {
@@ -70,6 +73,7 @@ namespace DQB2ChunkEditor.Controls
             Select.Visibility = Visibility.Collapsed;
             Pencil.Visibility = Visibility.Visible;
             Replace.Visibility = Visibility.Collapsed;
+            Gloves.Visibility = Visibility.Collapsed;
         }
         private void Replace_Check(object sender, RoutedEventArgs e)
         {
@@ -78,6 +82,16 @@ namespace DQB2ChunkEditor.Controls
             Select.Visibility = Visibility.Collapsed;
             Pencil.Visibility = Visibility.Collapsed;
             Replace.Visibility = Visibility.Visible;
+            Gloves.Visibility = Visibility.Collapsed;
+        }
+        private void Gloves_Check(object sender, RoutedEventArgs e)
+        {
+            tool = 4;
+            Mouse.OverrideCursor = null;
+            Select.Visibility = Visibility.Collapsed;
+            Pencil.Visibility = Visibility.Collapsed;
+            Replace.Visibility = Visibility.Collapsed;
+            Gloves.Visibility = Visibility.Visible;
         }
         private void Replace1_Click(object sender, RoutedEventArgs e)
         {
@@ -152,6 +166,20 @@ namespace DQB2ChunkEditor.Controls
         {
             menuList.FavouriteList.SelectedToList(tile);
         }
-
+        private void Grab_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (Place.IsChecked == true) { 
+                Grab.IsChecked = true;
+                Place.IsChecked = false;
+            }
+        }
+        private void Place_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (Grab.IsChecked == true)
+            {
+                Grab.IsChecked = false;
+                Place.IsChecked = true;
+            }
+        }
     }
 }

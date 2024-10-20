@@ -5,13 +5,15 @@ namespace DQB2ChunkEditor.Models
 	public class ObjectItem
 	{
         public short Id { get; set; } = -1;
+		public uint Offset { get; set; }
         public short ChunkGrid { get; set; }
 		public short Chunk { get; set; }
-		public short ChunkRow => (short)(ChunkGrid/64);
-        public short ChunkCol => (short)(ChunkGrid % 64);
         public short PosX { get; set; }
         public short PosY { get; set; }
         public short PosZ { get; set; }
+		public short Rotation { get; set; }
+        public short ChunkRow => (short)(ChunkGrid / 64);
+        public short ChunkCol => (short)(ChunkGrid % 64);
         public ObjectItem(byte[] Record)
 		{
             Id = Record[8];
@@ -25,6 +27,7 @@ namespace DQB2ChunkEditor.Models
 			PosY += (short)(tmp << 6);
 			PosZ = (short)(Record[11] & 0x3E);
 			PosZ >>= 1;
-		}
+			Rotation = (short)(Record[11] >> 6);
+        }
 	}
 }

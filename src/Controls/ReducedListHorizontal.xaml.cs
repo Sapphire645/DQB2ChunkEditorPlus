@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ComponentModel;
 using System.Collections;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DQB2ChunkEditor.Controls
 {
@@ -46,7 +47,7 @@ namespace DQB2ChunkEditor.Controls
                 var blockTile = new BlockTileSquare
                 {
                     Id = ID,
-                    Tile = Block
+                    Tile = new ObservableProperty<Tile>() { Value = Block.Value.ShallowCopy() }
                 };
                 IdList.Add(ID);
                 blockTile.TileButton.Click += (_, _) => { Button_Click(blockTile); };
@@ -55,6 +56,29 @@ namespace DQB2ChunkEditor.Controls
                 Grid.Children.Add(blockTile);
                 BlockList.Add(blockTile);
             }
+        }
+        public void AddToList(ObservableProperty<Tile> Block, byte[] RawData)
+        {
+            var ID = Block.Value.Id;
+            foreach (var a in BlockList)
+            {
+                if (a.ObjectData.SequenceEqual(RawData))
+                {
+                    return;
+                }
+            }
+            var blockTile = new BlockTileSquare
+            {
+                Id = ID,
+                Tile = new ObservableProperty<Tile>() { Value = Block.Value.ShallowCopy() },
+                ObjectData = RawData
+            };
+            IdList.Add(ID);
+            blockTile.TileButton.Click += (_, _) => { Button_Click(blockTile); };
+            blockTile.TileButton.MouseRightButtonDown += (_, _) => { Button_RightClick(blockTile); };
+            blockTile.TileButton.Height = 40;
+            Grid.Children.Add(blockTile);
+            BlockList.Add(blockTile);
         }
         private void Button_ClickSelected(object sender)
         {

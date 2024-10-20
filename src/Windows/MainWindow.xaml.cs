@@ -31,6 +31,9 @@ public partial class MainWindow : Window
     public ObservableProperty<Tile> SelectedTile { get; set; } = new();
     public ObservableProperty<bool> BuilderPlaced { get; set; } = new();
     public ObservableProperty<ushort> TrueId { get; set; } = new();
+    public ObservableProperty<ObjectItem> SelectedObject { get; set; } = new();
+    public ObservableProperty<byte[]> DataRawObject { get; set; } = new();
+    public ObservableProperty<string> BytesObject { get; set; } = new() { Value = ""};
     public ObservableProperty<LayerTile> SelectedLayerTile { get; set; } = new();
     public ObservableProperty<short> ChunkValue { get; set; } = new() { Value = 0};
     public ObservableProperty<byte> LayerValue { get; set; } = new() { Value = 0 };
@@ -282,7 +285,18 @@ public partial class MainWindow : Window
             switch (ToolBar.tool)
             {
                 case 0:
-                    var blockId = ChunkEditor.GetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id);
+                    if (layerTile.Tile.Value.isObject)
+                    {
+                        foreach (var item in CurrentObjectsList)
+                        {
+                            if (item.PosX + item.PosZ * 32 == layerTile!.Id)
+                            {
+                                SelectedObject.Value = item;
+                                DataRawObject.Value = ChunkEditor.GetItemDataBytes(item.Offset);
+                            }
+                        }
+                    }
+                    var blockId = ChunkEditor.GetBlockValue(ChunkValue.Value, LayerValue.Value, layerTile.Id);
                     if (blockId > 2047){ BuilderPlaced.Value = true; }
                     else{ BuilderPlaced.Value = false; }
                     TrueId.Value = blockId;
@@ -290,13 +304,14 @@ public partial class MainWindow : Window
                     SelectionList.FavouriteList.SelectedToList(layerTile.Tile,false);
                     break;
                 case 1:
+                    if (SelectedTile.Value.isObject)
+                    {
+                        paint = false; Mouse.OverrideCursor = null;
+                        //((LayerTile)LayerTiles.Children[layerTile!.Id]).Tile.Value = SelectedTile.Value;
+                        //ChunkEditor.SetItemValue(ChunkValue.Value, LayerValue.Value, layerTile.Id, SelectedTile.Value);
+                    }
                     if (paint) { paint = false; Mouse.OverrideCursor = null; }
                     else { paint = true; Mouse.OverrideCursor = ToolBar.paintCursor; }
-                    if (!CanvasH.SelectedArea.HasArea || (SelectedLayerTile.Value!.Id >= CanvasH.SelectedArea.TileIdBeg && SelectedLayerTile.Value!.Id <= CanvasH.SelectedArea.TileIdBeg))
-                    {
-                        ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value!.Id]).Tile.Value = SelectedTile.Value;
-                        ChunkEditor.SetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id, (short)TrueId.Value);
-                    }
                     break;
                 case 2:
                     var coordLine = ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value!.Id]).ActualHeight;
@@ -313,6 +328,37 @@ public partial class MainWindow : Window
                     SelectedTile.Value = layerTile.Tile.Value;
                     SelectionList.FavouriteList.SelectedToList(layerTile.Tile, false);
                     ToolBar.AddToList(layerTile.Tile);
+                    break;
+                case 4:
+                    if (layerTile.Tile.Value.isObject && ToolBar.Grab.IsChecked == true)
+                    {
+                        foreach (var item in CurrentObjectsList)
+                        {
+                            if (item.PosX + item.PosZ * 32 == layerTile!.Id)
+                            {
+                                SelectedObject.Value = item;
+                                DataRawObject.Value = ChunkEditor.GetItemDataBytes(item.Offset);
+                            }
+                        }
+                        BytesObject.Value = string.Join(", ", DataRawObject.Value);
+                        var blockIdGloves = ChunkEditor.GetBlockValue(ChunkValue.Value, LayerValue.Value, layerTile.Id);
+                        TrueId.Value = blockIdGloves;
+                        SelectedTile.Value = layerTile.Tile.Value;
+                        ToolBar.GlovesList.AddToList(layerTile.Tile, DataRawObject.Value);
+                    }else
+                    if (ToolBar.Place.IsChecked == true)
+                    {
+                        foreach (var item in CurrentObjectsList)
+                        {
+                            if (item.PosX + item.PosZ * 32 == layerTile!.Id)
+                            {
+                                ChunkEditor.DeleteItem(item);
+                                CurrentObjectsList.Remove(item);
+                            }
+                        }
+                        ChunkEditor.SetItem(SelectedObject.Value, DataRawObject.Value, ChunkValue.Value, LayerValue.Value,layerTile.Id);
+                        RefreshTiles(ChunkValue.Value, LayerValue.Value);
+                    }
                     break;
                 default:
                     break;
@@ -343,10 +389,21 @@ public partial class MainWindow : Window
                 case 0:
                     break;
                 case 1:
-                    if (!CanvasH.SelectedArea.HasArea || (SelectedLayerTile.Value!.Id >= CanvasH.SelectedArea.TileIdBeg && SelectedLayerTile.Value!.Id <= CanvasH.SelectedArea.TileIdBeg))
+                    if (CanvasH.InsideArea(layerTile!.Id))
                     {
-                        ((LayerTile)LayerTiles.Children[SelectedLayerTile.Value!.Id]).Tile.Value = SelectedTile.Value;
-                        ChunkEditor.SetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id, (short)TrueId.Value);
+                        if (layerTile.Tile.Value.isObject)
+                        {
+                            foreach (var item in CurrentObjectsList)
+                            {
+                                if (item.PosX + item.PosZ * 32 == layerTile!.Id)
+                                {
+                                    ChunkEditor.DeleteItem(item);
+                                    CurrentObjectsList.Remove(item);
+                                }
+                            }
+                        }
+                        ((LayerTile)LayerTiles.Children[layerTile!.Id]).Tile.Value = SelectedTile.Value;
+                        ChunkEditor.SetBlockValue(ChunkValue.Value, LayerValue.Value, layerTile.Id, (short)TrueId.Value);
                     }
                     break;
                 default:
@@ -364,21 +421,37 @@ public partial class MainWindow : Window
         BuilderPlaced.Value = false;
         TrueId.Value = (ushort)NewSelectedTile.Value.Id;
         SelectedTile.Value = NewSelectedTile.Value;
-        if (ToolBar.tool == 3)
+        if (ToolBar.tool == 4)
         {
-            ToolBar.AddToList(NewSelectedTile);
+            DataRawObject.Value = ToolBar.GlovesList.clickedButton.ObjectData;
+            BytesObject.Value = string.Join(", ", DataRawObject.Value);
         }
         else
         {
-            if (CanvasH.SelectedArea.HasArea)
+            if (ToolBar.tool == 3)
             {
-                ChunkEditor.ReplaceBlockValue(ChunkValue.Value, ChunkValue.Value,
-                                               CanvasH.SelectedArea.LayerBeggining, CanvasH.SelectedArea.LayerEnd,
-                                               CanvasH.SelectedArea.TileIdBeg, CanvasH.SelectedArea.TileIdEnd,
-                                               null, (short)TrueId.Value);
-                RefreshTiles(ChunkValue.Value, LayerValue.Value);
+                ToolBar.AddToList(NewSelectedTile);
+            }
+            else
+            {
+                if (CanvasH.SelectedArea.HasArea)
+                {
+                    ChunkEditor.ReplaceBlockValue(ChunkValue.Value, ChunkValue.Value,
+                                                   CanvasH.SelectedArea.LayerBeggining, CanvasH.SelectedArea.LayerEnd,
+                                                   CanvasH.SelectedArea.TileIdBeg, CanvasH.SelectedArea.TileIdEnd,
+                                                   null, (short)TrueId.Value);
+                    foreach (var item in CurrentObjectsList)
+                    {
+                        if (CanvasH.InsideArea((short)(item.PosX + item.PosZ * 32)))
+                        {
+                            ChunkEditor.DeleteItem(item);
+                        }
+                    }
+                    RefreshTiles(ChunkValue.Value, LayerValue.Value);
+                }
             }
         }
+        
     }
 
     public void ReplaceBlocks(List<BlockTileSquare> BlockList, short newId)

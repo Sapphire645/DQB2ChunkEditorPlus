@@ -9,6 +9,7 @@ public partial class BlockTileSquare : UserControl
 {
     public int Id { get; set; } = 0;
     public ObservableProperty<Tile> Tile { get; set; } = new();
+    public byte[] ObjectData { get; set; }
 
     public BlockTileSquare()
     {
