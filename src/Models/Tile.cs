@@ -40,13 +40,16 @@ public class Tile
     public short ImageId { get; set; } = -1;
 
     [JsonPropertyName("Map")]
-    public string ImagMap { get { return isObject ? $"/Images/TilesObject/{ImageId:0000}.png" : $"/Images/Tiles/{ImageId:0000}.png"; } }
+    public string ImagMap { get { return isObject ? $"/Images/ObjectIcon/{ImageId:0000}.png" : $"/Images/Tiles/{ImageId:0000}.png"; } }
 
     [JsonIgnore]
-    public string Image { get { return isObject ? $"/Images/BlocksObject/{ImageId:0000}.png" : $"/Images/Blocks/{ImageId:0000}.png"; } }
+    public string Image { get { return isObject ? $"/Images/ObjectIcon/{ImageId:0000}.png" : $"/Images/Blocks/{ImageId:0000}.png"; } }
 
     [JsonPropertyName("BlockId")]
-    public short blockId { get { return isObject ? blockId : (short)-1; } set { blockId = value; } }
+    public short mblockId { get; set; } = -1;
+
+    [JsonIgnore]
+    public short blockId { get { return isObject ? mblockId : (short)-1; } set { mblockId = value; } }
     [JsonIgnore]
     public short blockIdDisplay { get { return isObject ? blockId : Id; }}
 }

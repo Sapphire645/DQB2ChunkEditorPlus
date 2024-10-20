@@ -25,6 +25,9 @@ namespace DQB2ChunkEditor.Windows;
 public partial class MainWindow : Window
 {
     public List<Tile> TileList { get; } = new();
+    public List<Tile> TileListObject { get; } = new();
+
+    private List<ObjectItem> CurrentObjectsList;
     public ObservableProperty<Tile> SelectedTile { get; set; } = new();
     public ObservableProperty<bool> BuilderPlaced { get; set; } = new();
     public ObservableProperty<ushort> TrueId { get; set; } = new();
@@ -58,6 +61,7 @@ public partial class MainWindow : Window
         ToolBar.AreaRemovalCommand += AreaReset;
         ToolBar.PrintOutCommand += SaveData_OnClick;
         ToolBar.menuList = SelectionList;
+        ChunkGrid.ChunkClick += TrySetChunk;
         this.MouseDown += MouseDownCheck;
         this.SizeChanged += OnWindowSizeChanged;
         SelectionList.ReturnSelectedTile += SelectionTile_OnClick;
@@ -198,8 +202,29 @@ public partial class MainWindow : Window
             Temp.Add(UnusedLiquid);
             Temp.Add(NULLLiquid);
             SelectionList.LiquidList = Temp;
+
+            json = File.ReadAllText(@"Data\Items.json");
+
+            tiles = JsonSerializer.Deserialize<TileList>(json, options);
+
+            List<Tile> UsedObject = new List<Tile>();
+            List<Tile> UnusedObject = new List<Tile>();
+            List<Tile> NULLObject = new List<Tile>();
+
+            foreach (var Tile in tiles.Tiles)
+            {
+                Tile.ImageId = Tile.Id;
+                Tile.isObject = true;
+                TileListObject.Add(Tile);
+                UsedObject.Add(Tile);
+            }
+
             Temp = new List<List<Tile>>();
+            Temp.Add(UsedObject);
+            Temp.Add(UnusedObject);
+            Temp.Add(NULLObject);
             SelectionList.ObjectList = Temp;
+
             SelectionList.createTabList();
         }
         
@@ -208,7 +233,7 @@ public partial class MainWindow : Window
             Console.WriteLine(ex);
         }
     }
-
+   
     /// <summary>
     /// 
     /// </summary>
@@ -220,12 +245,16 @@ public partial class MainWindow : Window
             {
                 return;
             }
-
+            CurrentObjectsList = ChunkEditor.ReadItemsChunkLayer(chunk, layer);
             for (short i = 0; i < 1024; i++)
             {
                 var blockId = ChunkEditor.GetBlockValue(chunk, layer, i);
 
                 ((LayerTile)LayerTiles.Children[i]).Tile.Value = TileList.FirstOrDefault(t => t.Id == blockId % 2048) ?? TileList[0];
+            }
+            foreach(var item in CurrentObjectsList)
+            {
+                ((LayerTile)LayerTiles.Children[item.PosX+(item.PosZ*32)]).Tile.Value = TileListObject.FirstOrDefault(t => t.Id == item.Id) ?? TileListObject[0];
             }
         }
         catch (Exception ex)
@@ -416,6 +445,7 @@ public partial class MainWindow : Window
             TimeInput.Text = Convert.ToString(ChunkEditor.Clock);
             WeatherComboBoxX.SelectedIndex = ChunkEditor.Weather;
             LayerTiles.Visibility = Visibility.Visible;
+            ChunkGrid.CreateMainGrid();
         }
         catch (Exception ex)
         {
@@ -519,6 +549,7 @@ public partial class MainWindow : Window
             TimeInput.Text = Convert.ToString(ChunkEditor.Clock);
             WeatherComboBoxX.SelectedIndex = ChunkEditor.Weather;
             LayerTiles.Visibility = Visibility.Visible;
+            ChunkGrid.CreateMainGrid();
         }
         catch (Exception ex)
         {
@@ -539,7 +570,6 @@ public partial class MainWindow : Window
         {
             var saveFileDialog = new SaveFileDialog
             {
-                Filter = "Text file (*.txt)|*.txt|All files (*.*)|*.*"
             };
 
             if (saveFileDialog.ShowDialog() == false)
@@ -548,17 +578,9 @@ public partial class MainWindow : Window
             }
             if (isObject)
             {
-                var ListI = ChunkEditor.CountItemData();
-                if (ListI == null) return;
                 using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
                 {
-                    for (int i = 0; i < ListI.Length; i++)
-                    {
-                        if (ListI[i] > 0)
-                        {
-                            writer.WriteLine(ListI[i] + "\tItemID" + i);
-                        }
-                    }
+                    ChunkEditor.CountItemData(writer,TileListObject);
                 }
             }
             else
@@ -653,8 +675,7 @@ public partial class MainWindow : Window
     {
         TrySetLayer((byte)(LayerValue.Value - 1));
     }
-
-    private void TrySetChunk(short value)
+    public void TrySetChunk(short value)
     {
         if (value < 0 || value >= ChunkEditor.ChunkCount)
         {
@@ -662,7 +683,7 @@ public partial class MainWindow : Window
         }
 
         ChunkValue.Value = value;
-
+        Tabs.SelectedIndex = 0;
         RefreshTiles(ChunkValue.Value, LayerValue.Value);
     }
     private void TrySetChunk(object sender, KeyEventArgs e)
@@ -724,11 +745,17 @@ public partial class MainWindow : Window
     }
     protected void OnWindowSizeChanged(object sender, SizeChangedEventArgs e)
     {
-        SelectionList.ScrollViewUpdate(SelectionList.ActualHeight);
-        PreviewText.Height = e.NewSize.Width/2;
-        SelectionList.BlockMenu.TextBoxFilter.Width = SelectionList.ActualWidth - 10;
-        SelectionList.LiquidMenu.TextBoxFilter.Width = SelectionList.ActualWidth - 10;
-        //SelectionList.ObjectMenu.TextBoxFilter.Width = SelectionList.ActualWidth - 10;
+        try
+        {
+            SelectionList.ScrollViewUpdate(SelectionList.ActualHeight);
+            PreviewText.Height = e.NewSize.Width / 2;
+            SelectionList.BlockMenu.TextBoxFilter.Width = SelectionList.ActualWidth - 10;
+            SelectionList.LiquidMenu.TextBoxFilter.Width = SelectionList.ActualWidth - 10;
+            SelectionList.ObjectMenu.TextBoxFilter.Width = SelectionList.ActualWidth - 10;
+        }
+        catch { }
+
+        //
     }
 
     private void TimeInput_TextChanged(object sender, TextChangedEventArgs e)

@@ -36,6 +36,9 @@
       <Button Name="PrintData2" Height="30" Width="30" ToolTip="Print out the quantity of items in the map into a TXT file." Click="PrintOut_Check">
         <Image Source="/Images/Info.png" />
       </Button>
+      <Button Name="Flat" Height="30" Width="30" ToolTip="Print out the quantity of items in the map into a TXT file." Click="KILL_ITEMS">
+        <Image Source="/Images/Flat.png" />
+      </Button>
     </ToolBar>
     <Rectangle Name="Acacac" StrokeThickness="1" Stroke="#ACACAC"/>
     <StackPanel Grid.Row="1" Name="Select" Visibility="Visible" Orientation="Vertical" Margin="30,5,30,5">

@@ -29,7 +29,7 @@ namespace DQB2ChunkEditor.Models
 
         public short LayerBeggining { get; set; } = -1;
         public short LayerEnd { get; set; } = -1;
-        public bool HasArea { get { if (TileIdEnd > 0 && TileIdBeg > 0) return true; return false; } }
+        public bool HasArea { get { if (TileIdEnd >= 0 && TileIdBeg >= 0) return true; return false; } }
 
         public List<Line> BegList = new();
         public List<Line> EndList = new();

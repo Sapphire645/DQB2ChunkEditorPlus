@@ -35,7 +35,7 @@
         <Image x:Name="Loading" Source="/Images/Loading2.png" Height="24" MaxHeight="24" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Image x:Name="Saving" Source="/Images/Saving.png" Height="24" MaxHeight="24" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
       </ToolBar>
-      <TabControl Grid.Row="1">
+      <TabControl Grid.Row="1" Name="Tabs">
         <TabItem Header="Chunk Editor">
           <Grid>
         <Grid.ColumnDefinitions>
@@ -71,7 +71,7 @@
                 <TextBlock Text="Chunk" Width="50" TextAlignment="Center" />
                 <Button Name="AddChunk" Width="21" FontWeight="Bold" Click="AddChunk_OnClick">+</Button>
                 <Border Style="{StaticResource BorderStyle}">
-                  <TextBox Name="ChunkInput" Text="{Binding Path=ChunkValue.Value, RelativeSource={RelativeSource AncestorType=Window}}" Width="30" TextAlignment="Center" />
+                  <TextBox Name="ChunkInput" Text="{Binding Path=ChunkValue.Value, RelativeSource={RelativeSource AncestorType=Window}}" Width="30" TextAlignment="Center" KeyDown="TrySetChunk"/>
                 </Border>
                 <Button Name="SubChunk" Width="20" FontWeight="Bold" Click="SubChunk_OnClick">-</Button>
                 <TextBlock Width="10"/>
@@ -127,6 +127,11 @@
             </ListBox>
             <TextBlock  Grid.Row="0" Grid.RowSpan="2" TextWrapping="Wrap" Margin="5,160,5,0"><Run Text="OP CODES IMPLEMENTED:"/><LineBreak/><Run Text="&lt;pname&gt; : Builder name"/><LineBreak/><Run Text="&lt;cap&gt; : capitalizes next word"/><LineBreak/><Run Text="&lt;off&gt; : Rubiss style textbox"/><LineBreak/><Run Text="&lt;morph(male,female)&gt; changes word depending on gender"/><LineBreak/><Run Text="&lt;key&gt; : waits for you to press A"/><LineBreak/><Run Text="&lt;br&gt; : line break"/><LineBreak/><Run Text="&lt;$iname("/><Run Text="__"/><Run Text=")&gt; : name of item"/><LineBreak/><Run Text="&lt;$iicon("/><Run Language="es-es" Text="__"/><Run Text=")&gt;"/><Run Text=" : icon of item"/><LineBreak/><Run Text="&lt;$cdef(__)&gt;: changes text colour"/><LineBreak/><Run Text="&lt;/color&gt; : returns colour to white"/><LineBreak/><Run Text="&lt;note&gt; : ♩"/><LineBreak/><Run/></TextBlock>
             <control:Preview Grid.Row="1" Grid.Column="1" x:Name="PreviewText"/>
+          </Grid>
+        </TabItem>
+        <TabItem Header="Chunk Grid Map">
+          <Grid>
+            <control:ChunkGrid x:Name="ChunkGrid"/>
           </Grid>
         </TabItem>
       </TabControl>

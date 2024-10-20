@@ -139,6 +139,10 @@ namespace DQB2ChunkEditor.Controls
             bool check = (sender as Button).Equals(PrintData2);
             PrintOutCommand?.Invoke(check);
         }
+        private void KILL_ITEMS(object sender, RoutedEventArgs e)
+        {
+            ChunkEditor.KILLITEMS();
+        }
         private void LoadCustomCursor()
         {
             var cursorImagePath = "pack://application:,,,/Images/Cursor/Paste.cur";

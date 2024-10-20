@@ -9,6 +9,8 @@ using DQB2ChunkEditor.Windows;
 using Ionic.Zlib;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Media.Imaging;
+using System.Reflection;
 
 
 namespace DQB2ChunkEditor;
@@ -18,8 +20,15 @@ public static class ChunkEditor
     private const uint LayerSize = 0x800; // layers are 32x32 * 2
     private const uint HeaderLength = 0x110; // everything after the header is compressed data
     private const uint ChunkSize = 0x30000; // chunk size is layer size (1024) * layer height (96) * block size (2)
+
+    private const uint ChunkGridSize = 0x2000;
+    private const uint ItemSize = 0x12C0000;
+    private const uint ItemOffsetSize = 0x320000;
+
+    private const uint ChunkGridStart = 0x24C7C1; // starting index for the chunk offsets
+    private const uint ItemStart = 0x24E7D1; // starting index for the item data
+    private const uint ItemOffsetStart = 0x150E7D1; // starting index for the chunk offsets
     private const uint BlockStart = 0x183FEF0; // starting index for the block data
-    private const uint ItemStart = 0x24E7D1; // starting index for the block data
     private const string ExpectedFileHeader = "aerC"; // expected file header for the map
 
     private static byte[] _headerBytes = new byte[HeaderLength];
@@ -112,6 +121,11 @@ public static class ChunkEditor
 
     public static void SaveFile()
     {
+        var chunkBytes = new byte[2];
+        chunkBytes = BitConverter.GetBytes(ChunkCount);
+        _uncompressedBytes[1331903 - HeaderLength] = chunkBytes[0];
+        _uncompressedBytes[1331904 - HeaderLength] = chunkBytes[1];
+
         var compressedBytes = ZlibStream.CompressBuffer(_uncompressedBytes);
         var outputFileBytes = new byte[HeaderLength + compressedBytes.Length];
 
@@ -122,6 +136,11 @@ public static class ChunkEditor
     }
     public static void ExportFile(string filename)
     {
+        var chunkBytes = new byte[2];
+        chunkBytes = BitConverter.GetBytes(ChunkCount);
+        _uncompressedBytes[1331903 - HeaderLength] = chunkBytes[0];
+        _uncompressedBytes[1331904 - HeaderLength] = chunkBytes[1];
+
         var outputFileBytes = new byte[HeaderLength + _uncompressedBytes.Length];
 
         Array.Copy(_headerBytes, outputFileBytes, HeaderLength);
@@ -161,6 +180,45 @@ public static class ChunkEditor
         if (hasAllZeroes) return -1;
         int ID = data[8] + ((data[9] & 0xF0) >> 8);
         return ID;
+    }
+    private static ObjectItem GetItemData(uint RelativeAddressID)
+    {
+        byte[] data = new byte[24];
+        Array.Copy(_uncompressedBytes, RelativeAddressID * 24 + ItemStart, data, 0, 24);
+        bool hasAllZeroes = data.All(singleByte => singleByte == 0);
+        if (hasAllZeroes) return null;
+        ObjectItem objectItem = new ObjectItem(data);
+        return objectItem;
+    }
+    private static uint[] GetItemOffset(uint RelativeAddressID)
+    {
+        byte[] data = new byte[4];
+        uint[] values = new uint[2];
+        Array.Copy(_uncompressedBytes, RelativeAddressID * 4 + ItemOffsetStart, data, 0, 4);
+        bool hasAllZeroes = data.All(singleByte => singleByte == 0);
+        if (hasAllZeroes) return null;
+        values[0] = (uint)(data[0] + ((data[1] & 0x0F) << 8)); 
+        values[1] = (uint)(((data[1] & 0xF0) >> 4) + (data[2]<<4) + (data[3] << 12)); //defrag index
+        return values;
+    }
+    private static uint[] SetItemOffset(uint RelativeAddressID)
+    {
+        byte[] data = new byte[4];
+        uint[] values = new uint[2];
+        Array.Copy(_uncompressedBytes, RelativeAddressID * 4 + ItemOffsetStart, data, 0, 4);
+        bool hasAllZeroes = data.All(singleByte => singleByte == 0);
+        if (hasAllZeroes) return null;
+        values[0] = (uint)(data[0] + ((data[1] & 0x0F) << 4)); //chunk
+        values[1] = (uint)(((data[1] & 0xF0) >> 4) + (data[2] << 4) + (data[3] << 12)); //defrag index
+        data[0] = (byte)(data[0] - 1);
+        Array.Copy(data, 0,_uncompressedBytes, RelativeAddressID * 4 + ItemOffsetStart, 4);
+        return values;
+    }
+    private static byte[] GetItemOffsetBYTES(uint RelativeAddressID)
+    {
+        byte[] data = new byte[4];
+        Array.Copy(_uncompressedBytes, RelativeAddressID * 4 + ItemOffsetStart, data, 0, 4);
+        return data;
     }
     private static void SetItemID(uint RelativeAddressID, short newId)
     {
@@ -305,26 +363,132 @@ public static class ChunkEditor
         }
         return list;
     }
-    public static uint[] CountItemData()
+    public static void CountItemData(StreamWriter file,List<Tile> TileListObject)
     {
-        if (Island == 0xFF) return null;
-        uint[] list = new uint[17327];
-        for (int i = 0; i < 17326; i++)
-        {
-            list[i] = 0;
-        }
+        if (Island == 0xFF) return;
         for (uint i = 0; i < 0xC8000; i++)
         {
-            var a = GetItemID(i);
-            if (a > 17326 || a < 0)
+            //SetItemID(i,1);
+            var j = GetItemOffset(i);
+            var aaa = GetItemOffsetBYTES(i);
+            if (j != null)
             {
-                list[17326] = (uint)a;
+                var a = GetItemData(j[1]);
+                if (a != null)
+                {
+                    a.Chunk = (short)j[0];
+                    if(a.Id > 1)
+                    {
+                        //SetItemOffset(i);
+                        file.WriteLine("ID: " + a.Id + " " + (TileListObject.FirstOrDefault(t => t.Id == a.Id) ?? TileListObject[0]).Name + " " + a.Chunk + " " + a.PosX + " " + a.PosY + " " + a.PosZ);
+                        file.WriteLine(i+ " "+ j[1]+" " + Convert.ToString(aaa[0], 2).PadLeft(8, '0') + " " + Convert.ToString((aaa[1] & 0x0F), 2).PadLeft(8, '0'));
+                    }
+                }
             }
-            else
+        }
+        return;
+    }
+
+    public static List<ObjectItem> ReadItemsChunkLayer(short chunk, byte layer)
+    {
+        if (Island == 0xFF) return null;
+        var list = new List<ObjectItem>();
+        for (uint i = 0; i < 0xC8000; i++)
+        {
+            //SetItemID(i,1);
+            var j = GetItemOffset(i);
+
+            if (j != null && j[0] != 0)
             {
-                list[a] = list[a] + 1;
+                if (GetChunkFromGrid((int)j[0]) == chunk)
+                {
+                    var a = GetItemData(j[1]);
+                    if (a != null)
+                    {
+                        if(a.PosY == layer)
+                        {
+                            a.ChunkGrid = (short)j[0];
+                            a.Chunk = chunk;
+                            list.Add(a);
+                        }
+                    }
+                }
             }
         }
         return list;
+    }
+    public static uint GetChunkFromGrid(int index)
+    {
+        byte[] data = new byte[2];
+        Array.Copy(_uncompressedBytes, index * 2 + ChunkGridStart, data, 0, 2);
+        var Offset = BitConverter.ToUInt16(data);
+        return Offset;
+    }
+    public static void SetChunkFromGrid(int index, uint value)
+    {
+        byte[] data = new byte[2];
+        data = BitConverter.GetBytes(value);
+        Array.Copy(data, 0, _uncompressedBytes, index * 2 + ChunkGridStart, 2);
+    }
+    public static void ChunkGridEdit( List<uint> ChunkGridList, List<uint> ChunkGridListOld, short ChunkCount)
+    {
+        byte[] ChunkBytes = new byte[ChunkCount * ChunkSize];
+        byte[] NewUncompressedBytes = new byte[BlockStart + ChunkCount * ChunkSize];
+        for (int i=0; i < ChunkGridList.Count; i++)
+        {
+            SetChunkFromGrid(i, ChunkGridList[i]);
+            if (ChunkGridList[i] != 0xFFFF)
+            {
+                if(ChunkGridListOld[i] != 0xFFFF)
+                { //copy the old chunk reference to the new chunk reference
+                    Array.Copy(_uncompressedBytes, BlockStart + (ChunkGridListOld[i] * ChunkSize), ChunkBytes, (ChunkGridList[i] * ChunkSize), ChunkSize);
+                }
+                else
+                {
+                    for(int j = 0; j < LayerSize; j +=2)
+                    {
+                        ChunkBytes[ChunkGridList[i] * ChunkSize + j] = 1; //set bedrock
+                    }
+                }
+            }
+        }
+        Array.Copy(_uncompressedBytes, NewUncompressedBytes, BlockStart);
+        Array.Copy(ChunkBytes,0, NewUncompressedBytes, BlockStart, ChunkCount * ChunkSize);
+        _uncompressedBytes = NewUncompressedBytes;
+    }
+    public static uint[] GetChunkCrop()
+    {
+        uint[] uints = new uint[4];
+        uints[0] = 99999;
+        uints[2] = 99999;
+        for (uint i = 1; i < ChunkGridSize; i += 2)
+        {
+            if(_uncompressedBytes[ChunkGridStart + i] != 0xFF)
+            {
+                if ((i/128) < uints[0]) uints[0] = (i / 128);
+                if ((i/128) > uints[1]) uints[1] = (i / 128);
+                if ((i / 2 % 64) < uints[2]) uints[2] = (i/2 % 64);
+                if ((i / 2 % 64) > uints[3]) uints[3] = (i/2 % 64);
+            }
+        }
+        return uints;
+    }
+    public static void KILLITEMS()
+    {
+        byte[] data = new byte[24];
+        for (uint i = 0; i < 24; i++)
+        {
+            data[i] = 0;
+        }
+        byte[] offset = new byte[4];
+        for (uint i = 0; i < 4; i++)
+        {
+            data[i] = 0;
+        }
+        for (uint i = 2; i < 0xC8000; i++)
+        {
+            Array.Copy(data, 0,_uncompressedBytes, i * 24 + ItemStart, 24);
+            Array.Copy(offset, 0, _uncompressedBytes, i * 4 + ItemOffsetStart, 4);
+        }
     }
 }
