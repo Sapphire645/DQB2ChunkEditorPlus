@@ -16,29 +16,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using DQB2ChunkEditor.Controls;
-using DQB2ChunkEditor.Models;
+using DQBChunkEditor.Controls;
+using DQBChunkEditor.Models;
 using Microsoft.Win32;
 
-namespace DQB2ChunkEditor.Windows;
+namespace DQBChunkEditor.Windows;
 
 public partial class MainWindow : Window
 {
-    public List<Tile> TileList { get; } = new();
-    public List<Tile> TileListObject { get; } = new();
+    public List<TileData> TileList { get; } = new();
+    public List<TileData> TileListObject { get; } = new();
 
-    private List<ObjectItem> CurrentObjectsList;
+    private List<ItemInstance> CurrentObjectsList;
     public ObservableProperty<Tile> SelectedTile { get; set; } = new();
-    public ObservableProperty<bool> BuilderPlaced { get; set; } = new();
-    public ObservableProperty<ushort> TrueId { get; set; } = new();
-    public ObservableProperty<ObjectItem> SelectedObject { get; set; } = new();
-    public ObservableProperty<byte[]> DataRawObject { get; set; } = new();
-    public ObservableProperty<string> BytesObject { get; set; } = new() { Value = ""};
     public ObservableProperty<LayerTile> SelectedLayerTile { get; set; } = new();
     public ObservableProperty<short> ChunkValue { get; set; } = new() { Value = 0};
     public ObservableProperty<byte> LayerValue { get; set; } = new() { Value = 0 };
     public List<Weather> WeatherList { get; set; } = new();
-    public ObservableCollection<ComboBoxWeather> WeatherComboBox { get; set; } = new();
     public List<ObservableProperty<SignText>> SignTextList { get; set; } = new List<ObservableProperty<SignText>>();
 
     public ObservableProperty<SelectionPencilClass> Test { get; set; } = new() { Value = null};
@@ -53,7 +47,6 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
         CreateDefaultTiles();
-        CreateComboBoxTilesWeather();
         CreateMenuList();
         CanvasH.GridProcessing(GridMinimap, 1);
         CanvasH.Test.Value = CanvasH.SelectedArea;
@@ -100,78 +93,31 @@ public partial class MainWindow : Window
         }
     }
     /// <summary>
-    /// Creates the dropdown selection for changing weather
-    /// </summary>
-    private void CreateComboBoxTilesWeather()
-    {
-        try
-        {
-            var WeatherOptions = new JsonSerializerOptions
-            {
-                Converters =
-                {
-                    new JsonStringEnumConverter(JsonNamingPolicy.CamelCase)
-                }
-            };
-
-            var Weatherjson = File.ReadAllText(@"Data\Weather.json");
-
-            var weathers = JsonSerializer.Deserialize<WeatherList>(Weatherjson, WeatherOptions);
-
-            for (var i = 0; i < weathers!.Weathers.Count; i++)
-            {
-                WeatherComboBox.Add(new ComboBoxWeather
-                {
-                    Id = i,
-                    Weather = weathers.Weathers[i]
-                });
-
-                WeatherList.Add(weathers.Weathers[i]);
-            }
-            WeatherComboBoxX.SelectedIndex = ChunkEditor.Weather;
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
-    }
-
-    /// <summary>
     /// Creates the dropdown selection tiles for changing a selected tile
     /// </summary>
     private void CreateMenuList()
     {
         try
         {
-            var options = new JsonSerializerOptions
+
+            List<TileData> UsedBlocks = new List<TileData>();
+            List<TileData> UnusedBlocks = new List<TileData>();
+            List<TileData> NULLBlocks = new List<TileData>();
+            List<TileData> IndestructibleBlocks = new List<TileData>();
+
+            List<TileData> UsedLiquid = new List<TileData>();
+            List<TileData> UnusedLiquid = new List<TileData>();
+            List<TileData> NULLLiquid = new List<TileData>();
+
+            for(short i = 0; i < 255; i++)
             {
-                Converters =
-                {
-                    new JsonStringEnumConverter(JsonNamingPolicy.CamelCase)
-                }
-            };
-
-            var json = File.ReadAllText(@"Data\Tiles.json");
-
-            var tiles = JsonSerializer.Deserialize<TileList>(json, options);
-
-            List<Tile> UsedBlocks = new List<Tile>();
-            List<Tile> UnusedBlocks = new List<Tile>();
-            List<Tile> NULLBlocks = new List<Tile>();
-            List<Tile> IndestructibleBlocks = new List<Tile>();
-
-            List<Tile> UsedLiquid = new List<Tile>();
-            List<Tile> UnusedLiquid = new List<Tile>();
-            List<Tile> NULLLiquid = new List<Tile>();
-
-            foreach (var Tile in tiles.Tiles)
-            {
-                if(Tile.Name.Contains("Default Block"))
+                var Tile = new TileData(i);
+                if (Tile.Name.Contains("Default Block"))
                 {
                     NULLBlocks.Add(Tile);
                 }else if (IsLiquid(Tile))
                 {
-                    if (Tile.Used == "Unused")
+                    if (Tile.Extras.Used == "Unused")
                     {
                         UnusedLiquid.Add(Tile);
                     }
@@ -180,11 +126,11 @@ public partial class MainWindow : Window
                         UsedLiquid.Add(Tile);
                     }
                 }
-                else if(Tile.Used == "Unused")
+                else if(Tile.Extras.Used == "Unused")
                 {
                     UnusedBlocks.Add(Tile);
                 }
-                else if (Tile.Break.Contains("Indestructible") || Tile.Break.Contains("Intangible"))
+                else if (Tile.Extras.BrokenBy.Contains("Indestructible") || Tile.Extras.BrokenBy.Contains("Intangible"))
                 {
                     IndestructibleBlocks.Add(Tile);
                 }
@@ -194,35 +140,30 @@ public partial class MainWindow : Window
                 }
                 TileList.Add(Tile);
             }
-            var Temp = new List<List<Tile>>();
+            var Temp = new List<List<TileData>>();
             Temp.Add(UsedBlocks);
             Temp.Add(UnusedBlocks);
             Temp.Add(IndestructibleBlocks);
             Temp.Add(NULLBlocks);
             SelectionList.BlockList = Temp;
-            Temp = new List<List<Tile>>();
+            Temp = new List<List<TileData>>();
             Temp.Add(UsedLiquid);
             Temp.Add(UnusedLiquid);
             Temp.Add(NULLLiquid);
             SelectionList.LiquidList = Temp;
 
-            json = File.ReadAllText(@"Data\Items.json");
+            List<TileData> UsedObject = new List<TileData>();
+            List<TileData> UnusedObject = new List<TileData>();
+            List<TileData> NULLObject = new List<TileData>();
 
-            tiles = JsonSerializer.Deserialize<TileList>(json, options);
-
-            List<Tile> UsedObject = new List<Tile>();
-            List<Tile> UnusedObject = new List<Tile>();
-            List<Tile> NULLObject = new List<Tile>();
-
-            foreach (var Tile in tiles.Tiles)
+            for (short i = 1; i < 255; i++)
             {
-                Tile.ImageId = Tile.Id;
-                Tile.isObject = true;
+                var Tile = new TileData(i,true);
                 TileListObject.Add(Tile);
                 UsedObject.Add(Tile);
             }
 
-            Temp = new List<List<Tile>>();
+            Temp = new List<List<TileData>>();
             Temp.Add(UsedObject);
             Temp.Add(UnusedObject);
             Temp.Add(NULLObject);
@@ -248,16 +189,13 @@ public partial class MainWindow : Window
             {
                 return;
             }
-            CurrentObjectsList = ChunkEditor.ReadItemsChunkLayer(chunk, layer);
             for (short i = 0; i < 1024; i++)
             {
                 var blockId = ChunkEditor.GetBlockValue(chunk, layer, i);
-
-                ((LayerTile)LayerTiles.Children[i]).Tile.Value = TileList.FirstOrDefault(t => t.Id == blockId % 2048) ?? TileList[0];
-            }
-            foreach(var item in CurrentObjectsList)
-            {
-                ((LayerTile)LayerTiles.Children[item.PosX+(item.PosZ*32)]).Tile.Value = TileListObject.FirstOrDefault(t => t.Id == item.Id) ?? TileListObject[0];
+                ((LayerTile)LayerTiles.Children[i]).Tile.Value = new Tile(TileList.FirstOrDefault(t => t.Id == blockId % 2048) ?? TileList[0])
+                {
+                    Id = blockId
+                };
             }
         }
         catch (Exception ex)
@@ -285,26 +223,11 @@ public partial class MainWindow : Window
             switch (ToolBar.tool)
             {
                 case 0:
-                    if (layerTile.Tile.Value.isObject)
-                    {
-                        foreach (var item in CurrentObjectsList)
-                        {
-                            if (item.PosX + item.PosZ * 32 == layerTile!.Id)
-                            {
-                                SelectedObject.Value = item;
-                                DataRawObject.Value = ChunkEditor.GetItemDataBytes(item.Offset);
-                            }
-                        }
-                    }
-                    var blockId = ChunkEditor.GetBlockValue(ChunkValue.Value, LayerValue.Value, layerTile.Id);
-                    if (blockId > 2047){ BuilderPlaced.Value = true; }
-                    else{ BuilderPlaced.Value = false; }
-                    TrueId.Value = blockId;
                     SelectedTile.Value = layerTile.Tile.Value;
-                    SelectionList.FavouriteList.SelectedToList(layerTile.Tile,false);
+                    SelectionList.FavouriteList.SelectedToList(layerTile.Tile.Value.TileData, false);
                     break;
                 case 1:
-                    if (SelectedTile.Value.isObject)
+                    if (SelectedTile.Value.TileData.isObject)
                     {
                         paint = false; Mouse.OverrideCursor = null;
                         //((LayerTile)LayerTiles.Children[layerTile!.Id]).Tile.Value = SelectedTile.Value;
@@ -321,44 +244,11 @@ public partial class MainWindow : Window
                     Test.Value = CanvasH.Test.Value;
                     break;
                 case 3:
-                    var blockId2 = ChunkEditor.GetBlockValue(ChunkValue.Value, LayerValue.Value, SelectedLayerTile.Value.Id);
-                    if (blockId2 > 2047) { BuilderPlaced.Value = true; }
-                    else { BuilderPlaced.Value = false; }
-                    TrueId.Value = blockId2;
                     SelectedTile.Value = layerTile.Tile.Value;
-                    SelectionList.FavouriteList.SelectedToList(layerTile.Tile, false);
-                    ToolBar.AddToList(layerTile.Tile);
+                    SelectionList.FavouriteList.SelectedToList(layerTile.Tile.Value.TileData, false);
+                    ToolBar.AddToList(layerTile.Tile.Value.TileData);
                     break;
                 case 4:
-                    if (layerTile.Tile.Value.isObject && ToolBar.Grab.IsChecked == true)
-                    {
-                        foreach (var item in CurrentObjectsList)
-                        {
-                            if (item.PosX + item.PosZ * 32 == layerTile!.Id)
-                            {
-                                SelectedObject.Value = item;
-                                DataRawObject.Value = ChunkEditor.GetItemDataBytes(item.Offset);
-                            }
-                        }
-                        BytesObject.Value = string.Join(", ", DataRawObject.Value);
-                        var blockIdGloves = ChunkEditor.GetBlockValue(ChunkValue.Value, LayerValue.Value, layerTile.Id);
-                        TrueId.Value = blockIdGloves;
-                        SelectedTile.Value = layerTile.Tile.Value;
-                        ToolBar.GlovesList.AddToList(layerTile.Tile, DataRawObject.Value);
-                    }else
-                    if (ToolBar.Place.IsChecked == true)
-                    {
-                        foreach (var item in CurrentObjectsList)
-                        {
-                            if (item.PosX + item.PosZ * 32 == layerTile!.Id)
-                            {
-                                ChunkEditor.DeleteItem(item);
-                                CurrentObjectsList.Remove(item);
-                            }
-                        }
-                        ChunkEditor.SetItem(SelectedObject.Value, DataRawObject.Value, ChunkValue.Value, LayerValue.Value,layerTile.Id);
-                        RefreshTiles(ChunkValue.Value, LayerValue.Value);
-                    }
                     break;
                 default:
                     break;
@@ -391,19 +281,8 @@ public partial class MainWindow : Window
                 case 1:
                     if (CanvasH.InsideArea(layerTile!.Id))
                     {
-                        if (layerTile.Tile.Value.isObject)
-                        {
-                            foreach (var item in CurrentObjectsList)
-                            {
-                                if (item.PosX + item.PosZ * 32 == layerTile!.Id)
-                                {
-                                    ChunkEditor.DeleteItem(item);
-                                    CurrentObjectsList.Remove(item);
-                                }
-                            }
-                        }
                         ((LayerTile)LayerTiles.Children[layerTile!.Id]).Tile.Value = SelectedTile.Value;
-                        ChunkEditor.SetBlockValue(ChunkValue.Value, LayerValue.Value, layerTile.Id, (short)TrueId.Value);
+                        ChunkEditor.SetBlockValue(ChunkValue.Value, LayerValue.Value, layerTile.Id, (short)layerTile.Tile.Value.Id);
                     }
                     break;
                 default:
@@ -416,42 +295,39 @@ public partial class MainWindow : Window
             Console.WriteLine(ex);
         }
     }
-    private void SelectionTile_OnClick(ObservableProperty<Tile> NewSelectedTile)
+    private void SelectionTile_OnClick(TileData NewSelectedTile)
     {
-        BuilderPlaced.Value = false;
-        TrueId.Value = (ushort)NewSelectedTile.Value.Id;
-        SelectedTile.Value = NewSelectedTile.Value;
-        if (ToolBar.tool == 4)
+        SelectedTile.Value = new Tile(NewSelectedTile)
         {
-            DataRawObject.Value = ToolBar.GlovesList.clickedButton.ObjectData;
-            BytesObject.Value = string.Join(", ", DataRawObject.Value);
+            Id = (ushort)NewSelectedTile.Id
+        };
+        //GOTTA DO ITEM INIT. STUFF. AND OVERFLOW.
+        if (ToolBar.tool == 3)
+        {
+            ToolBar.AddToList(NewSelectedTile);
         }
         else
         {
-            if (ToolBar.tool == 3)
+            if (CanvasH.SelectedArea.HasArea)
             {
-                ToolBar.AddToList(NewSelectedTile);
-            }
-            else
-            {
-                if (CanvasH.SelectedArea.HasArea)
-                {
-                    ChunkEditor.ReplaceBlockValue(ChunkValue.Value, ChunkValue.Value,
-                                                   CanvasH.SelectedArea.LayerBeggining, CanvasH.SelectedArea.LayerEnd,
-                                                   CanvasH.SelectedArea.TileIdBeg, CanvasH.SelectedArea.TileIdEnd,
-                                                   null, (short)TrueId.Value);
-                    foreach (var item in CurrentObjectsList)
-                    {
-                        if (CanvasH.InsideArea((short)(item.PosX + item.PosZ * 32)))
-                        {
-                            ChunkEditor.DeleteItem(item);
-                        }
-                    }
-                    RefreshTiles(ChunkValue.Value, LayerValue.Value);
-                }
+                ChunkEditor.ReplaceBlockValue(ChunkValue.Value, ChunkValue.Value,
+                                               CanvasH.SelectedArea.LayerBeggining, CanvasH.SelectedArea.LayerEnd,
+                                               CanvasH.SelectedArea.TileIdBeg, CanvasH.SelectedArea.TileIdEnd,
+                                               null, (short)SelectedTile.Value.Id);
+                RefreshTiles(ChunkValue.Value, LayerValue.Value);
             }
         }
-        
+    }
+
+    private void SelectionGloves_OnClick(ItemInstance NewItem)
+    {
+        if (ToolBar.tool == 4)
+        {
+        }
+        else
+        {
+           
+        }
     }
 
     public void ReplaceBlocks(List<BlockTileSquare> BlockList, short newId)
@@ -496,7 +372,7 @@ public partial class MainWindow : Window
         {
             var openFileDialog = new OpenFileDialog
             {
-                Filter = "STGDAT*.BIN|STGDAT*.BIN"
+                Filter = "WDAT*.BIN|WDAT*.BIN"
             };
 
             if (openFileDialog.ShowDialog() == false)
@@ -513,10 +389,6 @@ public partial class MainWindow : Window
             }
 
             RefreshTiles(ChunkValue.Value, LayerValue.Value);
-            ReadSign();
-            GratitudeInput.Text = Convert.ToString(ChunkEditor.GratitudePoints);
-            TimeInput.Text = Convert.ToString(ChunkEditor.Clock);
-            WeatherComboBoxX.SelectedIndex = ChunkEditor.Weather;
             LayerTiles.Visibility = Visibility.Visible;
             ChunkGrid.CreateMainGrid();
         }
@@ -542,7 +414,7 @@ public partial class MainWindow : Window
             var saveFileDialog = new SaveFileDialog
             {
                 Filter = "*.BIN|*.BIN",
-                FileName = "STGDAT" + ChunkEditor.Island.ToString("D2")
+                FileName = "WDAT*"
             };
             if (saveFileDialog.ShowDialog() == false)
             {
@@ -551,7 +423,6 @@ public partial class MainWindow : Window
             Saving.Visibility = Visibility.Visible;
             MainGrid.IsEnabled = false;
             ChunkEditor.Filename = saveFileDialog.FileName;
-            ChunkEditor.SaveSign(SignTextList);
             await Task.Run(() => ChunkEditor.SaveFile());
             MainGrid.IsEnabled = true;
             Saving.Visibility = Visibility.Collapsed;
@@ -576,7 +447,7 @@ public partial class MainWindow : Window
             var saveFileDialog = new SaveFileDialog
             {
                 Filter = "*.BINE|*.BINE",
-                FileName = "STGDAT" + ChunkEditor.Island.ToString("D2")
+                FileName = "WDAT*"
             };
 
             if (saveFileDialog.ShowDialog() == false)
@@ -584,8 +455,8 @@ public partial class MainWindow : Window
                 return;
             }
 
-            ChunkEditor.SaveSign(SignTextList);
-            ChunkEditor.ExportFile(saveFileDialog.FileName);
+
+            //ChunkEditor.ExportFile(saveFileDialog.FileName);
         }
         catch (Exception ex)
         {
@@ -608,7 +479,7 @@ public partial class MainWindow : Window
                 return;
             }
 
-            ChunkEditor.ImportFile(importFileDialog.FileName);
+            //ChunkEditor.ImportFile(importFileDialog.FileName);
 
             // if we are above the max chunk, reset to the highest chunk
             if (ChunkValue.Value >= ChunkEditor.ChunkCount)
@@ -617,10 +488,6 @@ public partial class MainWindow : Window
             }
 
             RefreshTiles(ChunkValue.Value, LayerValue.Value);
-            ReadSign();
-            GratitudeInput.Text = Convert.ToString(ChunkEditor.GratitudePoints);
-            TimeInput.Text = Convert.ToString(ChunkEditor.Clock);
-            WeatherComboBoxX.SelectedIndex = ChunkEditor.Weather;
             LayerTiles.Visibility = Visibility.Visible;
             ChunkGrid.CreateMainGrid();
         }
@@ -629,13 +496,6 @@ public partial class MainWindow : Window
             Console.WriteLine(ex);
             MessageBox.Show(ex.Message, "Failed to import file", MessageBoxButton.OK, MessageBoxImage.Error);
         }
-    }
-
-    private void ReadSign()
-    {
-        SignTextList = ChunkEditor.LoadSign();
-        List.ItemsSource = SignTextList;
-
     }
     private void SaveData_OnClick(bool isObject)
     {
@@ -649,25 +509,15 @@ public partial class MainWindow : Window
             {
                 return;
             }
-            if (isObject)
-            {
-                using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
-                {
-                    ChunkEditor.CountItemData(writer,TileListObject);
-                }
-            }
-            else
-            {
                 var List = ChunkEditor.CountBlockData();
                 if (List == null) return;
                 using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
                 {
                     for (int i = 0; i < 2048; i++)
                     {
-                        writer.WriteLine(List[i] + "\t" + i + "\t" + TileList[i + 1].Name);
+                        writer.WriteLine(List[i] + "\t" + i + "\t" + TileList[i].Name);
                     }
                 }
-            }
 
         }
         catch (Exception ex)
@@ -806,7 +656,7 @@ public partial class MainWindow : Window
         Test.Value = CanvasH.Test.Value;
     }
 
-    private bool IsLiquid(Tile Tile)
+    private bool IsLiquid(TileData Tile)
     {
         if (Tile != null)
         {
@@ -821,7 +671,6 @@ public partial class MainWindow : Window
         try
         {
             SelectionList.ScrollViewUpdate(SelectionList.ActualHeight);
-            PreviewText.Height = e.NewSize.Width / 2;
             SelectionList.BlockMenu.TextBoxFilter.Width = SelectionList.ActualWidth - 10;
             SelectionList.LiquidMenu.TextBoxFilter.Width = SelectionList.ActualWidth - 10;
             SelectionList.ObjectMenu.TextBoxFilter.Width = SelectionList.ActualWidth - 10;
@@ -830,58 +679,4 @@ public partial class MainWindow : Window
 
         //
     }
-
-    private void TimeInput_TextChanged(object sender, TextChangedEventArgs e)
-    {
-        try
-        {
-            if (!float.TryParse(TimeInput.Text, out var value) || value > 1200 || value < 0)
-            {
-                return;
-            }
-            else
-            {
-                ChunkEditor.Clock = value;
-                if (ChunkEditor.Island != 0xFF)
-                {
-                    ChunkEditor.UpdateExtra();
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
-    }
-
-    private void SetWeather_OnClick(object sender, SelectionChangedEventArgs e)
-    {
-        ChunkEditor.Weather = ((ComboBoxWeather)WeatherComboBoxX.SelectedItem).Weather.Id;
-        if (ChunkEditor.Island != 0xFF)
-        {
-            ChunkEditor.UpdateExtra();
-        }
-    }
-    public void CommandPreview(object sender, EventArgs e)
-    {
-        string Line = (sender as Button).Tag.ToString();
-        if (Line != null)
-        {
-            var elementsToRemove = Pain.Children.OfType<UserControl>()
-                                                  .Where(e => e.GetType() == typeof(Preview))
-                                                  .ToList();  // Create a list to avoid collection modification issues
-
-            // Remove each element from the Grid
-            foreach (var element in elementsToRemove)
-            {
-                Pain.Children.Remove(element);
-            }
-            var TextBox = new Preview();
-            TextBox.LoadPreview(Line);
-            Grid.SetColumn(TextBox, 1);
-            Grid.SetRow(TextBox, 1);
-            Pain.Children.Add(TextBox);
-        }
-    }
-    
 }

@@ -1,0 +1,2050 @@
+#Id	ImageId	Used	Name	Can be broken by	Normal Drop	Ultimallet Drop	Description
+0	0	Used	Empty	Intangible Block	0	0	Set on layer 0 will create sea floor
+1	1	Used	Bedrock	Intangible With Hammer	0	0	Indestructible
+2	2	Used	Earth	Giant Mallet	Earth x1 {1001}	Earth x1 {1001}	0
+3	3	Used	Grassy Earth	Giant Mallet	Earth x1 {1001}	Grassy Earth x1 {1002}	0
+4	4	Used	Limegrassy Earth	Giant Mallet	Earth x1 {1001}	Limegrassy Earth x1 {1003}	0
+5	5	Used	Tilled Soil	Giant Mallet	Earth x1 {1001}	Tilled Soil x1 {1004}	0
+6	6	Used	Clay	Giant Mallet	Clay x1 {1005}	Clay x1 {1005}	0
+7	7	Used	Mossy Earth	Giant Mallet	Earth x1 {1001}	Mossy Earth  x1 {1006}	0
+8	8	Used	Chalk	Giant Mallet	Chalk x1 {1007}	Chalk x1 {1007}	0
+9	9	Used	Chunky Chalk	Giant Mallet	Chunky Chalk x1 {1008}	Chunky Chalk x1 {1008}	0
+10	10	Used	Obsidian	War Hammer	Nothing {-1}	Obsidian x1 {1009}	0
+11	11	Used	Sand	Cypress Stick	Sand x1 {1010}	Sand x1 {1010}	0
+12	12	Used	Sandstone	Sledgehammer	Sandstone x1 {1011}	Sandstone x1 {1011}	0
+13	13	Used	Sandy Sandstone	Sledgehammer	Sandy Sandstone x1 {1012}	Sandy Sandstone x1 {1012}	0
+14	14	Used	Bloodstone	Sledgehammer	Bloodstone x1 {1013}	Bloodstone x1 {1013}	0
+15	15	Used	Ash	Sledgehammer	Ash x1 {1014}	Ash x1 {1014}	0
+16	16	Unused	Witchgrassy Earth*	Intangible Block	Nothing {-1}	Nothing {-1}	0
+17	17	Used	Poisonous Peat	Cypress Stick	Poisonous Peat x1 {1016} [With hammer]	Poisonous Peat x1 {1016}	0
+18	18	Used	Snow Cover	Cypress Stick	Nothing {-1}	Nothing {-1}	0
+19	19	Used	Snow	Cypress Stick	Snow x1 {1018}	Snow x1 {1018}	0
+20	20	Used	Ice	Giant Mallet	Ice x1 {1019}	Ice x1 {1019}	0
+21	21	Used	Clodstone	Giant Mallet	Clodstone x1 {1020}	Clodstone x1 {1020}	0
+22	22	Used	Crumbly Clodstone	Giant Mallet	Nothing {-1}	Crumbly Clodstone x1 {1021}	Breaks when stepped into
+23	23	Used	Basalt	Sledgehammer	Basalt x1 {1022}	Basalt x1 {1022}	0
+24	-1	Unused	Translucent Block	Intangible Block	Nothing {-1}	Nothing {-1}	0
+25	25	Used	Lava	Giant Mallet	Lava x1 {1024}	Lava x1 {1024}	Set near liquid lava will eventually transform into lava
+26	26	Used	Vault Wall	Ultimallet	Nothing {-1}	Vault Wall x1 {1025}	0
+27	27	Used	Viny Vault Wall	Ultimallet	Nothing {-1}	Viny Vault Wall x1 {1026}	0
+28	28	Used	Cracked Vault Wall	Sledgehammer	Stone x2 {404}	Cracked Vault Wall x1 {1027}	0
+29	29	Used	Mud-Brick Wall	Giant Mallet	Mud-Brick Wall x1 {1028}	Mud-Brick Wall x1 {1028}	0
+30	30	Used	Timbered Foundation	Giant Mallet	Timbered Wall x1 {1030}	Timbered Foundation x1 {1029}	0
+31	31	Used	Timbered Wall Midsection	Giant Mallet	Timbered Wall x1 {1030}	Timbered Wall Midsection x1 {2285}	0
+32	32	Used	Timbered Capital	Giant Mallet	Timbered Wall x1 {1030}	Timbered Capital x1 {1031}	0
+33	33	Used	Hardwood Pedestal	Giant Mallet	Hardwood Column x1 {1033}	Hardwood Pedestal x1 {1032}	0
+34	34	Used	Hardwood Column Midsection	Giant Mallet	Hardwood Column x1 {1033}	Hardwood Column Midsection x1 {2286}	0
+35	35	Used	Hardwood Capital	Giant Mallet	Hardwood Column x1 {1033}	Hardwood Capital x1 {1034}	0
+36	36	Used	Stone Foundation	Giant Mallet	Stone Wall x1 {1036}	Stone Foundation x1 {1035}	0
+37	37	Used	Stone Wall Midsection	Giant Mallet	Stone Wall x1 {1036}	Stone Wall Midsection x1 {2287}	0
+38	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+39	39	Used	Castle Foundation	Giant Mallet	Castle Wall x1 {1039}	Castle Foundation x1 {1038}	0
+40	40	Used	Castle Wall Midsection	Giant Mallet	Castle Wall x1 {1039}	Castle Wall Midsection x1 {2288}	0
+41	41	Used	Castle Crenellation	Giant Mallet	Castle Wall x1 {1039}	Castle Crenellation x1 {1040}	0
+42	42	Used	Castle Battlement	Giant Mallet	Castle Battlement x1 {1041}	Castle Battlement x1 {1041}	0
+43	43	Used	Wooden Wall	Giant Mallet	Wooden Wall x1 {1042}	Wooden Wall x1 {1042}	0
+44	44	Used	Plumberry Lumber	Giant Mallet	Plumberry Lumber x1 {1043}	Plumberry Lumber x1 {1043}	0
+45	45	Used	Flagstone	Giant Mallet	Flagstone x1 {1044}	Flagstone x1 {1044}	0
+46	46	Used	Straw Floor	Giant Mallet	Straw Floor x1 {1045}	Straw Floor x1 {1045}	0
+47	47	Used	Wooden Floor	Giant Mallet	Wooden Floor x1 {1046}	Wooden Floor x1 {1046}	0
+48	48	Used	Hardwood Tile	Giant Mallet	Hardwood Tile x1 {1047}	Hardwood Tile x1 {1047}	0
+49	49	Used	Purple Flagstone	Giant Mallet	Purple Flagstone x1 {1048}	Purple Flagstone x1 {1048}	0
+50	50	Used	Blue Flagstone	Giant Mallet	Blue Flagstone x1 {1049}	Blue Flagstone x1 {1049}	0
+51	51	Used	Carpet Midsection	Giant Mallet	Carpet x1 {1050}	Carpet x1 {1050}	The one without the pattern
+52	52	Used	Fancy Carpet	Giant Mallet	Fancy Carpet x1 {1051}	Fancy Carpet x1 {1051}	0
+53	53	Used	Castle Tile	Giant Mallet	Castle Tile x1 {1052}	Castle Tile x1 {1052}	0
+54	54	Used	Carved Castle Tile	Giant Mallet	Carved Castle Tile x1 {1053}	Carved Castle Tile x1 {1053}	0
+55	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+56	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+57	57	Used	Bronze Temple Tile	Ultimallet	Nothing {-1}	Bronze Temple Tile x1 {1056}	0
+58	58	Used	Blue Temple Tile	Ultimallet	Nothing {-1}	Blue Temple Tile x1 {1057}	0
+59	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+60	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+61	73	Unused	Golemite*	Giant Mallet	Nothing {-1}	Nothing {-1}	Intangible
+62	62	Used	Coal Vein	Giant Mallet	Coal x1 {425}	Coal Vein x1 {1061}	0
+63	63	Used	Copper Vein	Giant Mallet	Copper x1 {426}	Copper Vein x1 {1162}	0
+64	64	Used	Iron Vein	Giant Mallet	Iron x1 {427}	Iron Vein x1 {1063}	0
+65	65	Used	Silver Vein	Sledgehammer	Silver x1 {584}	Silver Vein x1 {1064}	0
+66	66	Used	Gold Vein	Sledgehammer	Gold x1 {461}	Gold Vein x1 {1065}	0
+67	67	Used	Zenithium Vein	Sledgehammer	Zenithium x1 {577}	Zenithium Vein x1 {1066}	0
+68	68	Used	Ruby Vein	Sledgehammer	Ruby x1 {578}	Ruby Vein x1 {1067}	0
+69	69	Used	Mythril Vein	Sledgehammer	Mythril x1 {521}	Mythril Vein x1 {1068}	0
+70	70	Used	Orichalcum Vein	Sledgehammer	Orichalcum x1 {507}	Orichalcum Vein x1 {1069}	0
+71	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+72	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+73	73	Used	Golemite	Giant Mallet	Golemite x1 {1072}	Golemite x1 {1072}	0
+74	74	Used	Palm Lumber	Giant Mallet	Palm Lumber x1 {1073}	Palm Lumber x1 {1073}	0
+75	75	Used	Cedar Lumber	Giant Mallet	Cedar Lumber x1 {1074}	Cedar Lumber x1 {1074}	0
+76	76	Used	Time-Honoured Turf	Giant Mallet	Time-Honoured Turf x1 {1075}	Time-Honoured Turf x1 {1075}	0
+77	77	Used	8-Bit Brick	Giant Mallet	8-Bit Brick x1 {1076}	8-Bit Brick x1 {1076}	0
+78	78	Used	Olde Worlde Wall	Giant Mallet	Olde Worlde Wall x1 {1077}	Olde Worlde Wall x1 {1077}	0
+79	79	Used	Eyewall	Giant Mallet	Eyewall x1 {1078}	Eyewall x1 {1078}	0
+80	-1	Unused	Dummy Block	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+81	16	Used	Witchgrassy Earth	Giant Mallet	Earth x1 {1001}	Witchgrassy Earth x1 {1080}	0
+82	82	Used	Lemongrassy Earth	Giant Mallet	Earth x1 {1001}	Lemongrassy Earth x1 {1081}	0
+83	83	Unused	Sulphur Ore	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+84	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+85	85	Used	Strange Sand	Cypress Stick	Strange Sand {1084}	Strange Sand {1084}	0
+86	86	Unused	Unused Lava Block	Cypress Stick	Nothing {-1}	Nothing {-1}	0
+87	87	Unused	Unused Ice Block	Cypress Stick	Nothing {-1}	Nothing {-1}	0
+88	88	Used	Bonestone	Giant Mallet	Bonestone x1 {1087}	Bonestone x1 {1087}	0
+89	89	Used	Hargon Block	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+90	90	Used	Slimy Block	Giant Mallet	Slimy Block x1 {1087}	Slimy Block x1 {1087}	0
+91	91	Used	Retro Roof	Giant Mallet	Retro Roof x1 {1107}	Retro Roof x1 {1107}	0
+92	92	Used	Black Block	Giant Mallet	Black Block x1 {1089}	Black Block x1 {1089}	0
+93	93	Used	Grey Block	Giant Mallet	Grey Block x1 {1090}	Grey Block x1 {1090}	0
+94	94	Used	White Block	Giant Mallet	White Block x1 {1091}	White Block x1 {1091}	0
+95	95	Used	Burgundy Block	Giant Mallet	Burgundy Block x1 {1092}	Burgundy Block x1 {1092}	0
+96	96	Used	Red Block	Giant Mallet	Red Block x1 {1093}	Red Block x1 {1093}	0
+97	97	Used	Purple Block	Giant Mallet	Purple Block x1 {1094}	Purple Block x1 {1094}	0
+98	98	Used	Pink Block	Giant Mallet	Pink Block x1 {1095}	Pink Block x1 {1095}	0
+99	99	Used	Green Block	Giant Mallet	Green Block x1 {1096}	Green Block x1 {1096}	0
+100	100	Used	Lime-Green Block	Giant Mallet	Lime-Green Block x1 {1097}	Lime-Green Block x1 {1097}	0
+101	101	Used	Orange Block	Giant Mallet	Orange Block x1 {1098}	Orange Block x1 {1098}	0
+102	102	Used	Yellow Block	Giant Mallet	Yellow Block x1 {1099}	Yellow Block x1 {1099}	0
+103	103	Used	Navy Block	Giant Mallet	Navy Block x1 {1100}	Navy Block x1 {1100}	0
+104	104	Used	Blue Block	Giant Mallet	Blue Block x1 {1101}	Blue Block x1 {1101}	0
+105	105	Used	Beige Block	Giant Mallet	Beige Block x1 {1102}	Beige Block x1 {1102}	0
+106	106	Used	Cyan Block	Giant Mallet	Cyan Block x1 {1103}	Cyan Block x1 {1103}	0
+107	107	Used	Silver Block	Giant Mallet	Silver Block x1 {1104}	Silver Block x1 {1104}	0
+108	108	Used	Gold Block	Giant Mallet	Gold Block x1 {1105}	Gold Block x1 {1105}	0
+109	109	Used	Fortress Foundation	Sledgehammer	Fortress Wall x1 {1110}	0	0
+110	110	Used	Fortress Wall Midsection	Sledgehammer	Fortress Wall x1 {1110}	0	0
+111	111	Used	Fortress Battlement	Sledgehammer	Fortress Wall x1 {1110}	0	0
+112	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+113	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+114	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+115	21	Used	Clodstone*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+116	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+117	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+118	22	Unused	Crumbly Clodstone	Giant Mallet	Earth x1 {1001}	Crumbly Clodstone x1 {1021}	0
+119	5	Used	Tilled Soil	Giant Mallet	Earth x1 {1001}	Earth x1 {1001}	0
+120	120	Used	Clear water full block	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+121	120	Used	Clear water surface block	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+122	120	Used	Clear water surface block	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+123	120	Used	Clear water surface block	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+124	124	Unused	Witchgrassy Block*	Giant Mallet	Earth x1 {1001}	Witchgrassy Earth x1 {1080}	0
+125	125	Unused	Lemongrassy Block*	Giant Mallet	Earth x1 {1001}	Lemongrassy Earth x1 {1081}	0
+126	126	Unused	Grassy Block*	Giant Mallet	Earth x1 {1001}	Grassy Earth x1 {1002}	0
+127	127	Unused	Limegrassy Block*	Giant Mallet	Earth x1 {1001}	Limegrassy Earth x1 {1003}	0
+128	120	Used	Clear water full block	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+129	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+130	130	Used	Light Dolomite	Sledgehammer	Light Dolomite x1 {1748}	Light Dolomite x1 {1748}	0
+131	131	Used	Dark Dolomite	Sledgehammer	Dark Dolomite x1 {1749}	Dark Dolomite x1 {1749}	0
+132	132	Used	Stony Sand	Giant Mallet	Stony Sand x1 {1751}	Stony Sand x1 {1751}	0
+133	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+134	134	Used	Masonry Wall	Ultimallet	Nothing {-1}	Masonry Wall x1 {1761}	0
+135	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+136	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+137	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+138	138	Used	Mossy Bark	Giant Mallet	Bark x1 {1753}	Mossy Bark x1 {1754}	0
+139	139	Used	Bark	Giant Mallet	Bark x1 {1753}	Bark x1 {1753}	0
+140	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+141	141	Used	Stony Soil	Giant Mallet	Stony Soil {1759}	Stony Soil {1759}	0
+142	120	Used	Clear water surface block	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+143	120	Used	Clear water surface block	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+144	120	Used	Clear water surface block	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+145	120	Used	Clear water shallow block	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+146	146	Used	Seaside Sand	Cypress Stick	Seaside Sand x1 {1747}	Seaside Sand x1 {1747}	0
+147	147	Used	Arid Earth	Giant Mallet	Arid Earth x1 {1760}	Arid Earth x1 {1760}	0
+148	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+149	149	Used	Chert	Sledgehammer	Chert x1 {1770}	Chert x1 {1770}	0
+150	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+151	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+152	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+153	153	Used	Chunky Chert	Sledgehammer	Chunky Chert x1 {1774}	Chunky Chert x1 {1774}	0
+154	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+155	155	Used	Leaves	Cypress Stick	Leaves x1 {1123}	Leaves x1 {1123}	0
+156	156	Used	Spoiled Soil	Giant Mallet	Spoiled Soil x1 {1784}	Spoiled Soil x1 {1784}	0
+157	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+158	158	Used	Moss	Giant Mallet	Spoiled Soil x1 {1784}	Moss x1 {1786}	0
+159	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+160	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+161	161	Used	Humus	Giant Mallet	Humus x1 {1789}	Humus x1 {1789}	0
+162	162	Used	Tilled Humus	Giant Mallet	Humus x1 {1789}	Tilled Humus x1 {1790}	0
+163	10	Used	Obsidian*	Indestructible	Nothing {-1}	Nothing {-1}	0
+164	58	Used	Blue Temple Tile*	Indestructible	Nothing {-1}	Nothing {-1}	0
+165	149	Used	Chert*	Indestructible	Nothing {-1}	Nothing {-1}	0
+166	405	Used	Citadel Battlement*	Indestructible	Nothing {-1}	Nothing {-1}	0
+167	407	Used	Golden Citadel Capital*	Indestructible	Nothing {-1}	Nothing {-1}	0
+168	408	Used	Alcoved Citadel Wall*	Indestructible	Nothing {-1}	Nothing {-1}	0
+169	409	Used	Golden Citadel Foundation*	Indestructible	Nothing {-1}	Nothing {-1}	0
+170	607	Used	Sanguine Cinders*	Indestructible	Nothing {-1}	Nothing {-1}	0
+171	610	Used	Scales*	Indestructible	Nothing {-1}	Nothing {-1}	0
+172	5	Used	Tilled Soil	Giant Mallet	Earth x1 {1001}	Tilled Soil x1 {1004}	0
+173	162	Used	Tilled Humus	Giant Mallet	Humus x1 {1789}	Tilled Humus x1 {1790}	0
+174	149	Used	Chert	War Hammer	Chert x1 {1770}	Chert x1 {1770}	Is used in the IoA Temple Mountain. The villagers display an empty name when building a blueprint.
+175	175	Used	Bubbling Seaside Sand	Cypress Stick	Scallywinkle x1 {1919}	Bubbling Seaside Sand x1 {2037}	0
+176	176	Used	Patterned Citadel Wall*	Indestructible	Nothing {-1}	Nothing {-1}	0
+177	550	Used	Citadel Capital*	Indestructible	Nothing {-1}	Nothing {-1}	0
+178	551	Used	Citadel Foundation*	Indestructible	Nothing {-1}	Nothing {-1}	0
+179	552	Used	Castle Wall Midsection*	Indestructible	Nothing {-1}	Nothing {-1}	0
+180	553	Used	Citadel Floor*	Indestructible	Nothing {-1}	Nothing {-1}	0
+181	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+182	190	Used	Poison shallow block	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+183	190	Used	Poison surface block	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+184	190	Used	Poison surface block	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+185	190	Used	Poison surface block	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+186	190	Used	Poison surface block	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+187	190	Used	Poison surface block	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+188	190	Used	Poison surface block	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+189	190	Used	Poison full block	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+190	190	Used	Poison full block	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+191	199	Used	Bottomless Swamp shallow block	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+192	199	Used	Bottomless Swamp surface block	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+193	199	Used	Bottomless Swamp surface block	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+194	199	Used	Bottomless Swamp surface block	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+195	199	Used	Bottomless Swamp surface block	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+196	199	Used	Bottomless Swamp surface block	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+197	199	Used	Bottomless Swamp surface block	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+198	199	Used	Bottomless Swamp full block	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+199	199	Used	Bottomless Swamp full block	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+200	208	Used	Muddy Water shallow block	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+201	208	Used	Muddy Water surface block	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+202	208	Used	Muddy Water surface block	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+203	208	Used	Muddy Water surface block	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+204	208	Used	Muddy Water surface block	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+205	208	Used	Muddy Water surface block	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+206	208	Used	Muddy Water surface block	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+207	208	Used	Muddy Water full block	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+208	208	Used	Muddy Water full block	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+209	599	Used	Umber	Sledgehammer	Umber x1 {1923}	Umber x1 {1923}	0
+210	210	Unused	Umber Sandstone Block*	Sledgehammer	Nothing {-1}	Nothing {-1}	0
+211	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+212	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+213	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+214	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+215	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+216	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+217	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+218	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+219	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+220	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+221	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+222	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+223	231	Used	Hot Water shallow block	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+224	231	Used	Hot Water surface block	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+225	231	Used	Hot Water surface block	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+226	231	Used	Hot Water surface block	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+227	231	Used	Hot Water surface block	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+228	231	Used	Hot Water surface block	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+229	231	Used	Hot Water surface block	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+230	231	Used	Hot Water full block	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+231	231	Used	Hot Water full block	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+232	232	Used	Mossy Spoiled Soil	Giant Mallet	Spoiled Soil x1 {1784}	Mossy Spoiled Soil x1 {1949}	0
+233	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+234	234	Used	Swampy Soil	Giant Mallet	Spoiled Soil x1 {1784}	Swampy Soil x1 {1951}	0
+235	235	Unused	Seeded Spoiled Soil	Giant Mallet	Grass Seed x2 {163}	Seeded Spoiled Soil x1 {1953}	0
+236	236	Used	Seeded Spoiled Soil	Giant Mallet	Tomato Seed x2 {1831}	Tomato Seed x2 {1831}	0
+237	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+238	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+239	239	Used	Seeded Spoiled Soil	Giant Mallet	Sugar Cane Seedling x2 {1825}	Sugar Cane Seedling x2 {1825}	0
+240	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+241	602	Used	Lumpy Umber	Sledgehammer	Lumpy Umber x1 {2031}	Lumpy Umber x1 {2031}	0
+242	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+243	243	Used	Softwood	Giant Mallet	Softwood x1 {1987}	Softwood x1 {1987}	0
+244	244	Used	Floorboard	Giant Mallet	Floorboard x1 {1988}	Floorboard x1 {1988}	0
+245	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+246	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+247	247	Unused	Yellow frame block*	Cypress Stick	Nothing {-1}	Nothing {-1}	Transparent
+248	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+240	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+250	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+251	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+252	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+253	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+254	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+255	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+256	158	Used	Moss	Giant Mallet	Spoiled Soil x1 {1784}	Mossy Spoiled Soil x1 {1949}	0
+257	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+258	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+259	267	Used	Lava shallow block	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+260	267	Used	Lava surface block	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+261	267	Used	Lava surface block	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+262	267	Used	Lava surface block	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+263	267	Used	Lava surface block	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+264	267	Used	Lava surface block	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+265	267	Used	Lava surface block	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+266	267	Used	Lava surface block	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+267	267	Used	Lava surface block	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+268	268	Used	Patterned Vault Wall	Ultimallet	Nothing {-1}	Patterned Vault Wall x1 {226}	0
+269	52	Used	Fancy Carpet {White}	Giant Mallet	Fancy Carpet {White} x1 {2157}	Fancy Carpet {White} x1 {2157}	0
+270	52	Used	Fancy Carpet {Black}	Giant Mallet	Fancy Carpet {Black} x1 {2158}	Fancy Carpet {Black} x1 {2158}	0
+271	52	Used	Fancy Carpet {Purple}	Giant Mallet	Fancy Carpet {Purple} x1 {2159}	Fancy Carpet {Purple} x1 {2159}	0
+272	52	Used	Fancy Carpet {Pink}	Giant Mallet	Fancy Carpet {Pink} x1 {2160}	Fancy Carpet {Pink} x1 {2160}	0
+273	52	Used	Fancy Carpet {Green}	Giant Mallet	Fancy Carpet {Green} x1 {2162}	Fancy Carpet {Green} x1 {2162}	0
+274	52	Used	Fancy Carpet {Yellow}	Giant Mallet	Fancy Carpet {Yellow} x1 {2163}	Fancy Carpet {Yellow} x1 {2163}	0
+275	52	Used	Fancy Carpet {Blue}	Giant Mallet	Fancy Carpet {Blue} x1 {2164}	Fancy Carpet {Blue} x1 {2164}	0
+276	52	Used	Fancy Carpet {Red}	Giant Mallet	Fancy Carpet {Red} x1 {2161}	Fancy Carpet {Red} x1 {2161}	0
+277	30	Used	Timbered Foundation {White}	Giant Mallet	Timbered Wall {White} x1 {2849}	Timbered Foundation {White} x1 {2857}	0
+278	30	Used	Timbered Foundation {Black}	Giant Mallet	Timbered Wall {Black} x1 {2850}	Timbered Foundation {Black} x1 {2858}	0
+279	30	Used	Timbered Foundation {Purple}	Giant Mallet	Timbered Wall {Purple} x1 {2851}	Timbered Foundation {Purple} x1 {2859}	0
+280	30	Used	Timbered Foundation {Pink}	Giant Mallet	Timbered Wall {Pink} x1 {2852}	Timbered Foundation {Pink} x1 {2860}	0
+281	30	Used	Timbered Foundation {Red}	Giant Mallet	Timbered Wall {Red} x1 {2853}	Timbered Foundation {Red} x1 {2861}	0
+282	30	Used	Timbered Foundation {Green}	Giant Mallet	Timbered Wall {Green} x1 {2854}	Timbered Foundation {Green} x1 {2862}	0
+283	30	Used	Timbered Foundation {Yellow}	Giant Mallet	Timbered Wall {Yellow} x1 {2855}	Timbered Foundation {Yellow} x1 {2863}	0
+284	30	Used	Timbered Foundation {Blue}	Giant Mallet	Timbered Wall {Blue} x1 {2856}	Timbered Foundation {Blue} x1 {2864}	0
+285	31	Used	Timbered Wall Midsection {White}	Giant Mallet	Timbered Wall {White} x1 {2849}	Timbered Wall Midsection {White} x1 {2865}	0
+286	31	Used	Timbered Wall Midsection {Black}	Giant Mallet	Timbered Wall {Black} x1 {2850}	Timbered Wall Midsection {Black} x1 {2866}	0
+287	31	Used	Timbered Wall Midsection {Purple}	Giant Mallet	Timbered Wall {Purple} x1 {2851}	Timbered Wall Midsection {Purple} x1 {2867}	0
+288	31	Used	Timbered Wall Midsection {Pink}	Giant Mallet	Timbered Wall {Pink} x1 {2852}	Timbered Wall Midsection {Pink} x1 {2868}	0
+289	31	Used	Timbered Wall Midsection {Red}	Giant Mallet	Timbered Wall {Red} x1 {2853}	Timbered Wall Midsection {Red} x1 {2869}	0
+290	31	Used	Timbered Wall Midsection {Green}	Giant Mallet	Timbered Wall {Green} x1 {2854}	Timbered Wall Midsection {Green} x1 {2870}	0
+291	31	Used	Timbered Wall Midsection {Yellow}	Giant Mallet	Timbered Wall {Yellow} x1 {2855}	Timbered Wall Midsection {Yellow} x1 {2871}	0
+292	31	Used	Timbered Wall Midsection {Blue}	Giant Mallet	Timbered Wall {Blue} x1 {2856}	Timbered Wall Midsection {Blue} x1 {2872}	0
+293	32	Used	Timbered Capital {White}	Giant Mallet	Timbered Wall {White} x1 {2849}	Timbered Capital {White} x1 {2873}	0
+294	32	Used	Timbered Capital {Black}	Giant Mallet	Timbered Wall {Black} x1 {2850}	Timbered Capital {Black} x1 {2874}	0
+295	32	Used	Timbered Capital {Purple}	Giant Mallet	Timbered Wall {Purple} x1 {2851}	Timbered Capital {Purple} x1 {2875}	0
+296	32	Used	Timbered Capital {Pink}	Giant Mallet	Timbered Wall {Pink} x1 {2852}	Timbered Capital {Pink} x1 {2876}	0
+297	32	Used	Timbered Capital {Red}	Giant Mallet	Timbered Wall {Red} x1 {2853}	Timbered Capital {Red} x1 {2877}	0
+298	32	Used	Timbered Capital {Green}	Giant Mallet	Timbered Wall {Green} x1 {2854}	Timbered Capital {Green} x1 {2878}	0
+299	32	Used	Timbered Capital {Yellow}	Giant Mallet	Timbered Wall {Yellow} x1 {2855}	Timbered Capital {Yellow} x1 {2879}	0
+300	32	Used	Timbered Capital {Blue}	Giant Mallet	Timbered Wall {Blue} x1 {2856}	Timbered Capital {Blue} x1 {2880}	0
+301	43	Used	Wooden Wall {White}	Giant Mallet	Wooden Wall {White} x1 {2881}	Wooden Wall {White} x1 {2881}	0
+302	43	Used	Wooden Wall {Black}	Giant Mallet	Wooden Wall {Black} x1 {2882}	Wooden Wall {Black} x1 {2882}	0
+303	43	Used	Wooden Wall {Purple}	Giant Mallet	Wooden Wall {Purple} x1 {2883}	Wooden Wall {Purple} x1 {2883}	0
+304	43	Used	Wooden Wall {Pink}	Giant Mallet	Wooden Wall {Pink} x1 {2884}	Wooden Wall {Pink} x1 {2884}	0
+305	43	Used	Wooden Wall {Red}	Giant Mallet	Wooden Wall {Red} x1 {2885}	Wooden Wall {Red} x1 {2885}	0
+306	43	Used	Wooden Wall {Green}	Giant Mallet	Wooden Wall {Green} x1 {2886}	Wooden Wall {Green} x1 {2886}	0
+307	43	Used	Wooden Wall {Yellow}	Giant Mallet	Wooden Wall {Yellow} x1 {2887}	Wooden Wall {Yellow} x1 {2887}	0
+308	43	Used	Wooden Wall {Blue}	Giant Mallet	Wooden Wall {Blue} x1 {2888}	Wooden Wall {Blue} x1 {2888}	0
+309	544	Used	Carpet {White}	Giant Mallet	Carpet {White} x1 {2625}	Carpet {White} x1 {2625}	0
+310	544	Used	Carpet {Black}	Giant Mallet	Carpet {Black} x1 {2626}	Carpet {Black} x1 {2626}	0
+311	544	Used	Carpet {Purple}	Giant Mallet	Carpet {Purple} x1 {2627}	Carpet {Purple} x1 {2627}	0
+312	544	Used	Carpet {Pink}	Giant Mallet	Carpet {Pink} x1 {2628}	Carpet {Pink} x1 {2628}	0
+313	544	Used	Carpet {Red}	Giant Mallet	Carpet {Red} x1 {2629}	Carpet {Red} x1 {2629}	0
+314	544	Used	Carpet {Green}	Giant Mallet	Carpet {Green} x1 {2630}	Carpet {Green} x1 {2630}	0
+315	544	Used	Carpet {Yellow}	Giant Mallet	Carpet {Yellow} x1 {2631}	Carpet {Yellow} x1 {2631}	0
+316	544	Used	Carpet {Blue}	Giant Mallet	Carpet {Blue} x1 {2632}	Carpet {Blue} x1 {2632}	0
+317	47	Used	Wooden Floor {White}	Giant Mallet	Wooden Floor {White} x1 {2889}	Wooden Floor {White} x1 {2889}	0
+318	47	Used	Wooden Floor {Black}	Giant Mallet	Wooden Floor {Black} x1 {2890}	Wooden Floor {Black} x1 {2890}	0
+319	47	Used	Wooden Floor {Purple}	Giant Mallet	Wooden Floor {Purple} x1 {2891}	Wooden Floor {Purple} x1 {2891}	0
+320	47	Used	Wooden Floor {Pink}	Giant Mallet	Wooden Floor {Pink} x1 {2892}	Wooden Floor {Pink} x1 {2892}	0
+321	47	Used	Wooden Floor {Red}	Giant Mallet	Wooden Floor {Red} x1 {2893}	Wooden Floor {Red} x1 {2893}	0
+322	47	Used	Wooden Floor {Green}	Giant Mallet	Wooden Floor {Green} x1 {2894}	Wooden Floor {Green} x1 {2894}	0
+323	47	Used	Wooden Floor {Yellow}	Giant Mallet	Wooden Floor {Yellow} x1 {2895}	Wooden Floor {Yellow} x1 {2895}	0
+324	47	Used	Wooden Floor {Blue}	Giant Mallet	Wooden Floor {Blue} x1 {2896}	Wooden Floor {Blue} x1 {2896}	0
+325	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+326	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+327	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+328	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+329	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+330	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+331	331	Used	Shifting Sand	Cypress Stick	Nothing {-1}	Shifting Sand x1 {265}	0
+332	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+333	349	Used	Sea water shallow block	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+334	349	Used	Sea water surface block	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+335	349	Used	Sea water surface block	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+336	349	Used	Sea water surface block	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+337	349	Used	Sea water surface block	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+338	349	Used	Sea water surface block	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+339	349	Used	Sea water surface block	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+340	349	Used	Sea water full block	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+341	349	Used	Sea water full block	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+342	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+343	120	Used	Clear water shallow block	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+344	231	Used	Hot water shallow block	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+345	190	Used	Poison shallow block	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+346	267	Used	Lava shallow block	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+347	199	Used	Bottomless Swamp shallow block	Unscoopable	Nothing {-1}	0	0
+348	208	Used	Muddy Water shallow block	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+349	349	Used	Sea water shallow block	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+350	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+351	34	Used	Hardwood Column Midsection {White}	Giant Mallet	Hardwood Column {White} x1 {2777}	Hardwood Column Midsection {White} x1 {2793}	0
+352	34	Used	Hardwood Column Midsection {Black}	Giant Mallet	Hardwood Column {Black} x1 {2778}	Hardwood Column Midsection {Black} x1 {2794}	0
+353	34	Used	Hardwood Column Midsection {Purple}	Giant Mallet	Hardwood Column {Purple} x1 {2779}	Hardwood Column Midsection {Purple} x1 {2795}	0
+354	34	Used	Hardwood Column Midsection {Pink}	Giant Mallet	Hardwood Column {Pink} x1 {2780}	Hardwood Column Midsection {Pink} x1 {2796}	0
+355	34	Used	Hardwood Column Midsection {Red}	Giant Mallet	Hardwood Column {Red} x1 {2781}	Hardwood Column Midsection {Red} x1 {2797}	0
+356	34	Used	Hardwood Column Midsection {Green}	Giant Mallet	Hardwood Column {Green} x1 {2782}	Hardwood Column Midsection {Green} x1 {2798}	0
+357	34	Used	Hardwood Column Midsection {Yellow}	Giant Mallet	Hardwood Column {Yellow} x1 {2783}	Hardwood Column Midsection {Yellow} x1 {2799}	0
+358	34	Used	Hardwood Column Midsection {Blue}	Giant Mallet	Hardwood Column {Blue} x1 {2784}	Hardwood Column Midsection {Blue} x1 {2800}	0
+359	33	Used	Hardwood Pedestal {White}	Giant Mallet	Hardwood Column {White} x1 {2777}	Hardwood Pedestal {White} x1 {2801}	0
+360	33	Used	Hardwood Pedestal {Black}	Giant Mallet	Hardwood Column {Black} x1 {2778}	Hardwood Pedestal {Black} x1 {2802}	0
+361	33	Used	Hardwood Pedestal {Purple}	Giant Mallet	Hardwood Column {Purple} x1 {2779}	Hardwood Pedestal {Purple} x1 {2803}	0
+362	33	Used	Hardwood Pedestal {Pink}	Giant Mallet	Hardwood Column {Pink} x1 {2780}	Hardwood Pedestal {Pink} x1 {2804}	0
+363	33	Used	Hardwood Pedestal {Red}	Giant Mallet	Hardwood Column {Red} x1 {2781}	Hardwood Pedestal {Red} x1 {2805}	0
+364	33	Used	Hardwood Pedestal {Green}	Giant Mallet	Hardwood Column {Green} x1 {2782}	Hardwood Pedestal {Green} x1 {2806}	0
+365	33	Used	Hardwood Pedestal {Yellow}	Giant Mallet	Hardwood Column {Yellow} x1 {2783}	Hardwood Pedestal {Yellow} x1 {2807}	0
+366	33	Used	Hardwood Pedestal {Blue}	Giant Mallet	Hardwood Column {Blue} x1 {2784}	Hardwood Pedestal {Blue} x1 {2808}	0
+367	35	Used	Hardwood Capital {White}	Giant Mallet	Hardwood Column {White} x1 {2777}	Hardwood Capital {White} x1 {2785}	0
+368	35	Used	Hardwood Capital {Black}	Giant Mallet	Hardwood Column {Black} x1 {2778}	Hardwood Capital {Black} x1 {2786}	0
+369	35	Used	Hardwood Capital {Purple}	Giant Mallet	Hardwood Column {Purple} x1 {2779}	Hardwood Capital {Purple} x1 {2787}	0
+370	35	Used	Hardwood Capital {Pink}	Giant Mallet	Hardwood Column {Pink} x1 {2780}	Hardwood Capital {Pink} x1 {2788}	0
+371	35	Used	Hardwood Capital {Red}	Giant Mallet	Hardwood Column {Red} x1 {2781}	Hardwood Capital {Red} x1 {2789}	0
+372	35	Used	Hardwood Capital {Green}	Giant Mallet	Hardwood Column {Green} x1 {2782}	Hardwood Capital {Green} x1 {2790}	0
+373	35	Used	Hardwood Capital {Yellow}	Giant Mallet	Hardwood Column {Yellow} x1 {2783}	Hardwood Capital {Yellow} x1 {2791}	0
+374	35	Used	Hardwood Capital {Blue}	Giant Mallet	Hardwood Column {Blue} x1 {2784}	Hardwood Capital {Blue} x1 {2792}	0
+375	51	Used	Carpet Midsection {White}	Giant Mallet	Carpet {White} x1 {2625}	Carpet {White} x1 {2625}	0
+376	51	Used	Carpet Midsection {Black}	Giant Mallet	Carpet {Black} x1 {2626}	Carpet {Black} x1 {2626}	0
+377	51	Used	Carpet Midsection {Purple}	Giant Mallet	Carpet {Purple} x1 {2627}	Carpet {Purple} x1 {2627}	0
+378	51	Used	Carpet Midsection {Pink}	Giant Mallet	Carpet {Pink} x1 {2628}	Carpet {Pink} x1 {2628}	0
+379	51	Used	Carpet Midsection {Red}	Giant Mallet	Carpet {Red} x1 {2629}	Carpet {Red} x1 {2629}	0
+380	51	Used	Carpet Midsection {Green}	Giant Mallet	Carpet {Green} x1 {2630}	Carpet {Green} x1 {2630}	0
+381	51	Used	Carpet Midsection {Yellow}	Giant Mallet	Carpet {Yellow} x1 {2631}	Carpet {Yellow} x1 {2631}	0
+382	51	Used	Carpet Midsection {Blue}	Giant Mallet	Carpet {Blue} x1 {2632}	Carpet {Blue} x1 {2632}	0
+383	120	Used	Clear water surface block	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+384	231	Used	Hot water surface block	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+385	190	Used	Poison surface block	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+386	267	Used	Lava surface block	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+387	199	Used	Bottomless Swamp surface block	Unscoopable	Nothing {-1}	0	0
+388	208	Used	Muddy Water surface block	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+389	349	Used	Sea water surface block	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+390	390	Used	Plasma shallow block	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+391	390	Used	Plasma surface block	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+392	390	Used	Plasma surface block	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+393	390	Used	Plasma surface block	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+394	390	Used	Plasma surface block	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+395	390	Used	Plasma surface block	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+396	390	Used	Plasma surface block	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+397	390	Used	Plasma full block	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+398	390	Used	Plasma full block	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+399	390	Used	Plasma shallow block	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+400	390	Used	Plasma surface block	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+401	401	Used	Vault Tile	Ultimallet	Nothing {-1}	Vault Tile x1 {2544}	0
+402	402	Used	Gold Brick	Giant Mallet	Gold Brick x1 {1565}	Gold Brick x1 {1565}	0
+403	403	Used	Spaceship Wall	Giant Mallet	Spaceship Wall x1 {211}	Spaceship Wall x1 {211}	0
+404	404	Used	Shiny Spaceship Wall	Giant Mallet	Shiny Spaceship Wall x1 {212}	Shiny Spaceship Wall x1 {212}	0
+405	405	Used	Citadel Battlement	Sledgehammer	Citadel Wall x1 {2495}	Citadel Battlement x1 {402}	0
+406	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+407	407	Used	Golden Citadel Capital	Sledgehammer	Golden Citadel Capital x1 {2301}	Golden Citadel Capital x1 {2301}	0
+408	408	Used	Alcoved Citadel Wall	Sledgehammer	Alcoved Citadel Wall x1 {2303}	Alcoved Citadel Wall x1 {2303}	0
+409	409	Used	Golden Citadel Foundation	Sledgehammer	Golden Citadel Foundation x1 {2302}	Golden Citadel Foundation x1 {2302}	0
+410	176	Used	Patterned Citadel Wall	Sledgehammer	Patterned Citadel Wall x1 {10}	Patterned Citadel Wall x1 {10}	0
+411	411	Used	Golden Tile	Giant Mallet	Golden Tile x1 {1703}	Golden Tile x1 {1703}	0
+412	89	Used	Hargon Block*	Ultimallet	Nothing {-1}	Golden Tile x1 {1703}	0
+413	413	Used	Black Void	Intangible Block	Nothing {-1}	Nothing {-1}	Malhalla floor
+414	2	Used	Earth*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+415	7	Used	Mossy Earth*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+416	19	Used	Snow*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+417	21	Used	Clodstone*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+418	16	Used	Witchgrassy Earth*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+419	607	Used	Battlefield Earth	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+420	349	Used	Sea water shallow block	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+421	403	Used	Spaceship Wall {White}	Giant Mallet	Spaceship Wall {White} x1 {95}	Spaceship Wall {White} x1 {95}	0
+422	403	Used	Spaceship Wall {Black}	Giant Mallet	Spaceship Wall {Black} x1 {96}	Spaceship Wall {Black} x1 {96}	0
+423	403	Used	Spaceship Wall {Purple}	Giant Mallet	Spaceship Wall {Purple} x1 {97}	Spaceship Wall {Purple} x1 {97}	0
+424	403	Used	Spaceship Wall {Pink}	Giant Mallet	Spaceship Wall {Pink} x1 {98}	Spaceship Wall {Pink} x1 {98}	0
+425	403	Used	Spaceship Wall {Red}	Giant Mallet	Spaceship Wall {Red} x1 {99}	Spaceship Wall {Red} x1 {99}	0
+426	403	Used	Spaceship Wall {Green}	Giant Mallet	Spaceship Wall {Green} x1 {100}	Spaceship Wall {Green} x1 {100}	0
+427	403	Used	Spaceship Wall {Yellow}	Giant Mallet	Spaceship Wall {Yellow} x1 {101}	Spaceship Wall {Yellow} x1 {101}	0
+428	403	Used	Spaceship Wall {Blue}	Giant Mallet	Spaceship Wall {Blue} x1 {102}	Spaceship Wall {Blue} x1 {102}	0
+429	404	Used	Shiny Spaceship Wall {White}	Giant Mallet	Shiny Spaceship Wall {White} x1 {134}	Shiny Spaceship Wall {White} x1 {134}	0
+430	404	Used	Shiny Spaceship Wall {Black}	Giant Mallet	Shiny Spaceship Wall {Black} x1 {135}	Shiny Spaceship Wall {Black} x1 {135}	0
+431	404	Used	Shiny Spaceship Wall {Purple}	Giant Mallet	Shiny Spaceship Wall {Purple} x1 {136}	Shiny Spaceship Wall {Purple} x1 {136}	0
+432	404	Used	Shiny Spaceship Wall {Pink}	Giant Mallet	Shiny Spaceship Wall {Pink} x1 {137}	Shiny Spaceship Wall {Pink} x1 {137}	0
+433	404	Used	Shiny Spaceship Wall {Red}	Giant Mallet	Shiny Spaceship Wall {Red} x1 {138}	Shiny Spaceship Wall {Red} x1 {138}	0
+434	404	Used	Shiny Spaceship Wall {Green}	Giant Mallet	Shiny Spaceship Wall {Green} x1 {139}	Shiny Spaceship Wall {Green} x1 {139}	0
+435	404	Used	Shiny Spaceship Wall {Yellow}	Giant Mallet	Shiny Spaceship Wall {Yellow} x1 {140}	Shiny Spaceship Wall {Yellow} x1 {140}	0
+436	404	Used	Shiny Spaceship Wall {Blue}	Giant Mallet	Shiny Spaceship Wall {Blue} x1 {141}	Shiny Spaceship Wall {Blue} x1 {141}	0
+437	437	Used	Woodless Timbered Wall	Giant Mallet	Woodless Timbered Wall x1 {680}	Woodless Timbered Wall x1 {680}	0
+438	438	Used	Banded Timbered Wall	Giant Mallet	Banded Timbered Wall x1 {681}	Banded Timbered Wall x1 {681}	0
+439	94	Unused	White Unused Block	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+440	94	Unused	White Unused Block	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+441	94	Unused	White Unused Block	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+442	94	Unused	White Unused Block	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+443	94	Unused	White Unused Block	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+444	94	Unused	White Unused Block	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+445	94	Unused	White Unused Block	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+446	94	Unused	White Unused Block	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+447	438	Used	Banded Timbered Wall {White}	Giant Mallet	Banded Timbered Wall {White} x1 {727}	Banded Timbered Wall {White} x1 {727}	0
+448	438	Used	Banded Timbered Wall {Black}	Giant Mallet	Banded Timbered Wall {Black} x1 {728}	Banded Timbered Wall {Black} x1 {728}	0
+449	438	Used	Banded Timbered Wall {Purple}	Giant Mallet	Banded Timbered Wall {Purple} x1 {729}	Banded Timbered Wall {Purple} x1 {729}	0
+450	438	Used	Banded Timbered Wall {Pink}	Giant Mallet	Banded Timbered Wall {Pink} x1 {730}	Banded Timbered Wall {Pink} x1 {730}	0
+451	438	Used	Banded Timbered Wall {Red}	Giant Mallet	Banded Timbered Wall {Red} x1 {731}	Banded Timbered Wall {Red} x1 {731}	0
+452	438	Used	Banded Timbered Wall {Green}	Giant Mallet	Banded Timbered Wall {Green} x1 {732}	Banded Timbered Wall {Green} x1 {732}	0
+453	438	Used	Banded Timbered Wall {Yellow}	Giant Mallet	Banded Timbered Wall {Yellow} x1 {733}	Banded Timbered Wall {Yellow} x1 {733}	0
+454	438	Used	Banded Timbered Wall {Blue}	Giant Mallet	Banded Timbered Wall {Blue} x1 {734}	Banded Timbered Wall {Blue} x1 {734}	0
+455	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+456	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+457	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+458	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+459	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+460	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+461	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+462	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+463	48	Used	Hardwood Tile {White}	Giant Mallet	Hardwood Tile {White} x1 {2769}	Hardwood Tile {White} x1 {2769}	0
+464	48	Used	Hardwood Tile {Black}	Giant Mallet	Hardwood Tile {Black} x1 {2770}	Hardwood Tile {Black} x1 {2770}	0
+465	48	Used	Hardwood Tile {Purple}	Giant Mallet	Hardwood Tile {Purple} x1 {2771}	Hardwood Tile {Purple} x1 {2771}	0
+466	48	Used	Hardwood Tile {Pink}	Giant Mallet	Hardwood Tile {Pink} x1 {2772}	Hardwood Tile {Pink} x1 {2772}	0
+467	48	Used	Hardwood Tile {Red}	Giant Mallet	Hardwood Tile {Red} x1 {2773}	Hardwood Tile {Red} x1 {2773}	0
+468	48	Used	Hardwood Tile {Green}	Giant Mallet	Hardwood Tile {Green} x1 {2774}	Hardwood Tile {Green} x1 {2774}	0
+469	48	Used	Hardwood Tile {Yellow}	Giant Mallet	Hardwood Tile {Yellow} x1 {2775}	Hardwood Tile {Yellow} x1 {2775}	0
+470	48	Used	Hardwood Tile {Blue}	Giant Mallet	Hardwood Tile {Blue} x1 {2776}	Hardwood Tile {Blue} x1 {2776}	0
+471	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+472	472	Used	Red-Brick Wall	Giant Mallet	Red-Brick Wall x1 {653}	Red-Brick Wall x1 {653}	0
+473	473	Used	Diamond Vein	Sledgehammer	Diamond x1 {656}	Diamond Vein x1 {1114}	0
+474	474	Unused	Chert (Red)*	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+475	475	Unused	Citadel Floor (Red)*	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+476	476	Used	Magnetite Vein	Sledgehammer	Magnetite x1 {669}	Magnetite Vein x1 {668}	0
+477	477	Used	Siltstone	Sledgehammer	Siltstone x1 {636}	Siltstone x1 {636}	0
+478	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+479	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+480	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+481	90	Unused	Slimy Block	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+482	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+483	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+484	484	Used	Red-Brick Floor	Giant Mallet	Red-Brick Floor x1 {1154}	Red-Brick Floor x1 {1154}	0
+485	485	Used	Crazing Paving	Giant Mallet	Crazing Paving x1 {1155}	Crazing Paving x1 {1155}	0
+486	486	Used	Copper Wall	Giant Mallet	Copper Wall x1 {1156}	Copper Wall x1 {1156}	0
+487	487	Used	Marble	Giant Mallet	Marble x1 {1157}	Marble x1 {1157}	0
+488	488	Used	Silver Birch Lumber	Giant Mallet	Silver Birch Lumber x1 {1158}	Silver Birch Lumber x1 {1158}	0
+489	156	Used	Spoiled Soil*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+490	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+491	491	Used	Dark Bark	Giant Mallet	Dark Bark x1 {2076}	Dark Bark x1 {2076}	0
+492	492	Used	Teal Leaves	Cypress Stick	Teal Leaves x1 {2077}	Teal Leaves x1 {2077}	0
+493	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+494	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+495	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+496	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+497	497	Used	Bloodstained Soil	Giant Mallet	Spoiled Soil x1 {1784}	Bloodstained Soil x1 {2083}	0
+498	-1	Unused	Bloodstained Soil full	Giant Mallet	Spoiled Soil x1 {1784}	Bloodstained Soil x1 {2083}	0
+499	499	Used	Padded Floor	Giant Mallet	Padded Floor x1 {1464}	Padded Floor x1 {1464}	0
+500	500	Used	Leafy Spoiled Soil	Giant Mallet	Spoiled Soil x1 {1784}	Leafy Spoiled Soil x1 {2084}	0
+501	501	Unused	Leafy Spoiled Soil full	Giant Mallet	Spoiled Soil x1 {1784}	Leafy Spoiled Soil x1 {2084}	0
+502	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+503	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+504	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+505	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+506	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+507	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+508	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+509	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+510	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+511	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+512	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+513	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+514	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+515	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+516	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+517	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+518	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+519	519	Used	Cracked Floorboard	Cypress Stick	Wood x3 {407}	Cracked Floorboard x1 {2169}	0
+520	520	Used	Blackened Bark	Giant Mallet	Blackened Bark x1 {2249}	Blackened Bark x1 {2249}	0
+521	-1	Unused	Bloodstained Soil full	Giant Mallet	Spoiled Soil x1 {1784}	Bloodstained Soil x1 {2083}	0
+522	522	Used	Malachite	Giant Mallet	Malachite x1 {2184}	Malachite x1 {2184}	0
+523	268	Used	Patterned Vault Wall*	Ultimallet	Nothing {-1}	Patterned Vault Wall x1 {226}	0
+524	268	Used	Patterned Vault Wall*	Ultimallet	Nothing {-1}	Nothing {-1}	0
+525	525	Used	Adobe Capital	Giant Mallet	Adobe Wall x1 {2291}	Adobe Capital x1 {2187}	0
+526	526	Used	Adobe Wall (Midsection)	Giant Mallet	Adobe Wall x1 {2291}	Adobe Wall (Midsection) x1 {2188}	0
+527	527	Used	Adobe Pedestal	Giant Mallet	Adobe Wall x1 {2291}	Adobe Pedestal x1 {2189}	0
+528	528	Used	Alcoved Adobe Wall	Giant Mallet	Alcoved Adobe Wall x1 {2190}	Alcoved Adobe Wall x1 {2190}	0
+529	529	Used	Copper Floor	Giant Mallet	Copper Floor x1 {2247}	Copper Floor x1 {2247}	0
+530	530	Used	Sooty Softwood	Giant Mallet	Sooty Softwood x1 {2255}	Sooty Softwood x1 {2255}	0
+531	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+532	532	Used	Heartwood	Giant Mallet	Heartwood x1 {2253}	Heartwood x1 {2253}	0
+533	44	Used	Plumberry Lumber*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+534	534	Used	White Dye Vein	Sledgehammer	White Dye x1 {271}	White Dye Vein x1 {2256}	0
+535	535	Used	Black Dye Vein	Sledgehammer	Black Dye x1 {272}	Black Dye Vein x1 {2257}	0
+536	536	Used	Purple Dye Vein	Sledgehammer	Purple Dye x1 {273}	Purple Dye Vein x1 {2258}	0
+537	537	Used	Pink Dye Vein	Sledgehammer	Pink Dye x1 {274}	Pink Dye Vein x1 {2259}	0
+538	538	Used	Red Dye Vein	Sledgehammer	Red Dye x1 {275}	Red Dye Vein x1 {2260}	0
+539	539	Used	Green Dye Vein	Sledgehammer	Green Dye x1 {276}	Green Dye Vein x1 {2261}	0
+540	540	Used	Yellow Dye Vein	Sledgehammer	Yellow Dye x1 {277}	Yellow Dye Vein x1 {2262}	0
+541	541	Used	Blue Dye Vein	Sledgehammer	Blue Dye x1 {278}	Blue Dye Vein x1 {2263}	0
+542	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+543	-1	Unused	Blue Temple Tile Half Dummy	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+544	544	Used	Carpet	Giant Mallet	Carpet x1 {1050}	Carpet x1 {1050}	0
+545	545	Used	Golden Castle Capital	Giant Mallet	Golden Castle Capital x1 {2372}	Golden Castle Capital x1 {2372}	0
+546	546	Used	Alcoved Castle Wall	Giant Mallet	Alcoved Castle Wall x1 {2373}	Alcoved Castle Wall x1 {2373}	0
+547	547	Used	Golden Castle Foundation	Giant Mallet	Golden Castle Foundation x1 {2374}	Golden Castle Foundation x1 {2374}	0
+548	548	Used	Cracked Castle Tile	Giant Mallet	Stone x2 {404}	Cracked Castle Tile x1 {2375}	0
+549	549	Used	Battlefield Earth	Giant Mallet	Earth x1 {1001}	Battlefield Earth x1 {2376}	0
+550	550	Used	Citadel Capital	Sledgehammer	Citadel Wall x1 {2495}	Citadel Capital x1 {2451}	0
+551	551	Used	Citadel Foundation	Sledgehammer	Citadel Wall x1 {2495}	Citadel Foundation x1 {2452}	0
+552	552	Used	Citadel Wall Midsection	Sledgehammer	Citadel Wall x1 {2495}	Citadel Wall Midsection x1 {2453}	0
+553	553	Used	Citadel Floor	Sledgehammer	Citadel Floor x1 {2454}	Citadel Floor x1 {2454}	0
+554	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+555	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+556	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+557	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+558	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+559	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+560	-1	Unused	Ghost Block*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	Looks like nothing is there. Can pass through.
+561	561	Used	Plaster	Giant Mallet	Plaster x1 {2615}	Plaster x1 {2615}	0
+562	561	Used	Plaster {White}	Giant Mallet	Plaster {White} x1 {2833}	Plaster {White} x1 {2833}	0
+563	561	Used	Plaster {Black}	Giant Mallet	Plaster {Black} x1 {2834}	Plaster {Black} x1 {2834}	0
+564	561	Used	Plaster {Purple}	Giant Mallet	Plaster {Purple} x1 {2835}	Plaster {Purple} x1 {2835}	0
+565	561	Used	Plaster {Pink}	Giant Mallet	Plaster {Pink} x1 {2836}	Plaster {Pink} x1 {2836}	0
+566	561	Used	Plaster {Red}	Giant Mallet	Plaster {Red} x1 {2837}	Plaster {Red} x1 {2837}	0
+567	561	Used	Plaster {Green}	Giant Mallet	Plaster {Green} x1 {2838}	Plaster {Green} x1 {2838}	0
+568	561	Used	Plaster {Yellow}	Giant Mallet	Plaster {Yellow} x1 {2839}	Plaster {Yellow} x1 {2839}	0
+569	561	Used	Plaster {Blue}	Giant Mallet	Plaster {Blue} x1 {2840}	Plaster {Blue} x1 {2840}	0
+570	244	Used	Floorboard {White}	Giant Mallet	Floorboard {White} x1 {2809}	Floorboard {White} x1 {2809}	0
+571	244	Used	Floorboard {Black}	Giant Mallet	Floorboard {Black} x1 {2810}	Floorboard {Black} x1 {2810}	0
+572	244	Used	Floorboard {Purple}	Giant Mallet	Floorboard {Purple} x1 {2811}	Floorboard {Purple} x1 {2811}	0
+573	244	Used	Floorboard {Pink}	Giant Mallet	Floorboard {Pink} x1 {2812}	Floorboard {Pink} x1 {2812}	0
+574	244	Used	Floorboard {Red}	Giant Mallet	Floorboard {Red} x1 {2813}	Floorboard {Red} x1 {2813}	0
+575	244	Used	Floorboard {Green}	Giant Mallet	Floorboard {Green} x1 {2814}	Floorboard {Green} x1 {2814}	0
+576	244	Used	Floorboard {Yellow}	Giant Mallet	Floorboard {Yellow} x1 {2815}	Floorboard {Yellow} x1 {2815}	0
+577	244	Used	Floorboard {Blue}	Giant Mallet	Floorboard {Blue} x1 {2816}	Floorboard {Blue} x1 {2816}	0
+578	499	Used	Padded Floor {White}	Giant Mallet	Padded Floor {White} x1 {2633}	Padded Floor {White} x1 {2633}	0
+579	499	Used	Padded Floor {Black}	Giant Mallet	Padded Floor {Black} x1 {2634}	Padded Floor {Black} x1 {2634}	0
+580	499	Used	Padded Floor {Purple}	Giant Mallet	Padded Floor {Purple} x1 {2635}	Padded Floor {Purple} x1 {2635}	0
+581	499	Used	Padded Floor {Pink}	Giant Mallet	Padded Floor {Pink} x1 {2636}	Padded Floor {Pink} x1 {2636}	0
+582	499	Used	Padded Floor {Red}	Giant Mallet	Padded Floor {Red} x1 {2637}	Padded Floor {Red} x1 {2637}	0
+583	499	Used	Padded Floor {Green}	Giant Mallet	Padded Floor {Green} x1 {2638}	Padded Floor {Green} x1 {2638}	0
+584	499	Used	Padded Floor {Yellow}	Giant Mallet	Padded Floor {Yellow} x1 {2639}	Padded Floor {Yellow} x1 {2639}	0
+585	499	Used	Padded Floor {Blue}	Giant Mallet	Padded Floor {Blue} x1 {2640}	Padded Floor {Blue} x1 {2640}	0
+586	586	Unused	Leafy Stony Soil	Giant Mallet	Nothing {-1}	Stony Soil {1759}	0
+587	587	Unused	Leafy Stony Soil Full	Giant Mallet	Nothing {-1}	Stony Soil {1759}	0
+588	588	Used	Iron Block	Giant Mallet	Iron Block x1 {1134}	Iron Block x1 {1134}	0
+589	589	Used	Concrete Block	Giant Mallet	Concrete Block x1 {1133}	Concrete Block x1 {1133}	0
+590	590	Used	Sun Sigil Block	Giant Mallet	Sun Sigil Block x1 {1196}	Sun Sigil Block x1 {1196}	0
+591	591	Used	Star Sigil Block	Giant Mallet	Star Sigil Block x1 {1197}	Star Sigil Block x1 {1197}	0
+592	592	Used	Moon Sigil Block	Giant Mallet	Moon Sigil Block x1 {1198}	Moon Sigil Block x1 {1198}	0
+593	593	Used	Water Sigil Block	Giant Mallet	Water Sigil Block x1 {1199}	Water Sigil Block x1 {1199}	0
+594	594	Used	Soul Sigil Block	Giant Mallet	Soul Sigil Block x1 {1200}	Soul Sigil Block x1 {1200}	0
+595	595	Used	Sandstone Brick	Giant Mallet	Sandstone Brick x1 {229}	Sandstone Brick x1 {229}	0
+596	596	Used	Withered Leaves	Cypress Stick	Nothing {-1}	Withered Leaves x1 {240}	0
+597	94	Unused	White Unused Block	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+598	147	Used	Arid Earth*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+599	599	Used	Umber*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+600	232	Used	Mossy Spoiled Soil*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+601	234	Used	Swampy Soil*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+602	602	Used	Lumpy Umber*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+603	497	Used	Bloodstained Soil*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+604	497	Used	Leafy Spoiled Soil	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+605	94	Unused	White Unused Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+606	606	Used	Sanguine Sandstone	Giant Mallet	Sanguine Sandstone x1 {601}	Sanguine Sandstone x1 {601}	0
+607	607	Used	Sanguine Cinders	Giant Mallet	Sanguine Cinders x1 {603}	Sanguine Cinders x1 {603}	0
+608	608	Used	Sanguine Sand	Giant Mallet	Sanguine Sand x1 {600}	Sanguine Sand x1 {600}	0
+609	609	Used	Sanguine Sandy Sandstone	Giant Mallet	Sanguine Sandy Sandstone x1 {602}	Sanguine Sandy Sandstone x1 {602}	0
+610	610	Used	Scales	Sledgehammer	Scales x1 {942}	Scales x1 {942}	0
+611	96	Unused	Red Block*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+612	612	Used	Silver Brick	Giant Mallet	Silver Brick x1 {439}	Silver Brick x1 {439}	0
+613	613	Used	Sooty Silver Brick	Giant Mallet	Sooty Silver Brick x1 {440}	Sooty Silver Brick x1 {440}	0
+614	235	Used	Seeded Spoiled Soil	Giant Mallet	Grass Seed x3 {163}	Seeded Spoiled Soil x1 {442}	0
+615	236	Used	Seeded Spoiled Soil	Giant Mallet	Tomato Seed x3 {1831}	Tomato Seed x3 {1831}	0
+616	239	Used	Seeded Spoiled Soil	Giant Mallet	Sugar Cane Seedling x3 {1825}	Sugar Cane Seedling x3 {1825}	0
+617	617	Used	Seeded Spoiled Soil	Giant Mallet	Pumpkin Seed x1 {1830}	Pumpkin Seed x1 {1830}	0
+618	617	Used	Seeded Spoiled Soil	Giant Mallet	Pumpkin Seed x3 {1830}	Pumpkin Seed x3 {1830}	0
+619	10	Used	Obsidian*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+620	11	Used	Sand*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+621	25	Used	Lava*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+622	210	Used	Umber Sandstone Block*	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+263	8	Used	Chalk	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+624	624	Used	Silver Tile	Giant Mallet	Silver Tile x1 {1597}	Silver Tile x1 {1597}	0
+625	10	Used	Obsidian	War Hammer	Nothing {-1}	Obsidian x1 {1009}	0
+626	130	Used	Light Dolomite	Sledgehammer	Light Dolomite x1 {1748}	Light Dolomite x1 {1748}	0
+627	21	Used	Clodstone	Giant Mallet	Clodstone x1 {1020}	Clodstone x1 {1020}	0
+628	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+629	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+630	134	Used	Masonry Wall	Giant Mallet	Masonry Wall x1 {1761}	Masonry Wall x1 {1761}	0
+631	268	Used	Patterned Vault Wall	Giant Mallet	Patterned Vault Wall x1 {226}	Patterned Vault Wall x1 {226}	0
+632	268	Used	Patterned Vault Wall	Giant Mallet	Patterned Vault Wall x1 {226}	Patterned Vault Wall x1 {226}	0
+633	401	Used	Vault Tile	Giant Mallet	Vault Tile x1 {2544}	Vault Tile x1 {2544}	0
+634	26	Used	Vault Wall	Giant Mallet	Vault Wall x1 {1025}	Vault Wall x1 {1025}	0
+635	27	Used	Viny Vault Wall	Giant Mallet	Viny Vault Wall x1 {1026}	Viny Vault Wall x1 {1026}	0
+636	28	Used	Cracked Vault Wall	Giant Mallet	Stone x2 {404}	Cracked Vault Wall x1 {1027}	0
+637	413	Used	Black Void	Intangible With Hammer	Nothing {-1}	Nothing {-1}	Malhalla floor
+638	588	Used	Iron Block {White}	Giant Mallet	Iron Block {White} x1 {3119}	Iron Block {White} x1 {3119}	0
+639	588	Used	Iron Block {Black}	Giant Mallet	Iron Block {Black} x1 {3120}	Iron Block {Black} x1 {3120}	0
+640	588	Used	Iron Block {Purple}	Giant Mallet	Iron Block {Purple} x1 {3121}	Iron Block {Purple} x1 {3121}	0
+641	588	Used	Iron Block {Pink}	Giant Mallet	Iron Block {Pink} x1 {3122}	Iron Block {Pink} x1 {3122}	0
+642	588	Used	Iron Block {Red}	Giant Mallet	Iron Block {Red} x1 {3123}	Iron Block {Red} x1 {3123}	0
+643	588	Used	Iron Block {Green}	Giant Mallet	Iron Block {Green} x1 {3124}	Iron Block {Green} x1 {3124}	0
+644	588	Used	Iron Block {Yellow}	Giant Mallet	Iron Block {Yellow} x1 {3125}	Iron Block {Yellow} x1 {3125}	0
+645	588	Used	Iron Block {Blue}	Giant Mallet	Iron Block {Blue} x1 {3126}	Iron Block {Blue} x1 {3126}	0
+646	595	Used	Sandstone Brick {White}	Giant Mallet	Sandstone Brick {White} x1 {3127}	Sandstone Brick {White} x1 {3127}	0
+647	595	Used	Sandstone Brick {Black}	Giant Mallet	Sandstone Brick {Black} x1 {3128}	Sandstone Brick {Black} x1 {3128}	0
+648	595	Used	Sandstone Brick {Purple}	Giant Mallet	Sandstone Brick {Purple} x1 {3129}	Sandstone Brick {Purple} x1 {3129}	0
+649	595	Used	Sandstone Brick {Pink}	Giant Mallet	Sandstone Brick {Pink} x1 {3130}	Sandstone Brick {Pink} x1 {3130}	0
+650	595	Used	Sandstone Brick {Red}	Giant Mallet	Sandstone Brick {Red} x1 {3131}	Sandstone Brick {Red} x1 {3131}	0
+651	595	Used	Sandstone Brick {Green}	Giant Mallet	Sandstone Brick {Green} x1 {3132}	Sandstone Brick {Green} x1 {3132}	0
+652	595	Used	Sandstone Brick {Yellow}	Giant Mallet	Sandstone Brick {Yellow} x1 {3133}	Sandstone Brick {Yellow} x1 {3133}	0
+653	595	Used	Sandstone Brick {Blue}	Giant Mallet	Sandstone Brick {Blue} x1 {3134}	Sandstone Brick {Blue} x1 {3134}	0
+654	53	Used	Castle Tile {White}	Giant Mallet	Castle Tile {White} x1 {3135}	Castle Tile {White} x1 {3135}	0
+655	53	Used	Castle Tile {Black}	Giant Mallet	Castle Tile {Black} x1 {3136}	Castle Tile {Black} x1 {3136}	0
+656	53	Used	Castle Tile {Purple}	Giant Mallet	Castle Tile {Purple} x1 {3137}	Castle Tile {Purple} x1 {3137}	0
+657	53	Used	Castle Tile {Pink}	Giant Mallet	Castle Tile {Pink} x1 {3138}	Castle Tile {Pink} x1 {3138}	0
+658	53	Used	Castle Tile {Red}	Giant Mallet	Castle Tile {Red} x1 {3139}	Castle Tile {Red} x1 {3139}	0
+659	53	Used	Castle Tile {Green}	Giant Mallet	Castle Tile {Green} x1 {3140}	Castle Tile {Green} x1 {3140}	0
+660	53	Used	Castle Tile {Yellow}	Giant Mallet	Castle Tile {Yellow} x1 {3141}	Castle Tile {Yellow} x1 {3141}	0
+661	53	Used	Castle Tile {Blue}	Giant Mallet	Castle Tile {Blue} x1 {3142}	Castle Tile {Blue} x1 {3142}	0
+662	54	Used	Carved Castle Tile {White}	Giant Mallet	Carved Castle Tile {White} x1 {3143}	Carved Castle Tile {White} x1 {3143}	0
+663	54	Used	Carved Castle Tile {Black}	Giant Mallet	Carved Castle Tile {Black} x1 {3144}	Carved Castle Tile {Black} x1 {3144}	0
+664	54	Used	Carved Castle Tile {Purple}	Giant Mallet	Carved Castle Tile {Purple} x1 {3145}	Carved Castle Tile {Purple} x1 {3145}	0
+665	54	Used	Carved Castle Tile {Pink}	Giant Mallet	Carved Castle Tile {Pink} x1 {3146}	Carved Castle Tile {Pink} x1 {3146}	0
+666	54	Used	Carved Castle Tile {Red}	Giant Mallet	Carved Castle Tile {Red} x1 {3147}	Carved Castle Tile {Red} x1 {3147}	0
+667	54	Used	Carved Castle Tile {Green}	Giant Mallet	Carved Castle Tile {Green} x1 {3148}	Carved Castle Tile {Green} x1 {3148}	0
+668	54	Used	Carved Castle Tile {Yellow}	Giant Mallet	Carved Castle Tile {Yellow} x1 {3149}	Carved Castle Tile {Yellow} x1 {3149}	0
+669	54	Used	Carved Castle Tile {Blue}	Giant Mallet	Carved Castle Tile {Blue} x1 {3150}	Carved Castle Tile {Blue} x1 {3150}	0
+670	106	Unused	Cyan Block*	Intangible Block	Nothing {-1}	Nothing {-1}	0
+671	100	Unused	Green Block*	Intangible Block	Nothing {-1}	Nothing {-1}	0
+672	97	Unused	Purple Block*	Intangible Block	Nothing {-1}	Nothing {-1}	0
+673	-1	Unused	Translucent Block	Intangible Block	Nothing {-1}	Nothing {-1}	0
+674	102	Unused	Yellow Block*	Intangible Block	Nothing {-1}	Nothing {-1}	0
+675	101	Unused	Orange Block*	Intangible Block	Nothing {-1}	Nothing {-1}	0
+676	104	Unused	Blue Block*	Intangible Block	Nothing {-1}	Nothing {-1}	0
+677	106	Unused	Cyan Block*	Intangible Block	Nothing {-1}	Nothing {-1}	0
+678	57	Used	Bronze Temple Tile	Sledgehammer	Bronze Temple Tile x1 {1056}	Bronze Temple Tile x1 {1056}	0
+679	58	Used	Blue Temple Tile	Sledgehammer	Blue Temple Tile x1 {1057}	Blue Temple Tile x1 {1057}	0
+680	680	Used	Seeded Limegrassy Earth	Giant Mallet	Strawberry Seed x2 {1826}	Strawberry Seed x2 {1826}	0
+681	681	Used	Seeded Mossy Spoiled Soil	Giant Mallet	Aubergette Seed x2 {1832}	Aubergette Seed x2 {1832}	0
+682	682	Used	Seeded Sand	Cypress Stick	Sweetcorn Kernel x2 {1823}	Sweetcorn Kernel x2 {1823}	0
+683	683	Used	Seeded Earth	Giant Mallet	Coffee Bean x2 {1827}	Coffee Bean x2 {1827}	0
+684	684	Used	Seeded Snow	Cypress Stick	Leek Seed x2 {1828}	Leek Seed x2 {1828}	0
+685	685	Used	Seeded Grassy Earth	Giant Mallet	Melon Seed x2 {1834}	Melon Seed x2 {1834}	0
+686	686	Used	Gravel Block	Giant Mallet	Gravel Block x1 {1108}	Gravel Block x1 {1108}	0
+687	687	Used	Scaled Wall Block	Giant Mallet	Scaled Wall Block x1 {1112}	Scaled Wall Block x1 {1112}	0
+688	688	Used	Slatted Wall Block	Giant Mallet	Slatted Wall Block x1 {1136}	Slatted Wall Block x1 {1136}	0
+689	689	Used	Woven Straw Block	Giant Mallet	Woven Straw Block x1 {3169}	Woven Straw Block x1 {3169}	0
+690	689	Used	Woven Straw Block	Giant Mallet	Woven Straw Block x1 {3169}	Woven Straw Block x1 {3169}	0
+691	689	Used	Woven Straw Block	Giant Mallet	Woven Straw Block x1 {3169}	Woven Straw Block x1 {3169}	0
+692	689	Used	Woven Straw Block	Giant Mallet	Woven Straw Block x1 {3169}	Woven Straw Block x1 {3169}	0
+693	689	Used	Woven Straw Block	Giant Mallet	Woven Straw Block x1 {3169}	Woven Straw Block x1 {3169}	0
+694	687	Used	Scaled Wall Block {White}	Giant Mallet	Scaled Wall Block {White} x1 {2713}	Scaled Wall Block {White} x1 {2713}	0
+695	687	Used	Scaled Wall Block {Black}	Giant Mallet	Scaled Wall Block {Black} x1 {2714}	Scaled Wall Block {Black} x1 {2714}	0
+696	687	Used	Scaled Wall Block {Purple}	Giant Mallet	Scaled Wall Block {Purple} x1 {2715}	Scaled Wall Block {Purple} x1 {2715}	0
+697	687	Used	Scaled Wall Block {Pink}	Giant Mallet	Scaled Wall Block {Pink} x1 {2716}	Scaled Wall Block {Pink} x1 {2716}	0
+698	687	Used	Scaled Wall Block {Red}	Giant Mallet	Scaled Wall Block {Red} x1 {2717}	Scaled Wall Block {Red} x1 {2717}	0
+699	687	Used	Scaled Wall Block {Green}	Giant Mallet	Scaled Wall Block {Green} x1 {2718}	Scaled Wall Block {Green} x1 {2718}	0
+700	687	Used	Scaled Wall Block {Yellow}	Giant Mallet	Scaled Wall Block {Yellow} x1 {2719}	Scaled Wall Block {Yellow} x1 {2719}	0
+701	687	Used	Scaled Wall Block {Blue}	Giant Mallet	Scaled Wall Block {Blue} x1 {2720}	Scaled Wall Block {Blue} x1 {2720}	0
+702	702	Used	Polka-Dot Block	Giant Mallet	Polka-Dot Block x1 {3203}	Polka-Dot Block x1 {3203}	0
+703	702	Used	Polka-Dot Block {White}	Giant Mallet	Polka-Dot Block {White} x1 {3204}	Polka-Dot Block {White} x1 {3204}	0
+704	702	Used	Polka-Dot Block {Black}	Giant Mallet	Polka-Dot Block {Black} x1 {3205}	Polka-Dot Block {Black} x1 {3205}	0
+705	702	Used	Polka-Dot Block {Purple}	Giant Mallet	Polka-Dot Block {Purple} x1 {3206}	Polka-Dot Block {Purple} x1 {3206}	0
+706	702	Used	Polka-Dot Block {Pink}	Giant Mallet	Polka-Dot Block {Pink} x1 {3207}	Polka-Dot Block {Pink} x1 {3207}	0
+707	702	Used	Polka-Dot Block {Red}	Giant Mallet	Polka-Dot Block {Red} x1 {3208}	Polka-Dot Block {Red} x1 {3208}	0
+708	702	Used	Polka-Dot Block {Green}	Giant Mallet	Polka-Dot Block {Green} x1 {3209}	Polka-Dot Block {Green} x1 {3209}	0
+709	702	Used	Polka-Dot Block {Yellow}	Giant Mallet	Polka-Dot Block {Yellow} x1 {3210}	Polka-Dot Block {Yellow} x1 {3210}	0
+710	702	Used	Polka-Dot Block {Blue}	Giant Mallet	Polka-Dot Block {Blue} x1 {3211}	Polka-Dot Block {Blue} x1 {3211}	0
+711	711	Used	Faux Floral Floor Block	Giant Mallet	Faux Floral Floor Block x1 {3368}	Faux Floral Floor Block x1 {3368}	0
+712	712	Used	Palm-Patterned Block	Giant Mallet	Palm-Patterned Block x1 {3369}	Palm-Patterned Block x1 {3369}	0
+713	713	Used	Fruity Fiend Block	Giant Mallet	Fruity Fiend Block x1 {3370}	Fruity Fiend Block x1 {3370}	0
+714	714	Used	Chequered Block	Giant Mallet	Chequered Block x1 {3371}	Chequered Block x1 {3371}	0
+715	715	Used	Sunset-Styled Block	Giant Mallet	Sunset-Styled Block x1 {3372}	Sunset-Styled Block x1 {3372}	0
+716	716	Used	Seaweed-Styled Block	Giant Mallet	Seaweed-Styled Block x1 {3373}	Seaweed-Styled Block x1 {3373}	0
+717	717	Used	Stylish Stripy Block	Giant Mallet	Stylish Stripy Block x1 {3374}	Stylish Stripy Block x1 {3374}	0
+718	718	Used	Seaside Scene Block	Giant Mallet	Seaside Scene  Block x1 {3375}	Seaside Scene  Block x1 {3375}	0
+719	719	Used	Abstract Floral Floor Block	Giant Mallet	Abstract Floral Floor Block x1 {3376}	Abstract Floral Floor Block x1 {3376}	0
+720	720	Used	Herringbone Floorboard Block	Giant Mallet	Herringbone Floorboard Block x1 {3377}	Herringbone Floorboard Block x1 {3377}	0
+721	721	Used	Night Sky Wall Block	Giant Mallet	Night Sky Wall Block x1 {3378}	Night Sky Wall Block x1 {3378}	0
+722	722	Used	Granite Floor Block	Giant Mallet	Granite Floor Block x1 {3379}	Granite Floor Block x1 {3379}	0
+723	723	Used	Stucco Wall Block	Giant Mallet	Stucco Wall Block x1 {3380}	Stucco Wall Block x1 {3380}	0
+724	723	Used	Stucco Wall Block {White}	Giant Mallet	Stucco Wall Block {White} x1 {3409}	Stucco Wall Block {White} x1 {3409}	0
+725	723	Used	Stucco Wall Block {Black}	Giant Mallet	Stucco Wall Block {Black} x1 {3410}	Stucco Wall Block {Black} x1 {3410}	0
+726	723	Used	Stucco Wall Block {Purple}	Giant Mallet	Stucco Wall Block {Purple} x1 {3411}	Stucco Wall Block {Purple} x1 {3411}	0
+727	723	Used	Stucco Wall Block {Pink}	Giant Mallet	Stucco Wall Block {Pink} x1 {3412}	Stucco Wall Block {Pink} x1 {3412}	0
+728	723	Used	Stucco Wall Block {Red}	Giant Mallet	Stucco Wall Block {Red} x1 {3413}	Stucco Wall Block {Red} x1 {3413}	0
+729	723	Used	Stucco Wall Block {Green}	Giant Mallet	Stucco Wall Block {Green} x1 {3414}	Stucco Wall Block {Green} x1 {3414}	0
+730	723	Used	Stucco Wall Block {Yellow}	Giant Mallet	Stucco Wall Block {Yellow} x1 {3415}	Stucco Wall Block {Yellow} x1 {3415}	0
+731	723	Used	Stucco Wall Block {Blue}	Giant Mallet	Stucco Wall Block {Blue} x1 {3416}	Stucco Wall Block {Blue} x1 {3416}	0
+732	712	Used	Palm-Patterned Block {White}	Giant Mallet	Palm-Patterned Block {White} x1 {3417}	Palm-Patterned Block {White} x1 {3417}	0
+733	712	Used	Palm-Patterned Block {Black}	Giant Mallet	Palm-Patterned Block {Black} x1 {3418}	Palm-Patterned Block {Black} x1 {3418}	0
+734	712	Used	Palm-Patterned Block {Purple}	Giant Mallet	Palm-Patterned Block {Purple} x1 {3419}	Palm-Patterned Block {Purple} x1 {3419}	0
+735	712	Used	Palm-Patterned Block {Pink}	Giant Mallet	Palm-Patterned Block {Pink} x1 {3420}	Palm-Patterned Block {Pink} x1 {3420}	0
+736	712	Used	Palm-Patterned Block {Red}	Giant Mallet	Palm-Patterned Block {Red} x1 {3421}	Palm-Patterned Block {Red} x1 {3421}	0
+737	712	Used	Palm-Patterned Block {Green}	Giant Mallet	Palm-Patterned Block {Green} x1 {3422}	Palm-Patterned Block {Green} x1 {3422}	0
+738	712	Used	Palm-Patterned Block {Yellow}	Giant Mallet	Palm-Patterned Block {Yellow} x1 {3423}	Palm-Patterned Block {Yellow} x1 {3423}	0
+739	712	Used	Palm-Patterned Block {Blue}	Giant Mallet	Palm-Patterned Block {Blue} x1 {3424}	Palm-Patterned Block {Blue} x1 {3424}	0
+740	714	Used	Chequered Block {White}	Giant Mallet	Chequered Block {White} x1 {3425}	Chequered Block {White} x1 {3425}	0
+741	714	Used	Chequered Block {Black}	Giant Mallet	Chequered Block {Black} x1 {3426}	Chequered Block {Black} x1 {3426}	0
+742	714	Used	Chequered Block {Purple}	Giant Mallet	Chequered Block {Purple} x1 {3427}	Chequered Block {Purple} x1 {3427}	0
+743	714	Used	Chequered Block {Pink}	Giant Mallet	Chequered Block {Pink} x1 {3428}	Chequered Block {Pink} x1 {3428}	0
+744	714	Used	Chequered Block {Red}	Giant Mallet	Chequered Block {Red} x1 {3429}	Chequered Block {Red} x1 {3429}	0
+745	714	Used	Chequered Block {Green}	Giant Mallet	Chequered Block {Green} x1 {3430}	Chequered Block {Green} x1 {3430}	0
+746	714	Used	Chequered Block {Yellow}	Giant Mallet	Chequered Block {Yellow} x1 {3431}	Chequered Block {Yellow} x1 {3431}	0
+747	714	Used	Chequered Block {Blue}	Giant Mallet	Chequered Block {Blue} x1 {3432}	Chequered Block {Blue} x1 {3432}	0
+748	717	Used	Stylish Stripy Block {White}	Giant Mallet	Stylish Stripy Block {White} x1 {3433}	Stylish Stripy Block {White} x1 {3433}	0
+749	717	Used	Stylish Stripy Block {Black}	Giant Mallet	Stylish Stripy Block {Black} x1 {3434}	Stylish Stripy Block {Black} x1 {3434}	0
+750	717	Used	Stylish Stripy Block {Purple}	Giant Mallet	Stylish Stripy Block {Purple} x1 {3435}	Stylish Stripy Block {Purple} x1 {3435}	0
+751	717	Used	Stylish Stripy Block {Pink}	Giant Mallet	Stylish Stripy Block {Pink} x1 {3436}	Stylish Stripy Block {Pink} x1 {3436}	0
+752	717	Used	Stylish Stripy Block {Red}	Giant Mallet	Stylish Stripy Block {Red} x1 {3437}	Stylish Stripy Block {Red} x1 {3437}	0
+753	717	Used	Stylish Stripy Block {Green}	Giant Mallet	Stylish Stripy Block {Green} x1 {3438}	Stylish Stripy Block {Green} x1 {3438}	0
+754	717	Used	Stylish Stripy Block {Yellow}	Giant Mallet	Stylish Stripy Block {Yellow} x1 {3439}	Stylish Stripy Block {Yellow} x1 {3439}	0
+755	717	Used	Stylish Stripy Block {Blue}	Giant Mallet	Stylish Stripy Block {Blue} x1 {3440}	Stylish Stripy Block {Blue} x1 {3440}	0
+756	720	Used	Herringbone Floorboard Block {White}	Giant Mallet	Herringbone Floorboard Block {White} x1 {3441}	Herringbone Floorboard Block {White} x1 {3441}	0
+757	720	Used	Herringbone Floorboard Block {Black}	Giant Mallet	Herringbone Floorboard Block {Black} x1 {3442}	Herringbone Floorboard Block {Black} x1 {3442}	0
+758	720	Used	Herringbone Floorboard Block {Purple}	Giant Mallet	Herringbone Floorboard Block {Purple} x1 {3443}	Herringbone Floorboard Block {Purple} x1 {3443}	0
+759	720	Used	Herringbone Floorboard Block {Pink}	Giant Mallet	Herringbone Floorboard Block {Pink} x1 {3444}	Herringbone Floorboard Block {Pink} x1 {3444}	0
+760	720	Used	Herringbone Floorboard Block {Red}	Giant Mallet	Herringbone Floorboard Block {Red} x1 {3445}	Herringbone Floorboard Block {Red} x1 {3445}	0
+761	720	Used	Herringbone Floorboard Block {Green}	Giant Mallet	Herringbone Floorboard Block {Green} x1 {3446}	Herringbone Floorboard Block {Green} x1 {3446}	0
+762	720	Used	Herringbone Floorboard Block {Yellow}	Giant Mallet	Herringbone Floorboard Block {Yellow} x1 {3447}	Herringbone Floorboard Block {Yellow} x1 {3447}	0
+763	720	Used	Herringbone Floorboard Block {Blue}	Giant Mallet	Herringbone Floorboard Block {Blue} x1 {3448}	Herringbone Floorboard Block {Blue} x1 {3448}	0
+764	721	Used	Night Sky Wall Block {White}	Giant Mallet	Night Sky Wall Block {White} x1 {3449}	Night Sky Wall Block {White} x1 {3449}	0
+765	721	Used	Night Sky Wall Block {Black}	Giant Mallet	Night Sky Wall Block {Black} x1 {3450}	Night Sky Wall Block {Black} x1 {3450}	0
+766	721	Used	Night Sky Wall Block {Purple}	Giant Mallet	Night Sky Wall Block {Purple} x1 {3451}	Night Sky Wall Block {Purple} x1 {3451}	0
+767	721	Used	Night Sky Wall Block {Pink}	Giant Mallet	Night Sky Wall Block {Pink} x1 {3452}	Night Sky Wall Block {Pink} x1 {3452}	0
+768	721	Used	Night Sky Wall Block {Red}	Giant Mallet	Night Sky Wall Block {Red} x1 {3453}	Night Sky Wall Block {Red} x1 {3453}	0
+769	721	Used	Night Sky Wall Block {Green}	Giant Mallet	Night Sky Wall Block {Green} x1 {3454}	Night Sky Wall Block {Green} x1 {3454}	0
+770	721	Used	Night Sky Wall Block {Yellow}	Giant Mallet	Night Sky Wall Block {Yellow} x1 {3455}	Night Sky Wall Block {Yellow} x1 {3455}	0
+771	721	Used	Night Sky Wall Block {Blue}	Giant Mallet	Night Sky Wall Block {Blue} x1 {3456}	Night Sky Wall Block {Blue} x1 {3456}	0
+772	772	Used	Modern Masonry Block	Giant Mallet	Modern Masonry Block x1 {3683}	Modern Masonry Block x1 {3683}	0
+773	772	Used	Modern Masonry Block {White}	Giant Mallet	Modern Masonry Block {White} x1 {3684}	Modern Masonry Block {White} x1 {3684}	0
+774	772	Used	Modern Masonry Block {Black}	Giant Mallet	Modern Masonry Block {Black} x1 {3685}	Modern Masonry Block {Black} x1 {3685}	0
+775	772	Used	Modern Masonry Block {Purple}	Giant Mallet	Modern Masonry Block {Purple} x1 {3686}	Modern Masonry Block {Purple} x1 {3686}	0
+776	772	Used	Modern Masonry Block {Pink}	Giant Mallet	Modern Masonry Block {Pink} x1 {3687}	Modern Masonry Block {Pink} x1 {3687}	0
+777	772	Used	Modern Masonry Block {Red}	Giant Mallet	Modern Masonry Block {Red} x1 {3688}	Modern Masonry Block {Red} x1 {3688}	0
+778	772	Used	Modern Masonry Block {Green}	Giant Mallet	Modern Masonry Block {Green} x1 {3689}	Modern Masonry Block {Green} x1 {3689}	0
+779	772	Used	Modern Masonry Block {Yellow}	Giant Mallet	Modern Masonry Block {Yellow} x1 {3690}	Modern Masonry Block {Yellow} x1 {3690}	0
+780	772	Used	Modern Masonry Block {Blue}	Giant Mallet	Modern Masonry Block {Blue} x1 {3691}	Modern Masonry Block {Blue} x1 {3691}	0
+781	781	Used	Chintzy Block	Giant Mallet	Chintzy Block x1 {3692}	Chintzy Block x1 {3692}	0
+782	781	Used	Chintzy Block {White}	Giant Mallet	Chintzy Block {White} x1 {3693}	Chintzy Block {White} x1 {3693}	0
+783	781	Used	Chintzy Block {Black}	Giant Mallet	Chintzy Block {Black} x1 {3694}	Chintzy Block {Black} x1 {3694}	0
+784	781	Used	Chintzy Block {Purple}	Giant Mallet	Chintzy Block {Purple} x1 {3695}	Chintzy Block {Purple} x1 {3695}	0
+785	781	Used	Chintzy Block {Pink}	Giant Mallet	Chintzy Block {Pink} x1 {3696}	Chintzy Block {Pink} x1 {3696}	0
+786	781	Used	Chintzy Block {Red}	Giant Mallet	Chintzy Block {Red} x1 {3697}	Chintzy Block {Red} x1 {3697}	0
+787	781	Used	Chintzy Block {Green}	Giant Mallet	Chintzy Block {Green} x1 {3698}	Chintzy Block {Green} x1 {3698}	0
+788	781	Used	Chintzy Block {Yellow}	Giant Mallet	Chintzy Block {Yellow} x1 {3699}	Chintzy Block {Yellow} x1 {3699}	0
+789	781	Used	Chintzy Block {Blue}	Giant Mallet	Chintzy Block {Blue} x1 {3700}	Chintzy Block {Blue} x1 {3700}	0
+790	790	Used	Gingham Carpet	Giant Mallet	Gingham Carpet x1 {3701}	Gingham Carpet x1 {3701}	0
+791	790	Used	Gingham Carpet {White}	Giant Mallet	Gingham Carpet {White} x1 {3702}	Gingham Carpet {White} x1 {3702}	0
+792	790	Used	Gingham Carpet {Black}	Giant Mallet	Gingham Carpet {Black} x1 {3703}	Gingham Carpet {Black} x1 {3703}	0
+793	790	Used	Gingham Carpet {Purple}	Giant Mallet	Gingham Carpet {Purple} x1 {3704}	Gingham Carpet {Purple} x1 {3704}	0
+794	790	Used	Gingham Carpet {Pink}	Giant Mallet	Gingham Carpet {Pink} x1 {3705}	Gingham Carpet {Pink} x1 {3705}	0
+795	790	Used	Gingham Carpet {Red}	Giant Mallet	Gingham Carpet {Red} x1 {3706}	Gingham Carpet {Red} x1 {3706}	0
+796	790	Used	Gingham Carpet {Green}	Giant Mallet	Gingham Carpet {Green} x1 {3707}	Gingham Carpet {Green} x1 {3707}	0
+797	790	Used	Gingham Carpet {Yellow}	Giant Mallet	Gingham Carpet {Yellow} x1 {3708}	Gingham Carpet {Yellow} x1 {3708}	0
+798	790	Used	Gingham Carpet {Blue}	Giant Mallet	Gingham Carpet {Blue} x1 {3709}	Gingham Carpet {Blue} x1 {3709}	0
+799	799	Used	Stripy Wall	Giant Mallet	Stripy Wall x1 {3710}	Stripy Wall x1 {3710}	0
+800	799	Used	Stripy Wall {White}	Giant Mallet	Stripy Wall {White} x1 {3711}	Stripy Wall {White} x1 {3711}	0
+801	799	Used	Stripy Wall {Black}	Giant Mallet	Stripy Wall {Black} x1 {3712}	Stripy Wall {Black} x1 {3712}	0
+802	799	Used	Stripy Wall {Purple}	Giant Mallet	Stripy Wall {Purple} x1 {3713}	Stripy Wall {Purple} x1 {3713}	0
+803	799	Used	Stripy Wall {Pink}	Giant Mallet	Stripy Wall {Pink} x1 {3714}	Stripy Wall {Pink} x1 {3714}	0
+804	799	Used	Stripy Wall {Red}	Giant Mallet	Stripy Wall {Red} x1 {3715}	Stripy Wall {Red} x1 {3715}	0
+805	799	Used	Stripy Wall {Green}	Giant Mallet	Stripy Wall {Green} x1 {3716}	Stripy Wall {Green} x1 {3716}	0
+806	799	Used	Stripy Wall {Yellow}	Giant Mallet	Stripy Wall {Yellow} x1 {3717}	Stripy Wall {Yellow} x1 {3717}	0
+807	799	Used	Stripy Wall {Blue}	Giant Mallet	Stripy Wall {Blue} x1 {3718}	Stripy Wall {Blue} x1 {3718}	0
+808	808	Used	Mottled Wall	Giant Mallet	Mottled Wall {3719}	Mottled Wall x1 {3719}	0
+809	808	Used	Mottled Wall {White}	Giant Mallet	Mottled Wall {White} x1 {3720}	Mottled Wall {White} x1 {3720}	0
+810	808	Used	Mottled Wall {Black}	Giant Mallet	Mottled Wall {Black} x1 {3721}	Mottled Wall {Black} x1 {3721}	0
+811	808	Used	Mottled Wall {Purple}	Giant Mallet	Mottled Wall {Purple} x1 {3722}	Mottled Wall {Purple} x1 {3722}	0
+812	808	Used	Mottled Wall {Pink}	Giant Mallet	Mottled Wall {Pink} x1 {3723}	Mottled Wall {Pink} x1 {3723}	0
+813	808	Used	Mottled Wall {Red}	Giant Mallet	Mottled Wall {Red} x1 {3724}	Mottled Wall {Red} x1 {3724}	0
+814	808	Used	Mottled Wall {Green}	Giant Mallet	Mottled Wall {Green} x1 {3725}	Mottled Wall {Green} x1 {3725}	0
+815	808	Used	Mottled Wall {Yellow}	Giant Mallet	Mottled Wall {Yellow} x1 {3726}	Mottled Wall {Yellow} x1 {3726}	0
+816	808	Used	Mottled Wall {Blue}	Giant Mallet	Mottled Wall {Blue} x1 {3727}	Mottled Wall {Blue} x1 {3727}	0
+817	817	Used	Slimy Wall	Giant Mallet	Slimy Wall x1 {3728}	Slimy Wall x1 {3728}	0
+818	818	Used	Diamond Design Block	Giant Mallet	Diamond Design Block x1 {3729}	Diamond Design Block x1 {3729}	0
+819	819	Used	Old-Skool Wall Block	Giant Mallet	Old-Skool Wall Block x1 {3730}	Old-Skool Wall Block x1 {3730}	0
+820	820	Used	Art Deco Block	Giant Mallet	Art Deco Block x1 {3731}	Art Deco Block x1 {3731}	0
+821	821	Used	Jungle Wall	Giant Mallet	Jungle Wall x1 {3732}	Jungle Wall x1 {3732}	0
+822	822	Used	Vintage Wall	Giant Mallet	Vintage Wall x1 {3733}	Vintage Wall x1 {3733}	0
+823	823	Used	Damask Design Block	Giant Mallet	Damask Design Block x1 {3734}	Damask Design Block x1 {3734}	0
+824	823	Used	Damask Design Block {White}	Giant Mallet	Damask Design Block {White} x1 {3735}	Damask Design Block {White} x1 {3735}	0
+825	823	Used	Damask Design Block {Black}	Giant Mallet	Damask Design Block {Black} x1 {3736}	Damask Design Block {Black} x1 {3736}	0
+826	823	Used	Damask Design Block {Purple}	Giant Mallet	Damask Design Block {Purple} x1 {3737}	Damask Design Block {Purple} x1 {3737}	0
+827	823	Used	Damask Design Block {Pink}	Giant Mallet	Damask Design Block {Pink} x1 {3738}	Damask Design Block {Pink} x1 {3738}	0
+828	823	Used	Damask Design Block {Red}	Giant Mallet	Damask Design Block {Red} x1 {3739}	Damask Design Block {Red} x1 {3739}	0
+829	823	Used	Damask Design Block {Green}	Giant Mallet	Damask Design Block {Green} x1 {3740}	Damask Design Block {Green} x1 {3740}	0
+830	823	Used	Damask Design Block {Yellow}	Giant Mallet	Damask Design Block {Yellow} x1 {3741}	Damask Design Block {Yellow} x1 {3741}	0
+831	823	Used	Damask Design Block {Blue}	Giant Mallet	Damask Design Block {Blue} x1 {3742}	Damask Design Block {Blue} x1 {3742}	0
+832	832	Used	Refined Design Block	Giant Mallet	Refined Design Block x1 {3743}	Refined Design Block x1 {3743}	0
+833	833	Used	Classy Cross Block	Giant Mallet	Classy Cross Block x1 {3792}	Classy Cross Block x1 {3792}	0
+834	715	Used	Sunset-Styled Block {White}	Giant Mallet	Sunset-Styled Block {White} x1 {3943}	Sunset-Styled Block {White} x1 {3943}	0
+835	715	Used	Sunset-Styled Block {Black}	Giant Mallet	Sunset-Styled Block {Black} x1 {3944}	Sunset-Styled Block {Black} x1 {3944}	0
+836	715	Used	Sunset-Styled Block {Purple}	Giant Mallet	Sunset-Styled Block {Purple} x1 {3945}	Sunset-Styled Block {Purple} x1 {3945}	0
+837	715	Used	Sunset-Styled Block {Pink}	Giant Mallet	Sunset-Styled Block {Pink} x1 {3946}	Sunset-Styled Block {Pink} x1 {3946}	0
+838	715	Used	Sunset-Styled Block {Red}	Giant Mallet	Sunset-Styled Block {Red} x1 {3947}	Sunset-Styled Block {Red} x1 {3947}	0
+839	715	Used	Sunset-Styled Block {Green}	Giant Mallet	Sunset-Styled Block {Green} x1 {3948}	Sunset-Styled Block {Green} x1 {3948}	0
+840	715	Used	Sunset-Styled Block {Yellow}	Giant Mallet	Sunset-Styled Block {Yellow} x1 {3949}	Sunset-Styled Block {Yellow} x1 {3949}	0
+841	715	Used	Sunset-Styled Block {Blue}	Giant Mallet	Sunset-Styled Block {Blue} x1 {3950}	Sunset-Styled Block {Blue} x1 {3950}	0
+842	716	Used	Seaweed-Styled Block {White}	Giant Mallet	Seaweed-Styled Block {White} x1 {3951}	Seaweed-Styled Block {White} x1 {3951}	0
+843	716	Used	Seaweed-Styled Block {Black}	Giant Mallet	Seaweed-Styled Block {Black} x1 {3952}	Seaweed-Styled Block {Black} x1 {3952}	0
+844	716	Used	Seaweed-Styled Block {Purple}	Giant Mallet	Seaweed-Styled Block {Purple} x1 {3953}	Seaweed-Styled Block {Purple} x1 {3953}	0
+845	716	Used	Seaweed-Styled Block {Pink}	Giant Mallet	Seaweed-Styled Block {Pink} x1 {3954}	Seaweed-Styled Block {Pink} x1 {3954}	0
+846	716	Used	Seaweed-Styled Block {Red}	Giant Mallet	Seaweed-Styled Block {Red} x1 {3955}	Seaweed-Styled Block {Red} x1 {3955}	0
+847	716	Used	Seaweed-Styled Block {Green}	Giant Mallet	Seaweed-Styled Block {Green} x1 {3956}	Seaweed-Styled Block {Green} x1 {3956}	0
+848	716	Used	Seaweed-Styled Block {Yellow}	Giant Mallet	Seaweed-Styled Block {Yellow} x1 {3957}	Seaweed-Styled Block {Yellow} x1 {3957}	0
+849	716	Used	Seaweed-Styled Block {Blue}	Giant Mallet	Seaweed-Styled Block {Blue} x1 {3958}	Seaweed-Styled Block {Blue} x1 {3958}	0
+850	822	Used	Vintage Wall {White}	Giant Mallet	Vintage Wall {White} x1 {3959}	Vintage Wall {White} x1 {3959}	0
+851	822	Used	Vintage Wall {Black}	Giant Mallet	Vintage Wall {Black} x1 {3960}	Vintage Wall {Black} x1 {3960}	0
+852	822	Used	Vintage Wall {Purple}	Giant Mallet	Vintage Wall {Purple} x1 {3961}	Vintage Wall {Purple} x1 {3961}	0
+853	822	Used	Vintage Wall {Pink}	Giant Mallet	Vintage Wall {Pink} x1 {3962}	Vintage Wall {Pink} x1 {3962}	0
+854	822	Used	Vintage Wall {Red}	Giant Mallet	Vintage Wall {Red} x1 {3963}	Vintage Wall {Red} x1 {3963}	0
+855	822	Used	Vintage Wall {Green}	Giant Mallet	Vintage Wall {Green} x1 {3964}	Vintage Wall {Green} x1 {3964}	0
+856	822	Used	Vintage Wall {Yellow}	Giant Mallet	Vintage Wall {Yellow} x1 {3965}	Vintage Wall {Yellow} x1 {3965}	0
+857	822	Used	Vintage Wall {Blue}	Giant Mallet	Vintage Wall {Blue} x1 {3966}	Vintage Wall {Blue} x1 {3966}	0
+858	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+859	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+860	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+861	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+862	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+863	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+864	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+865	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+866	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+867	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+868	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+869	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+870	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+871	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+872	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+873	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+874	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+875	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+876	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+877	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+878	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+879	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+880	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+881	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+882	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+883	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+884	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+885	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+886	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+887	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+888	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+889	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+890	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+891	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+892	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+893	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+894	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+895	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+896	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+897	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+898	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+899	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+900	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+901	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+902	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+903	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+904	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+905	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+906	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+907	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+908	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+909	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+910	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+911	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+912	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+913	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+914	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+915	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+916	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+917	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+918	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+919	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+920	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+921	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+922	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+923	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+924	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+925	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+926	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+927	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+928	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+929	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+930	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+931	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+932	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+933	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+934	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+935	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+936	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+937	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+938	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+939	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+940	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+941	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+942	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+943	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+944	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+945	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+946	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+947	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+948	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+949	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+950	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+951	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+952	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+953	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+954	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+955	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+956	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+957	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+958	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+959	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+960	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+961	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+962	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+963	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+964	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+965	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+966	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+967	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+968	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+969	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+970	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+971	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+972	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+973	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+974	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+975	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+976	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+977	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+978	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+979	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+980	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+981	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+982	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+983	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+984	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+985	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+986	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+987	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+988	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+989	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+990	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+991	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+992	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+993	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+994	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+995	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+996	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+997	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+998	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+999	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1000	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1001	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1002	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1003	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1004	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1005	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1006	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1007	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1008	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1009	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1010	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1011	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1012	-1	Unused	Black Void	0	0	0	0
+1013	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1014	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1015	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1016	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1017	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1018	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1019	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1020	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1021	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1022	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1023	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1024	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1025	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1026	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1027	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1028	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1029	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1030	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1031	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1032	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1033	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1034	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1035	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1036	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1037	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1038	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1039	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1040	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1041	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1042	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1043	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1044	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1045	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1046	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1047	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1048	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1049	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1050	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1051	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1052	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1053	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1054	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1055	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1056	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1057	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1058	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1059	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1060	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1061	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1062	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1063	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1064	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1065	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1066	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1067	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1068	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1069	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1070	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1071	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1072	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1073	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1074	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1075	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1076	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1077	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1078	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1079	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1080	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1081	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1082	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1083	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1084	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1085	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1086	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1087	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1088	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1089	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1090	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1091	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1092	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1093	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1094	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1095	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1096	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1097	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1098	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1099	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1100	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1101	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1102	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1103	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1104	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1105	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1106	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1107	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1108	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1109	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1110	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1111	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1112	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1113	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1114	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1115	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1116	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1117	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1118	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1119	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1120	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1121	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1122	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1123	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1124	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1125	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1126	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1127	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1128	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1129	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1130	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1131	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1132	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1133	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1134	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1135	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1136	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1137	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1138	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1139	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1140	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1141	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1142	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1143	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1144	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1145	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1146	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1147	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1148	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1149	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1150	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1151	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1152	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1153	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1154	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1155	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1156	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1157	38	Unused	Default Block	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1158	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1159	120	Used	Clear Water Shallow Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1160	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1161	120	Used	Clear Water Small Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1162	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1163	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1164	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1165	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1166	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1167	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1168	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1169	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1170	231	Used	Hot Water Shallow Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1171	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1172	231	Used	Hot Water Small Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1173	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1174	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1175	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1176	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1177	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1178	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1179	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1180	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1181	190	Used	Poison Shallow Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1182	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1183	190	Used	Poison Small Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1184	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1185	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1186	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1187	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1188	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1189	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1190	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1191	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1192	267	Used	Liquid Lava Shallow Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1193	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1194	267	Used	Liquid Lava Small Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1195	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1196	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1197	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1198	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1199	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1200	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1201	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1202	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1203	199	Used	Bottomless Swamp Shallow Block	0	Nothing {-1}	0	0
+1204	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1205	199	Used	Bottomless Swamp Small Block	0	Nothing {-1}	0	0
+1206	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1207	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1208	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1209	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1210	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1211	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1212	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1213	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1214	208	Used	Filthy Water Shallow Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1215	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1216	208	Used	Filthy Water Small Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1217	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1218	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1219	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1220	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1221	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1222	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1223	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1224	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1225	349	Used	Sea Water Shallow Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1226	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1227	349	Used	Sea Water Small Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1228	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1229	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1230	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1231	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1232	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1233	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1234	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1235	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1236	390	Used	Plasma Shallow Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1237	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1238	390	Used	Plasma Small Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1239	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1240	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1241	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1242	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1243	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1244	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1245	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1246	2047	Used	Item	0	0	0	0
+1247	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1248	120	Used	Clear Water Shallow Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1249	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1250	120	Used	Clear Water Small Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1251	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1252	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1253	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1254	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1255	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1256	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1257	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1258	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1259	231	Used	Hot Water Shallow Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1260	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1261	231	Used	Hot Water Small Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1262	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1263	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1264	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1265	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1266	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1267	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1268	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1269	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1270	190	Used	Poison Shallow Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1271	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1272	190	Used	Poison Small Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1273	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1274	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1275	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1276	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1277	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1278	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1279	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1280	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1281	267	Used	Liquid Lava Shallow Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1282	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1283	267	Used	Liquid Lava Small Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1284	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1285	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1286	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1287	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1288	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1289	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1290	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1291	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1292	199	Used	Bottomless Swamp Shallow Block	0	Nothing {-1}	0	0
+1293	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1294	199	Used	Bottomless Swamp Small Block	0	Nothing {-1}	0	0
+1295	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1296	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1297	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1298	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1299	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1300	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1301	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1302	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1303	208	Used	Filthy Water Shallow Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1304	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1305	208	Used	Filthy Water Small Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1306	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1307	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1308	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1309	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1310	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1311	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1312	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1313	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1314	349	Used	Sea Water Shallow Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1315	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1316	349	Used	Sea Water Small Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1317	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1318	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1319	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1320	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1321	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1322	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1323	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1324	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1325	390	Used	Plasma Shallow Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1326	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1327	390	Used	Plasma Small Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1328	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1329	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1330	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1331	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1332	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1333	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1334	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1335	2047	Used	Item	0	0	0	0
+1336	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1337	120	Used	Clear Water Shallow Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1338	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1339	120	Used	Clear Water Small Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1340	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1341	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1342	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1343	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1344	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1345	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1346	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1347	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1348	231	Used	Hot Water Shallow Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1349	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1350	231	Used	Hot Water Small Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1351	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1352	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1353	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1354	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1355	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1356	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1357	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1358	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1359	190	Used	Poison Shallow Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1360	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1361	190	Used	Poison Small Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1362	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1363	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1364	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1365	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1366	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1367	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1368	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1369	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1370	267	Used	Liquid Lava Shallow Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1371	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1372	267	Used	Liquid Lava Small Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1373	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1374	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1375	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1376	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1377	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1378	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1379	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1380	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1381	199	Used	Bottomless Swamp Shallow Block	0	Nothing {-1}	0	0
+1382	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1383	199	Used	Bottomless Swamp Small Block	0	Nothing {-1}	0	0
+1384	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1385	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1386	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1387	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1388	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1389	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1390	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1391	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1392	208	Used	Filthy Water Shallow Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1393	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1394	208	Used	Filthy Water Small Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1395	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1396	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1397	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1398	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1399	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1400	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1401	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1402	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1403	349	Used	Sea Water Shallow Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1404	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1405	349	Used	Sea Water Small Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1406	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1407	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1408	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1409	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1410	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1411	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1412	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1413	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1414	390	Used	Plasma Shallow Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1415	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1416	390	Used	Plasma Small Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1417	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1418	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1419	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1420	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1421	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1422	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1423	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1424	2047	Used	Item	0	0	0	0
+1425	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1426	120	Used	Clear Water Shallow Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1427	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1428	120	Used	Clear Water Small Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1429	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1430	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1431	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1432	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1433	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1434	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1435	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1436	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1437	231	Used	Hot Water Shallow Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1438	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1439	231	Used	Hot Water Small Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1440	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1441	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1442	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1443	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1444	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1445	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1446	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1447	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1448	190	Used	Poison Shallow Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1449	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1450	190	Used	Poison Small Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1451	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1452	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1453	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1454	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1455	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1456	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1457	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1458	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1459	267	Used	Liquid Lava Shallow Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1460	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1461	267	Used	Liquid Lava Small Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1462	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1463	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1464	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1465	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1466	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1467	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1468	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1469	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1470	199	Used	Bottomless Swamp Shallow Block	0	Nothing {-1}	0	0
+1471	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1472	199	Used	Bottomless Swamp Small Block	0	Nothing {-1}	0	0
+1473	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1474	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1475	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1476	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1477	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1478	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1479	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1480	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1481	208	Used	Filthy Water Shallow Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1482	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1483	208	Used	Filthy Water Small Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1484	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1485	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1486	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1487	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1488	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1489	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1490	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1491	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1492	349	Used	Sea Water Shallow Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1493	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1494	349	Used	Sea Water Small Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1495	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1496	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1497	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1498	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1499	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1500	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1501	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1502	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1503	390	Used	Plasma Shallow Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1504	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1505	390	Used	Plasma Small Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1506	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1507	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1508	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1509	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1510	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1511	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1512	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1513	2047	Used	Item	0	0	0	0
+1514	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1515	120	Used	Clear Water Shallow Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1516	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1517	120	Used	Clear Water Small Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1518	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1519	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1520	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1521	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1522	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1523	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1524	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1525	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1526	231	Used	Hot Water Shallow Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1527	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1528	231	Used	Hot Water Small Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1529	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1530	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1531	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1532	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1533	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1534	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1535	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1536	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1537	190	Used	Poison Shallow Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1538	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1539	190	Used	Poison Small Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1540	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1541	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1542	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1543	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1544	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1545	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1546	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1547	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1548	267	Used	Liquid Lava Shallow Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1549	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1550	267	Used	Liquid Lava Small Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1551	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1552	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1553	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1554	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1555	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1556	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1557	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1558	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1559	199	Used	Bottomless Swamp Shallow Block	0	Nothing {-1}	0	0
+1560	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1561	199	Used	Bottomless Swamp Small Block	0	Nothing {-1}	0	0
+1562	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1563	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1564	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1565	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1566	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1567	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1568	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1569	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1570	208	Used	Filthy Water Shallow Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1571	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1572	208	Used	Filthy Water Small Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1573	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1574	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1575	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1576	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1577	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1578	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1579	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1580	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1581	349	Used	Sea Water Shallow Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1582	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1583	349	Used	Sea Water Small Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1584	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1585	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1586	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1587	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1588	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1589	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1590	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1591	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1592	390	Used	Plasma Shallow Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1593	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1594	390	Used	Plasma Small Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1595	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1596	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1597	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1598	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1599	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1600	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1601	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1602	2047	Used	Item	0	0	0	0
+1603	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1604	120	Used	Clear Water Shallow Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1605	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1606	120	Used	Clear Water Small Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1607	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1608	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1609	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1610	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1611	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1612	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1613	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1614	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1615	231	Used	Hot Water Shallow Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1616	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1617	231	Used	Hot Water Small Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1618	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1619	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1620	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1621	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1622	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1623	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1624	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1625	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1626	190	Used	Poison Shallow Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1627	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1628	190	Used	Poison Small Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1629	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1630	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1631	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1632	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1633	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1634	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1635	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1636	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1637	267	Used	Liquid Lava Shallow Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1638	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1639	267	Used	Liquid Lava Small Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1640	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1641	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1642	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1643	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1644	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1645	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1646	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1647	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1648	199	Used	Bottomless Swamp Shallow Block	0	Nothing {-1}	0	0
+1649	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1650	199	Used	Bottomless Swamp Small Block	0	Nothing {-1}	0	0
+1651	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1652	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1653	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1654	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1655	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1656	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1657	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1658	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1659	208	Used	Filthy Water Shallow Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1660	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1661	208	Used	Filthy Water Small Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1662	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1663	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1664	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1665	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1666	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1667	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1668	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1669	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1670	349	Used	Sea Water Shallow Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1671	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1672	349	Used	Sea Water Small Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1673	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1674	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1675	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1676	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1677	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1678	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1679	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1680	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1681	390	Used	Plasma Shallow Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1682	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1683	390	Used	Plasma Small Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1684	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1685	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1686	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1687	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1688	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1689	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1690	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1691	2047	Used	Item	0	0	0	0
+1692	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1693	120	Used	Clear Water Shallow Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1694	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1695	120	Used	Clear Water Small Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1696	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1697	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1698	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1699	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1700	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1701	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1702	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1703	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1704	231	Used	Hot Water Shallow Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1705	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1706	231	Used	Hot Water Small Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1707	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1708	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1709	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1710	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1711	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1712	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1713	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1714	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1715	190	Used	Poison Shallow Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1716	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1717	190	Used	Poison Small Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1718	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1719	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1720	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1721	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1722	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1723	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1724	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1725	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1726	267	Used	Liquid Lava Shallow Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1727	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1728	267	Used	Liquid Lava Small Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1729	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1730	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1731	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1732	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1733	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1734	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1735	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1736	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1737	199	Used	Bottomless Swamp Shallow Block	0	Nothing {-1}	0	0
+1738	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1739	199	Used	Bottomless Swamp Small Block	0	Nothing {-1}	0	0
+1740	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1741	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1742	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1743	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1744	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1745	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1746	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1747	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1748	208	Used	Filthy Water Shallow Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1749	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1750	208	Used	Filthy Water Small Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1751	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1752	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1753	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1754	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1755	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1756	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1757	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1758	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1759	349	Used	Sea Water Shallow Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1760	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1761	349	Used	Sea Water Small Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1762	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1763	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1764	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1765	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1766	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1767	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1768	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1769	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1770	390	Used	Plasma Shallow Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1771	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1772	390	Used	Plasma Small Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1773	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1774	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1775	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1776	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1777	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1778	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1779	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1780	2047	Used	Item	0	0	0	0
+1781	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1782	120	Used	Clear Water Shallow Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1783	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1784	120	Used	Clear Water Small Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1785	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1786	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1787	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1788	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1789	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1790	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1791	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1792	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1793	231	Used	Hot Water Shallow Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1794	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1795	231	Used	Hot Water Small Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1796	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1797	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1798	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1799	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1800	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1801	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1802	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1803	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1804	190	Used	Poison Shallow Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1805	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1806	190	Used	Poison Small Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1807	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1808	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1809	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1810	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1811	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1812	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1813	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1814	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1815	267	Used	Liquid Lava Shallow Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1816	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1817	267	Used	Liquid Lava Small Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1818	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1819	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1820	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1821	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1822	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1823	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1824	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1825	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1826	199	Used	Bottomless Swamp Shallow Block	0	Nothing {-1}	0	0
+1827	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1828	199	Used	Bottomless Swamp Small Block	0	Nothing {-1}	0	0
+1829	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1830	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1831	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1832	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1833	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1834	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1835	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1836	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1837	208	Used	Filthy Water Shallow Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1838	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1839	208	Used	Filthy Water Small Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1840	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1841	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1842	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1843	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1844	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1845	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1846	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1847	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1848	349	Used	Sea Water Shallow Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1849	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1850	349	Used	Sea Water Small Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1851	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1852	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1853	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1854	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1855	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1856	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1857	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1858	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1859	390	Used	Plasma Shallow Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1860	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1861	390	Used	Plasma Small Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1862	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1863	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1864	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1865	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1866	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1867	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1868	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1869	2047	Used	Item	0	0	0	0
+1870	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1871	120	Used	Clear Water Shallow Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1872	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1873	120	Used	Clear Water Small Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1874	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1875	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1876	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1877	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1878	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1879	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1880	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1881	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1882	231	Used	Hot Water Shallow Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1883	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1884	231	Used	Hot Water Small Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1885	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1886	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1887	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1888	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1889	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1890	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1891	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1892	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1893	190	Used	Poison Shallow Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1894	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1895	190	Used	Poison Small Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1896	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1897	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1898	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1899	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1900	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1901	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1902	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1903	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1904	267	Used	Liquid Lava Shallow Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1905	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1906	267	Used	Liquid Lava Small Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1907	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1908	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1909	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1910	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1911	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1912	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1913	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1914	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1915	199	Used	Bottomless Swamp Shallow Block	0	Nothing {-1}	0	0
+1916	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1917	199	Used	Bottomless Swamp Small Block	0	Nothing {-1}	0	0
+1918	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1919	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1920	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1921	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1922	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1923	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+1924	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+1925	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1926	208	Used	Filthy Water Shallow Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1927	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1928	208	Used	Filthy Water Small Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1929	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1930	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1931	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1932	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1933	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1934	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1935	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1936	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1937	349	Used	Sea Water Shallow Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1938	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1939	349	Used	Sea Water Small Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1940	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1941	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1942	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1943	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1944	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1945	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1946	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1947	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1948	390	Used	Plasma Shallow Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1949	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1950	390	Used	Plasma Small Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1951	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1952	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1953	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1954	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1955	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1956	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1957	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1958	2047	Used	Item	0	0	0	0
+1959	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1960	120	Used	Clear Water Shallow Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1961	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1962	120	Used	Clear Water Small Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1963	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1964	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1965	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1966	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1967	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1968	120	Used	Clear Water Surface Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1969	120	Used	Clear Water Full Block	0	Water-Filled Bottomless Pot {1767}	0	0
+1970	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1971	231	Used	Hot Water Shallow Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1972	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1973	231	Used	Hot Water Small Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1974	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1975	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1976	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1977	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1978	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1979	231	Used	Hot Water Surface Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1980	231	Used	Hot Water Full Block	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1981	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1982	190	Used	Poison Shallow Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1983	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1984	190	Used	Poison Small Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1985	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1986	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1987	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1988	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1989	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1990	190	Used	Poison Surface Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1991	190	Used	Poison Full Block	0	Poison-Filled Bottomless Pot {1557}	0	0
+1992	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1993	267	Used	Liquid Lava Shallow Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1994	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1995	267	Used	Liquid Lava Small Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1996	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1997	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1998	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+1999	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+2000	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+2001	267	Used	Liquid Lava Surface Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+2002	267	Used	Liquid Lava Full Block	0	Lava-Filled Bottomless Pot {1558}	0	0
+2003	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+2004	199	Used	Bottomless Swamp Shallow Block	0	Nothing {-1}	0	0
+2005	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+2006	199	Used	Bottomless Swamp Small Block	0	Nothing {-1}	0	0
+2007	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+2008	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+2009	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+2010	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+2011	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+2012	199	Used	Bottomless Swamp Surface Block	0	Nothing {-1}	0	0
+2013	199	Used	Bottomless Swamp Full Block	0	Nothing {-1}	0	0
+2014	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2015	208	Used	Filthy Water Shallow Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2016	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2017	208	Used	Filthy Water Small Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2018	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2019	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2020	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2021	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2022	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2023	208	Used	Filthy Water Surface Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2024	208	Used	Filthy Water Full Block	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2025	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2026	349	Used	Sea Water Shallow Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2027	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2028	349	Used	Sea Water Small Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2029	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2030	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2031	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2032	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2033	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2034	349	Used	Sea Water Surface Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2035	349	Used	Sea Water Full Block	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2036	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2037	390	Used	Plasma Shallow Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2038	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2039	390	Used	Plasma Small Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2040	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2041	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2042	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2043	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2044	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2045	390	Used	Plasma Surface Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2046	390	Used	Plasma Full Block	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2047	2047	Used	Item	0	0	0	0
+

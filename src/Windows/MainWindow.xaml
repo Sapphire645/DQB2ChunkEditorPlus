@@ -1,11 +1,11 @@
-﻿<Window x:Class="DQB2ChunkEditor.Windows.MainWindow"
+﻿<Window x:Class="DQBChunkEditor.Windows.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:control="clr-namespace:DQB2ChunkEditor.Controls"
+        xmlns:control="clr-namespace:DQBChunkEditor.Controls"
         mc:Ignorable="d"
-        Title="DQB2 Chunk Editor Plus" Height="600" MinHeight="600" Width="900" MinWidth="900" WindowStartupLocation="CenterScreen" WindowState="Maximized" SnapsToDevicePixels="True" Icon="/Images/Icon.png">
+        Title="DQB Chunk Editor Plus" Height="600" MinHeight="600" Width="900" MinWidth="900" WindowStartupLocation="CenterScreen" WindowState="Maximized" SnapsToDevicePixels="True" Icon="/Images/Icon.png">
   <Window.Resources>
     <Style TargetType="Image">
       <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality" />
@@ -38,21 +38,21 @@
       <TabControl Grid.Row="1" Name="Tabs">
         <TabItem Header="Chunk Editor">
           <Grid>
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="4*"/>
-          <ColumnDefinition Width="4*"/>
-        </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0" DockPanel.Dock="Left">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="4*"/>
+              <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" DockPanel.Dock="Left">
               <Grid.RowDefinitions>
                 <RowDefinition Height="3*"/>
                 <RowDefinition Height="2*"/>
               </Grid.RowDefinitions>
-                <control:TabList x:Name="SelectionList"/>
+              <control:TabList x:Name="SelectionList"/>
               <control:ToolBar x:Name="ToolBar" Grid.Row="1"></control:ToolBar>
               <!-- StackPanel Grid.Row="1">
                 
           </StackPanel-->
-        </Grid>
+            </Grid>
             <Grid Grid.Column="1" DockPanel.Dock="Right">
               <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -83,50 +83,6 @@
                 <Button Name="SubLayer" Width="20" FontWeight="Bold" Click="SubLayer_OnClick">-</Button>
               </StackPanel>
             </Grid>
-          </Grid>
-        </TabItem>
-        <TabItem Header="Value Editors">
-          <Grid Background="#FFE5E5E5" x:Name="Pain">
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width = "4*"/>
-              <ColumnDefinition Width="6*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-              <RowDefinition Height="2*"/>
-              <RowDefinition/>
-            </Grid.RowDefinitions>
-            <StackPanel Grid.Column="0" Width="450" VerticalAlignment="Top" Orientation="Vertical" HorizontalAlignment="Left" Margin="15,15,0,0">
-              <StackPanel Width="450" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0" Height="45">
-                <Image Source="/Images/Gratitude.png" Height="60" Width="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,5,0"/>
-                <TextBlock Text="Gratitude(ERROR): " VerticalAlignment="Center" FontSize="12" Margin="5,0,0,0" Width="55" TextWrapping="WrapWithOverflow"/>
-                <TextBlock Name="GratitudeInput" TextAlignment="Right" Text="{Binding ChunkEditor.GratitudePoints, BindsDirectlyToSource=True, FallbackValue=0, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" Width="297" Margin="20,0,0,0" Padding="5,0,10,0" VerticalAlignment="Center" />
-              </StackPanel>
-              <StackPanel Width="450" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0" Height="45">
-                <Image Source="/Images/Clock.png" Height="60" Width="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,5,0"/>
-                <TextBlock Text="Time: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Margin="5,0,0,0" Height="20" Width="55"/>
-                <TextBox Name="TimeInput" Text="{Binding ChunkEditor.Clock, BindsDirectlyToSource=True, FallbackValue=0, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" Height="25" Width="300" Margin="20,0,0,0" Padding="5,0,10,0" TextChanged="TimeInput_TextChanged" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" />
-              </StackPanel>
-              <StackPanel Width="450" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,0" Height="45">
-                <Image Source="/Images/Weather.png" Height="60" Width="30" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,5,0"/>
-                <TextBlock Text= "Weather: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Margin="5,0,0,0" Width="55" Height="20"/>
-                <ComboBox Name="WeatherComboBoxX" Height="35" Width = "300" SelectedItem="{Binding SelectedWeather, RelativeSource={RelativeSource AncestorType=Window}}" SelectionChanged="SetWeather_OnClick" ItemsSource="{Binding WeatherComboBox, RelativeSource={RelativeSource AncestorType=Window}}" Margin="20,0,0,0" />
-              </StackPanel>
-            </StackPanel>
-            <ListBox x:Name="List" Grid.Column="1">
-              <ListBox.ItemTemplate>
-                <DataTemplate>
-                  <StackPanel Orientation="Horizontal">
-                    <Label Margin="5,0,0,0" Content="Index"/>
-                    <Label Content="{Binding Value.Index}" Width="40"/>
-                    <Label Content="Line" Margin="5,0,0,0"/>
-                    <TextBox Text="{Binding Value.Line}" Width="400" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" SelectionTextBrush="#FFA6F9FF" Background="{x:Null}" CaretBrush="{x:Null}"/>
-                    <Button Content="Preview" Tag="{Binding Value.Line}" Click="CommandPreview"/>
-                  </StackPanel>
-                </DataTemplate>
-              </ListBox.ItemTemplate>
-            </ListBox>
-            <TextBlock  Grid.Row="0" Grid.RowSpan="2" TextWrapping="Wrap" Margin="5,160,5,0"><Run Text="OP CODES IMPLEMENTED:"/><LineBreak/><Run Text="&lt;pname&gt; : Builder name"/><LineBreak/><Run Text="&lt;cap&gt; : capitalizes next word"/><LineBreak/><Run Text="&lt;off&gt; : Rubiss style textbox"/><LineBreak/><Run Text="&lt;morph(male,female)&gt; changes word depending on gender"/><LineBreak/><Run Text="&lt;key&gt; : waits for you to press A"/><LineBreak/><Run Text="&lt;br&gt; : line break"/><LineBreak/><Run Text="&lt;$iname("/><Run Text="__"/><Run Text=")&gt; : name of item"/><LineBreak/><Run Text="&lt;$iicon("/><Run Language="es-es" Text="__"/><Run Text=")&gt;"/><Run Text=" : icon of item"/><LineBreak/><Run Text="&lt;$cdef(__)&gt;: changes text colour"/><LineBreak/><Run Text="&lt;/color&gt; : returns colour to white"/><LineBreak/><Run Text="&lt;note&gt; : ♩"/><LineBreak/><Run/></TextBlock>
-            <control:Preview Grid.Row="1" Grid.Column="1" x:Name="PreviewText"/>
           </Grid>
         </TabItem>
         <TabItem Header="Chunk Grid Map">

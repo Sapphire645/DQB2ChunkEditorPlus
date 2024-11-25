@@ -1,0 +1,1481 @@
+#ID	imageId	Used	NAME
+0	0	Unknown	Null
+1	1	Unknown	Grass
+2	2	Unknown	Stalwort
+3	3	Unknown	Medicinal Shrub
+4	4	Unknown	Coralily
+5	5	Unknown	Daffodaisy
+6	6	Unknown	Milkblossom
+7	7	Unknown	Ivy
+8	8	Unknown	Tingleweed
+9	9	Unknown	Cotton Plant
+10	10	Unknown	Marshroom
+11	11	Unknown	Large Lily Pad
+12	12	Unknown	Fibrous Fern
+13	13	Unknown	Bigonia
+14	14	Unknown	Pongsettia
+15	15	Unknown	Sandwort
+16	16	Unknown	Prickly Peach Cactus
+17	17	Unknown	Cactus Crown
+18	18	Unknown	Cactus Trunk
+19	19	Unknown	Witchgrass
+20	20	Unknown	Bogwort
+21	21	Unknown	Frogstool
+22	22	Unknown	Tainted Tree
+23	23	Unknown	Twisted Tree Trunk
+24	24	Unknown	Freezia
+25	25	Unknown	Septic Shrub
+26	26	Unknown	Shadowgrass
+27	27	Unknown	Plumberry Seedling
+28	28	Unknown	Plumberry Sapling
+29	29	Unknown	Plumberry Tree
+30	30	Unknown	Plumberry Stump
+31	31	Unknown	Big Plumberry Tree
+32	32	Unknown	Palm Seedling
+33	33	Unknown	Palm Sapling
+34	34	Unknown	Palm Tree
+35	35	Unknown	Palm Stump
+36	36	Unknown	Cedar Seedling
+37	37	Unknown	Cedar Sapling
+38	38	Unknown	Cedar Tree
+39	39	Unknown	Cedar Stump
+40	40	Unknown	Snowy Cedar
+41	41	Unknown	Pumice
+42	42	Unknown	Dead Tree
+43	43	Unknown	Metal Memorial
+44	44	Unknown	Huge Horn
+45	45	Unknown	Wooden Memorial
+46	46	Unknown	Gravestone
+47	47	Unknown	Dilapidated Crate
+48	48	Unknown	Broken Brickwork
+49	49	Unknown	¿Tattered Banner of Erdrick
+50	50	Unknown	Broken Barricade
+51	51	Unknown	Tattered Tent
+52	52	Unknown	Crate
+53	53	Unknown	Barrel
+54	54	Unknown	Pot
+55	55	Unknown	Leather Sack
+56	56	Unknown	Washtub
+57	57	Unknown	Signpost
+58	58	Unknown	Diagonal Fencing
+59	59	Unknown	Barricade
+60	60	Unknown	Ladder
+61	61	Unknown	Stone Steps
+62	62	Unknown	Armourer’s Sign
+63	63	Unknown	Shop Sign
+64	64	Unknown	Inn Sign
+65	65	Unknown	Wall-Mounted Banner [White]
+66	66	Unknown	Porched Window
+67	67	Unknown	Arched Window
+68	68	Unknown	Stone Window
+69	69	Unknown	Wooden Door
+70	70	Unknown	Magic Door
+71	71	Unknown	Cell Door
+72	72	Unknown	Steel Doors
+73	73	Unknown	Wooden Gate
+74	74	Unknown	(Lock)
+75	75	Unknown	Buttress
+76	76	Unknown	Ridge Tiling
+77	77	Unknown	Well
+78	78	Unknown	Torch
+79	79	Unknown	Sconce
+80	80	Unknown	Bonfire
+81	81	Unknown	Cookfire
+82	82	Unknown	Wall Lamp
+83	83	Unknown	Candlestick
+84	84	Unknown	Candelabrum
+85	85	Unknown	Brazier
+86	86	Unknown	Pot Plant
+87	87	Unknown	Bottles
+88	88	Unknown	Crockery
+89	89	Unknown	Dressing Table
+90	90	Unknown	Small Table
+91	91	Unknown	Big Table
+92	92	Unknown	Stone Table
+93	93	Unknown	Dining Table
+94	94	Unknown	Wooden Stool
+95	95	Unknown	Comfy Stool
+96	96	Unknown	Throne
+97	97	Unknown	Straw Mattress
+98	98	Unknown	Simple Bed
+99	99	Unknown	King-Sized Bed
+100	100	Unknown	Towel Rail
+101	101	Unknown	Bookcase
+102	102	Unknown	Chest Of Drawers
+103	103	Unknown	Wardrobe
+104	104	Unknown	Grandfather Clock
+105	105	Unknown	Ornamental Swords
+106	106	Unknown	Ornamental Armour
+107	107	Unknown	Stove
+108	108	Unknown	Sink
+109	109	Unknown	Bathtub
+110	110	Unknown	Goddess Statue
+111	111	Unknown	Clover Carving
+112	112	Unknown	Item Display Stand
+113	113	Unknown	Treasure Chest
+114	114	Unknown	Decorative Drapery
+115	115	Unknown	Bold Banner
+116	116	Unknown	Big Bold Banner
+117	117	Unknown	Pretty Pillar
+118	118	Unknown	Column
+119	119	Unknown	Stone Coping
+120	120	Unknown	Stone Capping
+121	121	Unknown	Decorative Shield
+122	122	Unknown	Small Stones
+123	123	Unknown	Big Rock
+124	124	Unknown	Bones
+125	125	Unknown	Dragon Bones
+126	126	Unknown	Chains
+127	127	Unknown	Dragonlord’s Standard
+128	128	Unknown	Vile Tile
+129	129	Unknown	Seal of Erdrick
+130	130	Unknown	Draconic Column
+131	131	Unknown	Vile Visage
+132	132	Unknown	Evil Idol
+133	133	Unknown	Beastly Burrow
+134	134	Unknown	Helliportal
+135	135	Unknown	Spike Trap
+136	136	Unknown	Wall-Mounted Banner [Black]
+137	137	Unknown	Pristine Plumberry
+138	138	Unknown	Wall-Mounted Banner [Purple]
+139	139	Unknown	Wall-Mounted Banner [Pink]
+140	140	Unknown	Wall-Mounted Banner [Red]
+141	141	Unknown	Wall-Mounted Banner [Green]
+142	142	Unknown	Wall-Mounted Banner [Yellow]
+143	143	Unknown	Fierce Fountain
+144	144	Unknown	Wall-Mounted Banner [Blue]
+145	145	Unknown	Tree Stump
+146	146	Unknown	Slime Balloons
+147	147	Unknown	Stone Workbench LV0
+148	148	Unknown	Wooden Workbench LV0
+149	149	Unknown	(Multipurpose Workbench)
+150	150	Unknown	Colour Wheel
+151	151	Unknown	Forge
+152	152	Unknown	Hela’s Hammer Sign
+153	153	Unknown	Brick Barbecue
+154	154	Unknown	Stickler’s Sifter
+155	155	Unknown	Sewing Station
+156	156	Unknown	Wooden Fortification [White]
+157	157	Unknown	Metalist Workbench
+158	158	Unknown	Welder’s Workbench
+159	159	Unknown	¿Dead Plant
+160	160	Unknown	¿Dead Plant on Pole
+161	161	Unknown	Furnace
+162	162	Unknown	Old Book
+163	163	Unknown	Old Note
+164	164	Unknown	¿Buggy Buggy
+165	165	Unknown	Cantlin Shield
+166	166	Unknown	Holyhock Seedling
+167	167	Unknown	Wooden Fortification [Black]
+168	168	Unknown	¿Infernal Ivy
+169	169	Unknown	Cannon
+170	170	Unknown	Piston
+171	171	Unknown	¿Pressure Plate
+172	172	Unknown	¿Button
+173	173	Unknown	Ballista
+174	174	Unknown	Magic Cannon
+175	175	Unknown	Roof Tiling
+176	176	Unknown	Pitched Tiling
+177	177	Unknown	Outer Corner Tiling
+178	178	Unknown	Inner Corner Tiling
+179	179	Unknown	Colossal Coffer
+180	180	Unknown	Armoire
+181	181	Unknown	¿Armoire
+182	182	Unknown	Equipment Display Stand
+183	183	Unknown	Straight Track
+184	184	Unknown	Curved Track
+185	185	Unknown	Sloped Track
+186	186	Unknown	Stop Sign
+187	187	Unknown	Wooden Minecart
+188	188	Unknown	Spiked Metal Minecart
+189	189	Unknown	Criss-Cross Leadlight [White]
+190	190	Unknown	Criss-Cross Leadlight [Black]
+191	191	Unknown	Criss-Cross Leadlight [Purple]
+192	192	Unknown	Criss-Cross Leadlight [Pink]
+193	193	Unknown	Criss-Cross Leadlight [Red]
+194	194	Unknown	Criss-Cross Leadlight [Green]
+195	195	Unknown	Criss-Cross Leadlight [Yellow]
+196	196	Unknown	Criss-Cross Leadlight [Blue]
+197	197	Unknown	Wrecking Ball
+198	198	Unknown	Portrait of a Lady
+199	199	Unknown	Fountain
+200	200	Unknown	¿Water block
+201	201	Unknown	¿Ht Water block
+202	202	Unknown	Wooden Fortification [Purple]
+203	203	Unknown	Wooden Fortification [Pink]
+204	204	Unknown	Wooden Fortification [Red]
+205	205	Unknown	¿Yellow banner
+206	206	Unknown	Straw Door
+207	207	Unknown	Wooden Steps
+208	208	Unknown	Chimney
+209	209	Unknown	Stone Stool
+210	210	Unknown	0
+211	211	Unknown	Window
+212	212	Unknown	Wooden Fortification [Yellow]
+213	213	Unknown	Wooden Fortification [Blue]
+214	214	Unknown	Filter Fountain
+215	215	Unknown	¿Locked Chest
+216	216	Unknown	¿Teleportal
+217	217	Unknown	¿Terra Incognita
+218	218	Unknown	¿Terra Incognita
+219	219	Unknown	¿Minimedal Stand
+220	220	Unknown	Tiled Window
+221	221	Unknown	Branch
+222	222	Unknown	Mini Merlon
+223	223	Unknown	Emblematic Clock [White]
+224	224	Unknown	Gentleman Sign
+225	225	Unknown	Lady Sign
+226	226	Unknown	Bench
+227	227	Unknown	Bar Counter
+228	228	Unknown	Chic Chair
+229	229	Unknown	Cask
+230	230	Unknown	Naughty Night Light
+231	231	Unknown	Comfy Sofa
+232	232	Unknown	Princess-Sized Bed
+233	233	Unknown	Extravagant Table
+234	234	Unknown	Round Table
+235	235	Unknown	Fireplace
+236	236	Unknown	Plant Pot
+237	237	Unknown	Player Lyre
+238	238	Unknown	Dumb-Bells
+239	239	Unknown	Stationery
+240	240	Unknown	Water Jug
+241	241	Unknown	Tea Service
+242	242	Unknown	Salad Plate
+243	243	Unknown	Fish Dish
+244	244	Unknown	Bread Basket
+245	245	Unknown	Meat Feast
+246	246	Unknown	Treasures ‘n’ Trapdoors
+247	247	Unknown	Stuffed Hammerhood
+248	248	Unknown	Powie Yowie Rug
+249	249	Unknown	Cherry Blossom Tree
+250	250	Unknown	Healix The Hero
+251	251	Unknown	(Lock)
+252	252	Unknown	¿Tattered Banner of Erdrick
+253	253	Unknown	Blighted Branch
+254	254	Unknown	Dragonlord’s Throne
+255	255	Unknown	Four-Square Leadlight [White]
+256	256	Unknown	Four-Square Leadlight [Black]
+257	257	Unknown	Four-Square Leadlight [Purple]
+258	258	Unknown	Four-Square Leadlight [Pink]
+259	259	Unknown	Four-Square Leadlight [Red]
+260	260	Unknown	Four-Square Leadlight [Green]
+261	261	Unknown	Four-Square Leadlight [Yellow]
+262	262	Unknown	Four-Square Leadlight [Blue]
+263	263	Unknown	Plain-Plane Leadlight [White]
+264	264	Unknown	Plain-Plane Leadlight [Black]
+265	265	Unknown	Anvil
+266	266	Unknown	¿Water block
+267	267	Unknown	Plain-Plane Leadlight [Purple]
+268	268	Unknown	Plain-Plane Leadlight [Pink]
+269	269	Unknown	Plain-Plane Leadlight [Red]
+270	270	Unknown	Plain-Plane Leadlight [Green]
+271	271	Unknown	Plain-Plane Leadlight [Yellow]
+272	272	Unknown	Plain-Plane Leadlight [Blue]
+273	273	Unknown	Classy Couch [White]
+274	274	Unknown	Classy Couch [Black]
+275	275	Unknown	Classy Couch [Purple]
+276	276	Unknown	Classy Couch [Pink]
+277	277	Unknown	Classy Couch [Red]
+278	278	Unknown	Classy Couch [Green]
+279	279	Unknown	Classy Couch [Yellow]
+280	280	Unknown	Classy Couch [Blue]
+281	281	Unknown	Tartan Bed [White]
+282	282	Unknown	Tartan Bed [Black]
+283	283	Unknown	Tartan Bed [Purple]
+284	284	Unknown	Tartan Bed [Pink]
+285	285	Unknown	Tartan Bed [Red]
+286	286	Unknown	Tartan Bed [Green]
+287	287	Unknown	Tartan Bed [Yellow]
+288	288	Unknown	Tartan Bed [Blue]
+289	289	Unknown	Cooking Pot [White]
+290	290	Unknown	Cooking Pot [Black]
+291	291	Unknown	Cooking Pot [Purple]
+292	292	Unknown	Cooking Pot [Pink]
+293	293	Unknown	Cooking Pot [Red]
+294	294	Unknown	Cooking Pot [Green]
+295	295	Unknown	Cooking Pot [Yellow]
+296	296	Unknown	Cooking Pot [Blue]
+297	297	Unknown	¿TextTablet
+298	298	Unknown	¿TextTablet
+299	299	Unknown	¿TextTablet
+300	300	Unknown	¿TextTablet
+301	301	Unknown	¿TextTablet
+302	302	Unknown	¿TextTablet
+303	303	Unknown	¿TextTablet
+304	304	Unknown	Old Note
+305	305	Unknown	¿TextTablet
+306	306	Unknown	¿TextTablet
+307	307	Unknown	¿TextTablet
+308	308	Unknown	¿TextTablet
+309	309	Unknown	¿TextTablet
+310	310	Unknown	¿TextTablet
+311	311	Unknown	Gravestone
+312	312	Unknown	Grandfather Clock
+313	313	Unknown	¿TextTablet
+314	314	Unknown	¿TextTablet
+315	315	Unknown	Old Note
+316	316	Unknown	Oaken Club
+317	317	Unknown	¿TextTablet
+318	318	Unknown	¿TextTablet
+319	319	Unknown	¿TextTablet
+320	320	Unknown	¿TextTablet
+321	321	Unknown	¿TextTablet
+322	322	Unknown	¿TextTablet
+323	323	Unknown	¿TextTablet
+324	324	Unknown	¿TextTablet
+325	325	Unknown	¿TextTablet
+326	326	Unknown	¿TextTablet
+327	327	Unknown	Emblematic Clock [Black]
+328	328	Unknown	Scallywinkle
+329	329	Unknown	Emblematic Clock [Purple]
+330	330	Unknown	Driftlumber
+331	331	Unknown	Driftwood
+332	332	Unknown	Seaside Seaweed
+333	333	Unknown	Emblematic Clock [Pink]
+334	334	Unknown	Broken Barrel
+335	335	Unknown	Starfish
+336	336	Unknown	Seaslime Shell
+337	337	Unknown	Emblematic Clock [Red]
+338	338	Unknown	Emblematic Clock [Green]
+339	339	Unknown	Emblematic Clock [Yellow]
+340	340	Unknown	Pebble Pile
+341	341	Unknown	Toppled Column
+342	342	Unknown	Dry Ivy
+343	343	Unknown	Emblematic Clock [Blue]
+344	344	Unknown	Pampas Grass
+345	345	Unknown	Port and Shot Set [White]
+346	346	Unknown	Port and Shot Set [Black]
+347	347	Unknown	Port and Shot Set [Purple]
+348	348	Unknown	Broken Masonry
+349	349	Unknown	Classical Column Midsection
+350	350	Unknown	Classical Column Pedestal
+351	351	Unknown	Colossal Crag
+352	352	Unknown	Crag
+353	353	Unknown	Glass Floor [White]
+354	354	Unknown	Glass Floor [Black]
+355	355	Unknown	Glass Floor [Purple]
+356	356	Unknown	Glass Floor [Pink]
+357	357	Unknown	Glass Floor [Red]
+358	358	Unknown	Glass Floor [Green]
+359	359	Unknown	Glass Floor [Yellow]
+360	360	Unknown	Glass Floor [Blue]
+361	361	Unknown	Port and Shot Set [Pink]
+362	362	Unknown	Port and Shot Set [Red]
+363	363	Unknown	Port and Shot Set [Green]
+364	364	Unknown	Water Lily Flower
+365	365	Unknown	Lily Pad
+366	366	Unknown	Port and Shot Set [Yellow]
+367	367	Unknown	Port and Shot Set [Blue]
+368	368	Unknown	She-Slimespawn
+369	369	Unknown	Dressing Table [White]
+370	370	Unknown	Dressing Table [Black]
+371	371	Unknown	Chic Sunbrella [Pink]
+372	372	Unknown	Chic Sunbrella [Red]
+373	373	Unknown	Chic Sunbrella [Green]
+374	374	Unknown	Chic Sunbrella [Yellow]
+375	375	Unknown	Chic Sunbrella [Blue]
+376	376	Unknown	¿Deitree
+377	377	Unknown	¿Deitree
+378	378	Unknown	¿Deitree blue
+379	379	Unknown	¿Deitree Dead
+380	380	Unknown	¿Deitree smol
+381	381	Unknown	¿Deitree
+382	382	Unknown	0
+383	383	Unknown	Planting Pole
+384	384	Unknown	Dressing Table [Purple]
+385	385	Unknown	Dressing Table [Pink]
+386	386	Unknown	Worm Food
+387	387	Unknown	¿Wheat 0
+388	388	Unknown	¿Wheat 1
+389	389	Unknown	¿Wheat 2
+390	390	Unknown	Wheat
+391	391	Unknown	¿Butterbeans 0
+392	392	Unknown	¿Butterbeans 1
+393	393	Unknown	¿Butterbeans 2
+394	394	Unknown	Butterbeans
+395	395	Unknown	¿Cabbage 0
+396	396	Unknown	¿Cabbage 1
+397	397	Unknown	¿Cabbage 2
+398	398	Unknown	Cabbage
+399	399	Unknown	Red Cabbage
+400	400	Unknown	¿Buckwheat 0
+401	401	Unknown	¿Buckwheat 1
+402	402	Unknown	¿Buckwheat 2
+403	403	Unknown	Buckwheat
+404	404	Unknown	¿Sweetcorn 0
+405	405	Unknown	¿Sweetcorn 1
+406	406	Unknown	¿Sweetcorn 2
+407	407	Unknown	Sweetcorn
+408	408	Unknown	¿Chilli Pepper 0
+409	409	Unknown	¿Chilli Pepper 1
+410	410	Unknown	¿Chilli Pepper 2
+411	411	Unknown	Chilli Pepper
+412	412	Unknown	Red-Hot Chilli Pepper
+413	413	Unknown	¿Sugar Cane 0
+414	414	Unknown	¿Sugar Cane 1
+415	415	Unknown	¿Sugar Cane 2
+416	416	Unknown	Sugar Cane
+417	417	Unknown	¿Strawberry 0
+418	418	Unknown	¿Strawberry 1
+419	419	Unknown	¿Strawberry 2
+420	420	Unknown	Strawberry
+421	421	Unknown	Moreberry
+422	422	Unknown	¿Coffee Beans 0
+423	423	Unknown	¿Coffee Beans 1
+424	424	Unknown	¿Coffee Beans 2
+425	425	Unknown	Coffee Beans
+426	426	Unknown	¿Leek 0
+427	427	Unknown	¿Leek 1
+428	428	Unknown	Dressing Table [Red]
+429	429	Unknown	Leek
+430	430	Unknown	¿Potato 0
+431	431	Unknown	¿Potato 1
+432	432	Unknown	¿Potato 2
+433	433	Unknown	Potato
+434	434	Unknown	¿Pumpkin 0
+435	435	Unknown	¿Pumpkin 1
+436	436	Unknown	¿Pumpkin 2
+437	437	Unknown	Pumpkin
+438	438	Unknown	Plumpkin
+439	439	Unknown	¿Tomato 0
+440	440	Unknown	¿Tomato 1
+441	441	Unknown	¿Tomato 2
+442	442	Unknown	Tomato
+443	443	Unknown	Killer Tomato
+444	444	Unknown	¿Aubergette 0
+445	445	Unknown	¿Aubergette 1
+446	446	Unknown	¿Aubergette 2
+447	447	Unknown	Aubergette
+448	448	Unknown	Dressing Table [Green]
+449	449	Unknown	Dressing Table [Yellow]
+450	450	Unknown	Dressing Table [Blue]
+451	451	Unknown	Towel Rail [White]
+452	452	Unknown	¿Melon 0
+453	453	Unknown	¿Melon 1
+454	454	Unknown	¿Melon 2
+455	455	Unknown	Melon
+456	456	Unknown	Sunny-Hued Melon
+457	457	Unknown	¿Rice 0
+458	458	Unknown	¿Rice 1
+459	459	Unknown	¿Rice 2
+460	460	Unknown	Rice
+461	461	Unknown	¿Heartroot 0
+462	462	Unknown	¿Heartroot 1
+463	463	Unknown	¿Heartroot 2
+464	464	Unknown	Heartroot
+465	465	Unknown	White-Hot Heartroot
+466	466	Unknown	¿Dead Plant
+467	467	Unknown	Basic Bunk [White]
+468	468	Unknown	Basic Bunk [Black]
+469	469	Unknown	Basic Bunk [Purple]
+470	470	Unknown	Basic Bunk [Pink]
+471	471	Unknown	Basic Bunk [Red]
+472	472	Unknown	Basic Bunk [Green]
+473	473	Unknown	Basic Bunk [Yellow]
+474	474	Unknown	Basic Bunk [Blue]
+475	475	Unknown	Gift-Wrapped Gift [White]
+476	476	Unknown	Gift-Wrapped Gift [Black]
+477	477	Unknown	Gift-Wrapped Gift [Purple]
+478	478	Unknown	Gift-Wrapped Gift [Pink]
+479	479	Unknown	Gift-Wrapped Gift [Red]
+480	480	Unknown	Gift-Wrapped Gift [Green]
+481	481	Unknown	Gift-Wrapped Gift [Yellow]
+482	482	Unknown	Gift-Wrapped Gift [Blue]
+483	483	Unknown	Wooden Pillar [White]
+484	484	Unknown	Wooden Pillar [Black]
+485	485	Unknown	Wooden Pillar [Purple]
+486	486	Unknown	Wooden Pillar [Pink]
+487	487	Unknown	Wooden Pillar [Red]
+488	488	Unknown	Wooden Pillar [Green]
+489	489	Unknown	Wooden Pillar [Yellow]
+490	490	Unknown	Wooden Pillar [Blue]
+491	491	Unknown	Sliding Glass Door [White]
+492	492	Unknown	Sliding Glass Door [Black]
+493	493	Unknown	Sliding Glass Door [Purple]
+494	494	Unknown	Sliding Glass Door [Pink]
+495	495	Unknown	Banana
+496	496	Unknown	Sliding Glass Door [Red]
+497	497	Unknown	Sliding Glass Door [Green]
+498	498	Unknown	Sliding Glass Door [Yellow]
+499	499	Unknown	Sliding Glass Door [Blue]
+500	500	Unknown	Angled Window [White]
+501	501	Unknown	Pet Bowl
+502	502	Unknown	Pet Bedding
+503	503	Unknown	Angled Window [Black]
+504	504	Unknown	Angled Window [Purple]
+505	505	Unknown	Angled Window [Pink]
+506	506	Unknown	Angled Window [Red]
+507	507	Unknown	Angled Window [Green]
+508	508	Unknown	Angled Window [Yellow]
+509	509	Unknown	Angled Window [Blue]
+510	510	Unknown	Rigid Rope [White]
+511	511	Unknown	Rigid Rope [Black]
+512	512	Unknown	Rigid Rope [Purple]
+513	513	Unknown	¿Deitree Dead
+514	514	Unknown	Rigid Rope [Pink]
+515	515	Unknown	Rigid Rope [Red]
+516	516	Unknown	Rigid Rope [Green]
+517	517	Unknown	Rigid Rope [Yellow]
+518	518	Unknown	Rigid Rope [Blue]
+519	519	Unknown	¿Boat
+520	520	Unknown	¿Planter 0
+521	521	Unknown	¿Planter 1
+522	522	Unknown	¿Pencil
+523	523	Unknown	¿seed
+524	524	Unknown	¿seed
+525	525	Unknown	Unidentified Dung
+526	526	Unknown	¿Worn-Out Workbench
+527	527	Unknown	Big Plumberry Tree
+528	528	Unknown	¿Coneconut Tree
+529	529	Unknown	Towel Rail [Black]
+530	530	Unknown	Towel Rail [Purple]
+531	531	Unknown	Towel Rail [Pink]
+532	532	Unknown	Straw Bedding
+533	533	Unknown	Towel Rail [Red]
+534	534	Unknown	Towel Rail [Green]
+535	535	Unknown	Towel Rail [Yellow]
+536	536	Unknown	Towel Rail [Blue]
+537	537	Unknown	¿Wooden Workbench
+538	538	Unknown	¿Wooden Workbench
+539	539	Unknown	¿Wooden Workbench
+540	540	Unknown	Carpenter’s Workstation
+541	541	Unknown	¿seed
+542	542	Unknown	¿seed
+543	543	Unknown	¿Deitree
+544	544	Unknown	Bookcase [White]
+545	545	Unknown	¿Builder’s Bell
+546	546	Unknown	¿Builder’s Bell
+547	547	Unknown	¿Builder’s Bell
+548	548	Unknown	¿Builder’s Bell
+549	549	Unknown	¿Builder’s Bell
+550	550	Unknown	Bookcase [Black]
+551	551	Unknown	Bookcase [Purple]
+552	552	Unknown	Glass Floor
+553	553	Unknown	Glass Door
+554	554	Unknown	Big Cedar Tree
+555	555	Unknown	Big Palm Tree
+556	556	Unknown	¿Seedling
+557	557	Unknown	Brazier
+558	558	Unknown	Bookcase [Pink]
+559	559	Unknown	Bookcase [Red]
+560	560	Unknown	¿Cloth Rack
+561	561	Unknown	Postbox
+562	562	Unknown	¿Plant
+563	563	Unknown	Bookcase [Green]
+564	564	Unknown	Bookcase [Yellow]
+565	565	Unknown	Bookcase [Blue]
+566	566	Unknown	Chest Of Drawers [White]
+567	567	Unknown	Chest Of Drawers [Black]
+568	568	Unknown	¿Plant
+569	569	Unknown	¿Aubergette
+570	570	Unknown	¿Wheat
+571	571	Unknown	Chest Of Drawers [Purple]
+572	572	Unknown	Seaweed Stack
+573	573	Unknown	Chest Of Drawers [Pink]
+574	574	Unknown	Chest Of Drawers [Red]
+575	575	Unknown	Spleenwort
+576	576	Unknown	Mossy Stones
+577	577	Unknown	Withered Sapling
+578	578	Unknown	Big Withered Tree
+579	579	Unknown	Withered Stump
+580	580	Unknown	Chest Of Drawers [Green]
+581	581	Unknown	Chest Of Drawers [Yellow]
+582	582	Unknown	Residents’ Register
+583	583	Unknown	Withered Tree
+584	584	Unknown	Rocky Column
+585	585	Unknown	Mossy Rock
+586	586	Unknown	Chest Of Drawers [Blue]
+587	587	Unknown	Grandfather Clock [White]
+588	588	Unknown	Grandfather Clock [Black]
+589	589	Unknown	Grandfather Clock [Purple]
+590	590	Unknown	Frying Pan
+591	591	Unknown	Grandfather Clock [Pink]
+592	592	Unknown	Banana Basket
+593	593	Unknown	Grandfather Clock [Red]
+594	594	Unknown	Wooden Fencing
+595	595	Unknown	Enormous Table
+596	596	Unknown	Simple Stool
+597	597	Unknown	Simple Small Table
+598	598	Unknown	¿Pink
+599	599	Unknown	¿pink
+600	600	Unknown	Grandfather Clock [Green]
+601	601	Unknown	Simple Table
+602	602	Unknown	Simple Bench
+603	603	Unknown	Woody Goody
+604	604	Unknown	Stain Extractor
+605	605	Unknown	Jack-o’-Lantern
+606	606	Unknown	¿Kilrn
+607	607	Unknown	Fan Fern
+608	608	Unknown	Gladiolus
+609	609	Unknown	Grandfather Clock [Yellow]
+610	610	Unknown	Grandfather Clock [Blue]
+611	611	Unknown	Clover Carving [White]
+612	612	Unknown	Book of Blue Prints
+613	613	Unknown	Clover Carving [Black]
+614	614	Unknown	Clover Carving [Purple]
+615	615	Unknown	Curtain
+616	616	Unknown	¿Plant
+617	617	Unknown	¿Plant
+618	618	Unknown	¿Plant
+619	619	Unknown	¿Plant
+620	620	Unknown	¿Plant
+621	621	Unknown	Scarecrow
+622	622	Unknown	Broken Track
+623	623	Unknown	Spider Web
+624	624	Unknown	Clover Carving [Pink]
+625	625	Unknown	Vault Bracket
+626	626	Unknown	Community Chest
+627	627	Unknown	0
+628	628	Unknown	Colossal Chest
+629	629	Unknown	Haystack
+630	630	Unknown	Stained-Glass Window Arch
+631	631	Unknown	Stained-Glass Window Midsection
+632	632	Unknown	Stained-Glass Window Sill
+633	633	Unknown	Altar
+634	634	Unknown	Candle
+635	635	Unknown	Pub Sign
+636	636	Unknown	Ornamental Spears
+637	637	Unknown	Clover Carving [Green]
+638	638	Unknown	Rope
+639	639	Unknown	Fancy Bench
+640	640	Unknown	Clover Carving [Yellow]
+641	641	Unknown	Clover Carving [Blue]
+642	642	Unknown	Sliding Door
+643	643	Unknown	Watchfire
+644	644	Unknown	Wooden Fortification [Green]
+645	645	Unknown	Clover Carving [Red]
+646	646	Unknown	Paper Window
+647	647	Unknown	Curtain
+648	648	Unknown	¿seed
+649	649	Unknown	¿seed
+650	650	Unknown	¿seed
+651	651	Unknown	¿seed
+652	652	Unknown	¿Dead Plant
+653	653	Unknown	Sleek Shelf [White]
+654	654	Unknown	Picket Fencing [White]
+655	655	Unknown	Sleek Shelf [Black]
+656	656	Unknown	Sleek Shelf [Purple]
+657	657	Unknown	Sleek Shelf [Pink]
+658	658	Unknown	0
+659	659	Unknown	Wooden Toilet [White]
+660	660	Unknown	Mud-Brick Wall Rubble
+661	661	Unknown	Wooden Toilet [Black]
+662	662	Unknown	Wooden Toilet [Purple]
+663	663	Unknown	Wooden Toilet [Pink]
+664	664	Unknown	Wooden Toilet [Red]
+665	665	Unknown	Wooden Toilet [Green]
+666	666	Unknown	Wooden Toilet [Yellow]
+667	667	Unknown	Wooden Toilet [Blue]
+668	668	Unknown	¿Wheatgrass
+669	669	Unknown	Wheatgrass
+670	670	Unknown	Sleek Shelf [Red]
+671	671	Unknown	Sleek Shelf [Green]
+672	672	Unknown	Sleek Shelf [Yellow]
+673	673	Unknown	Sleek Shelf [Blue]
+674	674	Unknown	Täbel Lâmpe
+675	675	Unknown	Simple Bed [White]
+676	676	Unknown	Simple Bed [Black]
+677	677	Unknown	Simple Bed [Purple]
+678	678	Unknown	Simple Bed [Pink]
+679	679	Unknown	Simple Bed [Red]
+680	680	Unknown	Simple Bed [Green]
+681	681	Unknown	Simple Bed [Yellow]
+682	682	Unknown	Simple Bed [Blue]
+683	683	Unknown	Roof Tiling [White]
+684	684	Unknown	Roof Tiling [Black]
+685	685	Unknown	Roof Tiling [Purple]
+686	686	Unknown	Roof Tiling [Pink]
+687	687	Unknown	Roof Tiling [Red]
+688	688	Unknown	Roof Tiling [Green]
+689	689	Unknown	Roof Tiling [Yellow]
+690	690	Unknown	Roof Tiling [Blue]
+691	691	Unknown	Pitched Tiling [White]
+692	692	Unknown	Pitched Tiling [Black]
+693	693	Unknown	Pitched Tiling [Purple]
+694	694	Unknown	Pitched Tiling [Pink]
+695	695	Unknown	Pitched Tiling [Red]
+696	696	Unknown	Pitched Tiling [Green]
+697	697	Unknown	Pitched Tiling [Yellow]
+698	698	Unknown	Pitched Tiling [Blue]
+699	699	Unknown	Outer Corner Tiling [White]
+700	700	Unknown	Outer Corner Tiling [Black]
+701	701	Unknown	Outer Corner Tiling [Purple]
+702	702	Unknown	Outer Corner Tiling [Pink]
+703	703	Unknown	Outer Corner Tiling [Red]
+704	704	Unknown	Outer Corner Tiling [Green]
+705	705	Unknown	Outer Corner Tiling [Yellow]
+706	706	Unknown	Outer Corner Tiling [Blue]
+707	707	Unknown	Inner Corner Tiling [White]
+708	708	Unknown	Inner Corner Tiling [Black]
+709	709	Unknown	Inner Corner Tiling [Purple]
+710	710	Unknown	Inner Corner Tiling [Pink]
+711	711	Unknown	Inner Corner Tiling [Red]
+712	712	Unknown	Inner Corner Tiling [Green]
+713	713	Unknown	Inner Corner Tiling [Yellow]
+714	714	Unknown	Inner Corner Tiling [Blue]
+715	715	Unknown	Tiled Window [White]
+716	716	Unknown	Tiled Window [Black]
+717	717	Unknown	Tiled Window [Purple]
+718	718	Unknown	Tiled Window [Pink]
+719	719	Unknown	Tiled Window [Red]
+720	720	Unknown	Tiled Window [Green]
+721	721	Unknown	Tiled Window [Yellow]
+722	722	Unknown	Tiled Window [Blue]
+723	723	Unknown	Magic Door [White]
+724	724	Unknown	Magic Door [Black]
+725	725	Unknown	Magic Door [Purple]
+726	726	Unknown	Magic Door [Pink]
+727	727	Unknown	Magic Door [Red]
+728	728	Unknown	Magic Door [Green]
+729	729	Unknown	Magic Door [Yellow]
+730	730	Unknown	Magic Door [Blue]
+731	731	Unknown	Big Table [White]
+732	732	Unknown	Big Table [Black]
+733	733	Unknown	Big Table [Purple]
+734	734	Unknown	Big Table [Pink]
+735	735	Unknown	Big Table [Red]
+736	736	Unknown	Big Table [Green]
+737	737	Unknown	Big Table [Yellow]
+738	738	Unknown	Big Table [Blue]
+739	739	Unknown	Dining Table [White]
+740	740	Unknown	Dining Table [Black]
+741	741	Unknown	Dining Table [Purple]
+742	742	Unknown	Dining Table [Pink]
+743	743	Unknown	Dining Table [Red]
+744	744	Unknown	Dining Table [Green]
+745	745	Unknown	Dining Table [Yellow]
+746	746	Unknown	Dining Table [Blue]
+747	747	Unknown	Wooden Stool [White]
+748	748	Unknown	Wooden Stool [Black]
+749	749	Unknown	Wooden Stool [Purple]
+750	750	Unknown	Wooden Stool [Pink]
+751	751	Unknown	Wooden Stool [Red]
+752	752	Unknown	Wooden Stool [Green]
+753	753	Unknown	Wooden Stool [Yellow]
+754	754	Unknown	Wooden Stool [Blue]
+755	755	Unknown	Comfy Stool [White]
+756	756	Unknown	Comfy Stool [Black]
+757	757	Unknown	Comfy Stool [Purple]
+758	758	Unknown	Comfy Stool [Pink]
+759	759	Unknown	Comfy Stool [Red]
+760	760	Unknown	Comfy Stool [Green]
+761	761	Unknown	Comfy Stool [Yellow]
+762	762	Unknown	Comfy Stool [Blue]
+763	763	Unknown	Decorative Drapery [White]
+764	764	Unknown	Decorative Drapery [Black]
+765	765	Unknown	Decorative Drapery [Purple]
+766	766	Unknown	Decorative Drapery [Pink]
+767	767	Unknown	Decorative Drapery [Red]
+768	768	Unknown	Decorative Drapery [Green]
+769	769	Unknown	Decorative Drapery [Yellow]
+770	770	Unknown	Decorative Drapery [Blue]
+771	771	Unknown	Rose [White]
+772	772	Unknown	Rose [Black]
+773	773	Unknown	Rose [Purple]
+774	774	Unknown	Rose [Pink]
+775	775	Unknown	Rose [Red]
+776	776	Unknown	Rose [Green]
+777	777	Unknown	Rose [Yellow]
+778	778	Unknown	Rose [Blue]
+779	779	Unknown	Curtain (open) [White]
+780	780	Unknown	Curtain (open) [Black]
+781	781	Unknown	Curtain (open) [Purple]
+782	782	Unknown	Curtain (open) [Pink]
+783	783	Unknown	Curtain (open) [Red]
+784	784	Unknown	Curtain (open) [Green]
+785	785	Unknown	Curtain (open) [Yellow]
+786	786	Unknown	Curtain (open) [Blue]
+787	787	Unknown	Curtain (tied) [White]
+788	788	Unknown	Curtain (tied) [Black]
+789	789	Unknown	Curtain (tied) [Purple]
+790	790	Unknown	Curtain (tied) [Pink]
+791	791	Unknown	Curtain (tied) [Red]
+792	792	Unknown	Curtain (tied) [Green]
+793	793	Unknown	Curtain (tied) [Yellow]
+794	794	Unknown	Curtain (tied) [Blue]
+795	795	Unknown	¿Coralily
+796	796	Unknown	Daffodaisy
+797	797	Unknown	¿Milkblossom
+798	798	Unknown	0
+799	799	Unknown	0
+800	800	Unknown	Classical Column Capital
+801	801	Unknown	¿Deitree
+802	802	Unknown	¿Deitree
+803	803	Unknown	¿Deitree Blue
+804	804	Unknown	Basic Bathtub
+805	805	Unknown	0
+806	806	Unknown	0
+807	807	Unknown	¿Deitree
+808	808	Unknown	Tinting Tun
+809	809	Unknown	Grand Piano
+810	810	Unknown	0
+811	811	Unknown	0
+812	812	Unknown	0
+813	813	Unknown	Blackbell
+814	814	Unknown	Purplotus
+815	815	Unknown	Scarletulip
+816	816	Unknown	Emeraldahlia
+817	817	Unknown	Ultramarose
+818	818	Unknown	0
+819	819	Unknown	0
+820	820	Unknown	Big Rock
+821	821	Unknown	Big Plumberry Tree
+822	822	Unknown	0
+823	823	Unknown	Simple Door
+824	824	Unknown	Picket Gate
+825	825	Unknown	Saloon Door
+826	826	Unknown	Cocktail Shaker
+827	827	Unknown	Keg Counter
+828	828	Unknown	Lantern
+829	829	Unknown	¿Activator
+830	830	Unknown	Crash Cart
+831	831	Unknown	Metal Minecart
+832	832	Unknown	¿Ball
+833	833	Unknown	0
+834	834	Unknown	0
+835	835	Unknown	¿Null
+836	836	Unknown	Basic Bridge
+837	837	Unknown	0
+838	838	Unknown	0
+839	839	Unknown	¿Deitree Planter
+840	840	Unknown	Drapery Door [White]
+841	841	Unknown	Drapery Door [Black]
+842	842	Unknown	Drapery Door [Purple]
+843	843	Unknown	Drapery Door [Pink]
+844	844	Unknown	Drapery Door [Red]
+845	845	Unknown	Drapery Door [Green]
+846	846	Unknown	Drapery Door [Yellow]
+847	847	Unknown	Drapery Door [Blue]
+848	848	Unknown	Wall Hanging [White]
+849	849	Unknown	Wall Hanging [Black]
+850	850	Unknown	Wall Hanging [Purple]
+851	851	Unknown	Wall Hanging [Pink]
+852	852	Unknown	Wall Hanging [Red]
+853	853	Unknown	Wall Hanging [Green]
+854	854	Unknown	Wall Hanging [Yellow]
+855	855	Unknown	Wall Hanging [Blue]
+856	856	Unknown	Comfy Sofa [White]
+857	857	Unknown	Comfy Sofa [Black]
+858	858	Unknown	Comfy Sofa [Purple]
+859	859	Unknown	Comfy Sofa [Pink]
+860	860	Unknown	Comfy Sofa [Red]
+861	861	Unknown	Comfy Sofa [Green]
+862	862	Unknown	Comfy Sofa [Yellow]
+863	863	Unknown	Comfy Sofa [Blue]
+864	864	Unknown	Bunting [White]
+865	865	Unknown	Bunting [Black]
+866	866	Unknown	Bunting [Purple]
+867	867	Unknown	Bunting [Pink]
+868	868	Unknown	Bunting [Red]
+869	869	Unknown	Bunting [Green]
+870	870	Unknown	Bunting [Yellow]
+871	871	Unknown	Bunting [Blue]
+872	872	Unknown	Awning [White]
+873	873	Unknown	Awning [Black]
+874	874	Unknown	Awning [Purple]
+875	875	Unknown	Awning [Pink]
+876	876	Unknown	Awning [Red]
+877	877	Unknown	Awning [Green]
+878	878	Unknown	Awning [Yellow]
+879	879	Unknown	Awning [Blue]
+880	880	Unknown	Diagonal Fencing [White]
+881	881	Unknown	Diagonal Fencing [Black]
+882	882	Unknown	Diagonal Fencing [Purple]
+883	883	Unknown	Diagonal Fencing [Pink]
+884	884	Unknown	Diagonal Fencing [Red]
+885	885	Unknown	Diagonal Fencing [Green]
+886	886	Unknown	Diagonal Fencing [Yellow]
+887	887	Unknown	Diagonal Fencing [Blue]
+888	888	Unknown	Sunbrella [White]
+889	889	Unknown	Sunbrella [Black]
+890	890	Unknown	Sunbrella [Purple]
+891	891	Unknown	Sunbrella [Pink]
+892	892	Unknown	Sunbrella [Red]
+893	893	Unknown	Sunbrella [Green]
+894	894	Unknown	Sunbrella [Yellow]
+895	895	Unknown	Sunbrella [Blue]
+896	896	Unknown	Deckchair [White]
+897	897	Unknown	Deckchair [Black]
+898	898	Unknown	Deckchair [Purple]
+899	899	Unknown	Deckchair [Pink]
+900	900	Unknown	Deckchair [Red]
+901	901	Unknown	Deckchair [Green]
+902	902	Unknown	Deckchair [Yellow]
+903	903	Unknown	Deckchair [Blue]
+904	904	Unknown	Comfy Cushion [White]
+905	905	Unknown	Comfy Cushion [Black]
+906	906	Unknown	Comfy Cushion [Purple]
+907	907	Unknown	Comfy Cushion [Pink]
+908	908	Unknown	Comfy Cushion [Red]
+909	909	Unknown	Comfy Cushion [Green]
+910	910	Unknown	Comfy Cushion [Yellow]
+911	911	Unknown	Comfy Cushion [Blue]
+912	912	Unknown	Wooden Gate [White]
+913	913	Unknown	Wooden Gate [Black]
+914	914	Unknown	Wooden Gate [Purple]
+915	915	Unknown	Wooden Gate [Pink]
+916	916	Unknown	Wooden Gate [Red]
+917	917	Unknown	Wooden Gate [Green]
+918	918	Unknown	Wooden Gate [Yellow]
+919	919	Unknown	Wooden Gate [Blue]
+920	920	Unknown	Small Table [White]
+921	921	Unknown	Small Table [Black]
+922	922	Unknown	Small Table [Purple]
+923	923	Unknown	Small Table [Pink]
+924	924	Unknown	Small Table [Red]
+925	925	Unknown	Small Table [Green]
+926	926	Unknown	Small Table [Yellow]
+927	927	Unknown	Small Table [Blue]
+928	928	Unknown	Nameplate
+929	929	Unknown	¿Minimedal
+930	930	Unknown	Wooden Doormat
+931	931	Unknown	Stone Doormat
+932	932	Unknown	Coral
+933	933	Unknown	Colossal Coral
+934	934	Unknown	¿Activator
+935	935	Unknown	¿Activator
+936	936	Unknown	King-Sized Bed [White]
+937	937	Unknown	King-Sized Bed [Black]
+938	938	Unknown	King-Sized Bed [Purple]
+939	939	Unknown	King-Sized Bed [Pink]
+940	940	Unknown	King-Sized Bed [Red]
+941	941	Unknown	King-Sized Bed [Green]
+942	942	Unknown	King-Sized Bed [Yellow]
+943	943	Unknown	King-Sized Bed [Blue]
+944	944	Unknown	Small-Scale Soldier [White]
+945	945	Unknown	Small-Scale Soldier [Black]
+946	946	Unknown	Small-Scale Soldier [Purple]
+947	947	Unknown	Small-Scale Soldier [Pink]
+948	948	Unknown	Small-Scale Soldier [Red]
+949	949	Unknown	Small-Scale Soldier [Green]
+950	950	Unknown	Small-Scale Soldier [Yellow]
+951	951	Unknown	Small-Scale Soldier [Blue]
+952	952	Unknown	Wooden Steps [White]
+953	953	Unknown	Wooden Steps [Black]
+954	954	Unknown	Wooden Steps [Purple]
+955	955	Unknown	Wooden Steps [Pink]
+956	956	Unknown	Wooden Steps [Red]
+957	957	Unknown	Wooden Steps [Green]
+958	958	Unknown	Wooden Steps [Yellow]
+959	959	Unknown	Wooden Steps [Blue]
+960	960	Unknown	0
+961	961	Unknown	0
+962	962	Unknown	0
+963	963	Unknown	0
+964	964	Unknown	0
+965	965	Unknown	Burning Rock
+966	966	Unknown	0
+967	967	Unknown	¿Null
+968	968	Unknown	¿Null
+969	969	Unknown	¿Null
+970	970	Unknown	¿Null
+971	971	Unknown	¿Null
+972	972	Unknown	¿Null
+973	973	Unknown	¿Null
+974	974	Unknown	¿Null
+975	975	Unknown	¿Null
+976	976	Unknown	¿Null
+977	977	Unknown	¿Null
+978	978	Unknown	¿Null
+979	979	Unknown	0
+980	980	Unknown	¿Null
+981	981	Unknown	¿Null
+982	982	Unknown	Cell Doors
+983	983	Unknown	Simple Doors
+984	984	Unknown	¿bag
+985	985	Unknown	Big Palm Tree
+986	986	Unknown	Cotton Plant
+987	987	Unknown	Fibrous Fern
+988	988	Unknown	¿deitree bulb
+989	989	Unknown	¿Null
+990	990	Unknown	0
+991	991	Unknown	Sluice Gate
+992	992	Unknown	Siltstone Column Capital
+993	993	Unknown	Siltstone Column Midsection
+994	994	Unknown	Siltstone Column Pedestal
+995	995	Unknown	0
+996	996	Unknown	0
+997	997	Unknown	0
+998	998	Unknown	Golden Brazier
+999	999	Unknown	0
+1000	1000	Unknown	Stone Handrail
+1001	1001	Unknown	Wooden Handrail
+1002	1002	Unknown	¿Wooden Workbench
+1003	1003	Unknown	Smashing Sign
+1004	1004	Unknown	Slime Balloons
+1005	1005	Unknown	¿deitree bulb
+1006	1006	Unknown	Sideways-Pointing Puller
+1007	1007	Unknown	Upwards-Pointing Puller
+1008	1008	Unknown	Downwards-Pointing Puller
+1009	1009	Unknown	0
+1010	1010	Unknown	0
+1011	1011	Unknown	First Aid Kit
+1012	1012	Unknown	¿Banana Peel
+1013	1013	Unknown	0
+1014	1014	Unknown	Helm
+1015	1015	Unknown	Slime Light
+1016	1016	Unknown	King Slime Light
+1017	1017	Unknown	Slimy Eye
+1018	1018	Unknown	Slimy Mouth
+1019	1019	Unknown	¿Teleportal
+1020	1020	Unknown	Big Snowy Cedar Tree
+1021	1021	Unknown	Sideways-Pointing Pusher
+1022	1022	Unknown	Upwards-Pointing Pusher
+1023	1023	Unknown	Downwards-Pointing Pusher
+1024	1024	Unknown	0
+1025	1025	Unknown	Dartboard
+1026	1026	Unknown	¿Null
+1027	1027	Unknown	¿Null
+1028	1028	Unknown	0
+1029	1029	Unknown	0
+1030	1030	Unknown	0
+1031	1031	Unknown	0
+1032	1032	Unknown	0
+1033	1033	Unknown	Deckchair
+1034	1034	Unknown	0
+1035	1035	Unknown	Tattered Standard
+1036	1036	Unknown	0
+1037	1037	Unknown	Banner of Hargon
+1038	1038	Unknown	0
+1039	1039	Unknown	0
+1040	1040	Unknown	0
+1041	1041	Unknown	0
+1042	1042	Unknown	Incense Burner
+1043	1043	Unknown	Zap Trap
+1044	1044	Unknown	Zoompoline
+1045	1045	Unknown	Silver Birch Tree
+1046	1046	Unknown	0
+1047	1047	Unknown	0
+1048	1048	Unknown	Scarecrow
+1049	1049	Unknown	0
+1050	1050	Unknown	0
+1051	1051	Unknown	Simple Supper Set [White]
+1052	1052	Unknown	Simple Supper Set [Black]
+1053	1053	Unknown	Simple Supper Set [Purple]
+1054	1054	Unknown	Simple Supper Set [Pink]
+1055	1055	Unknown	Simple Supper Set [Red]
+1056	1056	Unknown	Simple Supper Set [Green]
+1057	1057	Unknown	Simple Supper Set [Yellow]
+1058	1058	Unknown	Simple Supper Set [Blue]
+1059	1059	Unknown	¿Null
+1060	1060	Unknown	¿Pink bulb
+1061	1061	Unknown	0
+1062	1062	Unknown	Sunbrella
+1063	1063	Unknown	Connecting Couch Left
+1064	1064	Unknown	Connecting Couch Midsection
+1065	1065	Unknown	Connecting Couch Right
+1066	1066	Unknown	Connecting Couch Corner
+1067	1067	Unknown	Woöden Lampe [White]
+1068	1068	Unknown	Woöden Lampe [Black]
+1069	1069	Unknown	Woöden Lampe [Purple]
+1070	1070	Unknown	Woöden Lampe [Pink]
+1071	1071	Unknown	Woöden Lampe [Red]
+1072	1072	Unknown	Woöden Lampe [Green]
+1073	1073	Unknown	Woöden Lampe [Yellow]
+1074	1074	Unknown	Woöden Lampe [Blue]
+1075	1075	Unknown	¿Stone Workbench
+1076	1076	Unknown	0
+1077	1077	Unknown	0
+1078	1078	Unknown	¿deitree bulb
+1079	1079	Unknown	Rose Leaves
+1080	1080	Unknown	Rose
+1081	1081	Unknown	Blossoming Shrub
+1082	1082	Unknown	Oversized Shrub
+1083	1083	Unknown	Reeds
+1084	1084	Unknown	Big Bramble
+1085	1085	Unknown	Bramble
+1086	1086	Unknown	Animal Bones
+1087	1087	Unknown	Coneconut Tree
+1088	1088	Unknown	Fiddleheads
+1089	1089	Unknown	Glowdrop
+1090	1090	Unknown	Blocky Branch
+1091	1091	Unknown	Blocky Buttress Root
+1092	1092	Unknown	Blocky Root
+1093	1093	Unknown	Acorn
+1094	1094	Unknown	Splashing Stone
+1095	1095	Unknown	Horizontal Log
+1096	1096	Unknown	Vertical Log
+1097	1097	Unknown	Log Wall Corner
+1098	1098	Unknown	Vertical Log
+1099	1099	Unknown	Flat Wooden Roofing
+1100	1100	Unknown	Column Crown
+1101	1101	Unknown	Rustic Door
+1102	1102	Unknown	Drapery Door
+1103	1103	Unknown	Brick Border
+1104	1104	Unknown	0
+1105	1105	Unknown	Plank Pathway
+1106	1106	Unknown	0
+1107	1107	Unknown	Stepping Stones
+1108	1108	Unknown	Corner Stones
+1109	1109	Unknown	Ceramic Sconce
+1110	1110	Unknown	Wall Hanging
+1111	1111	Unknown	Framed Foliage
+1112	1112	Unknown	Bunting
+1113	1113	Unknown	Cloth Sacks
+1114	1114	Unknown	Rustic Desk
+1115	1115	Unknown	Rustic Bed
+1116	1116	Unknown	Coffer
+1117	1117	Unknown	Planter
+1118	1118	Unknown	Planter
+1119	1119	Unknown	Potage Pot
+1120	1120	Unknown	Medicinal Mortar
+1121	1121	Unknown	Swing
+1122	1122	Unknown	Firewood
+1123	1123	Unknown	Farming Tools
+1124	1124	Unknown	Sack of Wheat
+1125	1125	Unknown	Haystack
+1126	1126	Unknown	Stackable Drackyma
+1127	1127	Unknown	0
+1128	1128	Unknown	0
+1129	1129	Unknown	0
+1130	1130	Unknown	Pebbles
+1131	1131	Unknown	Splinters
+1132	1132	Unknown	0
+1133	1133	Unknown	Magic Outcrop
+1134	1134	Unknown	Knight Oddments
+1135	1135	Unknown	0
+1136	1136	Unknown	0
+1137	1137	Unknown	Silver Birch Stump
+1138	1138	Unknown	Cannonball
+1139	1139	Unknown	Wooden Grating
+1140	1140	Unknown	Cell Wall
+1141	1141	Unknown	Swabbing Tools
+1142	1142	Unknown	Porthole
+1143	1143	Unknown	0
+1144	1144	Unknown	¿Builder’s Workbench
+1145	1145	Unknown	¿Builder’s Workbench
+1146	1146	Unknown	¿Builder’s Workbench
+1147	1147	Unknown	¿Wooden Workbench
+1148	1148	Unknown	¿Stone Workbench
+1149	1149	Unknown	0
+1150	1150	Unknown	Wizard’s Workbench
+1151	1151	Unknown	¿Null
+1152	1152	Unknown	¿Null
+1153	1153	Unknown	Terraforma Tiles
+1154	1154	Unknown	Cactail
+1155	1155	Unknown	Silver Birch Sapling
+1156	1156	Unknown	Silver Birch Tree
+1157	1157	Unknown	Big Silver Birch Tree
+1158	1158	Unknown	Pitched Wooden Roofing
+1159	1159	Unknown	Wooden Outer Corner Roofing
+1160	1160	Unknown	Wooden Inner Corner Roofing
+1161	1161	Unknown	Wooden Roof Window
+1162	1162	Unknown	Wooden Roof Ridge
+1163	1163	Unknown	¿Null
+1164	1164	Unknown	¿Null
+1165	1165	Unknown	¿Null
+1166	1166	Unknown	0
+1167	1167	Unknown	0
+1168	1168	Unknown	¿Boat
+1169	1169	Unknown	¿Naviglobe
+1170	1170	Unknown	0
+1171	1171	Unknown	0
+1172	1172	Unknown	0
+1173	1173	Unknown	0
+1174	1174	Unknown	Clam Shell
+1175	1175	Unknown	Plumberry Tree
+1176	1176	Unknown	Plumberry Tree
+1177	1177	Unknown	Plumberry Tree
+1178	1178	Unknown	Plumberry Tree
+1179	1179	Unknown	Plumberry Tree
+1180	1180	Unknown	Plumberry Tree
+1181	1181	Unknown	Plumberry Tree
+1182	1182	Unknown	Plumberry Tree
+1183	1183	Unknown	Plumberry Tree
+1184	1184	Unknown	Picture Frame
+1185	1185	Unknown	Picture Frame
+1186	1186	Unknown	Picture Frame
+1187	1187	Unknown	Picture Frame
+1188	1188	Unknown	Picture Frame
+1189	1189	Unknown	Picture Frame
+1190	1190	Unknown	Picture Frame
+1191	1191	Unknown	Picture Frame
+1192	1192	Unknown	Picture Frame
+1193	1193	Unknown	Picture Frame
+1194	1194	Unknown	¿Null
+1195	1195	Unknown	¿Naviglobe
+1196	1196	Unknown	¿Naviglobe
+1197	1197	Unknown	¿Naviglobe
+1198	1198	Unknown	¿Naviglobe
+1199	1199	Unknown	¿Naviglobe
+1200	1200	Unknown	¿Naviglobe
+1201	1201	Unknown	¿Naviglobe
+1202	1202	Unknown	¿Naviglobe
+1203	1203	Unknown	¿Naviglobe
+1204	1204	Unknown	¿Naviglobe
+1205	1205	Unknown	¿Naviglobe
+1206	1206	Unknown	¿Naviglobe
+1207	1207	Unknown	¿Naviglobe
+1208	1208	Unknown	¿Naviglobe
+1209	1209	Unknown	¿Naviglobe
+1210	1210	Unknown	¿Naviglobe
+1211	1211	Unknown	¿Naviglobe
+1212	1212	Unknown	¿Naviglobe
+1213	1213	Unknown	¿Naviglobe
+1214	1214	Unknown	¿Naviglobe
+1215	1215	Unknown	¿Naviglobe
+1216	1216	Unknown	¿Naviglobe
+1217	1217	Unknown	¿Naviglobe
+1218	1218	Unknown	¿Naviglobe
+1219	1219	Unknown	¿Naviglobe
+1220	1220	Unknown	¿Naviglobe
+1221	1221	Unknown	¿Naviglobe
+1222	1222	Unknown	¿Naviglobe
+1223	1223	Unknown	¿Naviglobe
+1224	1224	Unknown	¿Naviglobe
+1225	1225	Unknown	¿Naviglobe
+1226	1226	Unknown	¿Naviglobe
+1227	1227	Unknown	¿Naviglobe
+1228	1228	Unknown	¿Naviglobe
+1229	1229	Unknown	¿Naviglobe
+1230	1230	Unknown	¿Naviglobe
+1231	1231	Unknown	¿Naviglobe
+1232	1232	Unknown	¿Naviglobe
+1233	1233	Unknown	¿Naviglobe
+1234	1234	Unknown	0
+1235	1235	Unknown	0
+1236	1236	Unknown	Picture Frame
+1237	1237	Unknown	0
+1238	1238	Unknown	0
+1239	1239	Unknown	0
+1240	1240	Unknown	Broken Vault Wall
+1241	1241	Unknown	Mud-Brick Wall Rubble
+1242	1242	Unknown	0
+1243	1243	Unknown	Border Boulder
+1244	1244	Unknown	Big Border Boulder
+1245	1245	Unknown	Fun-Sized Fountain
+1246	1246	Unknown	Super Spouter
+1247	1247	Unknown	Iron Stanchion
+1248	1248	Unknown	Awning
+1249	1249	Unknown	Playing Cards
+1250	1250	Unknown	Carafe Collection
+1251	1251	Unknown	Full Flagon
+1252	1252	Unknown	Deep-Fried Feast
+1253	1253	Unknown	Fungusbord
+1254	1254	Unknown	Left Counter
+1255	1255	Unknown	Midsection Counter
+1256	1256	Unknown	Right Counter
+1257	1257	Unknown	Corner Counter
+1258	1258	Unknown	Cooking Utensils
+1259	1259	Unknown	Shower
+1260	1260	Unknown	Stone Pot
+1261	1261	Unknown	0
+1262	1262	Unknown	Wooden Toilet
+1263	1263	Unknown	Babs’s Billboard
+1264	1264	Unknown	Drum Kit
+1265	1265	Unknown	Cello
+1266	1266	Unknown	Price Tag
+1267	1267	Unknown	Fancy Signpost
+1268	1268	Unknown	Hexagonal Planter
+1269	1269	Unknown	Shelf
+1270	1270	Unknown	0
+1271	1271	Unknown	Cupboard
+1272	1272	Unknown	Drawer
+1273	1273	Unknown	0
+1274	1274	Unknown	Protective Planks
+1275	1275	Unknown	Mining Tools
+1276	1276	Unknown	¿Rockbomb
+1277	1277	Unknown	Earth Pile
+1278	1278	Unknown	Rock Pile
+1279	1279	Unknown	0
+1280	1280	Unknown	Vineapple
+1281	1281	Unknown	Shineapple
+1282	1282	Unknown	Glumgus
+1283	1283	Unknown	Massive Mushroom Stem
+1284	1284	Unknown	Massive Mushroom Cap
+1285	1285	Unknown	Supermassive Mushroom Cap
+1286	1286	Unknown	Sizeable Stalagmite
+1287	1287	Unknown	Stalagmites
+1288	1288	Unknown	Adobe Window
+1289	1289	Unknown	Iron Stanchion
+1290	1290	Unknown	Iron Stanchion ·-
+1291	1291	Unknown	Iron Stanchion -·-
+1292	1292	Unknown	Beastly Burrow Broken
+1293	1293	Unknown	¿Null
+1294	1294	Unknown	Stickler’s Sifter
+1295	1295	Unknown	¿Arrow
+1296	1296	Unknown	Sconce
+1297	1297	Unknown	Steel Doors
+1298	1298	Unknown	0
+1299	1299	Unknown	0
+1300	1300	Unknown	(Golden Lock)
+1301	1301	Unknown	0
+1302	1302	Unknown	Firework Cannon
+1303	1303	Unknown	0
+1304	1304	Unknown	0
+1305	1305	Unknown	Sharpened Log
+1306	1306	Unknown	Sharpened Log
+1307	1307	Unknown	Pestilential Nest
+1308	1308	Unknown	Pestilential Nest Broken
+1309	1309	Unknown	0
+1310	1310	Unknown	Connecting Window
+1311	1311	Unknown	Connecting Window
+1312	1312	Unknown	Connecting Window
+1313	1313	Unknown	Connecting Window
+1314	1314	Unknown	Connecting Window
+1315	1315	Unknown	Connecting Window
+1316	1316	Unknown	Connecting Window
+1317	1317	Unknown	Connecting Window
+1318	1318	Unknown	Connecting Window
+1319	1319	Unknown	Connecting Window
+1320	1320	Unknown	Connecting Window
+1321	1321	Unknown	Connecting Window
+1322	1322	Unknown	Connecting Window
+1323	1323	Unknown	Connecting Window
+1324	1324	Unknown	Connecting Window
+1325	1325	Unknown	0
+1326	1326	Unknown	0
+1327	1327	Unknown	¿Null
+1328	1328	Unknown	Hargon’s Standard
+1329	1329	Unknown	Big Bolt
+1330	1330	Unknown	Wooden Bracket
+1331	1331	Unknown	0
+1332	1332	Unknown	Castle Corner Capital
+1333	1333	Unknown	Castle Corner Midsection
+1334	1334	Unknown	Castle Corner Foundation
+1335	1335	Unknown	Castle Belvedere
+1336	1336	Unknown	Large Castle Tile
+1337	1337	Unknown	Carpeted Steps Midsection
+1338	1338	Unknown	Carpeted Steps Left
+1339	1339	Unknown	Castle Column Pedestal
+1340	1340	Unknown	Portcullis
+1341	1341	Unknown	Castle Window Arch
+1342	1342	Unknown	Castle Window Midsection
+1343	1343	Unknown	Castle Window Sill
+1344	1344	Unknown	Castle Fanlight
+1345	1345	Unknown	Stage Curtain Left
+1346	1346	Unknown	Stage Curtain Right
+1347	1347	Unknown	Throne Room Door
+1348	1348	Unknown	Wall-Mounted Banner
+1349	1349	Unknown	Brass Bracket
+1350	1350	Unknown	Criss-Crossing Leadlight
+1351	1351	Unknown	Four-Square Leadlight
+1352	1352	Unknown	Plain-Pane Leadlight
+1353	1353	Unknown	Light Box
+1354	1354	Unknown	Royal Dining Table
+1355	1355	Unknown	Portrait of a Princess
+1356	1356	Unknown	¿Wooden Pristine Workbench
+1357	1357	Unknown	Broken Castle Wall
+1358	1358	Unknown	Disfigured Throne
+1359	1359	Unknown	Broken Citadel Wall
+1360	1360	Unknown	Broken Stone Wall
+1361	1361	Unknown	Wooden Foundation
+1362	1362	Unknown	Target Dummy
+1363	1363	Unknown	Coffin
+1364	1364	Unknown	Crock Pot
+1365	1365	Unknown	Sponge Cake
+1366	1366	Unknown	Unholy Altar
+1367	1367	Unknown	Tainted Glass Arch
+1368	1368	Unknown	Tainted Glass Midsection
+1369	1369	Unknown	Tainted Glass Sill
+1370	1370	Unknown	Folding Screen
+1371	1371	Unknown	Crystal Ball
+1372	1372	Unknown	Comfy Cushion
+1373	1373	Unknown	Note
+1374	1374	Unknown	Book
+1375	1375	Unknown	Biblio-Pile
+1376	1376	Unknown	Small-Scale Soldier
+1377	1377	Unknown	Small-Scale Slime
+1378	1378	Unknown	Map
+1379	1379	Unknown	Emblematic Table
+1380	1380	Unknown	Floating Flower Petals
+1381	1381	Unknown	Spa Spout
+1382	1382	Unknown	Bathing Stool
+1383	1383	Unknown	Trampoline
+1384	1384	Unknown	0
+1385	1385	Unknown	0
+1386	1386	Unknown	Banner of Erdrick
+1387	1387	Unknown	Tattered Banner of Erdrick
+1388	1388	Unknown	Burnt Branch
+1389	1389	Unknown	Singed Shrub
+1390	1390	Unknown	Torched Tree
+1391	1391	Unknown	0
+1392	1392	Unknown	0
+1393	1393	Unknown	0
+1394	1394	Unknown	False Idol
+1395	1395	Unknown	Guillotine
+1396	1396	Unknown	Hargon’s Throne
+1397	1397	Unknown	Pyramid Merlon
+1398	1398	Unknown	Citadel Creature Carving
+1399	1399	Unknown	Fiendish Face
+1400	1400	Unknown	Peculiar Pillar
+1401	1401	Unknown	Citadel Spear Symbol
+1402	1402	Unknown	Citadeñ Cross Carving
+1403	1403	Unknown	¿Minimedal
+1404	1404	Unknown	¿Minimedal
+1405	1405	Unknown	0
+1406	1406	Unknown	¿Moon Sigil
+1407	1407	Unknown	0
+1408	1408	Unknown	¿Water Sigil
+1409	1409	Unknown	¿Star Sigil
+1410	1410	Unknown	¿Hammer Icon
+1411	1411	Unknown	Wooden Door
+1412	1412	Unknown	Pot
+1413	1413	Unknown	0
+1414	1414	Unknown	Colossal Coffer
+1415	1415	Unknown	Grandfather Clock
+1416	1416	Unknown	Filter Fountain
+1417	1417	Unknown	¿Tattered Banner of Erdrick
+1418	1418	Unknown	Salutation Station
+1419	1419	Unknown	Connecting Counter
+1420	1420	Unknown	Long-Stemmed Rose [White]
+1421	1421	Unknown	Long-Stemmed Rose [Black]
+1422	1422	Unknown	Long-Stemmed Rose [Purple]
+1423	1423	Unknown	Long-Stemmed Rose [Pink]
+1424	1424	Unknown	Long-Stemmed Rose [Red]
+1425	1425	Unknown	Long-Stemmed Rose [Green]
+1426	1426	Unknown	Long-Stemmed Rose [Yellow]
+1427	1427	Unknown	Long-Stemmed Rose [Blue]
+1428	1428	Unknown	0
+1429	1429	Unknown	0
+1430	1430	Unknown	0
+1431	1431	Unknown	0
+1432	1432	Unknown	0
+1433	1433	Unknown	Capsized Crate
+1434	1434	Unknown	0
+1435	1435	Unknown	Simple Supper Set
+1436	1436	Unknown	¿Milkblossom
+1437	1437	Unknown	Ropy Vertical Log
+1438	1438	Unknown	Ropy Horizontal Log
+1439	1439	Unknown	0
+1440	1440	Unknown	0
+1441	1441	Unknown	0
+1442	1442	Unknown	0
+1443	1443	Unknown	Blackbell
+1444	1444	Unknown	Purplotus
+1445	1445	Unknown	Scarletulip
+1446	1446	Unknown	Emeraldahlia
+1447	1447	Unknown	Ultramarose
+1448	1448	Unknown	Light Box [White]
+1449	1449	Unknown	Light Box [Black]
+1450	1450	Unknown	Light Box [Purple]
+1451	1451	Unknown	Light Box [Pink]
+1452	1452	Unknown	Light Box [Red]
+1453	1453	Unknown	Light Box [Green]
+1454	1454	Unknown	Light Box [Yellow]
+1455	1455	Unknown	Light Box [Blue]
+1456	1456	Unknown	¿Stone Workbench
+1457	1457	Unknown	¿Stone Workbench
+1458	1458	Unknown	0
+1459	1459	Unknown	0
+1460	1460	Unknown	0
+1461	1461	Unknown	0
+1462	1462	Unknown	¿Orange Ball
+1463	1463	Unknown	¿Blue Ball
+1464	1464	Unknown	¿Yellow Ball
+1465	1465	Unknown	¿Green Ball
+1466	1466	Unknown	¿Red Ball
+1467	1467	Unknown	Left Carpeted Steps
+1468	1468	Unknown	Right Carpeted Steps
+1469	1469	Unknown	Brick Border Corner
+1470	1470	Unknown	0
+1471	1471	Unknown	Stackable Dracky
+1472	1472	Unknown	Stackable Drackyma
+1473	1473	Unknown	Stackable Drackolyte
+1474	1474	Unknown	Pressure Plate
+1475	1475	Unknown	Button
+1476	1476	Unknown	¿Altar
+1477	1477	Unknown	¿Stained Window Arch
+1478	1478	Unknown	¿Stained Window Midsection
+1479	1479	Unknown	¿Stained Window Sill

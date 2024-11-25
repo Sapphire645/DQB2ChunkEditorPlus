@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace DQB2ChunkEditor;
+namespace DQBChunkEditor;
 
 /// <summary>
 /// Refresh changes for bound properties

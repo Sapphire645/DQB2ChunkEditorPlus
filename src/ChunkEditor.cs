@@ -4,8 +4,8 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text;
-using DQB2ChunkEditor.Models;
-using DQB2ChunkEditor.Windows;
+using DQBChunkEditor.Models;
+using DQBChunkEditor.Windows;
 using Ionic.Zlib;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,156 +13,124 @@ using System.Windows.Media.Imaging;
 using System.Reflection;
 
 
-namespace DQB2ChunkEditor;
+namespace DQBChunkEditor;
 
 public static class ChunkEditor
 {
-    private const uint LayerSize = 0x800; // layers are 32x32 * 2
-    private const uint HeaderLength = 0x110; // everything after the header is compressed data
-    private const uint ChunkSize = 0x30000; // chunk size is layer size (1024) * layer height (96) * block size (2)
+    private const uint LayerSize = 0x400; // layers are 32x32
+    private const uint ChunkSize = 0x8000; // chunk size is layer size (1024) * layer height (32)
 
-    private const uint ChunkGridSize = 0x2000;
-    private const uint ItemSize = 0x12C0000;
-    private const uint ItemOffsetSize = 0x320000;
+    private const uint ChunkGridSize = 0x1200;
+    private const uint ItemSize = 0;
+    private const uint ItemOffsetSize = 0;
 
-    private const uint ChunkGridStart = 0x24C7C1; // starting index for the chunk offsets
-    private const uint ItemStart = 0x24E7D1; // starting index for the item data
-    private const uint ItemOffsetStart = 0x150E7D1; // starting index for the chunk offsets
-    private const uint BlockStart = 0x183FEF0; // starting index for the block data
-    private const string ExpectedFileHeader = "aerC"; // expected file header for the map
+    private const uint ChunkGridStart = 0x0; // starting index for the chunk offsets
+    private const uint ItemStart = 0x0; // starting index for the item data
+    private const uint ItemOffsetStart = 0x0; // starting index for the chunk offsets
+    private const uint BlockStart = 0x120c; // starting index for the block data
 
-    private static byte[] _headerBytes = new byte[HeaderLength];
     private static byte[] _uncompressedBytes = null!;
 
     public static string Filename { get; set; } = null!;
-    public const uint LayerHeight = 0x60; // layers are up to 96 blocks high
+    public const uint LayerHeight = 32; // layers are up to 32 blocks high
 
-    public static string Pname { get; set; } = null!;
-    public static UInt32 GratitudePoints { get; set; } = 99999; //gratitude points
-    public static float Clock { get; set; } = 0; //clock
-    public static ushort Weather { get; set; } = 1; //weather
     public static short ChunkCount { get; set; } = 0; // chunk count changes per map
-    public static byte Island { get; set; } = 0xFF; //Island Number
 
     public static void LoadFile(string filename)
     {
-        var fileBytes = File.ReadAllBytes(filename);
+        var fileBytes = System.IO.File.ReadAllBytes(filename);
         var headerBytes = new byte[4];
-        Array.Copy(fileBytes, 0, headerBytes, 0, 4);
 
-        var actualHeader = Encoding.UTF8.GetString(headerBytes);
-
-        if (ExpectedFileHeader != actualHeader)
+        using (var input = new MemoryStream(fileBytes))
         {
-            return;
+            using (var zlib = new System.IO.Compression.ZLibStream(input, System.IO.Compression.CompressionMode.Decompress))
+            {
+                using (var output = new MemoryStream())
+                {
+                    zlib.CopyTo(output);
+                    _uncompressedBytes = output.ToArray();
+                }
+            }
         }
-
-        var compressedBytes = new byte[fileBytes.Length - HeaderLength];
-
-        Array.Copy(fileBytes, HeaderLength, compressedBytes, 0, compressedBytes.Length);
-        Array.Copy(fileBytes, _headerBytes, HeaderLength);
-
-        _uncompressedBytes = ZlibStream.UncompressBuffer(compressedBytes);
+        //_uncompressedBytes = ZlibStream.UncompressBuffer(fileBytes);
 
         var chunkBytes = new byte[2];
-        chunkBytes[0] = _uncompressedBytes[1331903 - HeaderLength];
-        chunkBytes[1] = _uncompressedBytes[1331904 - HeaderLength];
+        chunkBytes[0] = _uncompressedBytes[0x1204];
+        chunkBytes[1] = _uncompressedBytes[0x1205];
         ChunkCount = (short)(BitConverter.ToUInt16(chunkBytes));
         Filename = filename;
-        readExtra();
     }
-    public static void ImportFile(string filename)
-    {
-        var fileBytes = File.ReadAllBytes(filename);
-        var headerBytes = new byte[4];
-        Array.Copy(fileBytes, 0, headerBytes, 0, 4);
+    //public static void ImportFile(string filename)
+    //{
+    //    var fileBytes = System.IO.File.ReadAllBytes(filename);
+    //    var headerBytes = new byte[4];
+    //    Array.Copy(fileBytes, 0, headerBytes, 0, 4);
 
-        var actualHeader = Encoding.UTF8.GetString(headerBytes);
+    //    var actualHeader = Encoding.UTF8.GetString(headerBytes);
 
-        if (ExpectedFileHeader != actualHeader)
-        {
-            return;
-        }
+    //    if (ExpectedFileHeader != actualHeader)
+    //    {
+    //        return;
+    //    }
 
-        _uncompressedBytes = new byte[fileBytes.Length - HeaderLength];
+    //    _uncompressedBytes = new byte[fileBytes.Length - HeaderLength];
 
-        Array.Copy(fileBytes, HeaderLength, _uncompressedBytes, 0, _uncompressedBytes.Length);
-        Array.Copy(fileBytes, _headerBytes, HeaderLength);
+    //    Array.Copy(fileBytes, HeaderLength, _uncompressedBytes, 0, _uncompressedBytes.Length);
+    //    Array.Copy(fileBytes, _headerBytes, HeaderLength);
 
-        var compressedBytes = ZlibStream.CompressBuffer(_uncompressedBytes);
+    //    var compressedBytes = ZlibStream.CompressBuffer(_uncompressedBytes);
 
-        var chunkBytes = new byte[2];
-        chunkBytes[0] = _uncompressedBytes[1331903 - HeaderLength];
-        chunkBytes[1] = _uncompressedBytes[1331904 - HeaderLength];
-        ChunkCount = (short)(BitConverter.ToUInt16(chunkBytes));
-        Filename = filename;
-        readExtra();
-    }
-
-    private static void readExtra()
-    {
-        Island = _uncompressedBytes[0xC0FE6 - HeaderLength];
-        //extra
-        var GratitudeBytes = new byte[4];
-        GratitudeBytes[0] = _uncompressedBytes[0xC0FDC - HeaderLength];
-        GratitudeBytes[1] = _uncompressedBytes[0xC0FDD - HeaderLength];
-        GratitudeBytes[2] = _uncompressedBytes[0xC0FDE - HeaderLength];
-        GratitudeBytes[3] = _uncompressedBytes[0xC0FDF - HeaderLength];
-        GratitudePoints = BitConverter.ToUInt32(GratitudeBytes);
-
-        GratitudeBytes[0] = _uncompressedBytes[0xC1060 - HeaderLength];
-        GratitudeBytes[1] = _uncompressedBytes[0xC1061 - HeaderLength];
-        GratitudeBytes[2] = _uncompressedBytes[0xC1062 - HeaderLength];
-        GratitudeBytes[3] = _uncompressedBytes[0xC1063 - HeaderLength];
-        Clock = BitConverter.ToSingle(GratitudeBytes);
-
-        Weather = _uncompressedBytes[0xC1064 - HeaderLength];
-    }
+    //    var chunkBytes = new byte[2];
+    //    chunkBytes[0] = _uncompressedBytes[1331903 - HeaderLength];
+    //    chunkBytes[1] = _uncompressedBytes[1331904 - HeaderLength];
+    //    ChunkCount = (short)(BitConverter.ToUInt16(chunkBytes));
+    //    Filename = filename;
+    //    readExtra();
+    //}
 
     public static void SaveFile()
     {
         var chunkBytes = new byte[2];
         chunkBytes = BitConverter.GetBytes(ChunkCount);
-        _uncompressedBytes[1331903 - HeaderLength] = chunkBytes[0];
-        _uncompressedBytes[1331904 - HeaderLength] = chunkBytes[1];
+        _uncompressedBytes[0x1204] = chunkBytes[0];
+        _uncompressedBytes[0x1205] = chunkBytes[1];
 
-        var compressedBytes = ZlibStream.CompressBuffer(_uncompressedBytes);
-        var outputFileBytes = new byte[HeaderLength + compressedBytes.Length];
-
-        Array.Copy(_headerBytes, outputFileBytes, HeaderLength);
-        Array.Copy(compressedBytes, 0, outputFileBytes, HeaderLength, compressedBytes.Length);
-
-        File.WriteAllBytes(Filename, outputFileBytes);
+        using (var input = new MemoryStream(_uncompressedBytes))
+        {
+            using (var output = new MemoryStream())
+            {
+                using (var zlib = new System.IO.Compression.ZLibStream(output, System.IO.Compression.CompressionLevel.Fastest))
+                {
+                    input.CopyTo(zlib);
+                }
+                System.IO.File.WriteAllBytes(Filename, output.ToArray());
+            }
+        }
     }
-    public static void ExportFile(string filename)
-    {
-        var chunkBytes = new byte[2];
-        chunkBytes = BitConverter.GetBytes(ChunkCount);
-        _uncompressedBytes[1331903 - HeaderLength] = chunkBytes[0];
-        _uncompressedBytes[1331904 - HeaderLength] = chunkBytes[1];
+    //public static void ExportFile(string filename)
+    //{
+    //    var chunkBytes = new byte[2];
+    //    chunkBytes = BitConverter.GetBytes(ChunkCount);
+    //    _uncompressedBytes[1331903 - HeaderLength] = chunkBytes[0];
+    //    _uncompressedBytes[1331904 - HeaderLength] = chunkBytes[1];
 
-        var outputFileBytes = new byte[HeaderLength + _uncompressedBytes.Length];
+    //    var outputFileBytes = new byte[HeaderLength + _uncompressedBytes.Length];
 
-        Array.Copy(_headerBytes, outputFileBytes, HeaderLength);
-        Array.Copy(_uncompressedBytes, 0, outputFileBytes, HeaderLength, _uncompressedBytes.Length);
+    //    Array.Copy(_headerBytes, outputFileBytes, HeaderLength);
+    //    Array.Copy(_uncompressedBytes, 0, outputFileBytes, HeaderLength, _uncompressedBytes.Length);
 
-        File.WriteAllBytes(filename, outputFileBytes);
-    }
+    //    System.IO.File.WriteAllBytes(filename, outputFileBytes);
+    //}
 
     private static uint GetByteIndex(short chunk, byte layer, short tile)
     {
-        return (uint)(BlockStart + (chunk * ChunkSize) + (layer * LayerSize) + (tile * 2));
+        return (uint)(BlockStart + (chunk * ChunkSize) + (layer * LayerSize) + (tile));
     }
 
     public static ushort GetBlockValue(short chunk, byte layer, short tile)
     {
         var index = GetByteIndex(chunk, layer, tile);
-
-        var blockBytes = new byte[2];
-        blockBytes[0] = _uncompressedBytes[index];
-        blockBytes[1] = _uncompressedBytes[index + 1];
-
-        return BitConverter.ToUInt16(blockBytes);
+        return _uncompressedBytes[index];
     }
 
     public static void SetBlockValue(short chunk, byte layer, short tile, short blockId)
@@ -170,150 +138,14 @@ public static class ChunkEditor
         var index = GetByteIndex(chunk, layer, tile);
 
         _uncompressedBytes[index] = (byte)blockId;
-        _uncompressedBytes[index + 1] = (byte)(blockId >> 8);
-    }
-    private static ObjectItem GetItemData(uint RelativeAddressID)
-    {
-        byte[] data = new byte[24];
-        Array.Copy(_uncompressedBytes, RelativeAddressID * 24 + ItemStart, data, 0, 24);
-        bool hasAllZeroes = data.All(singleByte => singleByte == 0);
-        if (hasAllZeroes) return null;
-        ObjectItem objectItem = new ObjectItem(data);
-        return objectItem;
-    }
-    public static byte[] GetItemDataBytes(uint RelativeAddressID)
-    {
-        byte[] data = new byte[24];
-        Array.Copy(_uncompressedBytes, RelativeAddressID * 24 + ItemStart, data, 0, 24);
-        return data;
-    }
-    private static uint[] GetItemOffset(uint RelativeAddressID)
-    {
-        byte[] data = new byte[4];
-        uint[] values = new uint[2];
-        Array.Copy(_uncompressedBytes, RelativeAddressID * 4 + ItemOffsetStart, data, 0, 4);
-        bool hasAllZeroes = data.All(singleByte => singleByte == 0);
-        if (hasAllZeroes) return null;
-        values[0] = (uint)(data[0] + ((data[1] & 0x0F) << 8)); 
-        values[1] = (uint)(((data[1] & 0xF0) >> 4) + (data[2]<<4) + (data[3] << 12)); //defrag index
-        return values;
     }
 
-    public static void DeleteItem(ObjectItem Item)
-    {
-        var ItemOffset = GetItemOffset(Item.Offset);
-        for(int ite=0;ite < 24; ite++) //delete Item
-        {
-            _uncompressedBytes[ItemOffset[1] * 24 + ItemStart + ite] = 0;
-        }
-        //Set Defrag area to 0
-        _uncompressedBytes[Item.Offset * 4 + ItemOffsetStart + 1] =(byte)( _uncompressedBytes[Item.Offset * 4 + ItemOffsetStart + 1] & 0xF0);
-        _uncompressedBytes[Item.Offset * 4 + ItemOffsetStart] = 0;
-    }
-
-    public static void SetItem(ObjectItem Item, byte[] rawData, short chunk, byte layer, short tile)
-    {
-        uint i,itemOffset;
-        byte[] DefragIndex = new byte[4];
-        byte[] bytes = new byte[2];
-        int x,z;
-        x = tile % 32;
-        z = tile / 32;
-        for (i = 0; i < 0xC8000; i++) //Get the first defrag index that is empty
-        {
-            Array.Copy(_uncompressedBytes, i * 4 + ItemOffsetStart, DefragIndex, 0, 4);
-            if ((DefragIndex[1] & 0x0F) + DefragIndex[0] == 0) break;
-        }
-        bytes = BitConverter.GetBytes(GetGridFromChunk(chunk));
-        DefragIndex[0] = bytes[0];
-        DefragIndex[1] = (byte)(bytes[1] | DefragIndex[1]); //set chunk
-        Array.Copy(DefragIndex, 0, _uncompressedBytes, i * 4 + ItemOffsetStart, 4);
-
-        itemOffset = (uint)(((DefragIndex[1] & 0xF0) >> 4) + (DefragIndex[2] << 4) + (DefragIndex[3] << 12)); //defrag index
-
-        rawData[9] = (byte)(((x << 5)) | (rawData[9] & 0x1F)); //setting x,y,z
-        rawData[10] = (byte)((x >> 3) + ((layer << 2) & 0xFF));
-        rawData[11] = (byte)((layer >> 6) + (z << 1) | (rawData[9] & 0xC0));
-
-        Array.Copy(rawData, 0, _uncompressedBytes, itemOffset * 24 + ItemStart, 24); //copying item
-
-    }
-    public static void UpdateExtra()
-    {
-        if (Island == 0xFF) return;
-        byte[] GratBytes = new byte[4];
-        BinaryPrimitives.WriteUInt32LittleEndian(GratBytes, GratitudePoints);
-        _uncompressedBytes[0xC0FDC - HeaderLength] = GratBytes[0];
-        _uncompressedBytes[0xC0FDD - HeaderLength] = GratBytes[1];
-        _uncompressedBytes[0xC0FDE - HeaderLength] = GratBytes[2];
-        _uncompressedBytes[0xC0FDF - HeaderLength] = GratBytes[3];
-        BinaryPrimitives.WriteSingleLittleEndian(GratBytes, Clock);
-        _uncompressedBytes[0xC1060 - HeaderLength] = GratBytes[0];
-        _uncompressedBytes[0xC1061 - HeaderLength] = GratBytes[1];
-        _uncompressedBytes[0xC1062 - HeaderLength] = GratBytes[2];
-        _uncompressedBytes[0xC1063 - HeaderLength] = GratBytes[3];
-        _uncompressedBytes[0xC1064 - HeaderLength] = (byte)Weather;
-    }
-    public static List<ObservableProperty<SignText>> LoadSign()
-    {
-        List<ObservableProperty<SignText>> LineList = new List<ObservableProperty<SignText>>();
-        var NameBytes = new byte[127];
-        for (int i = 0; i < 20 * 134; i += 134)
-        {
-            Array.Copy(_uncompressedBytes, 0x14904 + i, NameBytes, 0, 127);
-            if (_uncompressedBytes[0x14904 + i] != 0)
-            {
-                LineList.Add(new ObservableProperty<SignText>()
-                {
-                    Value = new SignText()
-                    {
-                        Size = 127,
-                        Line = System.Text.Encoding.Default.GetString(NameBytes),
-                        Index = i
-                    }
-                });
-            }
-        }
-        var NameBytes2 = new byte[216];
-        for (int i = 8761; i < 8761 + (60 * 228); i += 228)
-        {
-            Array.Copy(_uncompressedBytes, 0x14904 + i, NameBytes2, 0, 216);
-            if (_uncompressedBytes[0x14904 + i] != 0)
-            {
-                LineList.Add(new ObservableProperty<SignText>()
-                {
-                    Value = new SignText()
-                    {
-                        Size = 216,
-                        Line = System.Text.Encoding.Default.GetString(NameBytes2),
-                        Index = i
-                    }
-                });
-            }
-        }
-        return LineList;
-    }
-    public static void SaveSign(List<ObservableProperty<SignText>> LineList)
-    {
-        if (Island == 0xFF) return;
-        var NameBytes = new byte[216];
-        foreach (ObservableProperty<SignText> OLine in LineList)
-        {
-            var line = OLine.Value;
-            var Bytes = new byte[line.Size];
-            var BytesLen = new byte[line.Size];
-            Bytes = Encoding.Default.GetBytes(line.Line);
-            Array.Copy(Bytes, 0, BytesLen, 0, Bytes.Length);
-            Array.Copy(BytesLen, 0, _uncompressedBytes, 0x14904 + line.Index, line.Size);
-        }
-    }
-
+   
     public static void ReplaceBlockValue(short chunkBeg, short chunkEnd,
                                            short layerBeg, short layerEnd, 
                                            short tileBeg, short tileEnd,
                                            List<short> blockOldId, short blockNewId)
     {
-        if (Island == 0xFF) return;
         short chunk = chunkBeg;
         uint index = 0;
         short aux;
@@ -352,7 +184,6 @@ public static class ChunkEditor
     }
     public static uint[] CountBlockData()
     {
-        if (Island == 0xFF) return null;
         uint[] list = new uint[2048];
         short chunk = 0;
         for (int i = 0; i < 2048; i++)
@@ -368,57 +199,6 @@ public static class ChunkEditor
                     list[a] = list[a] + 1;
                 }
             chunk++;
-        }
-        return list;
-    }
-    public static void CountItemData(StreamWriter file,List<Tile> TileListObject)
-    {
-        if (Island == 0xFF) return;
-        for (uint i = 0; i < 0xC8000; i++)
-        {
-            var j = GetItemOffset(i); //0 CHUNK, 1 OFFSET
-            if (j != null)
-            {
-                var a = GetItemData(j[1]);
-                if (a != null)
-                {
-                    a.Chunk = (short)j[0];
-                    a.Offset = i;
-                    if (a.Id > 1)
-                    {
-                        file.WriteLine("ID: " + a.Id + " " + (TileListObject.FirstOrDefault(t => t.Id == a.Id) ?? TileListObject[0]).Name + " " + a.Chunk + " " + a.PosX + " " + a.PosY + " " + a.PosZ);
-                    }
-                }
-            }
-        }
-        return;
-    }
-
-    public static List<ObjectItem> ReadItemsChunkLayer(short chunk, byte layer)
-    {
-        if (Island == 0xFF) return null;
-        var list = new List<ObjectItem>();
-        for (uint i = 0; i < 0xC8000; i++)
-        {
-            var j = GetItemOffset(i);//0 CHUNK, 1 OFFSET
-
-            if (j != null && j[0] != 0)
-            {
-                if (GetChunkFromGrid((int)j[0]) == chunk)
-                {
-                    var a = GetItemData(j[1]);
-                    if (a != null)
-                    {
-                        if (a.PosY == layer)
-                        {
-                            a.Offset = i;
-                            a.ChunkGrid = (short)j[0];
-                            a.Chunk = chunk;
-                            list.Add(a);
-                        }
-                    }
-                }
-            }
         }
         return list;
     }
@@ -492,23 +272,5 @@ public static class ChunkEditor
             }
         }
         return uints;
-    }
-    public static void KILLITEMS()
-    {
-        byte[] data = new byte[24];
-        for (uint i = 0; i < 24; i++)
-        {
-            data[i] = 0;
-        }
-        byte[] offset = new byte[4];
-        for (uint i = 0; i < 4; i++)
-        {
-            data[i] = 0;
-        }
-        for (uint i = 2; i < 0xC8000; i++)
-        {
-            Array.Copy(data, 0,_uncompressedBytes, i * 24 + ItemStart, 24);
-            Array.Copy(offset, 0, _uncompressedBytes, i * 4 + ItemOffsetStart, 4);
-        }
     }
 }
