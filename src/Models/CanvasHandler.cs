@@ -3,6 +3,7 @@ using DQB2ChunkEditor.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Documents;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -19,30 +21,49 @@ namespace DQB2ChunkEditor.Models
 {
     public class SelectionPencilClass
     {
-
         public short TileIdBeg { get; set; } = -1;
         public ushort x0 => (ushort)(TileIdBeg % 32);
         public ushort y0 => (ushort)(TileIdBeg / 32);
+        public short LayerBeggining { get; set; } = -1;
+        public ushort VirtualChunkBeggining { get; set; } = 0;
+        public ushort Vx0 => (ushort)(VirtualChunkBeggining % 64);
+        public ushort Vy0 => (ushort)(VirtualChunkBeggining / 64);
         public short TileIdEnd { get; set; } = -1;
         public ushort x1 => (ushort)(TileIdEnd % 32);
         public ushort y1 => (ushort)(TileIdEnd / 32);
-
-        public short LayerBeggining { get; set; } = -1;
         public short LayerEnd { get; set; } = -1;
+        public ushort VirtualChunkEnd { get; set; } = 0;
+        public ushort Vx1 => (ushort)(VirtualChunkEnd % 64);
+        public ushort Vy1 => (ushort)(VirtualChunkEnd / 64);
         public bool HasArea { get { if (TileIdEnd >= 0 && TileIdBeg >= 0) return true; return false; } }
-
-        public List<Line> BegList = new();
-        public List<Line> EndList = new();
+        public void Tile1(ushort tile, short layer, ushort VirtualChunk)
+        {
+            TileIdBeg = (short)tile;
+            LayerBeggining = layer;
+            VirtualChunkBeggining = VirtualChunk;
+        }
+        public void Tile2(ushort tile, short layer, ushort VirtualChunk)
+        {
+            TileIdEnd = (short)tile;
+            LayerEnd = layer;
+            VirtualChunkEnd = VirtualChunk;
+        }
     }
 
     public class CanvasHandler
     {
         public SelectionPencilClass SelectedArea { get; set; } = new();
         public ObservableProperty<SelectionPencilClass> Test { get; set; } = new();
-
+        public double coordLine { set; private get; }
         public Canvas SelectionCanvas;
         public Canvas BGCanvas;
+
+        private List<Line> TileOne = new();
+        private Ellipse PointOne = new();
+        public List<Line> TileTwo = new();
+        private Ellipse PointTwo = new();
         private Rectangle Rectangle;
+
         public void GridProcessing(UniformGrid Grid, short ChunkDisplayNumber)
         {
             Grid.Children.Clear();
@@ -55,9 +76,6 @@ namespace DQB2ChunkEditor.Models
                     StrokeThickness = 1     // Set the thickness of the border
                 });
         }
-        /// <summary>
-        /// Here is the selection handler with the magic pencil. First is the line.
-        /// </summary>
 
         private void DrawLine(double x0, double y0, double x1, double y1, List<Line> List)
         {
@@ -72,157 +90,172 @@ namespace DQB2ChunkEditor.Models
             };
             List.Add(line);
         }
-
-        /// <summary>
-        /// Erases lines.
-        /// </summary>
-        private void EraseRect_OnClick(Object sender, RoutedEventArgs e)
+        private void DrawTilePoint(ushort tile, List<Line> TileLines, bool Second, bool Top, bool Left)
         {
-            EraseLine(SelectedArea.EndList);
-            EraseLine(SelectedArea.BegList);
-            SelectedArea.TileIdBeg = -1;
-            SelectedArea.TileIdEnd = -1;
-        }
-        private void EraseLine(List<Line> List)
-        {
-            foreach (var line in List)
-                SelectionCanvas.Children.Remove(line);
-            List.Clear();
-        }
-        /// <summary>
-        /// Completes selection and rotates to the orientation chosen.
-        /// </summary>
-        private void DrawRectangle(double ActualSize)
-        {
-            var x0 = SelectedArea.x0 * ActualSize;
-            var y0 = SelectedArea.y0 * ActualSize;
-            var x1 = SelectedArea.x1 * ActualSize;
-            var y1 = SelectedArea.y1 * ActualSize;
-            var changex = false;
-            var changey = false;
-
-            EraseLine(SelectedArea.EndList);
-            EraseLine(SelectedArea.BegList);
-            if (x0 > x1)
+            TileLines.Clear();
+            var x0 = tile % 32 * coordLine;
+            var x1 = tile % 32 * coordLine + coordLine;
+            var y0 = tile / 32 * coordLine;
+            var y1 = tile / 32 * coordLine + coordLine;
+            var Point = new Ellipse()
             {
-                changex = true;
-                DrawLine(x0 + ActualSize, y0, x0 + ActualSize, y0 + ActualSize, SelectedArea.BegList);
-                DrawLine(x1, y1 + ActualSize, x1, y1, SelectedArea.EndList);
-            }
-            else
-            {
-                DrawLine(x0, y0, x0, y0 + ActualSize, SelectedArea.BegList);
-                DrawLine(x1 + ActualSize, y1 + ActualSize, x1 + ActualSize, y1, SelectedArea.EndList);
-            }
-            if (y0 > y1)
-            {
-                changey = true;
-                DrawLine(x0, y0 + ActualSize, x0 + ActualSize, y0 + ActualSize, SelectedArea.BegList);
-                DrawLine(x1 + ActualSize, y1, x1, y1, SelectedArea.EndList);
-            }
-            else
-            {
-                DrawLine(x0, y0, x0 + ActualSize, y0, SelectedArea.BegList);
-                DrawLine(x1 + ActualSize, y1 + ActualSize, x1, y1 + ActualSize, SelectedArea.EndList);
-            }
-            if (changex) { var temp = x0; x0 = x1; x1 = temp; }
-            if (changey) { var temp = y0; y0 = y1; y1 = temp; }
-            Rectangle = new Rectangle()
-            {
-                 Width = x1 + ActualSize - x0,
-                 Height = y1 + ActualSize - y0,
-                 Fill = Brushes.Yellow
+                Width = 3,
+                Height = 3,
+                Fill = Brushes.Orange
             };
-            Canvas.SetLeft(Rectangle, x0);
-            Canvas.SetTop(Rectangle, y0);
-            BGCanvas.Children.Add(Rectangle);
+            if (Top)
+            {
+                DrawLine(x0, y0, x1, y0, TileLines);
+                Canvas.SetTop(Point, y0);
+            }
+            else
+            {
+                DrawLine(x0, y1, x1, y1, TileLines);
+                Canvas.SetTop(Point, y1);
+            }
+            if (Left)
+            {
+                DrawLine(x0, y0, x0, y1, TileLines);
+                Canvas.SetLeft(Point, x0);
+            }
+            else { 
+                DrawLine(x1, y0, x1, y1, TileLines);
+                Canvas.SetLeft(Point, x1);
+            }
+            if (Second) PointTwo = Point;
+            else PointOne = Point;
         }
-        public void LineHandler(double x0, double y0, double coordLine, short Id, short Layer)
+        public void LineHandler(ushort tile,byte layer, uint VirtualChunk)
         {
-
-            if (SelectedArea.TileIdBeg == Id)
+            bool top = true;
+            bool left = true;
+            //Tile beggining
+            if (SelectedArea.TileIdBeg == -1)
+            {
+                SelectedArea.Tile1(tile, layer, (ushort)VirtualChunk);
+                if (SelectedArea.TileIdEnd == -1)
+                    DrawTilePoint(tile, TileOne, false,true,true);
+            }
+            else if(SelectedArea.TileIdBeg == tile)
             {
                 SelectedArea.TileIdBeg = -1;
-                SelectedArea.LayerBeggining = -1;
-                EraseLine(SelectedArea.BegList);
             }
-            else if (SelectedArea.TileIdEnd == Id)
+            //Tile end
+            else if (SelectedArea.TileIdEnd == -1)
             {
-
+                SelectedArea.Tile2(tile, layer, (ushort)VirtualChunk);
+                if (SelectedArea.TileIdBeg == -1)
+                    DrawTilePoint(tile, TileTwo, true, false, false);
+            }else if (SelectedArea.TileIdEnd == tile)
+            {
                 SelectedArea.TileIdEnd = -1;
-                SelectedArea.LayerEnd = -1;
-                EraseLine(SelectedArea.EndList);
             }
-            else if (SelectedArea.TileIdBeg == -1)
-            {
-
-                DrawLine(x0, y0, x0, y0 + coordLine, SelectedArea.BegList);
-                DrawLine(x0, y0, x0 + coordLine, y0, SelectedArea.BegList);
-                SelectedArea.TileIdBeg = Id;
-                SelectedArea.LayerBeggining = Layer;
-            }
-            else
-            {
-                EraseLine(SelectedArea.EndList);
-                BGCanvas.Children.Remove(Rectangle);
-                DrawLine(x0 + coordLine, y0 + coordLine, x0, y0 + coordLine, SelectedArea.EndList);
-                DrawLine(x0 + coordLine, y0 + coordLine, x0 + coordLine, y0, SelectedArea.EndList);
-                SelectedArea.TileIdEnd = Id;
-                SelectedArea.LayerEnd = Layer;
-            }
-            try
-            {
-                if (SelectedArea.TileIdEnd > -1 && SelectedArea.TileIdBeg > -1) DrawRectangle(coordLine);
-                else { BGCanvas.Children.Remove(Rectangle); Rectangle = null; }
-                }
-            catch { }
-
-            UpdateLayer((byte)Layer);
-        }
-
-        public void UpdateLayer(byte Layer)
-        {
-            if (SelectedArea != null)
-            {
-                try
+            //Do the connecting.
+            if (SelectedArea.TileIdBeg != -1 && SelectedArea.TileIdEnd != -1){
+                if (SelectedArea.Vx0 == SelectedArea.Vx1)
                 {
-                    if (SelectedArea.LayerBeggining < Layer && SelectedArea.LayerEnd < Layer
-                        || SelectedArea.LayerBeggining > Layer && SelectedArea.LayerEnd > Layer)
+                    if (SelectedArea.x0 > SelectedArea.x1) left = false;
+                }
+                else
+                    if (SelectedArea.Vx0 > SelectedArea.Vx1) left = false;
+                if (SelectedArea.Vy0 == SelectedArea.Vy1)
+                {
+                    if (SelectedArea.y0 > SelectedArea.y1) top = false;
+                }
+                else
+                        if (SelectedArea.Vy0 > SelectedArea.Vy1) top = false;
+                DrawTilePoint((ushort)(SelectedArea.TileIdBeg), TileOne, false, top, left);
+                DrawTilePoint((ushort)(SelectedArea.TileIdEnd), TileTwo, true, !top, !left);
+            }
+            UpdateCanvas(layer,VirtualChunk);
+        }
+        
+        public void UpdateCanvas(byte layer, uint VirtualChunk)
+        {
+            double x0=-1,x1 = -1, y0 = -1, y1 = -1,aux; //rect
+            SelectionCanvas.Children.Clear();
+            BGCanvas.Children.Clear();
+            if (SelectedArea.TileIdBeg != -1)
+            {
+                if (SelectedArea.VirtualChunkBeggining == VirtualChunk) //If same chunk beggining!
+                {
+                    x0 = SelectedArea.x0 * coordLine; //Point 1 rect
+                    y0 = SelectedArea.y0 * coordLine;
+                    if (SelectedArea.LayerBeggining == layer) // If same Y coord
+                        foreach (var l in TileOne)
+                            SelectionCanvas.Children.Add(l);
+                    else
+                        if (SelectedArea.LayerBeggining < layer && SelectedArea.LayerEnd >= layer ||
+                        SelectedArea.LayerEnd < layer && SelectedArea.LayerBeggining >= layer) //if inside area
+                        SelectionCanvas.Children.Add(PointOne);
+                }
+                else
+                {
+                    if (SelectedArea.Vx0 == VirtualChunk % 64) //same X coord
+                        x0 = SelectedArea.x0 * coordLine; //x counts
+                    else if (SelectedArea.Vx0 <= VirtualChunk % 64 && SelectedArea.Vx1 >= VirtualChunk % 64)
+                        x0 = 0;
+                    else if (SelectedArea.Vx1 <= VirtualChunk % 64 && SelectedArea.Vx0 >= VirtualChunk % 64)
+                        x0 = 31 * coordLine;
+                    else x0 = -1;
+                    if (SelectedArea.Vy0 == VirtualChunk / 64) //same Y coord
+                        y0 = SelectedArea.y0 * coordLine; //y counts
+                    else if (SelectedArea.Vy0 <= VirtualChunk / 64 && SelectedArea.Vy1 >= VirtualChunk / 64)
+                        y0 = 0;
+                    else if (SelectedArea.Vy1 <= VirtualChunk / 64 && SelectedArea.Vy0 >= VirtualChunk / 64)
+                        y0 = 31 * coordLine;
+                    else y0 = -1;
+                }
+            }
+            if (SelectedArea.TileIdEnd != -1)
+                {
+                    if (SelectedArea.VirtualChunkEnd == VirtualChunk) //If same chunk end!
                     {
-                        BGCanvas.Children.Remove(Rectangle);
+                        x1 = SelectedArea.x1 * coordLine; //Point 2 rect
+                        y1 = SelectedArea.y1 * coordLine;
+                        if (SelectedArea.LayerEnd == layer) // If same Y coord
+                            foreach (var l in TileTwo)
+                                SelectionCanvas.Children.Add(l);
+                        else
+                            if (SelectedArea.LayerBeggining <= layer && SelectedArea.LayerEnd > layer ||
+                            SelectedArea.LayerEnd <= layer && SelectedArea.LayerBeggining > layer) //if inside area
+                            SelectionCanvas.Children.Add(PointTwo);
                     }
                     else
                     {
-                        try
-                        {
-                            BGCanvas.Children.Add(Rectangle);
-                        }
-                        catch { }
-                    }
-                    if (SelectedArea.LayerBeggining != Layer)
-                    {
-                        foreach (var line in SelectedArea.BegList)
-                            SelectionCanvas.Children.Remove(line);
-                    }
-                    else
-                    {
-                        foreach (var line in SelectedArea.BegList)
-                            SelectionCanvas.Children.Add(line);
-                    }
-                    if (SelectedArea.LayerEnd != Layer)
-                    {
-                        foreach (var line in SelectedArea.EndList)
-                            SelectionCanvas.Children.Remove(line);
-                    }
-                    else
-                    {
-                        foreach (var line in SelectedArea.EndList)
-                            SelectionCanvas.Children.Add(line);
+                        if (SelectedArea.Vx1 == VirtualChunk % 64) //same X coord
+                            x1 = SelectedArea.x1 * coordLine; //x counts
+                        else if (SelectedArea.Vx0 <= VirtualChunk % 64 && SelectedArea.Vx1 >= VirtualChunk % 64)
+                            x1 = 31 * coordLine;
+                        else if (SelectedArea.Vx1 <= VirtualChunk % 64 && SelectedArea.Vx0 >= VirtualChunk % 64)
+                            x1 = 0;
+                    else x1 = -1;
+                        if (SelectedArea.Vy1 == VirtualChunk / 64) //same Y coord
+                            y1 = SelectedArea.y1 * coordLine; //y counts
+                        else if (SelectedArea.Vy0 <= VirtualChunk / 64 && SelectedArea.Vy1 >= VirtualChunk / 64)
+                            y1 = 31 * coordLine;
+                        else if (SelectedArea.Vy1 <= VirtualChunk / 64 && SelectedArea.Vy0 >= VirtualChunk / 64)
+                            y1 = 0;
+                        else y1 = -1;
                     }
                 }
-                catch { }
-            }
+                if (SelectedArea.HasArea)
+                {
+                    if (y0 == -1 || x0 == -1 || y1 == -1 || x1 == -1) return;
+                    if (x0 > x1) { aux = x0; x0 = x1; x1 = aux; }
+                    if (y0 > y1) { aux = y0; y0 = y1; y1 = aux; }
+                    Rectangle = new Rectangle()
+                    {
+                        Height = y1 - y0 + coordLine,
+                        Width = x1 - x0 + coordLine,
+                        Fill = Brushes.Yellow
+                    };
+                    Canvas.SetLeft(Rectangle, x0);
+                    Canvas.SetTop(Rectangle, y0);
+                    BGCanvas.Children.Add(Rectangle);
+                }
         }
+ 
         public bool InsideArea(short Id)
         {
             if (SelectedArea == null) return true;

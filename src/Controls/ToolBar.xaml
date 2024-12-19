@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DQB2ChunkEditor.Controls"
              xmlns:control="clr-namespace:DQB2ChunkEditor.Controls"
+             xmlns:s="clr-namespace:DQB2ChunkEditor"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
   <Grid Background="#FFDFDFDF">
@@ -22,8 +23,11 @@
       <RadioButton Name="ReplaceButton" Height="30" Width="30" ToolTip="Replace Blocks." Checked="Replace_Check">
         <Image Source="/Images/Replace.png" />
       </RadioButton>
-      <RadioButton Name="GlovesButton" Height="30" Width="30" ToolTip="Copy Objects." Checked="Gloves_Check">
+      <!--<RadioButton Name="GlovesButton" Height="30" Width="30" ToolTip="Copy Objects." Checked="Gloves_Check">
         <Image Source="/Images/CopyTool.png" />
+      </RadioButton>-->
+      <RadioButton Name="IslandInfo" Height="30" Width="30" ToolTip="IslandData." Checked="Island_Check">
+        <Image Source="/Images/DQB2ilsand.png" />
       </RadioButton>
       <Separator/>
       <RadioButton Name="PencilButton" Height="30" Width="30" ToolTip="Selection an area" Checked="Pencil_Check">
@@ -47,31 +51,31 @@
     <StackPanel Grid.Row="1" Name="Select" Visibility="Collapsed" Orientation="Vertical" Margin="30,5,30,5">
       <TextBox Text="Selected Block/Object Information" TextAlignment="Center" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
       <UniformGrid Columns="2" Rows="5">
-        <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding StringFormat=ID:    {0}, Path=SelectedTile.Value.Id, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
-        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding StringFormat=Name:    {0}, Path=SelectedTile.Value.Name, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
-        <TextBox Grid.Row="1" Grid.Column="0" Text="{Binding StringFormat=Raw_ID:    {0}, Path=TrueId.Value, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding StringFormat=Builder_Placed:    {0}, Path=BuilderPlaced.Value, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-        <TextBox Grid.Row="2" Grid.Column="0" Text="{Binding StringFormat=Object?:    {0}, Path=SelectedTile.Value.isObject, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding StringFormat=Used?:    {0}, Path=SelectedTile.Value.Used, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-        <TextBox Grid.Row="3" Grid.Column="0" Text="{Binding StringFormat=BlockId:    {0}, Path=SelectedTile.Value.blockIdDisplay, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding StringFormat=Hardness:    {0}, Path=SelectedTile.Value.Break, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-        <TextBox Grid.Row="4" Grid.Column="0" Text="{Binding StringFormat=NormalDrop: {0}, Path=SelectedTile.Value.NormalDrop, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding StringFormat=UltimalletDrop: {0}, Path=SelectedTile.Value.UltimalletDrop, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding StringFormat=ID:    {0}, Path=SelectedTile.Value.TileData.Id, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding StringFormat=Name:    {0}, Path=SelectedTile.Value.TileData.Name, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+        <TextBox Grid.Row="1" Grid.Column="0" Text="{Binding StringFormat=Raw_ID:    {0}, Path=SelectedTile.Value.Id, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding StringFormat=Builder_Placed:    {0}, Path=SelectedTile.Value.BuilderPlaced, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="2" Grid.Column="0" Text="{Binding StringFormat=Object?:    {0}, Path=SelectedTile.Value.TileData.isObject, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding StringFormat=Used?:    {0}, Path=ExtrasTileData.Value.Used, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="3" Grid.Column="0" Text="---" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding StringFormat=Hardness:    {0}, Path=ExtrasTileData.Value.BrokenBy, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="4" Grid.Column="0" Text="{Binding StringFormat=NormalDrop: {0}, Path=ExtrasTileData.Value.NormalDrop, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding StringFormat=UltimalletDrop: {0}, Path=ExtrasTileData.Value.UltimalletDrop, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
       </UniformGrid>
       <Grid>
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="2*"/>
           <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <TextBox Text="{Binding StringFormat=Description:    {0}, Path=SelectedTile.Value.Description, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="70" TextWrapping="WrapWithOverflow"/>
+        <TextBox Text="{Binding StringFormat=Description:    {0}, Path=ExtrasTileData.Value.Description, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="70" TextWrapping="WrapWithOverflow"/>
         <Rectangle StrokeThickness="1" Stroke="#ACACAC" Grid.Column="1"/>
         <StackPanel Orientation="Horizontal" Grid.Column="1">
-          <Image Width="120" Height="70" Source="{Binding Path=SelectedTile.Value.Image, RelativeSource={RelativeSource AncestorType=Window}}" />
-          <Image Width="120" Height="70" Source="{Binding Path=SelectedTile.Value.ImagMap, RelativeSource={RelativeSource AncestorType=Window}}" />
+          <Image Width="120" Height="70" Source="{Binding Path=SelectedTile.Value.TileData.Image, RelativeSource={RelativeSource AncestorType=Window}}" />
+          <Image Width="120" Height="70" Source="{Binding Path=SelectedTile.Value.TileData.ImagMap, RelativeSource={RelativeSource AncestorType=Window}}" />
         </StackPanel>
       </Grid>
     </StackPanel>
-    <StackPanel Grid.Row="1" Name="Pencil" Visibility="Collapsed" Orientation="Vertical" Margin="30,5,30,5">
+    <StackPanel Grid.Row="1" Name="Pencil" Visibility="Visible" Orientation="Vertical" Margin="30,5,30,5">
       <TextBlock Text="[Feature of this white space coming soon...]" TextAlignment="Center" Height="50"/>
       <TextBox Text="Current Selection Info" TextAlignment="Center" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
       <UniformGrid Columns="2" Rows="3">
@@ -87,12 +91,14 @@
         </UniformGrid>
         <UniformGrid Columns="2" Rows="1">
           <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding StringFormat=Layer:    {0}, Path=Test.Value.LayerBeggining, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-          <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding StringFormat=Chunk[!]:   {0}, Path=ChunkValue.Value, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+          <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding StringFormat=Virtual_Chunk:   {0}, Path=Test.Value.VirtualChunkBeggining, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
         </UniformGrid>
         <UniformGrid  Grid.Column="1" Columns="2" Rows="1">
           <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding StringFormat=Layer:    {0}, Path=Test.Value.LayerEnd, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-          <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding StringFormat=Chunk[!]:   {0}, Path=ChunkValue.Value, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+          <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding StringFormat=Virtual_Chunk:   {0}, Path=Test.Value.VirtualChunkEnd, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
         </UniformGrid>
+        <Button Content="Clear first position" FontSize="16" Click="FirstArea_Click"/>
+        <Button Content="Clear second position" FontSize="16" Click="SecondArea_Click"/>
       </UniformGrid>
     </StackPanel>
     <StackPanel Grid.Row="1" Name="Replace" Visibility="Collapsed" Orientation="Vertical" Margin="30,5,30,5">
@@ -121,19 +127,19 @@
         <StackPanel Grid.Column="1" Orientation="Vertical">
           <TextBox Text="Selected Block/Object Information" TextAlignment="Center" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
           <UniformGrid Columns="2" Rows="2">
-            <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding StringFormat=ID:    {0}, Path=SelectedTile.Value.Id, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
-            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding StringFormat=Name:    {0}, Path=SelectedTile.Value.Name, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
-            <TextBox Grid.Row="1" Grid.Column="0" Text="{Binding StringFormat=Raw_ID:    {0}, Path=TrueId.Value, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding StringFormat=BlockId:    {0}, Path=SelectedTile.Value.blockIdDisplay, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+            <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding StringFormat=ID:    {0}, Path=SelectedTile.Value.TileData.Id, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding StringFormat=Name:    {0}, Path=SelectedTile.Value.TileData.Name, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+            <TextBox Grid.Row="1" Grid.Column="0" Text="{Binding StringFormat=Raw_ID:    {0}, Path=SelectedTile.Value.Id, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="---" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
           </UniformGrid>
           <Grid>
-            <TextBox Text="{Binding StringFormat=Description:    {0}, Path=SelectedTile.Value.Description, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="70" TextWrapping="WrapWithOverflow"/>
+            <TextBox Text="{Binding StringFormat=Description:    {0}, Path=ExtrasTileData.Value.Description, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="70" TextWrapping="WrapWithOverflow"/>
             <Rectangle StrokeThickness="1" Stroke="#ACACAC"/>
           </Grid>
         </StackPanel>
       </Grid>
     </StackPanel>
-    <StackPanel Grid.Row="1" Name="Gloves" Visibility="Visible" Orientation="Vertical" Margin="30,5,30,5">
+    <StackPanel Grid.Row="1" Name="Gloves" Visibility="Collapsed" Orientation="Vertical" Margin="30,5,30,5">
       <UniformGrid Columns="3">
         <TextBox Text="Selected Object Information" TextAlignment="Center" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
         <RadioButton Style="{StaticResource {x:Type ToggleButton}}" Name="Grab" Content="Grab" Click="Grab_OnClick" IsChecked="True"/>
@@ -149,32 +155,44 @@
           <RowDefinition Height="1*"/>
           <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding StringFormat=ID:    {0}, Path=SelectedTile.Value.Id, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
-        <TextBox Grid.Row="1" Grid.Column="0" Text="{Binding StringFormat=Name:    {0}, Path=SelectedTile.Value.Name, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding StringFormat=BlockId:    {0}, Path=SelectedTile.Value.blockIdDisplay, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-        <TextBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding StringFormat=BYTES:    {0}, Path=BytesObject.Value, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding StringFormat=ID:    {0}, Path=SelectedTile.Value.TileData.Id, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+        <TextBox Grid.Row="1" Grid.Column="0" Text="{Binding StringFormat=Name:    {0}, Path=SelectedTile.Value.TileData.Name, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="---" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding StringFormat=BYTES:    {0}, Path=SelectedTile.Value.ItemInstance.Bytes, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
       </Grid>
       <UniformGrid Columns="4">
-        <TextBox Grid.Column="0" Text="{Binding StringFormat=X:    {0}, Path=SelectedObject.Value.PosX, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-        <TextBox Grid.Column="1" Text="{Binding StringFormat=Y:    {0}, Path=SelectedObject.Value.PosY, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-        <TextBox Grid.Column="2" Text="{Binding StringFormat=Z:    {0}, Path=SelectedObject.Value.PosZ, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
-        <TextBox Grid.Column="3" Text="{Binding StringFormat=Axis:    {0}, Path=SelectedObject.Value.Rotation, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Column="0" Text="{Binding StringFormat=X:    {0}, Path=SelectedTile.Value.ItemInstance.PosX, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Column="1" Text="{Binding StringFormat=Y:    {0}, Path=SelectedTile.Value.ItemInstance.PosY, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Column="2" Text="{Binding StringFormat=Z:    {0}, Path=SelectedTile.Value.ItemInstance.PosZ, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Column="3" Text="{Binding StringFormat=Axis:    {0}, Path=SelectedTile.Value.ItemInstance.Rotation, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
       </UniformGrid>
       <Grid>
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="2*"/>
           <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <TextBox Text="{Binding StringFormat=Description:    {0}, Path=SelectedTile.Value.Description, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="70" TextWrapping="WrapWithOverflow"/>
+        <TextBox Text="{Binding StringFormat=Description:    {0}, Path=ExtrasTileData.Value.Description, RelativeSource={RelativeSource AncestorType=Window},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="70" TextWrapping="WrapWithOverflow"/>
         <Rectangle StrokeThickness="1" Stroke="#ACACAC" Grid.Column="1"/>
         <StackPanel Orientation="Horizontal" Grid.Column="1">
-          <Image Width="120" Height="70" Source="{Binding Path=SelectedTile.Value.Image, RelativeSource={RelativeSource AncestorType=Window}}" />
-          <Image Width="120" Height="70" Source="{Binding Path=SelectedTile.Value.ImagMap, RelativeSource={RelativeSource AncestorType=Window}}" />
+          <Image Width="120" Height="70" Source="{Binding Path=SelectedTile.Value.TileData.Image, RelativeSource={RelativeSource AncestorType=Window}}" />
+          <Image Width="120" Height="70" Source="{Binding Path=SelectedTile.Value.TileData.ImagMap, RelativeSource={RelativeSource AncestorType=Window}}" />
         </StackPanel>
       </Grid>
       <Grid Height="60">
-        <control:ReducedListHorizontal x:Name="GlovesList"/>
+        <control:GlovedList x:Name="GlovesList"/>
       </Grid>
+    </StackPanel>
+    <StackPanel Grid.Row="1" Name="IslandData" Visibility="Collapsed" Orientation="Vertical" Margin="30,5,30,5">
+      <TextBox Text="Island Data" TextAlignment="Center" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+      <UniformGrid Columns="2" Rows="4">
+        <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding StringFormat=Chunk_Count:    {0}, Path=IslandDataOb.Value.ChunkCount, RelativeSource={RelativeSource AncestorType=UserControl},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding StringFormat=Virtual_Chunk_Count:    {0}, Path=IslandDataOb.Value.VitrualChunkCount, RelativeSource={RelativeSource AncestorType=UserControl},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30" FontWeight="Bold"/>
+        <TextBox Grid.Row="1" Grid.Column="0" Text="{Binding StringFormat=Counted_Item_Count:    {0}, Path=IslandDataOb.Value.ItemCount, RelativeSource={RelativeSource AncestorType=UserControl},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding StringFormat=Virtual_Item_Count:    {0}, Path=IslandDataOb.Value.VirtualItemCount, RelativeSource={RelativeSource AncestorType=UserControl},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="2" Grid.Column="0" Text="{Binding StringFormat=Island:    {0}, Path=IslandDataOb.Value.IslandNumber, RelativeSource={RelativeSource AncestorType=UserControl},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding StringFormat=Sea_Level:    {0}, Path=IslandDataOb.Value.SeaLevel, RelativeSource={RelativeSource AncestorType=UserControl},Mode=OneWay}" FontSize="16" IsReadOnly="True" Background="{x:Null}" Height="30"/>
+        <Button Grid.Row="3" Grid.Column="0" Content="Refresh Data" Click="Refresh_Island_Data"/>
+      </UniformGrid>
     </StackPanel>
   </Grid>
 </UserControl>

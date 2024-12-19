@@ -1,0 +1,2049 @@
+#Id	Used	Can be broken by	Normal Drop	Ultimallet Drop	Description
+0	Used	Intangible Block	0	0	Set on layer 0 will create sea floor
+1	Used	Intangible With Hammer	0	0	Indestructible
+2	Used	Giant Mallet	Earth x1 {1001}	Earth x1 {1001}	0
+3	Used	Giant Mallet	Earth x1 {1001}	Grassy Earth x1 {1002}	0
+4	Used	Giant Mallet	Earth x1 {1001}	Limegrassy Earth x1 {1003}	0
+5	Used	Giant Mallet	Earth x1 {1001}	Tilled Soil x1 {1004}	0
+6	Used	Giant Mallet	Clay x1 {1005}	Clay x1 {1005}	0
+7	Used	Giant Mallet	Earth x1 {1001}	Mossy Earth  x1 {1006}	0
+8	Used	Giant Mallet	Chalk x1 {1007}	Chalk x1 {1007}	0
+9	Used	Giant Mallet	Chunky Chalk x1 {1008}	Chunky Chalk x1 {1008}	0
+10	Used	War Hammer	Nothing {-1}	Obsidian x1 {1009}	0
+11	Used	Cypress Stick	Sand x1 {1010}	Sand x1 {1010}	0
+12	Used	Sledgehammer	Sandstone x1 {1011}	Sandstone x1 {1011}	0
+13	Used	Sledgehammer	Sandy Sandstone x1 {1012}	Sandy Sandstone x1 {1012}	0
+14	Used	Sledgehammer	Bloodstone x1 {1013}	Bloodstone x1 {1013}	0
+15	Used	Sledgehammer	Ash x1 {1014}	Ash x1 {1014}	0
+16	Unused	Intangible Block	Nothing {-1}	Nothing {-1}	0
+17	Used	Cypress Stick	Poisonous Peat x1 {1016} [With hammer]	Poisonous Peat x1 {1016}	0
+18	Used	Cypress Stick	Nothing {-1}	Nothing {-1}	0
+19	Used	Cypress Stick	Snow x1 {1018}	Snow x1 {1018}	0
+20	Used	Giant Mallet	Ice x1 {1019}	Ice x1 {1019}	0
+21	Used	Giant Mallet	Clodstone x1 {1020}	Clodstone x1 {1020}	0
+22	Used	Giant Mallet	Nothing {-1}	Crumbly Clodstone x1 {1021}	Breaks when stepped into
+23	Used	Sledgehammer	Basalt x1 {1022}	Basalt x1 {1022}	0
+24	Unused	Intangible Block	Nothing {-1}	Nothing {-1}	0
+25	Used	Giant Mallet	Lava x1 {1024}	Lava x1 {1024}	Set near liquid lava will eventually transform into lava
+26	Used	Ultimallet	Nothing {-1}	Vault Wall x1 {1025}	0
+27	Used	Ultimallet	Nothing {-1}	Viny Vault Wall x1 {1026}	0
+28	Used	Sledgehammer	Stone x2 {404}	Cracked Vault Wall x1 {1027}	0
+29	Used	Giant Mallet	Mud-Brick Wall x1 {1028}	Mud-Brick Wall x1 {1028}	0
+30	Used	Giant Mallet	Timbered Wall x1 {1030}	Timbered Foundation x1 {1029}	0
+31	Used	Giant Mallet	Timbered Wall x1 {1030}	Timbered Wall Midsection x1 {2285}	0
+32	Used	Giant Mallet	Timbered Wall x1 {1030}	Timbered Capital x1 {1031}	0
+33	Used	Giant Mallet	Hardwood Column x1 {1033}	Hardwood Pedestal x1 {1032}	0
+34	Used	Giant Mallet	Hardwood Column x1 {1033}	Hardwood Column Midsection x1 {2286}	0
+35	Used	Giant Mallet	Hardwood Column x1 {1033}	Hardwood Capital x1 {1034}	0
+36	Used	Giant Mallet	Stone Wall x1 {1036}	Stone Foundation x1 {1035}	0
+37	Used	Giant Mallet	Stone Wall x1 {1036}	Stone Wall Midsection x1 {2287}	0
+38	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+39	Used	Giant Mallet	Castle Wall x1 {1039}	Castle Foundation x1 {1038}	0
+40	Used	Giant Mallet	Castle Wall x1 {1039}	Castle Wall Midsection x1 {2288}	0
+41	Used	Giant Mallet	Castle Wall x1 {1039}	Castle Crenellation x1 {1040}	0
+42	Used	Giant Mallet	Castle Battlement x1 {1041}	Castle Battlement x1 {1041}	0
+43	Used	Giant Mallet	Wooden Wall x1 {1042}	Wooden Wall x1 {1042}	0
+44	Used	Giant Mallet	Plumberry Lumber x1 {1043}	Plumberry Lumber x1 {1043}	0
+45	Used	Giant Mallet	Flagstone x1 {1044}	Flagstone x1 {1044}	0
+46	Used	Giant Mallet	Straw Floor x1 {1045}	Straw Floor x1 {1045}	0
+47	Used	Giant Mallet	Wooden Floor x1 {1046}	Wooden Floor x1 {1046}	0
+48	Used	Giant Mallet	Hardwood Tile x1 {1047}	Hardwood Tile x1 {1047}	0
+49	Used	Giant Mallet	Purple Flagstone x1 {1048}	Purple Flagstone x1 {1048}	0
+50	Used	Giant Mallet	Blue Flagstone x1 {1049}	Blue Flagstone x1 {1049}	0
+51	Used	Giant Mallet	Carpet x1 {1050}	Carpet x1 {1050}	The one without the pattern
+52	Used	Giant Mallet	Fancy Carpet x1 {1051}	Fancy Carpet x1 {1051}	0
+53	Used	Giant Mallet	Castle Tile x1 {1052}	Castle Tile x1 {1052}	0
+54	Used	Giant Mallet	Carved Castle Tile x1 {1053}	Carved Castle Tile x1 {1053}	0
+55	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+56	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+57	Used	Ultimallet	Nothing {-1}	Bronze Temple Tile x1 {1056}	0
+58	Used	Ultimallet	Nothing {-1}	Blue Temple Tile x1 {1057}	0
+59	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+60	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+61	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	Intangible
+62	Used	Giant Mallet	Coal x1 {425}	Coal Vein x1 {1061}	0
+63	Used	Giant Mallet	Copper x1 {426}	Copper Vein x1 {1162}	0
+64	Used	Giant Mallet	Iron x1 {427}	Iron Vein x1 {1063}	0
+65	Used	Sledgehammer	Silver x1 {584}	Silver Vein x1 {1064}	0
+66	Used	Sledgehammer	Gold x1 {461}	Gold Vein x1 {1065}	0
+67	Used	Sledgehammer	Zenithium x1 {577}	Zenithium Vein x1 {1066}	0
+68	Used	Sledgehammer	Ruby x1 {578}	Ruby Vein x1 {1067}	0
+69	Used	Sledgehammer	Mythril x1 {521}	Mythril Vein x1 {1068}	0
+70	Used	Sledgehammer	Orichalcum x1 {507}	Orichalcum Vein x1 {1069}	0
+71	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+72	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+73	Used	Giant Mallet	Golemite x1 {1072}	Golemite x1 {1072}	0
+74	Used	Giant Mallet	Palm Lumber x1 {1073}	Palm Lumber x1 {1073}	0
+75	Used	Giant Mallet	Cedar Lumber x1 {1074}	Cedar Lumber x1 {1074}	0
+76	Used	Giant Mallet	Time-Honoured Turf x1 {1075}	Time-Honoured Turf x1 {1075}	0
+77	Used	Giant Mallet	8-Bit Brick x1 {1076}	8-Bit Brick x1 {1076}	0
+78	Used	Giant Mallet	Olde Worlde Wall x1 {1077}	Olde Worlde Wall x1 {1077}	0
+79	Used	Giant Mallet	Eyewall x1 {1078}	Eyewall x1 {1078}	0
+80	Unused	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+81	Used	Giant Mallet	Earth x1 {1001}	Witchgrassy Earth x1 {1080}	0
+82	Used	Giant Mallet	Earth x1 {1001}	Lemongrassy Earth x1 {1081}	0
+83	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+84	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+85	Used	Cypress Stick	Strange Sand {1084}	Strange Sand {1084}	0
+86	Unused	Cypress Stick	Nothing {-1}	Nothing {-1}	0
+87	Unused	Cypress Stick	Nothing {-1}	Nothing {-1}	0
+88	Used	Giant Mallet	Bonestone x1 {1087}	Bonestone x1 {1087}	0
+89	Used	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+90	Used	Giant Mallet	Slimy Block x1 {1087}	Slimy Block x1 {1087}	0
+91	Used	Giant Mallet	Retro Roof x1 {1107}	Retro Roof x1 {1107}	0
+92	Used	Giant Mallet	Black Block x1 {1089}	Black Block x1 {1089}	0
+93	Used	Giant Mallet	Grey Block x1 {1090}	Grey Block x1 {1090}	0
+94	Used	Giant Mallet	White Block x1 {1091}	White Block x1 {1091}	0
+95	Used	Giant Mallet	Burgundy Block x1 {1092}	Burgundy Block x1 {1092}	0
+96	Used	Giant Mallet	Red Block x1 {1093}	Red Block x1 {1093}	0
+97	Used	Giant Mallet	Purple Block x1 {1094}	Purple Block x1 {1094}	0
+98	Used	Giant Mallet	Pink Block x1 {1095}	Pink Block x1 {1095}	0
+99	Used	Giant Mallet	Green Block x1 {1096}	Green Block x1 {1096}	0
+100	Used	Giant Mallet	Lime-Green Block x1 {1097}	Lime-Green Block x1 {1097}	0
+101	Used	Giant Mallet	Orange Block x1 {1098}	Orange Block x1 {1098}	0
+102	Used	Giant Mallet	Yellow Block x1 {1099}	Yellow Block x1 {1099}	0
+103	Used	Giant Mallet	Navy Block x1 {1100}	Navy Block x1 {1100}	0
+104	Used	Giant Mallet	Blue Block x1 {1101}	Blue Block x1 {1101}	0
+105	Used	Giant Mallet	Beige Block x1 {1102}	Beige Block x1 {1102}	0
+106	Used	Giant Mallet	Cyan Block x1 {1103}	Cyan Block x1 {1103}	0
+107	Used	Giant Mallet	Silver Block x1 {1104}	Silver Block x1 {1104}	0
+108	Used	Giant Mallet	Gold Block x1 {1105}	Gold Block x1 {1105}	0
+109	Used	Sledgehammer	Fortress Wall x1 {1110}	0	0
+110	Used	Sledgehammer	Fortress Wall x1 {1110}	0	0
+111	Used	Sledgehammer	Fortress Wall x1 {1110}	0	0
+112	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+113	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+114	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+115	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+116	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+117	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+118	Unused	Giant Mallet	Earth x1 {1001}	Crumbly Clodstone x1 {1021}	0
+119	Used	Giant Mallet	Earth x1 {1001}	Earth x1 {1001}	0
+120	Used	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+121	Used	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+122	Used	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+123	Used	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+124	Unused	Giant Mallet	Earth x1 {1001}	Witchgrassy Earth x1 {1080}	0
+125	Unused	Giant Mallet	Earth x1 {1001}	Lemongrassy Earth x1 {1081}	0
+126	Unused	Giant Mallet	Earth x1 {1001}	Grassy Earth x1 {1002}	0
+127	Unused	Giant Mallet	Earth x1 {1001}	Limegrassy Earth x1 {1003}	0
+128	Used	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+129	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+130	Used	Sledgehammer	Light Dolomite x1 {1748}	Light Dolomite x1 {1748}	0
+131	Used	Sledgehammer	Dark Dolomite x1 {1749}	Dark Dolomite x1 {1749}	0
+132	Used	Giant Mallet	Stony Sand x1 {1751}	Stony Sand x1 {1751}	0
+133	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+134	Used	Ultimallet	Nothing {-1}	Masonry Wall x1 {1761}	0
+135	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+136	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+137	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+138	Used	Giant Mallet	Bark x1 {1753}	Mossy Bark x1 {1754}	0
+139	Used	Giant Mallet	Bark x1 {1753}	Bark x1 {1753}	0
+140	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+141	Used	Giant Mallet	Stony Soil {1759}	Stony Soil {1759}	0
+142	Used	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+143	Used	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+144	Used	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+145	Used	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+146	Used	Cypress Stick	Seaside Sand x1 {1747}	Seaside Sand x1 {1747}	0
+147	Used	Giant Mallet	Arid Earth x1 {1760}	Arid Earth x1 {1760}	0
+148	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+149	Used	Sledgehammer	Chert x1 {1770}	Chert x1 {1770}	0
+150	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+151	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+152	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+153	Used	Sledgehammer	Chunky Chert x1 {1774}	Chunky Chert x1 {1774}	0
+154	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+155	Used	Cypress Stick	Leaves x1 {1123}	Leaves x1 {1123}	0
+156	Used	Giant Mallet	Spoiled Soil x1 {1784}	Spoiled Soil x1 {1784}	0
+157	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+158	Used	Giant Mallet	Spoiled Soil x1 {1784}	Moss x1 {1786}	0
+159	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+160	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+161	Used	Giant Mallet	Humus x1 {1789}	Humus x1 {1789}	0
+162	Used	Giant Mallet	Humus x1 {1789}	Tilled Humus x1 {1790}	0
+163	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+164	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+165	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+166	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+167	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+168	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+169	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+170	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+171	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+172	Used	Giant Mallet	Earth x1 {1001}	Tilled Soil x1 {1004}	0
+173	Used	Giant Mallet	Humus x1 {1789}	Tilled Humus x1 {1790}	0
+174	Used	War Hammer	Chert x1 {1770}	Chert x1 {1770}	Is used in the IoA Temple Mountain. The villagers display an empty name when building a blueprint.
+175	Used	Cypress Stick	Scallywinkle x1 {1919}	Bubbling Seaside Sand x1 {2037}	0
+176	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+177	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+178	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+179	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+180	Used	Indestructible	Nothing {-1}	Nothing {-1}	0
+181	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+182	Used	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+183	Used	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+184	Used	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+185	Used	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+186	Used	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+187	Used	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+188	Used	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+189	Used	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+190	Used	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+191	Used	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+192	Used	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+193	Used	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+194	Used	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+195	Used	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+196	Used	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+197	Used	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+198	Used	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+199	Used	Unscoopable	Nothing {-1}	0	If touched breath gauge depletes immideately. Slows movement down.
+200	Used	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+201	Used	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+202	Used	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+203	Used	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+204	Used	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+205	Used	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+206	Used	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+207	Used	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+208	Used	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+209	Used	Sledgehammer	Umber x1 {1923}	Umber x1 {1923}	0
+210	Unused	Sledgehammer	Nothing {-1}	Nothing {-1}	0
+211	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+212	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+213	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+214	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+215	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+216	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+217	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+218	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+219	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+220	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+221	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+222	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+223	Used	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+224	Used	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+225	Used	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+226	Used	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+227	Used	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+228	Used	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+229	Used	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+230	Used	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+231	Used	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+232	Used	Giant Mallet	Spoiled Soil x1 {1784}	Mossy Spoiled Soil x1 {1949}	0
+233	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+234	Used	Giant Mallet	Spoiled Soil x1 {1784}	Swampy Soil x1 {1951}	0
+235	Unused	Giant Mallet	Grass Seed x2 {163}	Seeded Spoiled Soil x1 {1953}	0
+236	Used	Giant Mallet	Tomato Seed x2 {1831}	Tomato Seed x2 {1831}	0
+237	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+238	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+239	Used	Giant Mallet	Sugar Cane Seedling x2 {1825}	Sugar Cane Seedling x2 {1825}	0
+240	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+241	Used	Sledgehammer	Lumpy Umber x1 {2031}	Lumpy Umber x1 {2031}	0
+242	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+243	Used	Giant Mallet	Softwood x1 {1987}	Softwood x1 {1987}	0
+244	Used	Giant Mallet	Floorboard x1 {1988}	Floorboard x1 {1988}	0
+245	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+246	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+247	Unused	Cypress Stick	Nothing {-1}	Nothing {-1}	Transparent
+248	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+240	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+250	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+251	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+252	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+253	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+254	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+255	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+256	Used	Giant Mallet	Spoiled Soil x1 {1784}	Mossy Spoiled Soil x1 {1949}	0
+257	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+258	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+259	Used	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+260	Used	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+261	Used	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+262	Used	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+263	Used	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+264	Used	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+265	Used	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+266	Used	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+267	Used	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+268	Used	Ultimallet	Nothing {-1}	Patterned Vault Wall x1 {226}	0
+269	Used	Giant Mallet	Fancy Carpet {White} x1 {2157}	Fancy Carpet {White} x1 {2157}	0
+270	Used	Giant Mallet	Fancy Carpet {Black} x1 {2158}	Fancy Carpet {Black} x1 {2158}	0
+271	Used	Giant Mallet	Fancy Carpet {Purple} x1 {2159}	Fancy Carpet {Purple} x1 {2159}	0
+272	Used	Giant Mallet	Fancy Carpet {Pink} x1 {2160}	Fancy Carpet {Pink} x1 {2160}	0
+273	Used	Giant Mallet	Fancy Carpet {Green} x1 {2162}	Fancy Carpet {Green} x1 {2162}	0
+274	Used	Giant Mallet	Fancy Carpet {Yellow} x1 {2163}	Fancy Carpet {Yellow} x1 {2163}	0
+275	Used	Giant Mallet	Fancy Carpet {Blue} x1 {2164}	Fancy Carpet {Blue} x1 {2164}	0
+276	Used	Giant Mallet	Fancy Carpet {Red} x1 {2161}	Fancy Carpet {Red} x1 {2161}	0
+277	Used	Giant Mallet	Timbered Wall {White} x1 {2849}	Timbered Foundation {White} x1 {2857}	0
+278	Used	Giant Mallet	Timbered Wall {Black} x1 {2850}	Timbered Foundation {Black} x1 {2858}	0
+279	Used	Giant Mallet	Timbered Wall {Purple} x1 {2851}	Timbered Foundation {Purple} x1 {2859}	0
+280	Used	Giant Mallet	Timbered Wall {Pink} x1 {2852}	Timbered Foundation {Pink} x1 {2860}	0
+281	Used	Giant Mallet	Timbered Wall {Red} x1 {2853}	Timbered Foundation {Red} x1 {2861}	0
+282	Used	Giant Mallet	Timbered Wall {Green} x1 {2854}	Timbered Foundation {Green} x1 {2862}	0
+283	Used	Giant Mallet	Timbered Wall {Yellow} x1 {2855}	Timbered Foundation {Yellow} x1 {2863}	0
+284	Used	Giant Mallet	Timbered Wall {Blue} x1 {2856}	Timbered Foundation {Blue} x1 {2864}	0
+285	Used	Giant Mallet	Timbered Wall {White} x1 {2849}	Timbered Wall Midsection {White} x1 {2865}	0
+286	Used	Giant Mallet	Timbered Wall {Black} x1 {2850}	Timbered Wall Midsection {Black} x1 {2866}	0
+287	Used	Giant Mallet	Timbered Wall {Purple} x1 {2851}	Timbered Wall Midsection {Purple} x1 {2867}	0
+288	Used	Giant Mallet	Timbered Wall {Pink} x1 {2852}	Timbered Wall Midsection {Pink} x1 {2868}	0
+289	Used	Giant Mallet	Timbered Wall {Red} x1 {2853}	Timbered Wall Midsection {Red} x1 {2869}	0
+290	Used	Giant Mallet	Timbered Wall {Green} x1 {2854}	Timbered Wall Midsection {Green} x1 {2870}	0
+291	Used	Giant Mallet	Timbered Wall {Yellow} x1 {2855}	Timbered Wall Midsection {Yellow} x1 {2871}	0
+292	Used	Giant Mallet	Timbered Wall {Blue} x1 {2856}	Timbered Wall Midsection {Blue} x1 {2872}	0
+293	Used	Giant Mallet	Timbered Wall {White} x1 {2849}	Timbered Capital {White} x1 {2873}	0
+294	Used	Giant Mallet	Timbered Wall {Black} x1 {2850}	Timbered Capital {Black} x1 {2874}	0
+295	Used	Giant Mallet	Timbered Wall {Purple} x1 {2851}	Timbered Capital {Purple} x1 {2875}	0
+296	Used	Giant Mallet	Timbered Wall {Pink} x1 {2852}	Timbered Capital {Pink} x1 {2876}	0
+297	Used	Giant Mallet	Timbered Wall {Red} x1 {2853}	Timbered Capital {Red} x1 {2877}	0
+298	Used	Giant Mallet	Timbered Wall {Green} x1 {2854}	Timbered Capital {Green} x1 {2878}	0
+299	Used	Giant Mallet	Timbered Wall {Yellow} x1 {2855}	Timbered Capital {Yellow} x1 {2879}	0
+300	Used	Giant Mallet	Timbered Wall {Blue} x1 {2856}	Timbered Capital {Blue} x1 {2880}	0
+301	Used	Giant Mallet	Wooden Wall {White} x1 {2881}	Wooden Wall {White} x1 {2881}	0
+302	Used	Giant Mallet	Wooden Wall {Black} x1 {2882}	Wooden Wall {Black} x1 {2882}	0
+303	Used	Giant Mallet	Wooden Wall {Purple} x1 {2883}	Wooden Wall {Purple} x1 {2883}	0
+304	Used	Giant Mallet	Wooden Wall {Pink} x1 {2884}	Wooden Wall {Pink} x1 {2884}	0
+305	Used	Giant Mallet	Wooden Wall {Red} x1 {2885}	Wooden Wall {Red} x1 {2885}	0
+306	Used	Giant Mallet	Wooden Wall {Green} x1 {2886}	Wooden Wall {Green} x1 {2886}	0
+307	Used	Giant Mallet	Wooden Wall {Yellow} x1 {2887}	Wooden Wall {Yellow} x1 {2887}	0
+308	Used	Giant Mallet	Wooden Wall {Blue} x1 {2888}	Wooden Wall {Blue} x1 {2888}	0
+309	Used	Giant Mallet	Carpet {White} x1 {2625}	Carpet {White} x1 {2625}	0
+310	Used	Giant Mallet	Carpet {Black} x1 {2626}	Carpet {Black} x1 {2626}	0
+311	Used	Giant Mallet	Carpet {Purple} x1 {2627}	Carpet {Purple} x1 {2627}	0
+312	Used	Giant Mallet	Carpet {Pink} x1 {2628}	Carpet {Pink} x1 {2628}	0
+313	Used	Giant Mallet	Carpet {Red} x1 {2629}	Carpet {Red} x1 {2629}	0
+314	Used	Giant Mallet	Carpet {Green} x1 {2630}	Carpet {Green} x1 {2630}	0
+315	Used	Giant Mallet	Carpet {Yellow} x1 {2631}	Carpet {Yellow} x1 {2631}	0
+316	Used	Giant Mallet	Carpet {Blue} x1 {2632}	Carpet {Blue} x1 {2632}	0
+317	Used	Giant Mallet	Wooden Floor {White} x1 {2889}	Wooden Floor {White} x1 {2889}	0
+318	Used	Giant Mallet	Wooden Floor {Black} x1 {2890}	Wooden Floor {Black} x1 {2890}	0
+319	Used	Giant Mallet	Wooden Floor {Purple} x1 {2891}	Wooden Floor {Purple} x1 {2891}	0
+320	Used	Giant Mallet	Wooden Floor {Pink} x1 {2892}	Wooden Floor {Pink} x1 {2892}	0
+321	Used	Giant Mallet	Wooden Floor {Red} x1 {2893}	Wooden Floor {Red} x1 {2893}	0
+322	Used	Giant Mallet	Wooden Floor {Green} x1 {2894}	Wooden Floor {Green} x1 {2894}	0
+323	Used	Giant Mallet	Wooden Floor {Yellow} x1 {2895}	Wooden Floor {Yellow} x1 {2895}	0
+324	Used	Giant Mallet	Wooden Floor {Blue} x1 {2896}	Wooden Floor {Blue} x1 {2896}	0
+325	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+326	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+327	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+328	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+329	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+330	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+331	Used	Cypress Stick	Nothing {-1}	Shifting Sand x1 {265}	0
+332	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+333	Used	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+334	Used	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+335	Used	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+336	Used	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+337	Used	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+338	Used	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+339	Used	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+340	Used	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+341	Used	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+342	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+343	Used	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+344	Used	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+345	Used	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+346	Used	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+347	Used	Unscoopable	Nothing {-1}	0	0
+348	Used	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+349	Used	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+350	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+351	Used	Giant Mallet	Hardwood Column {White} x1 {2777}	Hardwood Column Midsection {White} x1 {2793}	0
+352	Used	Giant Mallet	Hardwood Column {Black} x1 {2778}	Hardwood Column Midsection {Black} x1 {2794}	0
+353	Used	Giant Mallet	Hardwood Column {Purple} x1 {2779}	Hardwood Column Midsection {Purple} x1 {2795}	0
+354	Used	Giant Mallet	Hardwood Column {Pink} x1 {2780}	Hardwood Column Midsection {Pink} x1 {2796}	0
+355	Used	Giant Mallet	Hardwood Column {Red} x1 {2781}	Hardwood Column Midsection {Red} x1 {2797}	0
+356	Used	Giant Mallet	Hardwood Column {Green} x1 {2782}	Hardwood Column Midsection {Green} x1 {2798}	0
+357	Used	Giant Mallet	Hardwood Column {Yellow} x1 {2783}	Hardwood Column Midsection {Yellow} x1 {2799}	0
+358	Used	Giant Mallet	Hardwood Column {Blue} x1 {2784}	Hardwood Column Midsection {Blue} x1 {2800}	0
+359	Used	Giant Mallet	Hardwood Column {White} x1 {2777}	Hardwood Pedestal {White} x1 {2801}	0
+360	Used	Giant Mallet	Hardwood Column {Black} x1 {2778}	Hardwood Pedestal {Black} x1 {2802}	0
+361	Used	Giant Mallet	Hardwood Column {Purple} x1 {2779}	Hardwood Pedestal {Purple} x1 {2803}	0
+362	Used	Giant Mallet	Hardwood Column {Pink} x1 {2780}	Hardwood Pedestal {Pink} x1 {2804}	0
+363	Used	Giant Mallet	Hardwood Column {Red} x1 {2781}	Hardwood Pedestal {Red} x1 {2805}	0
+364	Used	Giant Mallet	Hardwood Column {Green} x1 {2782}	Hardwood Pedestal {Green} x1 {2806}	0
+365	Used	Giant Mallet	Hardwood Column {Yellow} x1 {2783}	Hardwood Pedestal {Yellow} x1 {2807}	0
+366	Used	Giant Mallet	Hardwood Column {Blue} x1 {2784}	Hardwood Pedestal {Blue} x1 {2808}	0
+367	Used	Giant Mallet	Hardwood Column {White} x1 {2777}	Hardwood Capital {White} x1 {2785}	0
+368	Used	Giant Mallet	Hardwood Column {Black} x1 {2778}	Hardwood Capital {Black} x1 {2786}	0
+369	Used	Giant Mallet	Hardwood Column {Purple} x1 {2779}	Hardwood Capital {Purple} x1 {2787}	0
+370	Used	Giant Mallet	Hardwood Column {Pink} x1 {2780}	Hardwood Capital {Pink} x1 {2788}	0
+371	Used	Giant Mallet	Hardwood Column {Red} x1 {2781}	Hardwood Capital {Red} x1 {2789}	0
+372	Used	Giant Mallet	Hardwood Column {Green} x1 {2782}	Hardwood Capital {Green} x1 {2790}	0
+373	Used	Giant Mallet	Hardwood Column {Yellow} x1 {2783}	Hardwood Capital {Yellow} x1 {2791}	0
+374	Used	Giant Mallet	Hardwood Column {Blue} x1 {2784}	Hardwood Capital {Blue} x1 {2792}	0
+375	Used	Giant Mallet	Carpet {White} x1 {2625}	Carpet {White} x1 {2625}	0
+376	Used	Giant Mallet	Carpet {Black} x1 {2626}	Carpet {Black} x1 {2626}	0
+377	Used	Giant Mallet	Carpet {Purple} x1 {2627}	Carpet {Purple} x1 {2627}	0
+378	Used	Giant Mallet	Carpet {Pink} x1 {2628}	Carpet {Pink} x1 {2628}	0
+379	Used	Giant Mallet	Carpet {Red} x1 {2629}	Carpet {Red} x1 {2629}	0
+380	Used	Giant Mallet	Carpet {Green} x1 {2630}	Carpet {Green} x1 {2630}	0
+381	Used	Giant Mallet	Carpet {Yellow} x1 {2631}	Carpet {Yellow} x1 {2631}	0
+382	Used	Giant Mallet	Carpet {Blue} x1 {2632}	Carpet {Blue} x1 {2632}	0
+383	Used	Pot [UNKOWN THE POT LEVEL]	Water-Filled Bottomless Pot {1767}	0	0
+384	Used	Pot [UNKOWN THE POT LEVEL]	Hot Water-Filled Bottomless Pot {1768}	0	0
+385	Used	Pot [UNKOWN THE POT LEVEL]	Poison-Filled Bottomless Pot {1557}	0	0
+386	Used	Pot [UNKOWN THE POT LEVEL]	Lava-Filled Bottomless Pot {1558}	0	0
+387	Used	Unscoopable	Nothing {-1}	0	0
+388	Used	Pot [UNKOWN THE POT LEVEL]	Filthy Water-Filled Bottomless Pot {2058}	0	0
+389	Used	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+390	Used	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+391	Used	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+392	Used	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+393	Used	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+394	Used	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+395	Used	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+396	Used	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+397	Used	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+398	Used	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+399	Used	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+400	Used	Pot [UNKOWN THE POT LEVEL]	Plasma-Filled Bottomless Pot {1559}	0	0
+401	Used	Ultimallet	Nothing {-1}	Vault Tile x1 {2544}	0
+402	Used	Giant Mallet	Gold Brick x1 {1565}	Gold Brick x1 {1565}	0
+403	Used	Giant Mallet	Spaceship Wall x1 {211}	Spaceship Wall x1 {211}	0
+404	Used	Giant Mallet	Shiny Spaceship Wall x1 {212}	Shiny Spaceship Wall x1 {212}	0
+405	Used	Sledgehammer	Citadel Wall x1 {2495}	Citadel Battlement x1 {402}	0
+406	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+407	Used	Sledgehammer	Golden Citadel Capital x1 {2301}	Golden Citadel Capital x1 {2301}	0
+408	Used	Sledgehammer	Alcoved Citadel Wall x1 {2303}	Alcoved Citadel Wall x1 {2303}	0
+409	Used	Sledgehammer	Golden Citadel Foundation x1 {2302}	Golden Citadel Foundation x1 {2302}	0
+410	Used	Sledgehammer	Patterned Citadel Wall x1 {10}	Patterned Citadel Wall x1 {10}	0
+411	Used	Giant Mallet	Golden Tile x1 {1703}	Golden Tile x1 {1703}	0
+412	Used	Ultimallet	Nothing {-1}	Golden Tile x1 {1703}	0
+413	Used	Intangible Block	Nothing {-1}	Nothing {-1}	Malhalla floor
+414	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+415	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+416	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+417	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+418	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+419	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+420	Used	Pot [UNKOWN THE POT LEVEL]	Seawater-Filled Bottomless Pot {1}	0	0
+421	Used	Giant Mallet	Spaceship Wall {White} x1 {95}	Spaceship Wall {White} x1 {95}	0
+422	Used	Giant Mallet	Spaceship Wall {Black} x1 {96}	Spaceship Wall {Black} x1 {96}	0
+423	Used	Giant Mallet	Spaceship Wall {Purple} x1 {97}	Spaceship Wall {Purple} x1 {97}	0
+424	Used	Giant Mallet	Spaceship Wall {Pink} x1 {98}	Spaceship Wall {Pink} x1 {98}	0
+425	Used	Giant Mallet	Spaceship Wall {Red} x1 {99}	Spaceship Wall {Red} x1 {99}	0
+426	Used	Giant Mallet	Spaceship Wall {Green} x1 {100}	Spaceship Wall {Green} x1 {100}	0
+427	Used	Giant Mallet	Spaceship Wall {Yellow} x1 {101}	Spaceship Wall {Yellow} x1 {101}	0
+428	Used	Giant Mallet	Spaceship Wall {Blue} x1 {102}	Spaceship Wall {Blue} x1 {102}	0
+429	Used	Giant Mallet	Shiny Spaceship Wall {White} x1 {134}	Shiny Spaceship Wall {White} x1 {134}	0
+430	Used	Giant Mallet	Shiny Spaceship Wall {Black} x1 {135}	Shiny Spaceship Wall {Black} x1 {135}	0
+431	Used	Giant Mallet	Shiny Spaceship Wall {Purple} x1 {136}	Shiny Spaceship Wall {Purple} x1 {136}	0
+432	Used	Giant Mallet	Shiny Spaceship Wall {Pink} x1 {137}	Shiny Spaceship Wall {Pink} x1 {137}	0
+433	Used	Giant Mallet	Shiny Spaceship Wall {Red} x1 {138}	Shiny Spaceship Wall {Red} x1 {138}	0
+434	Used	Giant Mallet	Shiny Spaceship Wall {Green} x1 {139}	Shiny Spaceship Wall {Green} x1 {139}	0
+435	Used	Giant Mallet	Shiny Spaceship Wall {Yellow} x1 {140}	Shiny Spaceship Wall {Yellow} x1 {140}	0
+436	Used	Giant Mallet	Shiny Spaceship Wall {Blue} x1 {141}	Shiny Spaceship Wall {Blue} x1 {141}	0
+437	Used	Giant Mallet	Woodless Timbered Wall x1 {680}	Woodless Timbered Wall x1 {680}	0
+438	Used	Giant Mallet	Banded Timbered Wall x1 {681}	Banded Timbered Wall x1 {681}	0
+439	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+440	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+441	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+442	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+443	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+444	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+445	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+446	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+447	Used	Giant Mallet	Banded Timbered Wall {White} x1 {727}	Banded Timbered Wall {White} x1 {727}	0
+448	Used	Giant Mallet	Banded Timbered Wall {Black} x1 {728}	Banded Timbered Wall {Black} x1 {728}	0
+449	Used	Giant Mallet	Banded Timbered Wall {Purple} x1 {729}	Banded Timbered Wall {Purple} x1 {729}	0
+450	Used	Giant Mallet	Banded Timbered Wall {Pink} x1 {730}	Banded Timbered Wall {Pink} x1 {730}	0
+451	Used	Giant Mallet	Banded Timbered Wall {Red} x1 {731}	Banded Timbered Wall {Red} x1 {731}	0
+452	Used	Giant Mallet	Banded Timbered Wall {Green} x1 {732}	Banded Timbered Wall {Green} x1 {732}	0
+453	Used	Giant Mallet	Banded Timbered Wall {Yellow} x1 {733}	Banded Timbered Wall {Yellow} x1 {733}	0
+454	Used	Giant Mallet	Banded Timbered Wall {Blue} x1 {734}	Banded Timbered Wall {Blue} x1 {734}	0
+455	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+456	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+457	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+458	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+459	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+460	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+461	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+462	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+463	Used	Giant Mallet	Hardwood Tile {White} x1 {2769}	Hardwood Tile {White} x1 {2769}	0
+464	Used	Giant Mallet	Hardwood Tile {Black} x1 {2770}	Hardwood Tile {Black} x1 {2770}	0
+465	Used	Giant Mallet	Hardwood Tile {Purple} x1 {2771}	Hardwood Tile {Purple} x1 {2771}	0
+466	Used	Giant Mallet	Hardwood Tile {Pink} x1 {2772}	Hardwood Tile {Pink} x1 {2772}	0
+467	Used	Giant Mallet	Hardwood Tile {Red} x1 {2773}	Hardwood Tile {Red} x1 {2773}	0
+468	Used	Giant Mallet	Hardwood Tile {Green} x1 {2774}	Hardwood Tile {Green} x1 {2774}	0
+469	Used	Giant Mallet	Hardwood Tile {Yellow} x1 {2775}	Hardwood Tile {Yellow} x1 {2775}	0
+470	Used	Giant Mallet	Hardwood Tile {Blue} x1 {2776}	Hardwood Tile {Blue} x1 {2776}	0
+471	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+472	Used	Giant Mallet	Red-Brick Wall x1 {653}	Red-Brick Wall x1 {653}	0
+473	Used	Sledgehammer	Diamond x1 {656}	Diamond Vein x1 {1114}	0
+474	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+475	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+476	Used	Sledgehammer	Magnetite x1 {669}	Magnetite Vein x1 {668}	0
+477	Used	Sledgehammer	Siltstone x1 {636}	Siltstone x1 {636}	0
+478	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+479	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+480	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+481	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+482	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+483	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+484	Used	Giant Mallet	Red-Brick Floor x1 {1154}	Red-Brick Floor x1 {1154}	0
+485	Used	Giant Mallet	Crazing Paving x1 {1155}	Crazing Paving x1 {1155}	0
+486	Used	Giant Mallet	Copper Wall x1 {1156}	Copper Wall x1 {1156}	0
+487	Used	Giant Mallet	Marble x1 {1157}	Marble x1 {1157}	0
+488	Used	Giant Mallet	Silver Birch Lumber x1 {1158}	Silver Birch Lumber x1 {1158}	0
+489	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+490	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+491	Used	Giant Mallet	Dark Bark x1 {2076}	Dark Bark x1 {2076}	0
+492	Used	Cypress Stick	Teal Leaves x1 {2077}	Teal Leaves x1 {2077}	0
+493	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+494	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+495	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+496	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+497	Used	Giant Mallet	Spoiled Soil x1 {1784}	Bloodstained Soil x1 {2083}	0
+498	Unused	Giant Mallet	Spoiled Soil x1 {1784}	Bloodstained Soil x1 {2083}	0
+499	Used	Giant Mallet	Padded Floor x1 {1464}	Padded Floor x1 {1464}	0
+500	Used	Giant Mallet	Spoiled Soil x1 {1784}	Leafy Spoiled Soil x1 {2084}	0
+501	Unused	Giant Mallet	Spoiled Soil x1 {1784}	Leafy Spoiled Soil x1 {2084}	0
+502	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+503	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+504	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+505	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+506	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+507	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+508	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+509	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+510	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+511	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+512	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+513	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+514	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+515	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+516	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+517	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+518	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+519	Used	Cypress Stick	Wood x3 {407}	Cracked Floorboard x1 {2169}	0
+520	Used	Giant Mallet	Blackened Bark x1 {2249}	Blackened Bark x1 {2249}	0
+521	Unused	Giant Mallet	Spoiled Soil x1 {1784}	Bloodstained Soil x1 {2083}	0
+522	Used	Giant Mallet	Malachite x1 {2184}	Malachite x1 {2184}	0
+523	Used	Ultimallet	Nothing {-1}	Patterned Vault Wall x1 {226}	0
+524	Used	Ultimallet	Nothing {-1}	Nothing {-1}	0
+525	Used	Giant Mallet	Adobe Wall x1 {2291}	Adobe Capital x1 {2187}	0
+526	Used	Giant Mallet	Adobe Wall x1 {2291}	Adobe Wall (Midsection) x1 {2188}	0
+527	Used	Giant Mallet	Adobe Wall x1 {2291}	Adobe Pedestal x1 {2189}	0
+528	Used	Giant Mallet	Alcoved Adobe Wall x1 {2190}	Alcoved Adobe Wall x1 {2190}	0
+529	Used	Giant Mallet	Copper Floor x1 {2247}	Copper Floor x1 {2247}	0
+530	Used	Giant Mallet	Sooty Softwood x1 {2255}	Sooty Softwood x1 {2255}	0
+531	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+532	Used	Giant Mallet	Heartwood x1 {2253}	Heartwood x1 {2253}	0
+533	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+534	Used	Sledgehammer	White Dye x1 {271}	White Dye Vein x1 {2256}	0
+535	Used	Sledgehammer	Black Dye x1 {272}	Black Dye Vein x1 {2257}	0
+536	Used	Sledgehammer	Purple Dye x1 {273}	Purple Dye Vein x1 {2258}	0
+537	Used	Sledgehammer	Pink Dye x1 {274}	Pink Dye Vein x1 {2259}	0
+538	Used	Sledgehammer	Red Dye x1 {275}	Red Dye Vein x1 {2260}	0
+539	Used	Sledgehammer	Green Dye x1 {276}	Green Dye Vein x1 {2261}	0
+540	Used	Sledgehammer	Yellow Dye x1 {277}	Yellow Dye Vein x1 {2262}	0
+541	Used	Sledgehammer	Blue Dye x1 {278}	Blue Dye Vein x1 {2263}	0
+542	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+543	Unused	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+544	Used	Giant Mallet	Carpet x1 {1050}	Carpet x1 {1050}	0
+545	Used	Giant Mallet	Golden Castle Capital x1 {2372}	Golden Castle Capital x1 {2372}	0
+546	Used	Giant Mallet	Alcoved Castle Wall x1 {2373}	Alcoved Castle Wall x1 {2373}	0
+547	Used	Giant Mallet	Golden Castle Foundation x1 {2374}	Golden Castle Foundation x1 {2374}	0
+548	Used	Giant Mallet	Stone x2 {404}	Cracked Castle Tile x1 {2375}	0
+549	Used	Giant Mallet	Earth x1 {1001}	Battlefield Earth x1 {2376}	0
+550	Used	Sledgehammer	Citadel Wall x1 {2495}	Citadel Capital x1 {2451}	0
+551	Used	Sledgehammer	Citadel Wall x1 {2495}	Citadel Foundation x1 {2452}	0
+552	Used	Sledgehammer	Citadel Wall x1 {2495}	Citadel Wall Midsection x1 {2453}	0
+553	Used	Sledgehammer	Citadel Floor x1 {2454}	Citadel Floor x1 {2454}	0
+554	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+555	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+556	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+557	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+558	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+559	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+560	Unused	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	Looks like nothing is there. Can pass through.
+561	Used	Giant Mallet	Plaster x1 {2615}	Plaster x1 {2615}	0
+562	Used	Giant Mallet	Plaster {White} x1 {2833}	Plaster {White} x1 {2833}	0
+563	Used	Giant Mallet	Plaster {Black} x1 {2834}	Plaster {Black} x1 {2834}	0
+564	Used	Giant Mallet	Plaster {Purple} x1 {2835}	Plaster {Purple} x1 {2835}	0
+565	Used	Giant Mallet	Plaster {Pink} x1 {2836}	Plaster {Pink} x1 {2836}	0
+566	Used	Giant Mallet	Plaster {Red} x1 {2837}	Plaster {Red} x1 {2837}	0
+567	Used	Giant Mallet	Plaster {Green} x1 {2838}	Plaster {Green} x1 {2838}	0
+568	Used	Giant Mallet	Plaster {Yellow} x1 {2839}	Plaster {Yellow} x1 {2839}	0
+569	Used	Giant Mallet	Plaster {Blue} x1 {2840}	Plaster {Blue} x1 {2840}	0
+570	Used	Giant Mallet	Floorboard {White} x1 {2809}	Floorboard {White} x1 {2809}	0
+571	Used	Giant Mallet	Floorboard {Black} x1 {2810}	Floorboard {Black} x1 {2810}	0
+572	Used	Giant Mallet	Floorboard {Purple} x1 {2811}	Floorboard {Purple} x1 {2811}	0
+573	Used	Giant Mallet	Floorboard {Pink} x1 {2812}	Floorboard {Pink} x1 {2812}	0
+574	Used	Giant Mallet	Floorboard {Red} x1 {2813}	Floorboard {Red} x1 {2813}	0
+575	Used	Giant Mallet	Floorboard {Green} x1 {2814}	Floorboard {Green} x1 {2814}	0
+576	Used	Giant Mallet	Floorboard {Yellow} x1 {2815}	Floorboard {Yellow} x1 {2815}	0
+577	Used	Giant Mallet	Floorboard {Blue} x1 {2816}	Floorboard {Blue} x1 {2816}	0
+578	Used	Giant Mallet	Padded Floor {White} x1 {2633}	Padded Floor {White} x1 {2633}	0
+579	Used	Giant Mallet	Padded Floor {Black} x1 {2634}	Padded Floor {Black} x1 {2634}	0
+580	Used	Giant Mallet	Padded Floor {Purple} x1 {2635}	Padded Floor {Purple} x1 {2635}	0
+581	Used	Giant Mallet	Padded Floor {Pink} x1 {2636}	Padded Floor {Pink} x1 {2636}	0
+582	Used	Giant Mallet	Padded Floor {Red} x1 {2637}	Padded Floor {Red} x1 {2637}	0
+583	Used	Giant Mallet	Padded Floor {Green} x1 {2638}	Padded Floor {Green} x1 {2638}	0
+584	Used	Giant Mallet	Padded Floor {Yellow} x1 {2639}	Padded Floor {Yellow} x1 {2639}	0
+585	Used	Giant Mallet	Padded Floor {Blue} x1 {2640}	Padded Floor {Blue} x1 {2640}	0
+586	Unused	Giant Mallet	Nothing {-1}	Stony Soil {1759}	0
+587	Unused	Giant Mallet	Nothing {-1}	Stony Soil {1759}	0
+588	Used	Giant Mallet	Iron Block x1 {1134}	Iron Block x1 {1134}	0
+589	Used	Giant Mallet	Concrete Block x1 {1133}	Concrete Block x1 {1133}	0
+590	Used	Giant Mallet	Sun Sigil Block x1 {1196}	Sun Sigil Block x1 {1196}	0
+591	Used	Giant Mallet	Star Sigil Block x1 {1197}	Star Sigil Block x1 {1197}	0
+592	Used	Giant Mallet	Moon Sigil Block x1 {1198}	Moon Sigil Block x1 {1198}	0
+593	Used	Giant Mallet	Water Sigil Block x1 {1199}	Water Sigil Block x1 {1199}	0
+594	Used	Giant Mallet	Soul Sigil Block x1 {1200}	Soul Sigil Block x1 {1200}	0
+595	Used	Giant Mallet	Sandstone Brick x1 {229}	Sandstone Brick x1 {229}	0
+596	Used	Cypress Stick	Nothing {-1}	Withered Leaves x1 {240}	0
+597	Unused	Giant Mallet	Nothing {-1}	Nothing {-1}	0
+598	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+599	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+600	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+601	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+602	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+603	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+604	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+605	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+606	Used	Giant Mallet	Sanguine Sandstone x1 {601}	Sanguine Sandstone x1 {601}	0
+607	Used	Giant Mallet	Sanguine Cinders x1 {603}	Sanguine Cinders x1 {603}	0
+608	Used	Giant Mallet	Sanguine Sand x1 {600}	Sanguine Sand x1 {600}	0
+609	Used	Giant Mallet	Sanguine Sandy Sandstone x1 {602}	Sanguine Sandy Sandstone x1 {602}	0
+610	Used	Sledgehammer	Scales x1 {942}	Scales x1 {942}	0
+611	Unused	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+612	Used	Giant Mallet	Silver Brick x1 {439}	Silver Brick x1 {439}	0
+613	Used	Giant Mallet	Sooty Silver Brick x1 {440}	Sooty Silver Brick x1 {440}	0
+614	Used	Giant Mallet	Grass Seed x3 {163}	Seeded Spoiled Soil x1 {442}	0
+615	Used	Giant Mallet	Tomato Seed x3 {1831}	Tomato Seed x3 {1831}	0
+616	Used	Giant Mallet	Sugar Cane Seedling x3 {1825}	Sugar Cane Seedling x3 {1825}	0
+617	Used	Giant Mallet	Pumpkin Seed x1 {1830}	Pumpkin Seed x1 {1830}	0
+618	Used	Giant Mallet	Pumpkin Seed x3 {1830}	Pumpkin Seed x3 {1830}	0
+619	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+620	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+621	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+622	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+623	Used	Blue Aura Indestructible	Nothing {-1}	Nothing {-1}	0
+624	Used	Giant Mallet	Silver Tile x1 {1597}	Silver Tile x1 {1597}	0
+625	Used	War Hammer	Nothing {-1}	Obsidian x1 {1009}	0
+626	Used	Sledgehammer	Light Dolomite x1 {1748}	Light Dolomite x1 {1748}	0
+627	Used	Giant Mallet	Clodstone x1 {1020}	Clodstone x1 {1020}	0
+628	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+629	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+630	Used	Giant Mallet	Masonry Wall x1 {1761}	Masonry Wall x1 {1761}	0
+631	Used	Giant Mallet	Patterned Vault Wall x1 {226}	Patterned Vault Wall x1 {226}	0
+632	Used	Giant Mallet	Patterned Vault Wall x1 {226}	Patterned Vault Wall x1 {226}	0
+633	Used	Giant Mallet	Vault Tile x1 {2544}	Vault Tile x1 {2544}	0
+634	Used	Giant Mallet	Vault Wall x1 {1025}	Vault Wall x1 {1025}	0
+635	Used	Giant Mallet	Viny Vault Wall x1 {1026}	Viny Vault Wall x1 {1026}	0
+636	Used	Giant Mallet	Stone x2 {404}	Cracked Vault Wall x1 {1027}	0
+637	Used	Intangible With Hammer	Nothing {-1}	Nothing {-1}	Malhalla floor
+638	Used	Giant Mallet	Iron Block {White} x1 {3119}	Iron Block {White} x1 {3119}	0
+639	Used	Giant Mallet	Iron Block {Black} x1 {3120}	Iron Block {Black} x1 {3120}	0
+640	Used	Giant Mallet	Iron Block {Purple} x1 {3121}	Iron Block {Purple} x1 {3121}	0
+641	Used	Giant Mallet	Iron Block {Pink} x1 {3122}	Iron Block {Pink} x1 {3122}	0
+642	Used	Giant Mallet	Iron Block {Red} x1 {3123}	Iron Block {Red} x1 {3123}	0
+643	Used	Giant Mallet	Iron Block {Green} x1 {3124}	Iron Block {Green} x1 {3124}	0
+644	Used	Giant Mallet	Iron Block {Yellow} x1 {3125}	Iron Block {Yellow} x1 {3125}	0
+645	Used	Giant Mallet	Iron Block {Blue} x1 {3126}	Iron Block {Blue} x1 {3126}	0
+646	Used	Giant Mallet	Sandstone Brick {White} x1 {3127}	Sandstone Brick {White} x1 {3127}	0
+647	Used	Giant Mallet	Sandstone Brick {Black} x1 {3128}	Sandstone Brick {Black} x1 {3128}	0
+648	Used	Giant Mallet	Sandstone Brick {Purple} x1 {3129}	Sandstone Brick {Purple} x1 {3129}	0
+649	Used	Giant Mallet	Sandstone Brick {Pink} x1 {3130}	Sandstone Brick {Pink} x1 {3130}	0
+650	Used	Giant Mallet	Sandstone Brick {Red} x1 {3131}	Sandstone Brick {Red} x1 {3131}	0
+651	Used	Giant Mallet	Sandstone Brick {Green} x1 {3132}	Sandstone Brick {Green} x1 {3132}	0
+652	Used	Giant Mallet	Sandstone Brick {Yellow} x1 {3133}	Sandstone Brick {Yellow} x1 {3133}	0
+653	Used	Giant Mallet	Sandstone Brick {Blue} x1 {3134}	Sandstone Brick {Blue} x1 {3134}	0
+654	Used	Giant Mallet	Castle Tile {White} x1 {3135}	Castle Tile {White} x1 {3135}	0
+655	Used	Giant Mallet	Castle Tile {Black} x1 {3136}	Castle Tile {Black} x1 {3136}	0
+656	Used	Giant Mallet	Castle Tile {Purple} x1 {3137}	Castle Tile {Purple} x1 {3137}	0
+657	Used	Giant Mallet	Castle Tile {Pink} x1 {3138}	Castle Tile {Pink} x1 {3138}	0
+658	Used	Giant Mallet	Castle Tile {Red} x1 {3139}	Castle Tile {Red} x1 {3139}	0
+659	Used	Giant Mallet	Castle Tile {Green} x1 {3140}	Castle Tile {Green} x1 {3140}	0
+660	Used	Giant Mallet	Castle Tile {Yellow} x1 {3141}	Castle Tile {Yellow} x1 {3141}	0
+661	Used	Giant Mallet	Castle Tile {Blue} x1 {3142}	Castle Tile {Blue} x1 {3142}	0
+662	Used	Giant Mallet	Carved Castle Tile {White} x1 {3143}	Carved Castle Tile {White} x1 {3143}	0
+663	Used	Giant Mallet	Carved Castle Tile {Black} x1 {3144}	Carved Castle Tile {Black} x1 {3144}	0
+664	Used	Giant Mallet	Carved Castle Tile {Purple} x1 {3145}	Carved Castle Tile {Purple} x1 {3145}	0
+665	Used	Giant Mallet	Carved Castle Tile {Pink} x1 {3146}	Carved Castle Tile {Pink} x1 {3146}	0
+666	Used	Giant Mallet	Carved Castle Tile {Red} x1 {3147}	Carved Castle Tile {Red} x1 {3147}	0
+667	Used	Giant Mallet	Carved Castle Tile {Green} x1 {3148}	Carved Castle Tile {Green} x1 {3148}	0
+668	Used	Giant Mallet	Carved Castle Tile {Yellow} x1 {3149}	Carved Castle Tile {Yellow} x1 {3149}	0
+669	Used	Giant Mallet	Carved Castle Tile {Blue} x1 {3150}	Carved Castle Tile {Blue} x1 {3150}	0
+670	Unused	Intangible Block	Nothing {-1}	Nothing {-1}	0
+671	Unused	Intangible Block	Nothing {-1}	Nothing {-1}	0
+672	Unused	Intangible Block	Nothing {-1}	Nothing {-1}	0
+673	Unused	Intangible Block	Nothing {-1}	Nothing {-1}	0
+674	Unused	Intangible Block	Nothing {-1}	Nothing {-1}	0
+675	Unused	Intangible Block	Nothing {-1}	Nothing {-1}	0
+676	Unused	Intangible Block	Nothing {-1}	Nothing {-1}	0
+677	Unused	Intangible Block	Nothing {-1}	Nothing {-1}	0
+678	Used	Sledgehammer	Bronze Temple Tile x1 {1056}	Bronze Temple Tile x1 {1056}	0
+679	Used	Sledgehammer	Blue Temple Tile x1 {1057}	Blue Temple Tile x1 {1057}	0
+680	Used	Giant Mallet	Strawberry Seed x2 {1826}	Strawberry Seed x2 {1826}	0
+681	Used	Giant Mallet	Aubergette Seed x2 {1832}	Aubergette Seed x2 {1832}	0
+682	Used	Cypress Stick	Sweetcorn Kernel x2 {1823}	Sweetcorn Kernel x2 {1823}	0
+683	Used	Giant Mallet	Coffee Bean x2 {1827}	Coffee Bean x2 {1827}	0
+684	Used	Cypress Stick	Leek Seed x2 {1828}	Leek Seed x2 {1828}	0
+685	Used	Giant Mallet	Melon Seed x2 {1834}	Melon Seed x2 {1834}	0
+686	Used	Giant Mallet	Gravel Block x1 {1108}	Gravel Block x1 {1108}	0
+687	Used	Giant Mallet	Scaled Wall Block x1 {1112}	Scaled Wall Block x1 {1112}	0
+688	Used	Giant Mallet	Slatted Wall Block x1 {1136}	Slatted Wall Block x1 {1136}	0
+689	Used	Giant Mallet	Woven Straw Block x1 {3169}	Woven Straw Block x1 {3169}	0
+690	Used	Giant Mallet	Woven Straw Block x1 {3169}	Woven Straw Block x1 {3169}	0
+691	Used	Giant Mallet	Woven Straw Block x1 {3169}	Woven Straw Block x1 {3169}	0
+692	Used	Giant Mallet	Woven Straw Block x1 {3169}	Woven Straw Block x1 {3169}	0
+693	Used	Giant Mallet	Woven Straw Block x1 {3169}	Woven Straw Block x1 {3169}	0
+694	Used	Giant Mallet	Scaled Wall Block {White} x1 {2713}	Scaled Wall Block {White} x1 {2713}	0
+695	Used	Giant Mallet	Scaled Wall Block {Black} x1 {2714}	Scaled Wall Block {Black} x1 {2714}	0
+696	Used	Giant Mallet	Scaled Wall Block {Purple} x1 {2715}	Scaled Wall Block {Purple} x1 {2715}	0
+697	Used	Giant Mallet	Scaled Wall Block {Pink} x1 {2716}	Scaled Wall Block {Pink} x1 {2716}	0
+698	Used	Giant Mallet	Scaled Wall Block {Red} x1 {2717}	Scaled Wall Block {Red} x1 {2717}	0
+699	Used	Giant Mallet	Scaled Wall Block {Green} x1 {2718}	Scaled Wall Block {Green} x1 {2718}	0
+700	Used	Giant Mallet	Scaled Wall Block {Yellow} x1 {2719}	Scaled Wall Block {Yellow} x1 {2719}	0
+701	Used	Giant Mallet	Scaled Wall Block {Blue} x1 {2720}	Scaled Wall Block {Blue} x1 {2720}	0
+702	Used	Giant Mallet	Polka-Dot Block x1 {3203}	Polka-Dot Block x1 {3203}	0
+703	Used	Giant Mallet	Polka-Dot Block {White} x1 {3204}	Polka-Dot Block {White} x1 {3204}	0
+704	Used	Giant Mallet	Polka-Dot Block {Black} x1 {3205}	Polka-Dot Block {Black} x1 {3205}	0
+705	Used	Giant Mallet	Polka-Dot Block {Purple} x1 {3206}	Polka-Dot Block {Purple} x1 {3206}	0
+706	Used	Giant Mallet	Polka-Dot Block {Pink} x1 {3207}	Polka-Dot Block {Pink} x1 {3207}	0
+707	Used	Giant Mallet	Polka-Dot Block {Red} x1 {3208}	Polka-Dot Block {Red} x1 {3208}	0
+708	Used	Giant Mallet	Polka-Dot Block {Green} x1 {3209}	Polka-Dot Block {Green} x1 {3209}	0
+709	Used	Giant Mallet	Polka-Dot Block {Yellow} x1 {3210}	Polka-Dot Block {Yellow} x1 {3210}	0
+710	Used	Giant Mallet	Polka-Dot Block {Blue} x1 {3211}	Polka-Dot Block {Blue} x1 {3211}	0
+711	Used	Giant Mallet	Faux Floral Floor Block x1 {3368}	Faux Floral Floor Block x1 {3368}	0
+712	Used	Giant Mallet	Palm-Patterned Block x1 {3369}	Palm-Patterned Block x1 {3369}	0
+713	Used	Giant Mallet	Fruity Fiend Block x1 {3370}	Fruity Fiend Block x1 {3370}	0
+714	Used	Giant Mallet	Chequered Block x1 {3371}	Chequered Block x1 {3371}	0
+715	Used	Giant Mallet	Sunset-Styled Block x1 {3372}	Sunset-Styled Block x1 {3372}	0
+716	Used	Giant Mallet	Seaweed-Styled Block x1 {3373}	Seaweed-Styled Block x1 {3373}	0
+717	Used	Giant Mallet	Stylish Stripy Block x1 {3374}	Stylish Stripy Block x1 {3374}	0
+718	Used	Giant Mallet	Seaside Scene  Block x1 {3375}	Seaside Scene  Block x1 {3375}	0
+719	Used	Giant Mallet	Abstract Floral Floor Block x1 {3376}	Abstract Floral Floor Block x1 {3376}	0
+720	Used	Giant Mallet	Herringbone Floorboard Block x1 {3377}	Herringbone Floorboard Block x1 {3377}	0
+721	Used	Giant Mallet	Night Sky Wall Block x1 {3378}	Night Sky Wall Block x1 {3378}	0
+722	Used	Giant Mallet	Granite Floor Block x1 {3379}	Granite Floor Block x1 {3379}	0
+723	Used	Giant Mallet	Stucco Wall Block x1 {3380}	Stucco Wall Block x1 {3380}	0
+724	Used	Giant Mallet	Stucco Wall Block {White} x1 {3409}	Stucco Wall Block {White} x1 {3409}	0
+725	Used	Giant Mallet	Stucco Wall Block {Black} x1 {3410}	Stucco Wall Block {Black} x1 {3410}	0
+726	Used	Giant Mallet	Stucco Wall Block {Purple} x1 {3411}	Stucco Wall Block {Purple} x1 {3411}	0
+727	Used	Giant Mallet	Stucco Wall Block {Pink} x1 {3412}	Stucco Wall Block {Pink} x1 {3412}	0
+728	Used	Giant Mallet	Stucco Wall Block {Red} x1 {3413}	Stucco Wall Block {Red} x1 {3413}	0
+729	Used	Giant Mallet	Stucco Wall Block {Green} x1 {3414}	Stucco Wall Block {Green} x1 {3414}	0
+730	Used	Giant Mallet	Stucco Wall Block {Yellow} x1 {3415}	Stucco Wall Block {Yellow} x1 {3415}	0
+731	Used	Giant Mallet	Stucco Wall Block {Blue} x1 {3416}	Stucco Wall Block {Blue} x1 {3416}	0
+732	Used	Giant Mallet	Palm-Patterned Block {White} x1 {3417}	Palm-Patterned Block {White} x1 {3417}	0
+733	Used	Giant Mallet	Palm-Patterned Block {Black} x1 {3418}	Palm-Patterned Block {Black} x1 {3418}	0
+734	Used	Giant Mallet	Palm-Patterned Block {Purple} x1 {3419}	Palm-Patterned Block {Purple} x1 {3419}	0
+735	Used	Giant Mallet	Palm-Patterned Block {Pink} x1 {3420}	Palm-Patterned Block {Pink} x1 {3420}	0
+736	Used	Giant Mallet	Palm-Patterned Block {Red} x1 {3421}	Palm-Patterned Block {Red} x1 {3421}	0
+737	Used	Giant Mallet	Palm-Patterned Block {Green} x1 {3422}	Palm-Patterned Block {Green} x1 {3422}	0
+738	Used	Giant Mallet	Palm-Patterned Block {Yellow} x1 {3423}	Palm-Patterned Block {Yellow} x1 {3423}	0
+739	Used	Giant Mallet	Palm-Patterned Block {Blue} x1 {3424}	Palm-Patterned Block {Blue} x1 {3424}	0
+740	Used	Giant Mallet	Chequered Block {White} x1 {3425}	Chequered Block {White} x1 {3425}	0
+741	Used	Giant Mallet	Chequered Block {Black} x1 {3426}	Chequered Block {Black} x1 {3426}	0
+742	Used	Giant Mallet	Chequered Block {Purple} x1 {3427}	Chequered Block {Purple} x1 {3427}	0
+743	Used	Giant Mallet	Chequered Block {Pink} x1 {3428}	Chequered Block {Pink} x1 {3428}	0
+744	Used	Giant Mallet	Chequered Block {Red} x1 {3429}	Chequered Block {Red} x1 {3429}	0
+745	Used	Giant Mallet	Chequered Block {Green} x1 {3430}	Chequered Block {Green} x1 {3430}	0
+746	Used	Giant Mallet	Chequered Block {Yellow} x1 {3431}	Chequered Block {Yellow} x1 {3431}	0
+747	Used	Giant Mallet	Chequered Block {Blue} x1 {3432}	Chequered Block {Blue} x1 {3432}	0
+748	Used	Giant Mallet	Stylish Stripy Block {White} x1 {3433}	Stylish Stripy Block {White} x1 {3433}	0
+749	Used	Giant Mallet	Stylish Stripy Block {Black} x1 {3434}	Stylish Stripy Block {Black} x1 {3434}	0
+750	Used	Giant Mallet	Stylish Stripy Block {Purple} x1 {3435}	Stylish Stripy Block {Purple} x1 {3435}	0
+751	Used	Giant Mallet	Stylish Stripy Block {Pink} x1 {3436}	Stylish Stripy Block {Pink} x1 {3436}	0
+752	Used	Giant Mallet	Stylish Stripy Block {Red} x1 {3437}	Stylish Stripy Block {Red} x1 {3437}	0
+753	Used	Giant Mallet	Stylish Stripy Block {Green} x1 {3438}	Stylish Stripy Block {Green} x1 {3438}	0
+754	Used	Giant Mallet	Stylish Stripy Block {Yellow} x1 {3439}	Stylish Stripy Block {Yellow} x1 {3439}	0
+755	Used	Giant Mallet	Stylish Stripy Block {Blue} x1 {3440}	Stylish Stripy Block {Blue} x1 {3440}	0
+756	Used	Giant Mallet	Herringbone Floorboard Block {White} x1 {3441}	Herringbone Floorboard Block {White} x1 {3441}	0
+757	Used	Giant Mallet	Herringbone Floorboard Block {Black} x1 {3442}	Herringbone Floorboard Block {Black} x1 {3442}	0
+758	Used	Giant Mallet	Herringbone Floorboard Block {Purple} x1 {3443}	Herringbone Floorboard Block {Purple} x1 {3443}	0
+759	Used	Giant Mallet	Herringbone Floorboard Block {Pink} x1 {3444}	Herringbone Floorboard Block {Pink} x1 {3444}	0
+760	Used	Giant Mallet	Herringbone Floorboard Block {Red} x1 {3445}	Herringbone Floorboard Block {Red} x1 {3445}	0
+761	Used	Giant Mallet	Herringbone Floorboard Block {Green} x1 {3446}	Herringbone Floorboard Block {Green} x1 {3446}	0
+762	Used	Giant Mallet	Herringbone Floorboard Block {Yellow} x1 {3447}	Herringbone Floorboard Block {Yellow} x1 {3447}	0
+763	Used	Giant Mallet	Herringbone Floorboard Block {Blue} x1 {3448}	Herringbone Floorboard Block {Blue} x1 {3448}	0
+764	Used	Giant Mallet	Night Sky Wall Block {White} x1 {3449}	Night Sky Wall Block {White} x1 {3449}	0
+765	Used	Giant Mallet	Night Sky Wall Block {Black} x1 {3450}	Night Sky Wall Block {Black} x1 {3450}	0
+766	Used	Giant Mallet	Night Sky Wall Block {Purple} x1 {3451}	Night Sky Wall Block {Purple} x1 {3451}	0
+767	Used	Giant Mallet	Night Sky Wall Block {Pink} x1 {3452}	Night Sky Wall Block {Pink} x1 {3452}	0
+768	Used	Giant Mallet	Night Sky Wall Block {Red} x1 {3453}	Night Sky Wall Block {Red} x1 {3453}	0
+769	Used	Giant Mallet	Night Sky Wall Block {Green} x1 {3454}	Night Sky Wall Block {Green} x1 {3454}	0
+770	Used	Giant Mallet	Night Sky Wall Block {Yellow} x1 {3455}	Night Sky Wall Block {Yellow} x1 {3455}	0
+771	Used	Giant Mallet	Night Sky Wall Block {Blue} x1 {3456}	Night Sky Wall Block {Blue} x1 {3456}	0
+772	Used	Giant Mallet	Modern Masonry Block x1 {3683}	Modern Masonry Block x1 {3683}	0
+773	Used	Giant Mallet	Modern Masonry Block {White} x1 {3684}	Modern Masonry Block {White} x1 {3684}	0
+774	Used	Giant Mallet	Modern Masonry Block {Black} x1 {3685}	Modern Masonry Block {Black} x1 {3685}	0
+775	Used	Giant Mallet	Modern Masonry Block {Purple} x1 {3686}	Modern Masonry Block {Purple} x1 {3686}	0
+776	Used	Giant Mallet	Modern Masonry Block {Pink} x1 {3687}	Modern Masonry Block {Pink} x1 {3687}	0
+777	Used	Giant Mallet	Modern Masonry Block {Red} x1 {3688}	Modern Masonry Block {Red} x1 {3688}	0
+778	Used	Giant Mallet	Modern Masonry Block {Green} x1 {3689}	Modern Masonry Block {Green} x1 {3689}	0
+779	Used	Giant Mallet	Modern Masonry Block {Yellow} x1 {3690}	Modern Masonry Block {Yellow} x1 {3690}	0
+780	Used	Giant Mallet	Modern Masonry Block {Blue} x1 {3691}	Modern Masonry Block {Blue} x1 {3691}	0
+781	Used	Giant Mallet	Chintzy Block x1 {3692}	Chintzy Block x1 {3692}	0
+782	Used	Giant Mallet	Chintzy Block {White} x1 {3693}	Chintzy Block {White} x1 {3693}	0
+783	Used	Giant Mallet	Chintzy Block {Black} x1 {3694}	Chintzy Block {Black} x1 {3694}	0
+784	Used	Giant Mallet	Chintzy Block {Purple} x1 {3695}	Chintzy Block {Purple} x1 {3695}	0
+785	Used	Giant Mallet	Chintzy Block {Pink} x1 {3696}	Chintzy Block {Pink} x1 {3696}	0
+786	Used	Giant Mallet	Chintzy Block {Red} x1 {3697}	Chintzy Block {Red} x1 {3697}	0
+787	Used	Giant Mallet	Chintzy Block {Green} x1 {3698}	Chintzy Block {Green} x1 {3698}	0
+788	Used	Giant Mallet	Chintzy Block {Yellow} x1 {3699}	Chintzy Block {Yellow} x1 {3699}	0
+789	Used	Giant Mallet	Chintzy Block {Blue} x1 {3700}	Chintzy Block {Blue} x1 {3700}	0
+790	Used	Giant Mallet	Gingham Carpet x1 {3701}	Gingham Carpet x1 {3701}	0
+791	Used	Giant Mallet	Gingham Carpet {White} x1 {3702}	Gingham Carpet {White} x1 {3702}	0
+792	Used	Giant Mallet	Gingham Carpet {Black} x1 {3703}	Gingham Carpet {Black} x1 {3703}	0
+793	Used	Giant Mallet	Gingham Carpet {Purple} x1 {3704}	Gingham Carpet {Purple} x1 {3704}	0
+794	Used	Giant Mallet	Gingham Carpet {Pink} x1 {3705}	Gingham Carpet {Pink} x1 {3705}	0
+795	Used	Giant Mallet	Gingham Carpet {Red} x1 {3706}	Gingham Carpet {Red} x1 {3706}	0
+796	Used	Giant Mallet	Gingham Carpet {Green} x1 {3707}	Gingham Carpet {Green} x1 {3707}	0
+797	Used	Giant Mallet	Gingham Carpet {Yellow} x1 {3708}	Gingham Carpet {Yellow} x1 {3708}	0
+798	Used	Giant Mallet	Gingham Carpet {Blue} x1 {3709}	Gingham Carpet {Blue} x1 {3709}	0
+799	Used	Giant Mallet	Stripy Wall x1 {3710}	Stripy Wall x1 {3710}	0
+800	Used	Giant Mallet	Stripy Wall {White} x1 {3711}	Stripy Wall {White} x1 {3711}	0
+801	Used	Giant Mallet	Stripy Wall {Black} x1 {3712}	Stripy Wall {Black} x1 {3712}	0
+802	Used	Giant Mallet	Stripy Wall {Purple} x1 {3713}	Stripy Wall {Purple} x1 {3713}	0
+803	Used	Giant Mallet	Stripy Wall {Pink} x1 {3714}	Stripy Wall {Pink} x1 {3714}	0
+804	Used	Giant Mallet	Stripy Wall {Red} x1 {3715}	Stripy Wall {Red} x1 {3715}	0
+805	Used	Giant Mallet	Stripy Wall {Green} x1 {3716}	Stripy Wall {Green} x1 {3716}	0
+806	Used	Giant Mallet	Stripy Wall {Yellow} x1 {3717}	Stripy Wall {Yellow} x1 {3717}	0
+807	Used	Giant Mallet	Stripy Wall {Blue} x1 {3718}	Stripy Wall {Blue} x1 {3718}	0
+808	Used	Giant Mallet	Mottled Wall {3719}	Mottled Wall x1 {3719}	0
+809	Used	Giant Mallet	Mottled Wall {White} x1 {3720}	Mottled Wall {White} x1 {3720}	0
+810	Used	Giant Mallet	Mottled Wall {Black} x1 {3721}	Mottled Wall {Black} x1 {3721}	0
+811	Used	Giant Mallet	Mottled Wall {Purple} x1 {3722}	Mottled Wall {Purple} x1 {3722}	0
+812	Used	Giant Mallet	Mottled Wall {Pink} x1 {3723}	Mottled Wall {Pink} x1 {3723}	0
+813	Used	Giant Mallet	Mottled Wall {Red} x1 {3724}	Mottled Wall {Red} x1 {3724}	0
+814	Used	Giant Mallet	Mottled Wall {Green} x1 {3725}	Mottled Wall {Green} x1 {3725}	0
+815	Used	Giant Mallet	Mottled Wall {Yellow} x1 {3726}	Mottled Wall {Yellow} x1 {3726}	0
+816	Used	Giant Mallet	Mottled Wall {Blue} x1 {3727}	Mottled Wall {Blue} x1 {3727}	0
+817	Used	Giant Mallet	Slimy Wall x1 {3728}	Slimy Wall x1 {3728}	0
+818	Used	Giant Mallet	Diamond Design Block x1 {3729}	Diamond Design Block x1 {3729}	0
+819	Used	Giant Mallet	Old-Skool Wall Block x1 {3730}	Old-Skool Wall Block x1 {3730}	0
+820	Used	Giant Mallet	Art Deco Block x1 {3731}	Art Deco Block x1 {3731}	0
+821	Used	Giant Mallet	Jungle Wall x1 {3732}	Jungle Wall x1 {3732}	0
+822	Used	Giant Mallet	Vintage Wall x1 {3733}	Vintage Wall x1 {3733}	0
+823	Used	Giant Mallet	Damask Design Block x1 {3734}	Damask Design Block x1 {3734}	0
+824	Used	Giant Mallet	Damask Design Block {White} x1 {3735}	Damask Design Block {White} x1 {3735}	0
+825	Used	Giant Mallet	Damask Design Block {Black} x1 {3736}	Damask Design Block {Black} x1 {3736}	0
+826	Used	Giant Mallet	Damask Design Block {Purple} x1 {3737}	Damask Design Block {Purple} x1 {3737}	0
+827	Used	Giant Mallet	Damask Design Block {Pink} x1 {3738}	Damask Design Block {Pink} x1 {3738}	0
+828	Used	Giant Mallet	Damask Design Block {Red} x1 {3739}	Damask Design Block {Red} x1 {3739}	0
+829	Used	Giant Mallet	Damask Design Block {Green} x1 {3740}	Damask Design Block {Green} x1 {3740}	0
+830	Used	Giant Mallet	Damask Design Block {Yellow} x1 {3741}	Damask Design Block {Yellow} x1 {3741}	0
+831	Used	Giant Mallet	Damask Design Block {Blue} x1 {3742}	Damask Design Block {Blue} x1 {3742}	0
+832	Used	Giant Mallet	Refined Design Block x1 {3743}	Refined Design Block x1 {3743}	0
+833	Used	Giant Mallet	Classy Cross Block x1 {3792}	Classy Cross Block x1 {3792}	0
+834	Used	Giant Mallet	Sunset-Styled Block {White} x1 {3943}	Sunset-Styled Block {White} x1 {3943}	0
+835	Used	Giant Mallet	Sunset-Styled Block {Black} x1 {3944}	Sunset-Styled Block {Black} x1 {3944}	0
+836	Used	Giant Mallet	Sunset-Styled Block {Purple} x1 {3945}	Sunset-Styled Block {Purple} x1 {3945}	0
+837	Used	Giant Mallet	Sunset-Styled Block {Pink} x1 {3946}	Sunset-Styled Block {Pink} x1 {3946}	0
+838	Used	Giant Mallet	Sunset-Styled Block {Red} x1 {3947}	Sunset-Styled Block {Red} x1 {3947}	0
+839	Used	Giant Mallet	Sunset-Styled Block {Green} x1 {3948}	Sunset-Styled Block {Green} x1 {3948}	0
+840	Used	Giant Mallet	Sunset-Styled Block {Yellow} x1 {3949}	Sunset-Styled Block {Yellow} x1 {3949}	0
+841	Used	Giant Mallet	Sunset-Styled Block {Blue} x1 {3950}	Sunset-Styled Block {Blue} x1 {3950}	0
+842	Used	Giant Mallet	Seaweed-Styled Block {White} x1 {3951}	Seaweed-Styled Block {White} x1 {3951}	0
+843	Used	Giant Mallet	Seaweed-Styled Block {Black} x1 {3952}	Seaweed-Styled Block {Black} x1 {3952}	0
+844	Used	Giant Mallet	Seaweed-Styled Block {Purple} x1 {3953}	Seaweed-Styled Block {Purple} x1 {3953}	0
+845	Used	Giant Mallet	Seaweed-Styled Block {Pink} x1 {3954}	Seaweed-Styled Block {Pink} x1 {3954}	0
+846	Used	Giant Mallet	Seaweed-Styled Block {Red} x1 {3955}	Seaweed-Styled Block {Red} x1 {3955}	0
+847	Used	Giant Mallet	Seaweed-Styled Block {Green} x1 {3956}	Seaweed-Styled Block {Green} x1 {3956}	0
+848	Used	Giant Mallet	Seaweed-Styled Block {Yellow} x1 {3957}	Seaweed-Styled Block {Yellow} x1 {3957}	0
+849	Used	Giant Mallet	Seaweed-Styled Block {Blue} x1 {3958}	Seaweed-Styled Block {Blue} x1 {3958}	0
+850	Used	Giant Mallet	Vintage Wall {White} x1 {3959}	Vintage Wall {White} x1 {3959}	0
+851	Used	Giant Mallet	Vintage Wall {Black} x1 {3960}	Vintage Wall {Black} x1 {3960}	0
+852	Used	Giant Mallet	Vintage Wall {Purple} x1 {3961}	Vintage Wall {Purple} x1 {3961}	0
+853	Used	Giant Mallet	Vintage Wall {Pink} x1 {3962}	Vintage Wall {Pink} x1 {3962}	0
+854	Used	Giant Mallet	Vintage Wall {Red} x1 {3963}	Vintage Wall {Red} x1 {3963}	0
+855	Used	Giant Mallet	Vintage Wall {Green} x1 {3964}	Vintage Wall {Green} x1 {3964}	0
+856	Used	Giant Mallet	Vintage Wall {Yellow} x1 {3965}	Vintage Wall {Yellow} x1 {3965}	0
+857	Used	Giant Mallet	Vintage Wall {Blue} x1 {3966}	Vintage Wall {Blue} x1 {3966}	0
+858	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+859	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+860	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+861	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+862	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+863	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+864	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+865	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+866	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+867	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+868	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+869	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+870	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+871	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+872	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+873	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+874	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+875	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+876	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+877	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+878	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+879	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+880	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+881	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+882	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+883	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+884	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+885	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+886	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+887	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+888	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+889	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+890	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+891	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+892	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+893	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+894	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+895	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+896	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+897	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+898	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+899	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+900	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+901	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+902	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+903	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+904	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+905	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+906	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+907	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+908	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+909	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+910	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+911	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+912	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+913	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+914	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+915	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+916	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+917	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+918	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+919	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+920	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+921	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+922	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+923	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+924	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+925	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+926	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+927	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+928	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+929	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+930	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+931	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+932	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+933	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+934	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+935	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+936	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+937	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+938	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+939	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+940	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+941	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+942	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+943	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+944	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+945	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+946	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+947	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+948	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+949	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+950	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+951	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+952	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+953	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+954	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+955	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+956	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+957	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+958	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+959	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+960	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+961	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+962	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+963	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+964	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+965	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+966	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+967	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+968	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+969	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+970	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+971	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+972	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+973	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+974	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+975	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+976	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+977	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+978	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+979	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+980	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+981	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+982	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+983	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+984	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+985	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+986	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+987	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+988	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+989	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+990	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+991	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+992	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+993	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+994	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+995	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+996	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+997	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+998	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+999	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1000	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1001	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1002	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1003	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1004	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1005	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1006	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1007	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1008	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1009	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1010	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1011	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1012	Unused	0	0	0	0
+1013	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1014	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1015	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1016	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1017	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1018	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1019	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1020	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1021	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1022	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1023	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1024	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1025	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1026	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1027	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1028	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1029	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1030	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1031	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1032	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1033	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1034	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1035	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1036	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1037	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1038	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1039	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1040	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1041	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1042	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1043	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1044	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1045	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1046	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1047	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1048	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1049	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1050	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1051	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1052	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1053	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1054	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1055	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1056	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1057	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1058	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1059	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1060	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1061	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1062	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1063	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1064	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1065	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1066	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1067	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1068	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1069	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1070	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1071	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1072	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1073	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1074	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1075	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1076	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1077	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1078	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1079	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1080	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1081	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1082	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1083	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1084	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1085	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1086	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1087	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1088	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1089	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1090	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1091	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1092	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1093	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1094	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1095	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1096	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1097	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1098	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1099	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1100	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1101	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1102	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1103	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1104	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1105	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1106	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1107	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1108	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1109	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1110	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1111	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1112	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1113	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1114	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1115	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1116	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1117	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1118	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1119	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1120	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1121	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1122	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1123	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1124	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1125	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1126	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1127	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1128	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1129	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1130	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1131	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1132	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1133	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1134	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1135	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1136	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1137	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1138	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1139	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1140	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1141	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1142	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1143	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1144	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1145	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1146	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1147	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1148	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1149	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1150	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1151	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1152	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1153	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1154	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1155	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1156	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1157	Unused	Intangible With Hammer	Nothing {-1}	Nothing {-1}	0
+1158	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1159	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1160	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1161	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1162	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1163	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1164	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1165	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1166	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1167	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1168	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1169	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1170	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1171	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1172	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1173	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1174	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1175	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1176	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1177	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1178	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1179	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1180	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1181	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1182	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1183	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1184	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1185	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1186	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1187	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1188	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1189	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1190	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1191	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1192	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1193	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1194	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1195	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1196	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1197	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1198	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1199	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1200	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1201	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1202	Used	0	Nothing {-1}	0	0
+1203	Used	0	Nothing {-1}	0	0
+1204	Used	0	Nothing {-1}	0	0
+1205	Used	0	Nothing {-1}	0	0
+1206	Used	0	Nothing {-1}	0	0
+1207	Used	0	Nothing {-1}	0	0
+1208	Used	0	Nothing {-1}	0	0
+1209	Used	0	Nothing {-1}	0	0
+1210	Used	0	Nothing {-1}	0	0
+1211	Used	0	Nothing {-1}	0	0
+1212	Used	0	Nothing {-1}	0	0
+1213	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1214	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1215	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1216	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1217	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1218	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1219	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1220	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1221	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1222	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1223	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1224	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1225	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1226	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1227	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1228	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1229	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1230	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1231	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1232	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1233	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1234	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1235	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1236	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1237	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1238	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1239	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1240	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1241	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1242	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1243	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1244	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1245	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1246	Used	0	0	0	0
+1247	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1248	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1249	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1250	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1251	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1252	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1253	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1254	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1255	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1256	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1257	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1258	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1259	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1260	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1261	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1262	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1263	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1264	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1265	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1266	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1267	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1268	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1269	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1270	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1271	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1272	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1273	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1274	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1275	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1276	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1277	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1278	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1279	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1280	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1281	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1282	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1283	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1284	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1285	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1286	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1287	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1288	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1289	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1290	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1291	Used	0	Nothing {-1}	0	0
+1292	Used	0	Nothing {-1}	0	0
+1293	Used	0	Nothing {-1}	0	0
+1294	Used	0	Nothing {-1}	0	0
+1295	Used	0	Nothing {-1}	0	0
+1296	Used	0	Nothing {-1}	0	0
+1297	Used	0	Nothing {-1}	0	0
+1298	Used	0	Nothing {-1}	0	0
+1299	Used	0	Nothing {-1}	0	0
+1300	Used	0	Nothing {-1}	0	0
+1301	Used	0	Nothing {-1}	0	0
+1302	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1303	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1304	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1305	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1306	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1307	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1308	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1309	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1310	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1311	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1312	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1313	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1314	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1315	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1316	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1317	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1318	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1319	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1320	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1321	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1322	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1323	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1324	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1325	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1326	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1327	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1328	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1329	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1330	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1331	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1332	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1333	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1334	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1335	Used	0	0	0	0
+1336	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1337	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1338	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1339	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1340	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1341	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1342	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1343	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1344	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1345	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1346	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1347	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1348	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1349	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1350	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1351	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1352	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1353	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1354	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1355	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1356	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1357	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1358	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1359	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1360	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1361	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1362	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1363	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1364	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1365	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1366	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1367	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1368	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1369	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1370	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1371	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1372	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1373	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1374	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1375	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1376	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1377	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1378	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1379	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1380	Used	0	Nothing {-1}	0	0
+1381	Used	0	Nothing {-1}	0	0
+1382	Used	0	Nothing {-1}	0	0
+1383	Used	0	Nothing {-1}	0	0
+1384	Used	0	Nothing {-1}	0	0
+1385	Used	0	Nothing {-1}	0	0
+1386	Used	0	Nothing {-1}	0	0
+1387	Used	0	Nothing {-1}	0	0
+1388	Used	0	Nothing {-1}	0	0
+1389	Used	0	Nothing {-1}	0	0
+1390	Used	0	Nothing {-1}	0	0
+1391	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1392	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1393	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1394	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1395	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1396	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1397	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1398	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1399	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1400	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1401	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1402	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1403	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1404	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1405	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1406	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1407	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1408	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1409	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1410	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1411	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1412	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1413	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1414	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1415	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1416	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1417	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1418	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1419	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1420	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1421	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1422	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1423	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1424	Used	0	0	0	0
+1425	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1426	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1427	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1428	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1429	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1430	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1431	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1432	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1433	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1434	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1435	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1436	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1437	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1438	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1439	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1440	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1441	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1442	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1443	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1444	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1445	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1446	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1447	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1448	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1449	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1450	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1451	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1452	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1453	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1454	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1455	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1456	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1457	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1458	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1459	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1460	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1461	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1462	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1463	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1464	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1465	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1466	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1467	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1468	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1469	Used	0	Nothing {-1}	0	0
+1470	Used	0	Nothing {-1}	0	0
+1471	Used	0	Nothing {-1}	0	0
+1472	Used	0	Nothing {-1}	0	0
+1473	Used	0	Nothing {-1}	0	0
+1474	Used	0	Nothing {-1}	0	0
+1475	Used	0	Nothing {-1}	0	0
+1476	Used	0	Nothing {-1}	0	0
+1477	Used	0	Nothing {-1}	0	0
+1478	Used	0	Nothing {-1}	0	0
+1479	Used	0	Nothing {-1}	0	0
+1480	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1481	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1482	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1483	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1484	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1485	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1486	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1487	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1488	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1489	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1490	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1491	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1492	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1493	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1494	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1495	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1496	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1497	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1498	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1499	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1500	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1501	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1502	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1503	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1504	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1505	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1506	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1507	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1508	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1509	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1510	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1511	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1512	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1513	Used	0	0	0	0
+1514	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1515	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1516	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1517	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1518	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1519	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1520	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1521	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1522	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1523	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1524	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1525	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1526	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1527	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1528	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1529	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1530	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1531	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1532	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1533	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1534	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1535	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1536	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1537	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1538	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1539	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1540	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1541	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1542	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1543	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1544	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1545	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1546	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1547	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1548	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1549	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1550	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1551	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1552	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1553	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1554	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1555	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1556	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1557	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1558	Used	0	Nothing {-1}	0	0
+1559	Used	0	Nothing {-1}	0	0
+1560	Used	0	Nothing {-1}	0	0
+1561	Used	0	Nothing {-1}	0	0
+1562	Used	0	Nothing {-1}	0	0
+1563	Used	0	Nothing {-1}	0	0
+1564	Used	0	Nothing {-1}	0	0
+1565	Used	0	Nothing {-1}	0	0
+1566	Used	0	Nothing {-1}	0	0
+1567	Used	0	Nothing {-1}	0	0
+1568	Used	0	Nothing {-1}	0	0
+1569	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1570	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1571	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1572	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1573	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1574	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1575	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1576	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1577	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1578	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1579	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1580	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1581	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1582	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1583	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1584	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1585	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1586	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1587	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1588	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1589	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1590	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1591	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1592	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1593	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1594	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1595	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1596	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1597	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1598	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1599	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1600	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1601	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1602	Used	0	0	0	0
+1603	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1604	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1605	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1606	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1607	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1608	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1609	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1610	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1611	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1612	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1613	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1614	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1615	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1616	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1617	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1618	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1619	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1620	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1621	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1622	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1623	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1624	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1625	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1626	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1627	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1628	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1629	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1630	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1631	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1632	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1633	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1634	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1635	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1636	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1637	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1638	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1639	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1640	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1641	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1642	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1643	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1644	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1645	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1646	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1647	Used	0	Nothing {-1}	0	0
+1648	Used	0	Nothing {-1}	0	0
+1649	Used	0	Nothing {-1}	0	0
+1650	Used	0	Nothing {-1}	0	0
+1651	Used	0	Nothing {-1}	0	0
+1652	Used	0	Nothing {-1}	0	0
+1653	Used	0	Nothing {-1}	0	0
+1654	Used	0	Nothing {-1}	0	0
+1655	Used	0	Nothing {-1}	0	0
+1656	Used	0	Nothing {-1}	0	0
+1657	Used	0	Nothing {-1}	0	0
+1658	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1659	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1660	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1661	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1662	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1663	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1664	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1665	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1666	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1667	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1668	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1669	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1670	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1671	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1672	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1673	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1674	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1675	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1676	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1677	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1678	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1679	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1680	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1681	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1682	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1683	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1684	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1685	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1686	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1687	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1688	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1689	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1690	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1691	Used	0	0	0	0
+1692	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1693	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1694	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1695	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1696	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1697	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1698	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1699	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1700	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1701	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1702	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1703	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1704	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1705	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1706	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1707	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1708	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1709	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1710	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1711	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1712	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1713	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1714	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1715	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1716	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1717	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1718	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1719	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1720	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1721	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1722	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1723	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1724	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1725	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1726	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1727	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1728	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1729	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1730	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1731	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1732	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1733	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1734	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1735	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1736	Used	0	Nothing {-1}	0	0
+1737	Used	0	Nothing {-1}	0	0
+1738	Used	0	Nothing {-1}	0	0
+1739	Used	0	Nothing {-1}	0	0
+1740	Used	0	Nothing {-1}	0	0
+1741	Used	0	Nothing {-1}	0	0
+1742	Used	0	Nothing {-1}	0	0
+1743	Used	0	Nothing {-1}	0	0
+1744	Used	0	Nothing {-1}	0	0
+1745	Used	0	Nothing {-1}	0	0
+1746	Used	0	Nothing {-1}	0	0
+1747	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1748	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1749	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1750	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1751	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1752	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1753	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1754	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1755	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1756	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1757	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1758	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1759	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1760	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1761	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1762	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1763	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1764	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1765	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1766	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1767	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1768	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1769	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1770	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1771	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1772	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1773	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1774	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1775	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1776	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1777	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1778	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1779	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1780	Used	0	0	0	0
+1781	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1782	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1783	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1784	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1785	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1786	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1787	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1788	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1789	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1790	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1791	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1792	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1793	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1794	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1795	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1796	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1797	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1798	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1799	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1800	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1801	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1802	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1803	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1804	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1805	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1806	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1807	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1808	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1809	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1810	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1811	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1812	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1813	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1814	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1815	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1816	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1817	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1818	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1819	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1820	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1821	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1822	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1823	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1824	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1825	Used	0	Nothing {-1}	0	0
+1826	Used	0	Nothing {-1}	0	0
+1827	Used	0	Nothing {-1}	0	0
+1828	Used	0	Nothing {-1}	0	0
+1829	Used	0	Nothing {-1}	0	0
+1830	Used	0	Nothing {-1}	0	0
+1831	Used	0	Nothing {-1}	0	0
+1832	Used	0	Nothing {-1}	0	0
+1833	Used	0	Nothing {-1}	0	0
+1834	Used	0	Nothing {-1}	0	0
+1835	Used	0	Nothing {-1}	0	0
+1836	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1837	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1838	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1839	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1840	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1841	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1842	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1843	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1844	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1845	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1846	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1847	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1848	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1849	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1850	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1851	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1852	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1853	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1854	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1855	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1856	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1857	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1858	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1859	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1860	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1861	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1862	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1863	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1864	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1865	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1866	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1867	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1868	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1869	Used	0	0	0	0
+1870	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1871	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1872	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1873	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1874	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1875	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1876	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1877	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1878	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1879	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1880	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1881	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1882	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1883	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1884	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1885	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1886	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1887	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1888	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1889	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1890	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1891	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1892	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1893	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1894	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1895	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1896	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1897	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1898	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1899	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1900	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1901	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1902	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1903	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1904	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1905	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1906	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1907	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1908	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1909	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1910	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1911	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1912	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1913	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1914	Used	0	Nothing {-1}	0	0
+1915	Used	0	Nothing {-1}	0	0
+1916	Used	0	Nothing {-1}	0	0
+1917	Used	0	Nothing {-1}	0	0
+1918	Used	0	Nothing {-1}	0	0
+1919	Used	0	Nothing {-1}	0	0
+1920	Used	0	Nothing {-1}	0	0
+1921	Used	0	Nothing {-1}	0	0
+1922	Used	0	Nothing {-1}	0	0
+1923	Used	0	Nothing {-1}	0	0
+1924	Used	0	Nothing {-1}	0	0
+1925	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1926	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1927	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1928	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1929	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1930	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1931	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1932	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1933	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1934	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1935	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+1936	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1937	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1938	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1939	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1940	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1941	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1942	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1943	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1944	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1945	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1946	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+1947	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1948	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1949	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1950	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1951	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1952	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1953	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1954	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1955	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1956	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1957	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+1958	Used	0	0	0	0
+1959	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1960	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1961	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1962	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1963	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1964	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1965	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1966	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1967	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1968	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1969	Used	0	Water-Filled Bottomless Pot {1767}	0	0
+1970	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1971	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1972	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1973	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1974	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1975	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1976	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1977	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1978	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1979	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1980	Used	0	Hot Water-Filled Bottomless Pot {1768}	0	0
+1981	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1982	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1983	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1984	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1985	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1986	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1987	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1988	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1989	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1990	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1991	Used	0	Poison-Filled Bottomless Pot {1557}	0	0
+1992	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1993	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1994	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1995	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1996	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1997	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1998	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+1999	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+2000	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+2001	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+2002	Used	0	Lava-Filled Bottomless Pot {1558}	0	0
+2003	Used	0	Nothing {-1}	0	0
+2004	Used	0	Nothing {-1}	0	0
+2005	Used	0	Nothing {-1}	0	0
+2006	Used	0	Nothing {-1}	0	0
+2007	Used	0	Nothing {-1}	0	0
+2008	Used	0	Nothing {-1}	0	0
+2009	Used	0	Nothing {-1}	0	0
+2010	Used	0	Nothing {-1}	0	0
+2011	Used	0	Nothing {-1}	0	0
+2012	Used	0	Nothing {-1}	0	0
+2013	Used	0	Nothing {-1}	0	0
+2014	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2015	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2016	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2017	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2018	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2019	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2020	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2021	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2022	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2023	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2024	Used	0	Filthy Water-Filled Bottomless Pot {2058}	0	0
+2025	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2026	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2027	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2028	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2029	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2030	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2031	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2032	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2033	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2034	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2035	Used	0	Sea Water-Filled Bottomless Pot {1}	0	0
+2036	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2037	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2038	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2039	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2040	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2041	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2042	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2043	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2044	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2045	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2046	Used	0	Plasma-Filled Bottomless Pot {1559}	0	0
+2047	Used	0	0	0	0

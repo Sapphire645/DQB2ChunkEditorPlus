@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Runtime.InteropServices.Marshalling;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Ribbon.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -20,7 +23,7 @@ namespace DQB2ChunkEditor.Controls
     /// </summary>
     public partial class ChunkGrid : UserControl
     {
-        private ObservableProperty<BitmapImage> LastBitmap = new ObservableProperty<BitmapImage>();
+        public ObservableProperty<BitmapImage> LastBitmap { get; private set; } = new ObservableProperty<BitmapImage>();
 
         public event Action<short> ChunkClick;
 
@@ -29,7 +32,7 @@ namespace DQB2ChunkEditor.Controls
         private ObservableProperty<short> ChunkCount = new ObservableProperty<short>();
 
         private bool editing = false;
-
+        private uint[] ints;
         private short ImageToggle = 0;
         public ChunkGrid()
         {
@@ -39,7 +42,7 @@ namespace DQB2ChunkEditor.Controls
         {
             try
             {
-                ChunkCount.Value = ChunkEditor.ChunkCount;
+                ChunkCount.Value = ChunkEditor.VirtualChunkCount;
                 ChunkGridList.Clear();
                 var Uri = new Uri("/Images/Maps/STGDAT" + ChunkEditor.Island.ToString("D2") + ".png", UriKind.Relative);
                 if (Uri == null) {
@@ -48,7 +51,7 @@ namespace DQB2ChunkEditor.Controls
                 LastBitmap.Value = new BitmapImage(Uri);
                 ImageBackground.Source = LastBitmap.Value;
                 MapGrid.Children.Clear();
-                var ints = ChunkEditor.GetChunkCrop();
+                ints = ChunkEditor.GetChunkCrop();
                 MapGrid.Rows = (int)(ints[1] - ints[0] + 3);
                 MapGrid.Columns = (int)(ints[3] - ints[2] + 3);
                 for (short i = 0; i < 64 * 64; i++) // layers are 32x32
@@ -89,7 +92,7 @@ namespace DQB2ChunkEditor.Controls
         {
             try
             {
-                ChunkCount.Value = ChunkEditor.ChunkCount;
+                ChunkCount.Value = ChunkEditor.VirtualChunkCount;
                 ChunkGridList.Clear();
                 ChunkGridListOld.Clear();
                 ImageBackground.Source = null;
@@ -194,6 +197,27 @@ namespace DQB2ChunkEditor.Controls
             CancelButton.Visibility = Visibility.Collapsed;
             editing = false;
             CreateMainGrid();
+        }
+        public void UpdateSelection(bool selection,ushort VChunk1, ushort VChunk2, ushort x1, ushort y1, ushort x2, ushort y2)
+        {
+            if (selection)
+            {
+                SelectionRectangle.Visibility = Visibility.Visible;
+                var coord = Math.Min(VBox.ActualHeight / MapGrid.Rows, VBox.ActualWidth / MapGrid.Columns);
+                System.Windows.Point MapGridPos = MapGrid.TransformToAncestor(this).Transform(new System.Windows.Point(0, 0));
+                var x = Math.Min(((VChunk1 % 64) - ints[2]) * coord + (x1 * coord / 32), ((VChunk2 % 64) - ints[2]) * coord + (x2 * coord / 32));
+                var y = Math.Min(((VChunk1 / 64) - ints[0]) * coord + (y1 * coord / 32), ((VChunk2 / 64) - ints[0]) * coord + (y2 * coord / 32));
+
+                var Mx = Math.Max(((VChunk1 % 64) - ints[2]) * coord + (x1 * coord / 32), ((VChunk2 % 64) - ints[2]) * coord + (x2 * coord / 32));
+                var My = Math.Max(((VChunk1 / 64) - ints[0]) * coord + (y1 * coord / 32), ((VChunk2 / 64) - ints[0]) * coord + (y2 * coord / 32));
+
+                SelectionRectangle.Margin = new Thickness(MapGridPos.X - GridOneCol.ActualWidth + (x + coord), MapGridPos.Y + (y + coord), 0, 0);
+                SelectionRectangle.Width = Mx - x;
+                SelectionRectangle.Height = My - y;
+            }
+            else{
+                SelectionRectangle.Visibility = Visibility.Collapsed;
+            }
         }
         private void Image(object sender, EventArgs e)
         {

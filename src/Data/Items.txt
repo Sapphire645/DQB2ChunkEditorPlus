@@ -1,0 +1,3084 @@
+0	0	Null
+1	1	Grass
+2	2	Stalwort
+3	3	Medicinal Shrub
+4	4	Coralily
+5	5	Daffodaisy
+6	6	Milkblossom
+7	7	Ivy
+8	8	Tingleweed
+9	9	Cotton Plant
+10	10	Marshroom
+11	11	Large Lily Pad
+12	12	Fibrous Fern
+13	13	Bigonia
+14	14	Pongsettia
+15	15	Sandwort
+16	16	Prickly Peach Cactus
+17	17	Cactus Crown
+18	18	Cactus Trunk
+19	19	Witchgrass
+20	20	Bogwort
+21	21	Frogstool
+22	22	Tainted Tree
+23	23	Twisted Tree Trunk
+24	24	Freezia
+25	25	Septic Shrub
+26	26	Shadowgrass
+27	27	Plumberry Seedling
+28	28	Plumberry Sapling
+29	29	Plumberry Tree
+30	30	Plumberry Stump
+31	31	Big Plumberry Tree
+32	32	Palm Seedling
+33	33	Palm Sapling
+34	34	Palm Tree
+35	35	Palm Stump
+36	36	Cedar Seedling
+37	37	Cedar Sapling
+38	38	Cedar Tree
+39	39	Cedar Stump
+40	40	Snowy Cedar
+41	41	Pumice
+42	42	Dead Tree
+43	43	Metal Memorial
+44	44	Huge Horn
+45	45	Wooden Memorial
+46	46	Gravestone
+47	47	Dilapidated Crate
+48	48	Broken Brickwork
+49	49	¿Tattered Banner of Erdrick
+50	50	Broken Barricade
+51	51	Tattered Tent
+52	52	Crate
+53	53	Barrel
+54	54	Pot
+55	55	Leather Sack
+56	56	Washtub
+57	57	Signpost
+58	58	Diagonal Fencing
+59	59	Barricade
+60	60	Ladder
+61	61	Stone Steps
+62	62	Armourer’s Sign
+63	63	Shop Sign
+64	64	Inn Sign
+65	0	Wall-Mounted Banner [White]
+66	66	Porched Window
+67	67	Arched Window
+68	68	Stone Window
+69	69	Wooden Door
+70	70	Magic Door
+71	71	Cell Door
+72	72	Steel Doors
+73	73	Wooden Gate
+74	74	(Lock)
+75	75	Buttress
+76	76	Ridge Tiling
+77	77	Well
+78	78	Torch
+79	79	Sconce
+80	80	Bonfire
+81	81	Cookfire
+82	82	Wall Lamp
+83	83	Candlestick
+84	84	Candelabrum
+85	85	Brazier
+86	86	Pot Plant
+87	87	Bottles
+88	88	Crockery
+89	89	Dressing Table
+90	90	Small Table
+91	91	Big Table
+92	92	Stone Table
+93	93	Dining Table
+94	94	Wooden Stool
+95	95	Comfy Stool
+96	96	Throne
+97	97	Straw Mattress
+98	98	Simple Bed
+99	99	King-Sized Bed
+100	100	Towel Rail
+101	101	Bookcase
+102	102	Chest Of Drawers
+103	103	Wardrobe
+104	104	Grandfather Clock
+105	105	Ornamental Swords
+106	106	Ornamental Armour
+107	107	Stove
+108	108	Sink
+109	109	Bathtub
+110	110	Goddess Statue
+111	111	Clover Carving
+112	112	Item Display Stand
+113	113	Treasure Chest
+114	114	Decorative Drapery
+115	115	Bold Banner
+116	116	Big Bold Banner
+117	117	Pretty Pillar
+118	118	Column
+119	119	Stone Coping
+120	120	Stone Capping
+121	121	Decorative Shield
+122	122	Small Stones
+123	123	Big Rock
+124	124	Bones
+125	125	Dragon Bones
+126	126	Chains
+127	127	Dragonlord’s Standard
+128	128	Vile Tile
+129	129	Seal of Erdrick
+130	130	Draconic Column
+131	131	Vile Visage
+132	132	Evil Idol
+133	133	Beastly Burrow
+134	134	Helliportal
+135	135	Spike Trap
+136	0	Wall-Mounted Banner [Black]
+137	137	Pristine Plumberry
+138	0	Wall-Mounted Banner [Purple]
+139	0	Wall-Mounted Banner [Pink]
+140	0	Wall-Mounted Banner [Red]
+141	0	Wall-Mounted Banner [Green]
+142	0	Wall-Mounted Banner [Yellow]
+143	143	Fierce Fountain
+144	0	Wall-Mounted Banner [Blue]
+145	145	Tree Stump
+146	146	Slime Balloons
+147	147	Stone Workbench LV0
+148	148	Wooden Workbench LV0
+149	149	(Multipurpose Workbench)
+150	150	Colour Wheel
+151	151	Forge
+152	152	Hela’s Hammer Sign
+153	153	Brick Barbecue
+154	154	Stickler’s Sifter
+155	155	Sewing Station
+156	0	Wooden Fortification [White]
+157	157	Metalist Workbench
+158	158	Welder’s Workbench
+159	159	¿Dead Plant
+160	160	¿Dead Plant on Pole
+161	161	Furnace
+162	162	Old Book
+163	163	Old Note
+164	164	¿Buggy Buggy
+165	165	Cantlin Shield
+166	166	Holyhock Seedling
+167	0	Wooden Fortification [Black]
+168	168	¿Infernal Ivy
+169	169	Cannon
+170	170	Piston
+171	171	¿Pressure Plate
+172	172	¿Button
+173	173	Ballista
+174	174	Magic Cannon
+175	175	Roof Tiling
+176	176	Pitched Tiling
+177	177	Outer Corner Tiling
+178	178	Inner Corner Tiling
+179	179	Colossal Coffer
+180	180	Armoire
+181	181	¿Armoire
+182	182	Equipment Display Stand
+183	183	Straight Track
+184	184	Curved Track
+185	185	Sloped Track
+186	186	Stop Sign
+187	187	Wooden Minecart
+188	188	Spiked Metal Minecart
+189	0	Criss-Cross Leadlight [White]
+190	0	Criss-Cross Leadlight [Black]
+191	0	Criss-Cross Leadlight [Purple]
+192	0	Criss-Cross Leadlight [Pink]
+193	0	Criss-Cross Leadlight [Red]
+194	0	Criss-Cross Leadlight [Green]
+195	0	Criss-Cross Leadlight [Yellow]
+196	0	Criss-Cross Leadlight [Blue]
+197	197	Wrecking Ball
+198	198	Portrait of a Lady
+199	199	Fountain
+200	200	¿Water block
+201	201	¿Ht Water block
+202	0	Wooden Fortification [Purple]
+203	0	Wooden Fortification [Pink]
+204	0	Wooden Fortification [Red]
+205	205	¿Yellow banner
+206	206	Straw Door
+207	207	Wooden Steps
+208	208	Chimney
+209	209	Stone Stool
+210	0	0
+211	211	Window
+212	0	Wooden Fortification [Yellow]
+213	0	Wooden Fortification [Blue]
+214	214	Filter Fountain
+215	215	¿Locked Chest
+216	216	¿Teleportal
+217	217	¿Terra Incognita
+218	218	¿Terra Incognita
+219	219	¿Minimedal Stand
+220	220	Tiled Window
+221	221	Branch
+222	222	Mini Merlon
+223	0	Emblematic Clock [White]
+224	224	Gentleman Sign
+225	225	Lady Sign
+226	226	Bench
+227	227	Bar Counter
+228	228	Chic Chair
+229	229	Cask
+230	230	Naughty Night Light
+231	231	Comfy Sofa
+232	232	Princess-Sized Bed
+233	233	Extravagant Table
+234	234	Round Table
+235	235	Fireplace
+236	236	Plant Pot
+237	237	Player Lyre
+238	238	Dumb-Bells
+239	239	Stationery
+240	240	Water Jug
+241	241	Tea Service
+242	242	Salad Plate
+243	243	Fish Dish
+244	244	Bread Basket
+245	245	Meat Feast
+246	246	Treasures ‘n’ Trapdoors
+247	247	Stuffed Hammerhood
+248	248	Powie Yowie Rug
+249	249	Cherry Blossom Tree
+250	250	Healix The Hero
+251	0	(Lock)
+252	0	¿Tattered Banner of Erdrick
+253	253	Blighted Branch
+254	254	Dragonlord’s Throne
+255	255	Four-Square Leadlight [White]
+256	0	Four-Square Leadlight [Black]
+257	0	Four-Square Leadlight [Purple]
+258	0	Four-Square Leadlight [Pink]
+259	0	Four-Square Leadlight [Red]
+260	0	Four-Square Leadlight [Green]
+261	0	Four-Square Leadlight [Yellow]
+262	0	Four-Square Leadlight [Blue]
+263	0	Plain-Plane Leadlight [White]
+264	0	Plain-Plane Leadlight [Black]
+265	0	Anvil
+266	0	¿Water block
+267	0	Plain-Plane Leadlight [Purple]
+268	0	Plain-Plane Leadlight [Pink]
+269	0	Plain-Plane Leadlight [Red]
+270	0	Plain-Plane Leadlight [Green]
+271	0	Plain-Plane Leadlight [Yellow]
+272	0	Plain-Plane Leadlight [Blue]
+273	0	Classy Couch [White]
+274	0	Classy Couch [Black]
+275	0	Classy Couch [Purple]
+276	0	Classy Couch [Pink]
+277	0	Classy Couch [Red]
+278	0	Classy Couch [Green]
+279	0	Classy Couch [Yellow]
+280	0	Classy Couch [Blue]
+281	0	Tartan Bed [White]
+282	0	Tartan Bed [Black]
+283	0	Tartan Bed [Purple]
+284	0	Tartan Bed [Pink]
+285	0	Tartan Bed [Red]
+286	0	Tartan Bed [Green]
+287	0	Tartan Bed [Yellow]
+288	0	Tartan Bed [Blue]
+289	0	Cooking Pot [White]
+290	0	Cooking Pot [Black]
+291	0	Cooking Pot [Purple]
+292	0	Cooking Pot [Pink]
+293	0	Cooking Pot [Red]
+294	0	Cooking Pot [Green]
+295	0	Cooking Pot [Yellow]
+296	0	Cooking Pot [Blue]
+297	0	¿TextTablet
+298	0	¿TextTablet
+299	0	¿TextTablet
+300	0	¿TextTablet
+301	0	¿TextTablet
+302	0	¿TextTablet
+303	0	¿TextTablet
+304	0	Old Note
+305	0	¿TextTablet
+306	0	¿TextTablet
+307	0	¿TextTablet
+308	0	¿TextTablet
+309	0	¿TextTablet
+310	0	¿TextTablet
+311	0	Gravestone
+312	0	Grandfather Clock
+313	0	¿TextTablet
+314	0	¿TextTablet
+315	0	Old Note
+316	316	Malroth’s Oaken Club
+317	0	¿TextTablet
+318	0	¿TextTablet
+319	0	¿TextTablet
+320	0	¿TextTablet
+321	0	¿TextTablet
+322	0	¿TextTablet
+323	0	¿TextTablet
+324	0	¿TextTablet
+325	0	¿TextTablet
+326	0	¿TextTablet
+327	0	Emblematic Clock [Black]
+328	328	Scallywinkle
+329	0	Emblematic Clock [Purple]
+330	330	Driftlumber
+331	331	Driftwood
+332	332	Seaside Seaweed
+333	0	Emblematic Clock [Pink]
+334	334	Broken Barrel
+335	335	Starfish
+336	336	Seaslime Shell
+337	0	Emblematic Clock [Red]
+338	0	Emblematic Clock [Green]
+339	0	Emblematic Clock [Yellow]
+340	340	Pebble Pile
+341	341	Toppled Column
+342	342	Dry Ivy
+343	343	Emblematic Clock [Blue]
+344	0	Pampas Grass
+345	0	Port and Shot Set [White]
+346	0	Port and Shot Set [Black]
+347	0	Port and Shot Set [Purple]
+348	348	Broken Masonry
+349	349	Classical Column Midsection
+350	350	Classical Column Pedestal
+351	351	Colossal Crag
+352	352	Crag
+353	0	Glass Floor [White]
+354	0	Glass Floor [Black]
+355	0	Glass Floor [Purple]
+356	0	Glass Floor [Pink]
+357	0	Glass Floor [Red]
+358	0	Glass Floor [Green]
+359	0	Glass Floor [Yellow]
+360	0	Glass Floor [Blue]
+361	0	Port and Shot Set [Pink]
+362	0	Port and Shot Set [Red]
+363	0	Port and Shot Set [Green]
+364	364	Water Lily Flower
+365	365	Lily Pad
+366	0	Port and Shot Set [Yellow]
+367	0	Port and Shot Set [Blue]
+368	368	She-Slimespawn
+369	0	Dressing Table [White]
+370	0	Dressing Table [Black]
+371	0	Chic Sunbrella [Pink]
+372	0	Chic Sunbrella [Red]
+373	0	Chic Sunbrella [Green]
+374	0	Chic Sunbrella [Yellow]
+375	0	Chic Sunbrella [Blue]
+376	0	¿Deitree
+377	0	¿Deitree
+378	0	¿Deitree blue
+379	0	¿Deitree Dead
+380	0	¿Deitree smol
+381	0	¿Deitree
+382	0	0
+383	383	Planting Pole
+384	0	Dressing Table [Purple]
+385	0	Dressing Table [Pink]
+386	386	Worm Food
+387	0	¿Wheat 0
+388	0	¿Wheat 1
+389	0	¿Wheat 2
+390	390	Wheat
+391	0	¿Butterbeans 0
+392	0	¿Butterbeans 1
+393	0	¿Butterbeans 2
+394	394	Butterbeans
+395	0	¿Cabbage 0
+396	0	¿Cabbage 1
+397	0	¿Cabbage 2
+398	398	Cabbage
+399	399	Red Cabbage
+400	0	¿Buckwheat 0
+401	0	¿Buckwheat 1
+402	0	¿Buckwheat 2
+403	403	Buckwheat
+404	0	¿Sweetcorn 0
+405	0	¿Sweetcorn 1
+406	0	¿Sweetcorn 2
+407	407	Sweetcorn
+408	0	¿Chilli Pepper 0
+409	0	¿Chilli Pepper 1
+410	0	¿Chilli Pepper 2
+411	411	Chilli Pepper
+412	412	Red-Hot Chilli Pepper
+413	0	¿Sugar Cane 0
+414	0	¿Sugar Cane 1
+415	0	¿Sugar Cane 2
+416	416	Sugar Cane
+417	0	¿Strawberry 0
+418	0	¿Strawberry 1
+419	0	¿Strawberry 2
+420	420	Strawberry
+421	421	Moreberry
+422	0	¿Coffee Beans 0
+423	0	¿Coffee Beans 1
+424	0	¿Coffee Beans 2
+425	425	Coffee Beans
+426	0	¿Leek 0
+427	0	¿Leek 1
+428	0	Dressing Table [Red]
+429	429	Leek
+430	0	¿Potato 0
+431	0	¿Potato 1
+432	0	¿Potato 2
+433	433	Potato
+434	0	¿Pumpkin 0
+435	0	¿Pumpkin 1
+436	0	¿Pumpkin 2
+437	437	Pumpkin
+438	438	Plumpkin
+439	0	¿Tomato 0
+440	0	¿Tomato 1
+441	0	¿Tomato 2
+442	442	Tomato
+443	443	Killer Tomato
+444	0	¿Aubergette 0
+445	0	¿Aubergette 1
+446	0	¿Aubergette 2
+447	447	Aubergette
+448	0	Dressing Table [Green]
+449	0	Dressing Table [Yellow]
+450	0	Dressing Table [Blue]
+451	0	Towel Rail [White]
+452	0	¿Melon 0
+453	0	¿Melon 1
+454	0	¿Melon 2
+455	455	Melon
+456	456	Sunny-Hued Melon
+457	0	¿Rice 0
+458	0	¿Rice 1
+459	0	¿Rice 2
+460	460	Rice
+461	0	¿Heartroot 0
+462	0	¿Heartroot 1
+463	0	¿Heartroot 2
+464	464	Heartroot
+465	465	White-Hot Heartroot
+466	0	¿Dead Plant
+467	0	Basic Bunk [White]
+468	0	Basic Bunk [Black]
+469	0	Basic Bunk [Purple]
+470	0	Basic Bunk [Pink]
+471	0	Basic Bunk [Red]
+472	0	Basic Bunk [Green]
+473	0	Basic Bunk [Yellow]
+474	0	Basic Bunk [Blue]
+475	0	Gift-Wrapped Gift [White]
+476	0	Gift-Wrapped Gift [Black]
+477	0	Gift-Wrapped Gift [Purple]
+478	0	Gift-Wrapped Gift [Pink]
+479	0	Gift-Wrapped Gift [Red]
+480	0	Gift-Wrapped Gift [Green]
+481	0	Gift-Wrapped Gift [Yellow]
+482	0	Gift-Wrapped Gift [Blue]
+483	0	Wooden Pillar [White]
+484	0	Wooden Pillar [Black]
+485	0	Wooden Pillar [Purple]
+486	0	Wooden Pillar [Pink]
+487	0	Wooden Pillar [Red]
+488	0	Wooden Pillar [Green]
+489	0	Wooden Pillar [Yellow]
+490	0	Wooden Pillar [Blue]
+491	0	Sliding Glass Door [White]
+492	0	Sliding Glass Door [Black]
+493	0	Sliding Glass Door [Purple]
+494	0	Sliding Glass Door [Pink]
+495	495	Banana
+496	0	Sliding Glass Door [Red]
+497	0	Sliding Glass Door [Green]
+498	0	Sliding Glass Door [Yellow]
+499	0	Sliding Glass Door [Blue]
+500	0	Angled Window [White]
+501	501	Pet Bowl
+502	502	Pet Bedding
+503	0	Angled Window [Black]
+504	0	Angled Window [Purple]
+505	0	Angled Window [Pink]
+506	0	Angled Window [Red]
+507	0	Angled Window [Green]
+508	0	Angled Window [Yellow]
+509	0	Angled Window [Blue]
+510	0	Rigid Rope [White]
+511	0	Rigid Rope [Black]
+512	0	Rigid Rope [Purple]
+513	0	¿Deitree Dead
+514	0	Rigid Rope [Pink]
+515	0	Rigid Rope [Red]
+516	0	Rigid Rope [Green]
+517	0	Rigid Rope [Yellow]
+518	0	Rigid Rope [Blue]
+519	0	¿Boat
+520	520	¿Planter 0
+521	521	¿Planter 1
+522	522	¿Pencil
+523	523	¿seed
+524	524	¿seed
+525	525	Unidentified Dung
+526	526	¿Worn-Out Workbench
+527	0	Big Plumberry Tree
+528	0	¿Coneconut Tree
+529	0	Towel Rail [Black]
+530	0	Towel Rail [Purple]
+531	0	Towel Rail [Pink]
+532	532	Straw Bedding
+533	0	Towel Rail [Red]
+534	0	Towel Rail [Green]
+535	0	Towel Rail [Yellow]
+536	0	Towel Rail [Blue]
+537	0	¿Wooden Workbench
+538	0	¿Wooden Workbench
+539	0	¿Wooden Workbench
+540	540	Carpenter’s Workstation
+541	0	¿seed
+542	0	¿seed
+543	0	¿Deitree
+544	0	Bookcase [White]
+545	545	¿Builder’s Bell
+546	0	¿Builder’s Bell
+547	0	¿Builder’s Bell
+548	0	¿Builder’s Bell
+549	0	¿Builder’s Bell
+550	0	Bookcase [Black]
+551	0	Bookcase [Purple]
+552	552	Glass Floor
+553	553	Glass Door
+554	0	Big Cedar Tree
+555	555	Big Palm Tree
+556	0	¿Seedling
+557	0	Brazier
+558	0	Bookcase [Pink]
+559	0	Bookcase [Red]
+560	560	¿Cloth Rack
+561	561	Postbox
+562	0	¿Plant
+563	0	Bookcase [Green]
+564	0	Bookcase [Yellow]
+565	0	Bookcase [Blue]
+566	0	Chest Of Drawers [White]
+567	0	Chest Of Drawers [Black]
+568	0	¿Plant
+569	0	¿Aubergette
+570	0	¿Wheat
+571	0	Chest Of Drawers [Purple]
+572	572	Seaweed Stack
+573	0	Chest Of Drawers [Pink]
+574	0	Chest Of Drawers [Red]
+575	575	Spleenwort
+576	576	Mossy Stones
+577	577	Withered Sapling
+578	578	Big Withered Tree
+579	579	Withered Stump
+580	0	Chest Of Drawers [Green]
+581	0	Chest Of Drawers [Yellow]
+582	582	Residents’ Register
+583	583	Withered Tree
+584	584	Rocky Column
+585	585	Mossy Rock
+586	0	Chest Of Drawers [Blue]
+587	0	Grandfather Clock [White]
+588	0	Grandfather Clock [Black]
+589	0	Grandfather Clock [Purple]
+590	590	Frying Pan
+591	0	Grandfather Clock [Pink]
+592	592	Banana Basket
+593	0	Grandfather Clock [Red]
+594	594	Wooden Fencing
+595	595	Enormous Table
+596	596	Simple Stool
+597	597	Simple Small Table
+598	0	¿Pink
+599	0	¿pink
+600	0	Grandfather Clock [Green]
+601	601	Simple Table
+602	602	Simple Bench
+603	603	Woody Goody
+604	604	Stain Extractor
+605	605	Jack-o’-Lantern
+606	606	¿Kilrn
+607	607	Fan Fern
+608	608	Gladiolus
+609	0	Grandfather Clock [Yellow]
+610	0	Grandfather Clock [Blue]
+611	0	Clover Carving [White]
+612	0	Book of Blue Prints
+613	0	Clover Carving [Black]
+614	0	Clover Carving [Purple]
+615	615	Curtain
+616	0	¿Plant
+617	0	¿Plant
+618	0	¿Plant
+619	0	¿Plant
+620	0	¿Plant
+621	621	Scarecrow
+622	622	Broken Track
+623	623	Spider Web
+624	0	Clover Carving [Pink]
+625	0	Vault Bracket
+626	626	Community Chest
+627	0	0
+628	0	Colossal Chest
+629	629	Haystack
+630	630	Stained-Glass Window Arch
+631	631	Stained-Glass Window Midsection
+632	632	Stained-Glass Window Sill
+633	633	Altar
+634	634	Candle
+635	635	Pub Sign
+636	636	Ornamental Spears
+637	0	Clover Carving [Green]
+638	638	Rope
+639	639	Fancy Bench
+640	0	Clover Carving [Yellow]
+641	0	Clover Carving [Blue]
+642	642	Sliding Door
+643	643	Watchfire
+644	0	Wooden Fortification [Green]
+645	0	Clover Carving [Red]
+646	646	Paper Window
+647	0	Curtain
+648	0	¿seed
+649	0	¿seed
+650	0	¿seed
+651	0	¿seed
+652	0	¿Dead Plant
+653	0	Sleek Shelf [White]
+654	0	Picket Fencing [White]
+655	0	Sleek Shelf [Black]
+656	0	Sleek Shelf [Purple]
+657	0	Sleek Shelf [Pink]
+658	0	0
+659	0	Wooden Toilet [White]
+660	660	Mud-Brick Wall Rubble
+661	0	Wooden Toilet [Black]
+662	0	Wooden Toilet [Purple]
+663	0	Wooden Toilet [Pink]
+664	0	Wooden Toilet [Red]
+665	0	Wooden Toilet [Green]
+666	0	Wooden Toilet [Yellow]
+667	0	Wooden Toilet [Blue]
+668	0	¿Wheatgrass
+669	0	Wheatgrass
+670	0	Sleek Shelf [Red]
+671	0	Sleek Shelf [Green]
+672	0	Sleek Shelf [Yellow]
+673	0	Sleek Shelf [Blue]
+674	674	Täbel Lâmpe
+675	0	Simple Bed [White]
+676	0	Simple Bed [Black]
+677	0	Simple Bed [Purple]
+678	0	Simple Bed [Pink]
+679	0	Simple Bed [Red]
+680	0	Simple Bed [Green]
+681	0	Simple Bed [Yellow]
+682	0	Simple Bed [Blue]
+683	0	Roof Tiling [White]
+684	0	Roof Tiling [Black]
+685	0	Roof Tiling [Purple]
+686	0	Roof Tiling [Pink]
+687	0	Roof Tiling [Red]
+688	0	Roof Tiling [Green]
+689	0	Roof Tiling [Yellow]
+690	0	Roof Tiling [Blue]
+691	0	Pitched Tiling [White]
+692	0	Pitched Tiling [Black]
+693	0	Pitched Tiling [Purple]
+694	0	Pitched Tiling [Pink]
+695	0	Pitched Tiling [Red]
+696	0	Pitched Tiling [Green]
+697	0	Pitched Tiling [Yellow]
+698	0	Pitched Tiling [Blue]
+699	0	Outer Corner Tiling [White]
+700	0	Outer Corner Tiling [Black]
+701	0	Outer Corner Tiling [Purple]
+702	0	Outer Corner Tiling [Pink]
+703	0	Outer Corner Tiling [Red]
+704	0	Outer Corner Tiling [Green]
+705	0	Outer Corner Tiling [Yellow]
+706	0	Outer Corner Tiling [Blue]
+707	0	Inner Corner Tiling [White]
+708	0	Inner Corner Tiling [Black]
+709	0	Inner Corner Tiling [Purple]
+710	0	Inner Corner Tiling [Pink]
+711	0	Inner Corner Tiling [Red]
+712	0	Inner Corner Tiling [Green]
+713	0	Inner Corner Tiling [Yellow]
+714	0	Inner Corner Tiling [Blue]
+715	0	Tiled Window [White]
+716	0	Tiled Window [Black]
+717	0	Tiled Window [Purple]
+718	0	Tiled Window [Pink]
+719	0	Tiled Window [Red]
+720	0	Tiled Window [Green]
+721	0	Tiled Window [Yellow]
+722	0	Tiled Window [Blue]
+723	0	Magic Door [White]
+724	0	Magic Door [Black]
+725	0	Magic Door [Purple]
+726	0	Magic Door [Pink]
+727	0	Magic Door [Red]
+728	0	Magic Door [Green]
+729	0	Magic Door [Yellow]
+730	0	Magic Door [Blue]
+731	0	Big Table [White]
+732	0	Big Table [Black]
+733	0	Big Table [Purple]
+734	0	Big Table [Pink]
+735	0	Big Table [Red]
+736	0	Big Table [Green]
+737	0	Big Table [Yellow]
+738	0	Big Table [Blue]
+739	0	Dining Table [White]
+740	0	Dining Table [Black]
+741	0	Dining Table [Purple]
+742	0	Dining Table [Pink]
+743	0	Dining Table [Red]
+744	0	Dining Table [Green]
+745	0	Dining Table [Yellow]
+746	0	Dining Table [Blue]
+747	0	Wooden Stool [White]
+748	0	Wooden Stool [Black]
+749	0	Wooden Stool [Purple]
+750	0	Wooden Stool [Pink]
+751	0	Wooden Stool [Red]
+752	0	Wooden Stool [Green]
+753	0	Wooden Stool [Yellow]
+754	0	Wooden Stool [Blue]
+755	0	Comfy Stool [White]
+756	0	Comfy Stool [Black]
+757	0	Comfy Stool [Purple]
+758	0	Comfy Stool [Pink]
+759	0	Comfy Stool [Red]
+760	0	Comfy Stool [Green]
+761	0	Comfy Stool [Yellow]
+762	0	Comfy Stool [Blue]
+763	0	Decorative Drapery [White]
+764	0	Decorative Drapery [Black]
+765	0	Decorative Drapery [Purple]
+766	0	Decorative Drapery [Pink]
+767	0	Decorative Drapery [Red]
+768	0	Decorative Drapery [Green]
+769	0	Decorative Drapery [Yellow]
+770	0	Decorative Drapery [Blue]
+771	0	Rose [White]
+772	0	Rose [Black]
+773	0	Rose [Purple]
+774	0	Rose [Pink]
+775	0	Rose [Red]
+776	0	Rose [Green]
+777	0	Rose [Yellow]
+778	0	Rose [Blue]
+779	0	Curtain (open) [White]
+780	0	Curtain (open) [Black]
+781	0	Curtain (open) [Purple]
+782	0	Curtain (open) [Pink]
+783	0	Curtain (open) [Red]
+784	0	Curtain (open) [Green]
+785	0	Curtain (open) [Yellow]
+786	0	Curtain (open) [Blue]
+787	0	Curtain (tied) [White]
+788	0	Curtain (tied) [Black]
+789	0	Curtain (tied) [Purple]
+790	0	Curtain (tied) [Pink]
+791	0	Curtain (tied) [Red]
+792	0	Curtain (tied) [Green]
+793	0	Curtain (tied) [Yellow]
+794	0	Curtain (tied) [Blue]
+795	0	¿Coralily
+796	0	Daffodaisy
+797	0	¿Milkblossom
+798	0	0
+799	0	0
+800	800	Classical Column Capital
+801	0	¿Deitree
+802	0	¿Deitree
+803	803	¿Deitree Blue
+804	804	Basic Bathtub
+805	0	0
+806	0	0
+807	0	¿Deitree
+808	808	Tinting Tun
+809	809	Grand Piano
+810	0	0
+811	0	0
+812	0	0
+813	813	Blackbell
+814	814	Purplotus
+815	815	Scarletulip
+816	816	Emeraldahlia
+817	817	Ultramarose
+818	0	0
+819	0	0
+820	0	Big Rock
+821	0	Big Plumberry Tree
+822	0	0
+823	823	Simple Door
+824	0	Picket Gate
+825	825	Saloon Door
+826	826	Cocktail Shaker
+827	827	Keg Counter
+828	828	Lantern
+829	829	¿Activator
+830	830	Crash Cart
+831	831	Metal Minecart
+832	0	¿Ball
+833	0	0
+834	0	0
+835	0	¿Null
+836	836	Basic Bridge
+837	0	0
+838	0	0
+839	0	¿Deitree Planter
+840	0	Drapery Door [White]
+841	0	Drapery Door [Black]
+842	0	Drapery Door [Purple]
+843	0	Drapery Door [Pink]
+844	0	Drapery Door [Red]
+845	0	Drapery Door [Green]
+846	0	Drapery Door [Yellow]
+847	0	Drapery Door [Blue]
+848	0	Wall Hanging [White]
+849	0	Wall Hanging [Black]
+850	0	Wall Hanging [Purple]
+851	0	Wall Hanging [Pink]
+852	0	Wall Hanging [Red]
+853	0	Wall Hanging [Green]
+854	0	Wall Hanging [Yellow]
+855	0	Wall Hanging [Blue]
+856	0	Comfy Sofa [White]
+857	0	Comfy Sofa [Black]
+858	0	Comfy Sofa [Purple]
+859	0	Comfy Sofa [Pink]
+860	0	Comfy Sofa [Red]
+861	0	Comfy Sofa [Green]
+862	0	Comfy Sofa [Yellow]
+863	0	Comfy Sofa [Blue]
+864	0	Bunting [White]
+865	0	Bunting [Black]
+866	0	Bunting [Purple]
+867	0	Bunting [Pink]
+868	0	Bunting [Red]
+869	0	Bunting [Green]
+870	0	Bunting [Yellow]
+871	0	Bunting [Blue]
+872	0	Awning [White]
+873	0	Awning [Black]
+874	0	Awning [Purple]
+875	0	Awning [Pink]
+876	0	Awning [Red]
+877	0	Awning [Green]
+878	0	Awning [Yellow]
+879	0	Awning [Blue]
+880	0	Diagonal Fencing [White]
+881	0	Diagonal Fencing [Black]
+882	0	Diagonal Fencing [Purple]
+883	0	Diagonal Fencing [Pink]
+884	0	Diagonal Fencing [Red]
+885	0	Diagonal Fencing [Green]
+886	0	Diagonal Fencing [Yellow]
+887	0	Diagonal Fencing [Blue]
+888	0	Sunbrella [White]
+889	0	Sunbrella [Black]
+890	0	Sunbrella [Purple]
+891	0	Sunbrella [Pink]
+892	0	Sunbrella [Red]
+893	0	Sunbrella [Green]
+894	0	Sunbrella [Yellow]
+895	0	Sunbrella [Blue]
+896	0	Deckchair [White]
+897	0	Deckchair [Black]
+898	0	Deckchair [Purple]
+899	0	Deckchair [Pink]
+900	0	Deckchair [Red]
+901	0	Deckchair [Green]
+902	0	Deckchair [Yellow]
+903	0	Deckchair [Blue]
+904	0	Comfy Cushion [White]
+905	0	Comfy Cushion [Black]
+906	0	Comfy Cushion [Purple]
+907	0	Comfy Cushion [Pink]
+908	0	Comfy Cushion [Red]
+909	0	Comfy Cushion [Green]
+910	0	Comfy Cushion [Yellow]
+911	0	Comfy Cushion [Blue]
+912	0	Wooden Gate [White]
+913	0	Wooden Gate [Black]
+914	0	Wooden Gate [Purple]
+915	0	Wooden Gate [Pink]
+916	0	Wooden Gate [Red]
+917	0	Wooden Gate [Green]
+918	0	Wooden Gate [Yellow]
+919	0	Wooden Gate [Blue]
+920	0	Small Table [White]
+921	0	Small Table [Black]
+922	0	Small Table [Purple]
+923	0	Small Table [Pink]
+924	0	Small Table [Red]
+925	0	Small Table [Green]
+926	0	Small Table [Yellow]
+927	0	Small Table [Blue]
+928	928	Nameplate
+929	0	¿Minimedal
+930	930	Wooden Doormat
+931	931	Stone Doormat
+932	932	Coral
+933	933	Colossal Coral
+934	934	¿Activator
+935	935	¿Activator
+936	0	King-Sized Bed [White]
+937	0	King-Sized Bed [Black]
+938	0	King-Sized Bed [Purple]
+939	0	King-Sized Bed [Pink]
+940	0	King-Sized Bed [Red]
+941	0	King-Sized Bed [Green]
+942	0	King-Sized Bed [Yellow]
+943	0	King-Sized Bed [Blue]
+944	0	Small-Scale Soldier [White]
+945	0	Small-Scale Soldier [Black]
+946	0	Small-Scale Soldier [Purple]
+947	0	Small-Scale Soldier [Pink]
+948	0	Small-Scale Soldier [Red]
+949	0	Small-Scale Soldier [Green]
+950	0	Small-Scale Soldier [Yellow]
+951	0	Small-Scale Soldier [Blue]
+952	0	Wooden Steps [White]
+953	0	Wooden Steps [Black]
+954	0	Wooden Steps [Purple]
+955	0	Wooden Steps [Pink]
+956	0	Wooden Steps [Red]
+957	0	Wooden Steps [Green]
+958	0	Wooden Steps [Yellow]
+959	0	Wooden Steps [Blue]
+960	0	0
+961	0	0
+962	0	0
+963	0	0
+964	0	0
+965	965	Burning Rock
+966	0	0
+967	0	¿Null
+968	0	¿Null
+969	0	¿Null
+970	0	¿Null
+971	0	¿Null
+972	0	¿Null
+973	0	¿Null
+974	0	¿Null
+975	0	¿Null
+976	0	¿Null
+977	0	¿Null
+978	0	¿Null
+979	0	0
+980	0	¿Null
+981	0	¿Null
+982	0	Cell Doors
+983	0	Simple Doors
+984	984	¿bag
+985	0	Big Palm Tree
+986	0	Cotton Plant
+987	0	Fibrous Fern
+988	988	¿deitree bulb
+989	0	¿Null
+990	0	0
+991	991	Sluice Gate
+992	992	Siltstone Column Capital
+993	993	Siltstone Column Midsection
+994	994	Siltstone Column Pedestal
+995	0	0
+996	0	0
+997	0	0
+998	998	Golden Brazier
+999	0	0
+1000	1000	Stone Handrail
+1001	1001	Wooden Handrail
+1002	1002	¿Wooden Workbench
+1003	1003	Smashing Sign
+1004	0	Slime Balloons
+1005	0	¿deitree bulb
+1006	1006	Sideways-Pointing Puller
+1007	1007	Upwards-Pointing Puller
+1008	1008	Downwards-Pointing Puller
+1009	0	0
+1010	0	0
+1011	1011	First Aid Kit
+1012	1012	¿Banana Peel
+1013	0	0
+1014	1014	Helm
+1015	1015	Slime Light
+1016	1016	King Slime Light
+1017	1017	Slimy Eye
+1018	1018	Slimy Mouth
+1019	1019	¿Teleportal
+1020	1020	Big Snowy Cedar Tree
+1021	1021	Sideways-Pointing Pusher
+1022	1022	Upwards-Pointing Pusher
+1023	1023	Downwards-Pointing Pusher
+1024	0	0
+1025	1025	Dartboard
+1026	0	¿Null
+1027	0	¿Null
+1028	0	0
+1029	0	0
+1030	0	0
+1031	0	0
+1032	0	0
+1033	1033	Deckchair
+1034	0	0
+1035	0	Tattered Standard
+1036	0	0
+1037	1037	Banner of Hargon
+1038	0	0
+1039	0	0
+1040	0	0
+1041	0	0
+1042	1042	Incense Burner
+1043	1043	Zap Trap
+1044	1044	Zoompoline
+1045	1045	Silver Birch Tree
+1046	0	0
+1047	0	0
+1048	0	Scarecrow
+1049	0	0
+1050	0	0
+1051	0	Simple Supper Set [White]
+1052	0	Simple Supper Set [Black]
+1053	0	Simple Supper Set [Purple]
+1054	0	Simple Supper Set [Pink]
+1055	0	Simple Supper Set [Red]
+1056	0	Simple Supper Set [Green]
+1057	0	Simple Supper Set [Yellow]
+1058	0	Simple Supper Set [Blue]
+1059	0	¿Null
+1060	0	¿Pink bulb
+1061	0	0
+1062	1062	Sunbrella
+1063	1063	Connecting Couch Left
+1064	0	Connecting Couch Midsection
+1065	0	Connecting Couch Right
+1066	0	Connecting Couch Corner
+1067	0	Woöden Lampe [White]
+1068	0	Woöden Lampe [Black]
+1069	0	Woöden Lampe [Purple]
+1070	0	Woöden Lampe [Pink]
+1071	0	Woöden Lampe [Red]
+1072	0	Woöden Lampe [Green]
+1073	0	Woöden Lampe [Yellow]
+1074	0	Woöden Lampe [Blue]
+1075	0	¿Stone Workbench
+1076	0	0
+1077	0	0
+1078	0	¿deitree bulb
+1079	1079	Rose Leaves
+1080	1080	Rose
+1081	1081	Blossoming Shrub
+1082	1082	Oversized Shrub
+1083	1083	Reeds
+1084	1084	Big Bramble
+1085	1085	Bramble
+1086	1086	Animal Bones
+1087	1087	Coneconut Tree
+1088	1088	Fiddleheads
+1089	1089	Glowdrop
+1090	1090	Blocky Branch
+1091	1091	Blocky Buttress Root
+1092	1092	Blocky Root
+1093	1093	Acorn
+1094	1094	Splashing Stone
+1095	1095	Horizontal Log
+1096	1096	Vertical Log
+1097	1097	Log Wall Corner
+1098	0	Vertical Log
+1099	1099	Flat Wooden Roofing
+1100	1100	Column Crown
+1101	1101	Rustic Door
+1102	1102	Drapery Door
+1103	1103	Brick Border
+1104	0	0
+1105	1105	Plank Pathway
+1106	0	0
+1107	1107	Stepping Stones
+1108	1108	Corner Stones
+1109	1109	Ceramic Sconce
+1110	1110	Wall Hanging
+1111	1111	Framed Foliage
+1112	1112	Bunting
+1113	1113	Cloth Sacks
+1114	1114	Rustic Desk
+1115	1115	Rustic Bed
+1116	1116	Coffer
+1117	1117	Planter
+1118	0	Planter
+1119	1119	Potage Pot
+1120	1120	Medicinal Mortar
+1121	1121	Swing
+1122	1122	Firewood
+1123	1123	Farming Tools
+1124	1124	Sack of Wheat
+1125	0	Haystack
+1126	1126	Stackable Drackyma
+1127	0	0
+1128	0	0
+1129	0	0
+1130	1130	Pebbles
+1131	1131	Splinters
+1132	0	0
+1133	1133	Magic Outcrop
+1134	1134	Knight Oddments
+1135	0	0
+1136	0	0
+1137	1137	Silver Birch Stump
+1138	1138	Cannonball
+1139	1139	Wooden Grating
+1140	1140	Cell Wall
+1141	1141	Swabbing Tools
+1142	1142	Porthole
+1143	0	0
+1144	1144	¿Builder’s Workbench
+1145	0	¿Builder’s Workbench
+1146	0	¿Builder’s Workbench
+1147	0	¿Wooden Workbench
+1148	0	¿Stone Workbench
+1149	0	0
+1150	1150	Wizard’s Workbench
+1151	0	¿Null
+1152	0	¿Null
+1153	0	Terraforma Tiles
+1154	1154	Cactail
+1155	1155	Silver Birch Sapling
+1156	1156	Silver Birch Tree
+1157	1157	Big Silver Birch Tree
+1158	1158	Pitched Wooden Roofing
+1159	1159	Wooden Outer Corner Roofing
+1160	1160	Wooden Inner Corner Roofing
+1161	1161	Wooden Roof Window
+1162	1162	Wooden Roof Ridge
+1163	0	¿Null
+1164	0	¿Null
+1165	0	¿Null
+1166	0	0
+1167	0	0
+1168	0	¿Boat
+1169	1169	¿Naviglobe
+1170	0	0
+1171	0	0
+1172	0	0
+1173	0	0
+1174	1174	Clam Shell
+1175	0	Plumberry Tree
+1176	0	Plumberry Tree
+1177	0	Plumberry Tree
+1178	0	Plumberry Tree
+1179	0	Plumberry Tree
+1180	0	Plumberry Tree
+1181	0	Plumberry Tree
+1182	0	Plumberry Tree
+1183	0	Plumberry Tree
+1184	1184	Picture Frame
+1185	0	Picture Frame
+1186	0	Picture Frame
+1187	0	Picture Frame
+1188	0	Picture Frame
+1189	0	Picture Frame
+1190	0	Picture Frame
+1191	0	Picture Frame
+1192	0	Picture Frame
+1193	0	Picture Frame
+1194	0	¿Null
+1195	0	¿Naviglobe
+1196	0	¿Naviglobe
+1197	0	¿Naviglobe
+1198	0	¿Naviglobe
+1199	0	¿Naviglobe
+1200	0	¿Naviglobe
+1201	0	¿Naviglobe
+1202	0	¿Naviglobe
+1203	0	¿Naviglobe
+1204	0	¿Naviglobe
+1205	0	¿Naviglobe
+1206	0	¿Naviglobe
+1207	0	¿Naviglobe
+1208	0	¿Naviglobe
+1209	0	¿Naviglobe
+1210	0	¿Naviglobe
+1211	0	¿Naviglobe
+1212	0	¿Naviglobe
+1213	0	¿Naviglobe
+1214	0	¿Naviglobe
+1215	0	¿Naviglobe
+1216	0	¿Naviglobe
+1217	0	¿Naviglobe
+1218	0	¿Naviglobe
+1219	0	¿Naviglobe
+1220	0	¿Naviglobe
+1221	0	¿Naviglobe
+1222	0	¿Naviglobe
+1223	0	¿Naviglobe
+1224	0	¿Naviglobe
+1225	0	¿Naviglobe
+1226	0	¿Naviglobe
+1227	0	¿Naviglobe
+1228	0	¿Naviglobe
+1229	0	¿Naviglobe
+1230	0	¿Naviglobe
+1231	0	¿Naviglobe
+1232	0	¿Naviglobe
+1233	0	¿Naviglobe
+1234	0	0
+1235	0	0
+1236	0	Picture Frame
+1237	0	0
+1238	0	0
+1239	0	0
+1240	1240	Broken Vault Wall
+1241	1241	Mud-Brick Wall Rubble
+1242	0	0
+1243	1243	Border Boulder
+1244	1244	Big Border Boulder
+1245	1245	Fun-Sized Fountain
+1246	1246	Super Spouter
+1247	1247	Iron Stanchion
+1248	1248	Awning
+1249	1249	Playing Cards
+1250	1250	Carafe Collection
+1251	1251	Full Flagon
+1252	1252	Deep-Fried Feast
+1253	1253	Fungusbord
+1254	1254	Left Counter
+1255	0	Midsection Counter
+1256	0	Right Counter
+1257	0	Corner Counter
+1258	1258	Cooking Utensils
+1259	1259	Shower
+1260	1260	Stone Pot
+1261	0	0
+1262	1262	Wooden Toilet
+1263	1263	Babs’s Billboard
+1264	1264	Drum Kit
+1265	1265	Cello
+1266	1266	Price Tag
+1267	1267	Fancy Signpost
+1268	1268	Hexagonal Planter
+1269	1269	Shelf
+1270	0	0
+1271	1271	Cupboard
+1272	1272	Drawer
+1273	0	0
+1274	1274	Protective Planks
+1275	1275	Mining Tools
+1276	1276	¿Rockbomb
+1277	1277	Earth Pile
+1278	1278	Rock Pile
+1279	0	0
+1280	1280	Vineapple
+1281	1281	Shineapple
+1282	1282	Glumgus
+1283	1283	Massive Mushroom Stem
+1284	1284	Massive Mushroom Cap
+1285	1285	Supermassive Mushroom Cap
+1286	1286	Sizeable Stalagmite
+1287	1287	Stalagmites
+1288	1288	Adobe Window
+1289	0	Iron Stanchion
+1290	0	Iron Stanchion ·-
+1291	0	Iron Stanchion -·-
+1292	0	Beastly Burrow Broken
+1293	0	¿Null
+1294	0	Stickler’s Sifter
+1295	0	¿Arrow
+1296	0	Sconce
+1297	0	Steel Doors
+1298	0	0
+1299	0	0
+1300	1300	(Golden Lock)
+1301	0	0
+1302	1302	Firework Cannon
+1303	0	0
+1304	0	0
+1305	1305	Sharpened Log
+1306	0	Sharpened Log
+1307	0	Pestilential Nest
+1308	0	Pestilential Nest Broken
+1309	0	0
+1310	1310	Connecting Window
+1311	0	Connecting Window
+1312	0	Connecting Window
+1313	0	Connecting Window
+1314	0	Connecting Window
+1315	0	Connecting Window
+1316	0	Connecting Window
+1317	0	Connecting Window
+1318	0	Connecting Window
+1319	0	Connecting Window
+1320	0	Connecting Window
+1321	0	Connecting Window
+1322	0	Connecting Window
+1323	0	Connecting Window
+1324	0	Connecting Window
+1325	0	0
+1326	0	0
+1327	0	¿Null
+1328	1328	Hargon’s Standard
+1329	1329	Big Bolt
+1330	1330	Wooden Bracket
+1331	0	0
+1332	1332	Castle Corner Capital
+1333	1333	Castle Corner Midsection
+1334	1334	Castle Corner Foundation
+1335	1335	Castle Belvedere
+1336	1336	Large Castle Tile
+1337	1337	Carpeted Steps Midsection
+1338	1338	Carpeted Steps Left
+1339	1339	Castle Column Pedestal
+1340	1340	Portcullis
+1341	1341	Castle Window Arch
+1342	1342	Castle Window Midsection
+1343	1343	Castle Window Sill
+1344	1344	Castle Fanlight
+1345	1345	Stage Curtain Left
+1346	1346	Stage Curtain Right
+1347	1347	Throne Room Door
+1348	1348	Wall-Mounted Banner
+1349	1349	Brass Bracket
+1350	1350	Criss-Crossing Leadlight
+1351	1351	Four-Square Leadlight
+1352	1352	Plain-Pane Leadlight
+1353	1353	Light Box
+1354	1354	Royal Dining Table
+1355	1355	Portrait of a Princess
+1356	0	¿Wooden Pristine Workbench
+1357	1357	Broken Castle Wall
+1358	1358	Disfigured Throne
+1359	1359	Broken Citadel Wall
+1360	1360	Broken Stone Wall
+1361	1361	Wooden Foundation
+1362	1362	Target Dummy
+1363	1363	Coffin
+1364	1364	Crock Pot
+1365	1365	Sponge Cake
+1366	1366	Unholy Altar
+1367	1367	Tainted Glass Arch
+1368	1368	Tainted Glass Midsection
+1369	1369	Tainted Glass Sill
+1370	1370	Folding Screen
+1371	1371	Crystal Ball
+1372	1372	Comfy Cushion
+1373	1373	Note
+1374	1374	Book
+1375	1375	Biblio-Pile
+1376	1376	Small-Scale Soldier
+1377	1377	Small-Scale Slime
+1378	1378	Map
+1379	1379	Emblematic Table
+1380	1380	Floating Flower Petals
+1381	1381	Spa Spout
+1382	1382	Bathing Stool
+1383	1383	Trampoline
+1384	0	0
+1385	0	0
+1386	1386	Banner of Erdrick
+1387	1387	Tattered Banner of Erdrick
+1388	1388	Burnt Branch
+1389	1389	Singed Shrub
+1390	1390	Torched Tree
+1391	0	0
+1392	0	0
+1393	0	0
+1394	1394	False Idol
+1395	1395	Guillotine
+1396	1396	Hargon’s Throne
+1397	1397	Pyramid Merlon
+1398	1398	Citadel Creature Carving
+1399	1399	Fiendish Face
+1400	1400	Peculiar Pillar
+1401	1401	Citadel Spear Symbol
+1402	1402	Citadeñ Cross Carving
+1403	1403	¿Minimedal
+1404	1404	¿Minimedal
+1405	0	0
+1406	1406	¿Moon Sigil
+1407	0	0
+1408	1408	¿Water Sigil
+1409	1409	¿Star Sigil
+1410	1410	¿Hammer Icon
+1411	0	Wooden Door
+1412	0	Pot
+1413	0	0
+1414	0	Colossal Coffer
+1415	0	Grandfather Clock
+1416	0	Filter Fountain
+1417	0	¿Tattered Banner of Erdrick
+1418	1418	Salutation Station
+1419	0	Connecting Counter
+1420	0	Long-Stemmed Rose [White]
+1421	0	Long-Stemmed Rose [Black]
+1422	0	Long-Stemmed Rose [Purple]
+1423	0	Long-Stemmed Rose [Pink]
+1424	0	Long-Stemmed Rose [Red]
+1425	0	Long-Stemmed Rose [Green]
+1426	0	Long-Stemmed Rose [Yellow]
+1427	0	Long-Stemmed Rose [Blue]
+1428	0	0
+1429	0	0
+1430	0	0
+1431	0	0
+1432	0	0
+1433	1433	Capsized Crate
+1434	0	0
+1435	1435	Simple Supper Set
+1436	0	¿Milkblossom
+1437	1437	Ropy Vertical Log
+1438	1438	Ropy Horizontal Log
+1439	0	0
+1440	0	0
+1441	0	0
+1442	0	0
+1443	0	Blackbell
+1444	0	Purplotus
+1445	0	Scarletulip
+1446	0	Emeraldahlia
+1447	0	Ultramarose
+1448	0	Light Box [White]
+1449	0	Light Box [Black]
+1450	0	Light Box [Purple]
+1451	0	Light Box [Pink]
+1452	0	Light Box [Red]
+1453	0	Light Box [Green]
+1454	0	Light Box [Yellow]
+1455	0	Light Box [Blue]
+1456	0	¿Stone Workbench
+1457	0	¿Stone Workbench
+1458	0	0
+1459	0	0
+1460	0	0
+1461	0	0
+1462	0	¿Orange Ball
+1463	0	¿Blue Ball
+1464	0	¿Yellow Ball
+1465	0	¿Green Ball
+1466	0	¿Red Ball
+1467	1467	Left Carpeted Steps
+1468	0	Right Carpeted Steps
+1469	1469	Brick Border Corner
+1470	0	0
+1471	0	Stackable Dracky
+1472	1472	Stackable Drackyma
+1473	1473	Stackable Drackolyte
+1474	1474	Pressure Plate
+1475	1475	Button
+1476	0	¿Altar
+1477	0	¿Stained Window Arch
+1478	0	¿Stained Window Midsection
+1479	0	¿Stained Window Sill
+1480	0	Window [White]
+1481	0	Window [Black]
+1482	0	Window [Purple]
+1483	0	Window [Pink]
+1484	0	Window [Red]
+1485	0	Window [Green]
+1486	0	Window [Yellow]
+1487	0	Window [Blue]
+1488	1488	Banner of Builder
+1489	0	Reeds
+1490	0	Old Note
+1491	0	¿Lock
+1492	0	Sewing Station
+1493	0	Horizontal Log Cap
+1494	0	Vertical Log Cap
+1495	0	Builder’s Workbench Lv0
+1496	0	Picket Gate [White]
+1497	0	Picket Gate [Black]
+1498	0	Picket Gate [Purple]
+1499	0	Picket Gate [Pink]
+1500	0	Picket Gate [Red]
+1501	0	Picket Gate [Green]
+1502	0	Picket Gate [Yellow]
+1503	0	Picket Gate [Blue]
+1504	0	Diagonal Fencing
+1505	0	Diagonal Fencing
+1506	0	Diagonal Fencing
+1507	0	Diagonal Fencing
+1508	0	Diagonal Fencing
+1509	0	Diagonal Fencing
+1510	0	Diagonal Fencing
+1511	0	Diagonal Fencing
+1512	0	Wooden Fencing [White]
+1513	0	Wooden Fencing [Black]
+1514	0	Wooden Fencing [Purple]
+1515	0	Wooden Fencing [Pink]
+1516	0	Wooden Fencing [Red]
+1517	0	Wooden Fencing [Green]
+1518	0	Wooden Fencing [Yellow]
+1519	0	Wooden Fencing [Blue]
+1520	0	Picket Fencing [White]
+1521	0	Picket Fencing [Black]
+1522	0	Picket Fencing [Purple]
+1523	0	Picket Fencing [Pink]
+1524	0	Picket Fencing [Red]
+1525	0	Picket Fencing [Green]
+1526	0	Picket Fencing [Yellow]
+1527	0	Picket Fencing [Blue]
+1528	0	Wooden Handrail [White]
+1529	0	Wooden Handrail [Black]
+1530	0	Wooden Handrail [Purple]
+1531	0	Wooden Handrail [Pink]
+1532	0	Wooden Handrail [Red]
+1533	0	Wooden Handrail [Green]
+1534	0	Wooden Handrail [Yellow]
+1535	0	Wooden Handrail [Blue]
+1536	0	Plank Pathway [White]
+1537	0	Plank Pathway [Black]
+1538	0	Plank Pathway [Purple]
+1539	0	Plank Pathway [Pink]
+1540	0	Plank Pathway [Red]
+1541	0	Plank Pathway [Green]
+1542	0	Plank Pathway [Yellow]
+1543	0	Plank Pathway [Blue]
+1544	0	¿White Block
+1545	0	¿White Block
+1546	0	¿White Block
+1547	0	¿White Block
+1548	0	¿White Block
+1549	0	¿White Block
+1550	0	¿White Block
+1551	0	¿White Block
+1552	0	¿White Block
+1553	0	¿White Block
+1554	0	¿White Block
+1555	0	¿White Block
+1556	0	¿White Block
+1557	0	¿White Block
+1558	0	¿White Block
+1559	0	¿White Block
+1560	0	¿White Block
+1561	0	¿White Block
+1562	0	¿White Block
+1563	0	¿White Block
+1564	0	¿White Block
+1565	0	¿White Block
+1566	0	¿White Block
+1567	0	¿White Block
+1568	0	¿White Block
+1569	0	¿White Block
+1570	0	¿White Block
+1571	0	¿White Block
+1572	0	¿White Block
+1573	0	¿White Block
+1574	0	¿White Block
+1575	0	¿White Block
+1576	0	Enormous Table [White]
+1577	0	Enormous Table [Black]
+1578	0	Enormous Table [Purple]
+1579	0	Enormous Table [Pink]
+1580	0	Enormous Table [Red]
+1581	0	Enormous Table [Green]
+1582	0	Enormous Table [Yellow]
+1583	0	Enormous Table [Blue]
+1584	0	Rustic Bed [White]
+1585	0	Rustic Bed [Black]
+1586	0	Rustic Bed [Purple]
+1587	0	Rustic Bed [Pink]
+1588	0	Rustic Bed [Red]
+1589	0	Rustic Bed [Green]
+1590	0	Rustic Bed [Yellow]
+1591	0	Rustic Bed [Blue]
+1592	0	Connecting Couch Midsection [White]
+1593	0	Connecting Couch Midsection [Black]
+1594	0	Connecting Couch Midsection [Purple]
+1595	0	Connecting Couch Midsection [Pink]
+1596	0	Connecting Couch Midsection [Red]
+1597	0	Connecting Couch Midsection [Green]
+1598	0	Connecting Couch Midsection [Yellow]
+1599	0	Connecting Couch Midsection [Blue]
+1600	0	Connecting Couch Left [White]
+1601	0	Connecting Couch Left [Black]
+1602	0	Connecting Couch Left [Purple]
+1603	0	Connecting Couch Left [Pink]
+1604	0	Connecting Couch Left [Red]
+1605	0	Connecting Couch Left [Green]
+1606	0	Connecting Couch Left [Yellow]
+1607	0	Connecting Couch Left [Blue]
+1608	0	Connecting Couch Right [White]
+1609	0	Connecting Couch Right [Black]
+1610	0	Connecting Couch Right [Purple]
+1611	0	Connecting Couch Right [Pink]
+1612	0	Connecting Couch Right [Red]
+1613	0	Connecting Couch Right [Green]
+1614	0	Connecting Couch Right [Yellow]
+1615	0	Connecting Couch Right [Blue]
+1616	0	Connecting Couch Corner [White]
+1617	0	Connecting Couch Corner [Black]
+1618	0	Connecting Couch Corner [Purple]
+1619	0	Connecting Couch Corner [Pink]
+1620	0	Connecting Couch Corner [Red]
+1621	0	Connecting Couch Corner [Green]
+1622	0	Connecting Couch Corner [Yellow]
+1623	0	Connecting Couch Corner [Blue]
+1624	0	Carpented Steps Midsection [White]
+1625	0	Carpented Steps Midsection [Black]
+1626	0	Carpented Steps Midsection [Purple]
+1627	0	Carpented Steps Midsection [Pink]
+1628	0	Carpented Steps Midsection [Red]
+1629	0	Carpented Steps Midsection [Green]
+1630	0	Carpented Steps Midsection [Yellow]
+1631	0	Carpented Steps Midsection [Blue]
+1632	0	Carpented Steps Right [White]
+1633	0	Carpented Steps Right [Black]
+1634	0	Carpented Steps Right [Purple]
+1635	0	Carpented Steps Right [Pink]
+1636	0	Carpented Steps Right [Red]
+1637	0	Carpented Steps Right [Green]
+1638	0	Carpented Steps Right [Yellow]
+1639	0	Carpented Steps Right [Blue]
+1640	0	Carpented Steps Left [White]
+1641	0	Carpented Steps Left [Black]
+1642	0	Carpented Steps Left [Purple]
+1643	0	Carpented Steps Left [Pink]
+1644	0	Carpented Steps Left [Red]
+1645	0	Carpented Steps Left [Green]
+1646	0	Carpented Steps Left [Yellow]
+1647	0	Carpented Steps Left [Blue]
+1648	0	Stage Curtain Left [White]
+1649	0	Stage Curtain Left [Black]
+1650	0	Stage Curtain Left [Purple]
+1651	0	Stage Curtain Left [Pink]
+1652	0	Stage Curtain Left [Red]
+1653	0	Stage Curtain Left [Green]
+1654	0	Stage Curtain Left [Yellow]
+1655	0	Stage Curtain Left [Blue]
+1656	0	Stage Curtain Right [White]
+1657	0	Stage Curtain Right [Black]
+1658	0	Stage Curtain Right [Purple]
+1659	0	Stage Curtain Right [Pink]
+1660	0	Stage Curtain Right [Red]
+1661	0	Stage Curtain Right [Green]
+1662	0	Stage Curtain Right [Yellow]
+1663	0	Stage Curtain Right [Blue]
+1664	0	Book [White]
+1665	0	Book [Black]
+1666	0	Book [Purple]
+1667	0	Book [Pink]
+1668	0	Book [Red]
+1669	0	Book [Green]
+1670	0	Book [Yellow]
+1671	0	Book [Blue]
+1672	0	¿Book [White]
+1673	0	¿Book [Black]
+1674	0	¿Book [Purple]
+1675	0	¿Book [Pink]
+1676	0	¿Book [Red]
+1677	0	¿Book [Green]
+1678	0	¿Book [Yellow]
+1679	0	¿Book [Blue]
+1680	0	Biblio-Pile [White]
+1681	0	Biblio-Pile [Black]
+1682	0	Biblio-Pile [Purple]
+1683	0	Biblio-Pile [Pink]
+1684	0	Biblio-Pile [Red]
+1685	0	Biblio-Pile [Green]
+1686	0	Biblio-Pile [Yellow]
+1687	0	Biblio-Pile [Blue]
+1688	0	Pot Plant [White]
+1689	0	Pot Plant [Black]
+1690	0	Pot Plant [Purple]
+1691	0	Pot Plant [Pink]
+1692	0	Pot Plant [Red]
+1693	0	Pot Plant [Green]
+1694	0	Pot Plant [Yellow]
+1695	0	Pot Plant [Blue]
+1696	0	Nameplate [White]
+1697	0	Nameplate [Black]
+1698	0	Nameplate [Purple]
+1699	0	Nameplate [Pink]
+1700	0	Nameplate [Red]
+1701	0	Nameplate [Green]
+1702	0	Nameplate [Yellow]
+1703	0	Nameplate [Blue]
+1704	0	Picture Frame [White]
+1705	0	Picture Frame [Black]
+1706	0	Picture Frame [Purple]
+1707	0	Picture Frame [Pink]
+1708	0	Picture Frame [Red]
+1709	0	Picture Frame [Green]
+1710	0	Picture Frame [Yellow]
+1711	0	Picture Frame [Blue]
+1712	0	Picture Frame [White]
+1713	0	Picture Frame [Black]
+1714	0	Picture Frame [Purple]
+1715	0	Picture Frame [Pink]
+1716	0	Picture Frame [Red]
+1717	0	Picture Frame [Green]
+1718	0	Picture Frame [Yellow]
+1719	0	Picture Frame [Blue]
+1720	0	Picture Frame [White]
+1721	0	Picture Frame [Black]
+1722	0	Picture Frame [Purple]
+1723	0	Picture Frame [Pink]
+1724	0	Picture Frame [Red]
+1725	0	Picture Frame [Green]
+1726	0	Picture Frame [Yellow]
+1727	0	Picture Frame [Blue]
+1728	0	Picture Frame [White]
+1729	0	Picture Frame [Black]
+1730	0	Picture Frame [Purple]
+1731	0	Picture Frame [Pink]
+1732	0	Picture Frame [Red]
+1733	0	Picture Frame [Green]
+1734	0	Picture Frame [Yellow]
+1735	0	Picture Frame [Blue]
+1736	0	Picture Frame [White]
+1737	0	Picture Frame [Black]
+1738	0	Picture Frame [Purple]
+1739	0	Picture Frame [Pink]
+1740	0	Picture Frame [Red]
+1741	0	Picture Frame [Green]
+1742	0	Picture Frame [Yellow]
+1743	0	Picture Frame [Blue]
+1744	0	Picture Frame [White]
+1745	0	Picture Frame [Black]
+1746	0	Picture Frame [Purple]
+1747	0	Picture Frame [Pink]
+1748	0	Picture Frame [Red]
+1749	0	Picture Frame [Green]
+1750	0	Picture Frame [Yellow]
+1751	0	Picture Frame [Blue]
+1752	0	Picture Frame [White]
+1753	0	Picture Frame [Black]
+1754	0	Picture Frame [Purple]
+1755	0	Picture Frame [Pink]
+1756	0	Picture Frame [Red]
+1757	0	Picture Frame [Green]
+1758	0	Picture Frame [Yellow]
+1759	0	Picture Frame [Blue]
+1760	0	Picture Frame [White]
+1761	0	Picture Frame [Black]
+1762	0	Picture Frame [Purple]
+1763	0	Picture Frame [Pink]
+1764	0	Picture Frame [Red]
+1765	0	Picture Frame [Green]
+1766	0	Picture Frame [Yellow]
+1767	0	Picture Frame [Blue]
+1768	0	Picture Frame [White]
+1769	0	Picture Frame [Black]
+1770	0	Picture Frame [Purple]
+1771	0	Picture Frame [Pink]
+1772	0	Picture Frame [Red]
+1773	0	Picture Frame [Green]
+1774	0	Picture Frame [Yellow]
+1775	0	Picture Frame [Blue]
+1776	0	Picture Frame [White]
+1777	0	Picture Frame [Black]
+1778	0	Picture Frame [Purple]
+1779	0	Picture Frame [Pink]
+1780	0	Picture Frame [Red]
+1781	0	Picture Frame [Green]
+1782	0	Picture Frame [Yellow]
+1783	0	Picture Frame [Blue]
+1784	0	Grand Piano [White]
+1785	0	Grand Piano [Black]
+1786	0	Grand Piano [Purple]
+1787	0	Grand Piano [Pink]
+1788	0	Grand Piano [Red]
+1789	0	Grand Piano [Green]
+1790	0	Grand Piano [Yellow]
+1791	0	Grand Piano [Blue]
+1792	0	High Heels [White]
+1793	0	High Heels [Black]
+1794	0	High Heels [Purple]
+1795	0	High Heels [Pink]
+1796	0	High Heels [Red]
+1797	0	High Heels [Green]
+1798	0	High Heels [Yellow]
+1799	0	High Heels [Blue]
+1800	0	Distinguished Deckchair [White]
+1801	0	Distinguished Deckchair [Black]
+1802	0	Distinguished Deckchair [Purple]
+1803	0	Distinguished Deckchair [Pink]
+1804	0	Distinguished Deckchair [Red]
+1805	0	Distinguished Deckchair [Green]
+1806	0	Distinguished Deckchair [Yellow]
+1807	0	Distinguished Deckchair [Blue]
+1808	0	Classy Canopy [White]
+1809	0	Classy Canopy [Black]
+1810	0	Classy Canopy [Purple]
+1811	0	Classy Canopy [Pink]
+1812	0	Classy Canopy [Red]
+1813	0	Classy Canopy [Green]
+1814	0	Classy Canopy [Yellow]
+1815	0	Classy Canopy [Blue]
+1816	0	Fancy Signpost [White]
+1817	0	Fancy Signpost [Black]
+1818	0	Fancy Signpost [Purple]
+1819	0	Fancy Signpost [Pink]
+1820	0	Fancy Signpost [Red]
+1821	0	Fancy Signpost [Green]
+1822	0	Fancy Signpost [Yellow]
+1823	0	Fancy Signpost [Blue]
+1824	0	White Coral Colony
+1825	0	Black Coral Colony
+1826	0	Purple Coral Colony
+1827	0	Colossal Coral
+1828	0	Red Coral Colony
+1829	0	Green Coral Colony
+1830	0	Yellow Coral Colony
+1831	0	Blue Coral Colony
+1832	0	White Coral
+1833	0	Black Coral
+1834	0	Purple Coral
+1835	0	Coral
+1836	0	Red Coral
+1837	0	Green Coral
+1838	0	Yellow Coral
+1839	0	Blue Coral
+1840	0	Boogie Board
+1841	0	Chain
+1842	0	Seaweed
+1843	1843	Bell
+1844	0	0
+1845	0	Connecting Window NC [White]
+1846	0	Connecting Window NC [Black]
+1847	0	Connecting Window NC [Purple]
+1848	0	Connecting Window NC [Pink]
+1849	0	Connecting Window NC [Red]
+1850	0	Connecting Window NC [Green]
+1851	0	Connecting Window NC [Yellow]
+1852	0	Connecting Window NC [Blue]
+1853	0	Connecting Window CE1 [White]
+1854	0	Connecting Window CE1 [Black]
+1855	0	Connecting Window CE1 [Purple]
+1856	0	Connecting Window CE1 [Pink]
+1857	0	Connecting Window CE1 [Red]
+1858	0	Connecting Window CE1 [Green]
+1859	0	Connecting Window CE1 [Yellow]
+1860	0	Connecting Window CE1 [Blue]
+1861	0	Connecting Window CE2A [White]
+1862	0	Connecting Window CE2A [Black]
+1863	0	Connecting Window CE2A [Purple]
+1864	0	Connecting Window CE2A [Pink]
+1865	0	Connecting Window CE2A [Red]
+1866	0	Connecting Window CE2A [Green]
+1867	0	Connecting Window CE2A [Yellow]
+1868	0	Connecting Window CE2A [Blue]
+1869	0	Connecting Window CE2C_O0 [White]
+1870	0	Connecting Window CE2C_O0 [Black]
+1871	0	Connecting Window CE2C_O0 [Purple]
+1872	0	Connecting Window CE2C_O0 [Pink]
+1873	0	Connecting Window CE2C_O0 [Red]
+1874	0	Connecting Window CE2C_O0 [Green]
+1875	0	Connecting Window CE2C_O0 [Yellow]
+1876	0	Connecting Window CE2C_O0 [Blue]
+1877	0	Connecting Window CE2C_O1 [White]
+1878	0	Connecting Window CE2C_O1 [Black]
+1879	0	Connecting Window CE2C_O1 [Purple]
+1880	0	Connecting Window CE2C_O1 [Pink]
+1881	0	Connecting Window CE2C_O1 [Red]
+1882	0	Connecting Window CE2C_O1 [Green]
+1883	0	Connecting Window CE2C_O1 [Yellow]
+1884	0	Connecting Window CE2C_O1 [Blue]
+1885	0	Connecting Window CE3C_O0 [White]
+1886	0	Connecting Window CE3C_O0 [Black]
+1887	0	Connecting Window CE3C_O0 [Purple]
+1888	0	Connecting Window CE3C_O0 [Pink]
+1889	0	Connecting Window CE3C_O0 [Red]
+1890	0	Connecting Window CE3C_O0 [Green]
+1891	0	Connecting Window CE3C_O0 [Yellow]
+1892	0	Connecting Window CE3C_O0 [Blue]
+1893	0	Connecting Window CE3C_O1 [White]
+1894	0	Connecting Window CE3C_O1 [Black]
+1895	0	Connecting Window CE3C_O1 [Purple]
+1896	0	Connecting Window CE3C_O1 [Pink]
+1897	0	Connecting Window CE3C_O1 [Red]
+1898	0	Connecting Window CE3C_O1 [Green]
+1899	0	Connecting Window CE3C_O1 [Yellow]
+1900	0	Connecting Window CE3C_O1 [Blue]
+1901	0	Connecting Window CE3C_O2 [White]
+1902	0	Connecting Window CE3C_O2 [Black]
+1903	0	Connecting Window CE3C_O2 [Purple]
+1904	0	Connecting Window CE3C_O2 [Pink]
+1905	0	Connecting Window CE3C_O2 [Red]
+1906	0	Connecting Window CE3C_O2 [Green]
+1907	0	Connecting Window CE3C_O2 [Yellow]
+1908	0	Connecting Window CE3C_O2 [Blue]
+1909	0	Connecting Window CE3C_O3 [White]
+1910	0	Connecting Window CE3C_O3 [Black]
+1911	0	Connecting Window CE3C_O3 [Purple]
+1912	0	Connecting Window CE3C_O3 [Pink]
+1913	0	Connecting Window CE3C_O3 [Red]
+1914	0	Connecting Window CE3C_O3 [Green]
+1915	0	Connecting Window CE3C_O3 [Yellow]
+1916	0	Connecting Window CE3C_O3 [Blue]
+1917	0	Connecting Window CE4_O0 [White]
+1918	0	Connecting Window CE4_O0 [Black]
+1919	0	Connecting Window CE4_O0 [Purple]
+1920	0	Connecting Window CE4_O0 [Pink]
+1921	0	Connecting Window CE4_O0 [Red]
+1922	0	Connecting Window CE4_O0 [Green]
+1923	0	Connecting Window CE4_O0 [Yellow]
+1924	0	Connecting Window CE4_O0 [Blue]
+1925	0	Connecting Window CE4_O1 [White]
+1926	0	Connecting Window CE4_O1 [Black]
+1927	0	Connecting Window CE4_O1 [Purple]
+1928	0	Connecting Window CE4_O1 [Pink]
+1929	0	Connecting Window CE4_O1 [Red]
+1930	0	Connecting Window CE4_O1 [Green]
+1931	0	Connecting Window CE4_O1 [Yellow]
+1932	0	Connecting Window CE4_O1 [Blue]
+1933	0	Connecting Window CE4_O2C [White]
+1934	0	Connecting Window CE4_O2C [Black]
+1935	0	Connecting Window CE4_O2C [Purple]
+1936	0	Connecting Window CE4_O2C [Pink]
+1937	0	Connecting Window CE4_O2C [Red]
+1938	0	Connecting Window CE4_O2C [Green]
+1939	0	Connecting Window CE4_O2C [Yellow]
+1940	0	Connecting Window CE4_O2C [Blue]
+1941	0	Connecting Window CE4_O2A [White]
+1942	0	Connecting Window CE4_O2A [Black]
+1943	0	Connecting Window CE4_O2A [Purple]
+1944	0	Connecting Window CE4_O2A [Pink]
+1945	0	Connecting Window CE4_O2A [Red]
+1946	0	Connecting Window CE4_O2A [Green]
+1947	0	Connecting Window CE4_O2A [Yellow]
+1948	0	Connecting Window CE4_O2A [Blue]
+1949	0	Connecting Window CE4_O3 [White]
+1950	0	Connecting Window CE4_O3 [Black]
+1951	0	Connecting Window CE4_O3 [Purple]
+1952	0	Connecting Window CE4_O3 [Pink]
+1953	0	Connecting Window CE4_O3 [Red]
+1954	0	Connecting Window CE4_O3 [Green]
+1955	0	Connecting Window CE4_O3 [Yellow]
+1956	0	Connecting Window CE4_O3 [Blue]
+1957	0	Connecting Window CA [White]
+1958	0	Connecting Window CA [Black]
+1959	0	Connecting Window CA [Purple]
+1960	0	Connecting Window CA [Pink]
+1961	0	Connecting Window CA [Red]
+1962	0	Connecting Window CA [Green]
+1963	0	Connecting Window CA [Yellow]
+1964	0	Connecting Window CA [Blue]
+1965	1965	Legendary Line Art
+1966	0	0
+1967	0	0
+1968	0	0
+1969	0	0
+1970	0	0
+1971	1971	Dragon Quest Logo
+1972	1972	Ornamental Medicinal Herb
+1973	1973	Stackable Slime
+1974	0	¿White Block
+1975	0	Bigonia
+1976	1976	Ornamental Chimaera Wing
+1977	0	Stationary Statue
+1978	0	Stackable Slime [White]
+1979	0	Stackable Slime [Black]
+1980	0	Stackable Slime [Purple]
+1981	0	Stackable Slime [Pink]
+1982	0	Stackable Slime [Red]
+1983	0	Stackable Slime [Green]
+1984	0	Stackable Slime [Yellow]
+1985	0	Stackable Slime [Blue]
+1986	0	Noticeboard
+1987	0	Wooden Bracket [White]
+1988	0	Wooden Bracket [Black]
+1989	0	Wooden Bracket [Purple]
+1990	0	Wooden Bracket [Pink]
+1991	0	Wooden Bracket [Red]
+1992	0	Wooden Bracket [Green]
+1993	0	Wooden Bracket [Yellow]
+1994	0	Wooden Bracket [Blue]
+1995	0	¿White Block
+1996	0	¿White Block
+1997	0	¿White Block
+1998	0	¿White Block
+1999	0	¿White Block
+2000	0	¿White Block
+2001	0	¿White Block
+2002	0	¿White Block
+2003	0	Pixelated Protagonist
+2004	0	Pixelated Prince
+2005	0	Pixelated Princess
+2006	0	Iron Workbench Lv0
+2007	0	Iron Workbench Lv1
+2008	0	Iron Workbench Lv2
+2009	0	Iron Workbench Lv3
+2010	0	Iron Workbench Lv4
+2011	0	¿Deitree Planter ZERO
+2012	0	0
+2013	0	Magic Cannon
+2014	0	0
+2015	0	Crack Contraption
+2016	0	¿Deitree Remains
+2017	0	¿Deitree 1 2
+2018	0	¿Deitree 1 3
+2019	0	Flat Fancy Roofing
+2020	0	Pitched Fancy Roofing
+2021	0	Fancy Outer Corner Roofing
+2022	0	Fancy Inner Corner Roofing
+2023	0	Fancy Roof Window
+2024	0	Fancy Roof Ridge
+2025	0	Castle Wall Battlement
+2026	0	Castle Wall Buttress
+2027	0	Simple Door [White]
+2028	0	Simple Door [Black]
+2029	0	Simple Door [Purple]
+2030	0	Simple Door [Pink]
+2031	0	Simple Door [Red]
+2032	0	Simple Door [Green]
+2033	0	Simple Door [Yellow]
+2034	0	Simple Door [Blue]
+2035	0	Simple Door Double [White]
+2036	0	Simple Door Double [Black]
+2037	0	Simple Door Double [Purple]
+2038	0	Simple Door Double [Pink]
+2039	0	Simple Door Double [Red]
+2040	0	Simple Door Double [Green]
+2041	0	Simple Door Double [Yellow]
+2042	0	Simple Door Double [Blue]
+2043	0	Supersized Skull
+2044	0	Terrible Talon
+2045	0	Enormous Eyeball
+2046	0	0
+2047	0	Viewing Dome
+2048	0	Humongous Horn
+2049	0	Titanic Top Teeth
+2050	0	Big Bad Bottom Teeth
+2051	0	Plumberry Tree
+2052	0	Plumberry Tree
+2053	0	Plumberry Tree
+2054	0	Flat Fancy Roofing [White]
+2055	0	Flat Fancy Roofing [Black]
+2056	0	Flat Fancy Roofing [Purple]
+2057	0	Flat Fancy Roofing [Pink]
+2058	0	Flat Fancy Roofing [Red]
+2059	0	Flat Fancy Roofing [Green]
+2060	0	Flat Fancy Roofing [Yellow]
+2061	0	Flat Fancy Roofing [Blue]
+2062	0	Pitched Fancy Roofing [White]
+2063	0	Pitched Fancy Roofing [Black]
+2064	0	Pitched Fancy Roofing [Purple]
+2065	0	Pitched Fancy Roofing [Pink]
+2066	0	Pitched Fancy Roofing [Red]
+2067	0	Pitched Fancy Roofing [Green]
+2068	0	Pitched Fancy Roofing [Yellow]
+2069	0	Pitched Fancy Roofing [Blue]
+2070	0	Fancy Outer Corner Roofing [White]
+2071	0	Fancy Outer Corner Roofing [Black]
+2072	0	Fancy Outer Corner Roofing [Purple]
+2073	0	Fancy Outer Corner Roofing [Pink]
+2074	0	Fancy Outer Corner Roofing [Red]
+2075	0	Fancy Outer Corner Roofing [Green]
+2076	0	Fancy Outer Corner Roofing [Yellow]
+2077	0	Fancy Outer Corner Roofing [Blue]
+2078	0	Fancy Inner Corner Roofing [White]
+2079	0	Fancy Inner Corner Roofing [Black]
+2080	0	Fancy Inner Corner Roofing [Purple]
+2081	0	Fancy Inner Corner Roofing [Pink]
+2082	0	Fancy Inner Corner Roofing [Red]
+2083	0	Fancy Inner Corner Roofing [Green]
+2084	0	Fancy Inner Corner Roofing [Yellow]
+2085	0	Fancy Inner Corner Roofing [Blue]
+2086	0	Fancy Roof Window [White]
+2087	0	Fancy Roof Window [Black]
+2088	0	Fancy Roof Window [Purple]
+2089	0	Fancy Roof Window [Pink]
+2090	0	Fancy Roof Window [Red]
+2091	0	Fancy Roof Window [Green]
+2092	0	Fancy Roof Window [Yellow]
+2093	0	Fancy Roof Window [Blue]
+2094	0	Fancy Roof Ridge [White]
+2095	0	Fancy Roof Ridge [Black]
+2096	0	Fancy Roof Ridge [Purple]
+2097	0	Fancy Roof Ridge [Pink]
+2098	0	Fancy Roof Ridge [Red]
+2099	0	Fancy Roof Ridge [Green]
+2100	0	Fancy Roof Ridge [Yellow]
+2101	0	Fancy Roof Ridge [Blue]
+2102	0	0
+2103	0	Freakish Fin
+2104	0	Twisting Tail
+2105	2105	Activator
+2106	2106	Upwards-Pointing Activator
+2107	2107	Downwards-Pointing Activator
+2108	0	0
+2109	0	0
+2110	0	Pressure Plate [White]
+2111	0	Pressure Plate [Black]
+2112	0	Pressure Plate [Purple]
+2113	0	Pressure Plate [Pink]
+2114	0	Pressure Plate [Red]
+2115	0	Pressure Plate [Green]
+2116	0	Pressure Plate [Yellow]
+2117	0	Pressure Plate [Blue]
+2118	0	Activator [White]
+2119	0	Activator [Black]
+2120	0	Activator [Purple]
+2121	0	Activator [Pink]
+2122	0	Activator [Red]
+2123	0	Activator [Green]
+2124	0	Activator [Yellow]
+2125	0	Activator [Blue]
+2126	0	Button [White]
+2127	0	Button [Black]
+2128	0	Button [Purple]
+2129	0	Button [Pink]
+2130	0	Button [Red]
+2131	0	Button [Green]
+2132	0	Button [Yellow]
+2133	0	Button [Blue]
+2134	0	Upwards-Pointing Activator [White]
+2135	0	Upwards-Pointing Activator [Black]
+2136	0	Upwards-Pointing Activator [Purple]
+2137	0	Upwards-Pointing Activator [Pink]
+2138	0	Upwards-Pointing Activator [Red]
+2139	0	Upwards-Pointing Activator [Green]
+2140	0	Upwards-Pointing Activator [Yellow]
+2141	0	Upwards-Pointing Activator [Blue]
+2142	0	Downwards-Pointing Activator [White]
+2143	0	Downwards-Pointing Activator [Black]
+2144	0	Downwards-Pointing Activator [Purple]
+2145	0	Downwards-Pointing Activator [Pink]
+2146	0	Downwards-Pointing Activator [Red]
+2147	0	Downwards-Pointing Activator [Green]
+2148	0	Downwards-Pointing Activator [Yellow]
+2149	0	Downwards-Pointing Activator [Blue]
+2150	0	Infernal Workbench Lv0
+2151	0	Infernal Workbench Lv1
+2152	0	Infernal Workbench Lv2
+2153	0	Worn-Out Workbench
+2154	0	¿
+2155	0	Floating Fragments
+2156	0	Ramp
+2157	0	Blooming Poxyglove
+2158	0	Budding Poxyglove
+2159	0	Wide Vile Vines
+2160	0	Small Vile Vines
+2161	0	Long Vile Vines
+2162	0	¿Gold Erdrick Trophee
+2163	0	Snizz Snare
+2164	0	Woosh Widget
+2165	0	Vertical Log Cap
+2166	2166	¿Gold Star Trophy
+2167	2167	¿Silver Star Trophy
+2168	2168	¿Bronze Star Trophy
+2169	2169	¿Bronze Star Trophy 2
+2170	2170	¿Gold Trophee
+2171	2171	¿Silver Trophee
+2172	2172	¿Bronze Trophee
+2173	0	¿
+2174	0	¿
+2175	2175	Goldinoggin
+2176	316	Malroth’s Oaken Club
+2177	0	Orb of Heroes
+2178	0	Orb of Magic
+2179	0	Orb of Power
+2180	0	0
+2181	0	0
+2182	0	Ridge Tiling [White]
+2183	0	Ridge Tiling [Black]
+2184	0	Ridge Tiling [Purple]
+2185	0	Ridge Tiling [Pink]
+2186	0	Ridge Tiling [Red]
+2187	0	Ridge Tiling [Green]
+2188	0	Ridge Tiling [Yellow]
+2189	0	Ridge Tiling [Blue]
+2190	0	Question
+2191	0	Big Cedar Tree
+2192	0	Big Snowy Cedar
+2193	0	Big Silver Birch Tree
+2194	0	Wooden Grating [White]
+2195	0	Wooden Grating [Black]
+2196	0	Wooden Grating [Purple]
+2197	0	Wooden Grating [Pink]
+2198	0	Wooden Grating [Red]
+2199	0	Wooden Grating [Green]
+2200	0	Wooden Grating [Yellow]
+2201	0	Wooden Grating [Blue]
+2202	0	Ladder [White]
+2203	0	Ladder [Black]
+2204	0	Ladder [Purple]
+2205	0	Ladder [Pink]
+2206	0	Ladder [Red]
+2207	0	Ladder [Green]
+2208	0	Ladder [Yellow]
+2209	0	Ladder [Blue]
+2210	0	Citadel Bracket
+2211	0	Left Air Vent
+2212	0	Middle Air Vent
+2213	0	Right Air Vent
+2214	0	Individual Air Vent
+2215	0	Horizontal Pipe
+2216	0	Vertical Pipe
+2217	0	Bent Pipe Bottom Left
+2218	0	Bent Pipe Bottom Right
+2219	0	Bent Pipe Top Right
+2220	0	Bent Pipe Top Left
+2221	0	Joint Pipe Horizontal Top
+2222	0	Joint Pipe Horizontal Bottom
+2223	0	Cross Pipe
+2224	0	Storage Bay
+2225	0	Toppled Citadel Column
+2226	0	Citadel Column Pedestal
+2227	0	Citadel Column Midsection
+2228	0	Citadel Column Capital
+2229	0	Citadel Fanlight
+2230	0	Citadel Column Plinth
+2231	0	Citadel Corner Capital
+2232	0	Citadel Corner Midsection
+2233	0	Citadel Corner Foundation
+2234	0	Citadel Wall Battlement
+2235	0	Citadel Wall Buttress
+2236	0	Citadel Window Arch
+2237	0	Citadel Window Midsection
+2238	0	Citadel Window Sill
+2239	0	Citadel Merlon
+2240	0	Crowned Citadel Column
+2241	0	Joint Pipe Vertical Right
+2242	0	Joint Pipe Vertical Left
+2243	0	Citadel Belvedere
+2244	0	Rusty Wrecking Ball
+2245	0	Citadel Spike
+2246	0	Citadel Handrail
+2247	0	Citadel Coping
+2248	0	Citadel Capping
+2249	0	¿Star trophy
+2250	2250	Beacon of Erdrick
+2251	2251	Magnetic Block
+2252	0	¿Green Garden Tablet
+2253	0	¿Scarlet Sands Tablet
+2254	0	¿Cerulean Steppe Tablet
+2255	0	¿Sun Sigil Tablet
+2256	0	¿Soul Sigil Tablet
+2257	0	Ra’s Mirror
+2258	0	¿
+2259	0	¿Dead Plant
+2260	0	¿Dead Plant
+2261	0	¿Dead Plant
+2262	0	¿Dead Plant
+2263	0	¿Dead Plant
+2264	0	¿Dead Plant
+2265	0	¿Dead Plant on pole
+2266	0	¿Dead Plant
+2267	0	¿Dead Plant on pole
+2268	0	¿Dead Plant
+2269	0	¿Dead Plant
+2270	0	0
+2271	0	Forbidden Altar
+2272	0	¿Dead Plant
+2273	0	¿Dead Plant
+2274	0	¿Dead Plant
+2275	0	¿Dead Plant
+2276	0	¿Dead Plant
+2277	0	¿Dead Plant
+2278	0	¿Dead Plant
+2279	0	¿Dead Plant
+2280	2280	¿Gold Erdrick Trophee Red
+2281	2281	¿Gold Erdrick Trophee Gold
+2282	2282	¿Gold Erdrick Trophee Green
+2283	2283	¿Gold Erdrick Trophee Cyan
+2284	2284	¿Gold Erdrick Trophee Blue
+2285	2285	¿Gold Erdrick Trophee Dark Blue
+2286	2286	¿Gold Erdrick Trophee Purple
+2287	2287	¿Gold Erdrick Trophee Magenta
+2288	2288	¿Gold Erdrick Trophee Pink
+2289	2289	¿Gold Erdrick Trophee White
+2290	2290	¿Gold Erdrick Trophee Dark Red
+2291	0	¿Dead Plant
+2292	0	¿Dead Plant
+2293	0	¿Dead Plant
+2294	0	¿Dead Plant
+2295	0	¿Dead Plant
+2296	0	¿Dead Plant
+2297	0	¿Dead Plant
+2298	0	¿Dead Plant
+2299	0	¿Dead Plant
+2300	0	¿Dead Plant on pole
+2301	0	¿Dead Plant on pole
+2302	0	¿Dead Plant on pole
+2303	0	¿Dead Plant on pole
+2304	0	¿Dead Plant on pole
+2305	0	¿Dead Plant on pole
+2306	0	¿Dead Plant on pole
+2307	0	¿Dead Plant on pole
+2308	0	¿Dead Plant on pole
+2309	0	¿Dead Plant on pole
+2310	0	¿Dead Plant on pole
+2311	0	¿Dead Plant on pole
+2312	0	¿Dead Plant on pole
+2313	0	¿Dead Plant on pole
+2314	0	¿Dead Plant on pole
+2315	0	¿Dead Plant on pole
+2316	0	¿Dead Plant on pole
+2317	0	¿Dead Plant on pole
+2318	0	¿Dead Plant on pole
+2319	0	¿Dead Plant on pole
+2320	0	¿Dead Plant on pole
+2321	0	¿Dead Plant on pole
+2322	0	¿Dead Plant on pole
+2323	0	¿Dead Plant on pole
+2324	0	¿Dead Plant
+2325	0	¿Dead Plant
+2326	0	¿Dead Plant
+2327	0	¿Dead Plant
+2328	0	¿Dead Plant
+2329	0	¿Dead Plant
+2330	0	¿Dead Plant on pole
+2331	0	¿Dead Plant on pole
+2332	0	¿Dead Plant on pole
+2333	0	¿Dead Plant on pole
+2334	0	¿Dead Plant on pole
+2335	0	¿Dead Plant on pole
+2336	0	Goldinoggin
+2337	0	Downward-Pointing Vine Vines
+2338	0	Upward-Pointing Vine Vines
+2339	0	Vertical Vile Vines
+2340	0	¿Dead Plant
+2341	0	¿Dead Plant on pole
+2342	0	Babs Statue
+2343	0	¿
+2344	0	Fright Bulb
+2345	0	Hydrangea
+2346	0	Cactiball
+2347	0	Framed Flowers
+2348	0	Treasure Pile
+2349	0	Emblematic Clock
+2350	0	Supersized Steak Set
+2351	0	Fruity Parfait
+2352	0	Soup and Salad Set
+2353	0	Pot and Shot Set
+2354	0	Rockbomb Bed
+2355	0	Stuffed Spiked Hare
+2356	0	Fat Rat Signpost
+2357	0	Crested Viper Fountain
+2358	0	¿Dead Plant
+2359	0	¿Dead Plant on pole
+2360	0	Wisteria Crown
+2361	0	Wisteria Stem
+2362	0	Wisteria Root
+2363	0	Citadel Wall Rubble
+2364	0	Citadel Steps
+2365	0	¿
+2366	0	Rubber Ring
+2367	0	Comfy Killerpillar Head
+2368	0	Comfy Killerpillar Body
+2369	0	Comfy Killerpillar Tail
+2370	0	Sunflowers
+2371	0	Doors of Doom
+2372	0	Plumberry Tree
+2373	0	Meaty Marshy Mountain
+2374	0	Infernal Workbench
+2375	0	¿
+2376	0	¿
+2377	0	¿
+2378	0	Shelf [White]
+2379	0	Shelf [Black]
+2380	0	Shelf [Purple]
+2381	0	Shelf [Pink]
+2382	0	Shelf [Red]
+2383	0	Shelf [Green]
+2384	0	Shelf [Yellow]
+2385	0	Shelf [Blue]
+2386	0	Glass Door [White]
+2387	0	Glass Door [Black]
+2388	0	Glass Door [Purple]
+2389	0	Glass Door [Pink]
+2390	0	Glass Door [Red]
+2391	0	Glass Door [Green]
+2392	0	Glass Door [Yellow]
+2393	0	Glass Door [Blue]
+2394	0	Choo-Choo Train Carriage
+2395	0	Choo-Choo Train Engine
+2396	0	Bathing Stool [White]
+2397	0	Bathing Stool [Black]
+2398	0	Bathing Stool [Purple]
+2399	0	Bathing Stool [Pink]
+2400	0	Bathing Stool [Red]
+2401	0	Bathing Stool [Green]
+2402	0	Bathing Stool [Yellow]
+2403	0	Bathing Stool [Blue]
+2404	0	Castle Fanlight [White]
+2405	0	Castle Fanlight [Black]
+2406	0	Castle Fanlight [Purple]
+2407	0	Castle Fanlight [Pink]
+2408	0	Castle Fanlight [Red]
+2409	0	Castle Fanlight [Green]
+2410	0	Castle Fanlight [Yellow]
+2411	0	Castle Fanlight [Blue]
+2412	0	¿
+2413	0	¿
+2414	0	¿
+2415	0	0
+2416	0	¿Dead Plant
+2417	0	¿Dead Plant on pole
+2418	0	¿Seed
+2419	0	¿Seed on pole
+2420	0	0
+2421	0	Beacon of Erdrick
+2422	2422	Spaceship Corner Capital
+2423	2423	Spaceship Corner Midsection
+2424	2424	Spaceship Corner Foundation
+2425	2425	Spaceship Capital
+2426	2426	Reinforced Iron Corner
+2427	2427	Spaceship Foundation
+2428	0	Plumberry Tree
+2429	0	Plumberry Tree
+2430	0	Plumberry Tree
+2431	0	Plumberry Tree
+2432	0	Broken Vault Wall
+2433	0	Broken Masonry
+2434	0	Vault Bracket
+2435	0	¿
+2436	0	Coffin
+2437	0	Beacon of Erdrick
+2438	0	0
+2439	0	Plumberry Tree
+2440	0	¿
+2441	0	¿
+2442	0	¿
+2443	0	¿
+2444	0	Spaceship Corner Capital [White]
+2445	0	Spaceship Corner Capital [Black]
+2446	0	Spaceship Corner Capital [Purple]
+2447	0	Spaceship Corner Capital [Pink]
+2448	0	Spaceship Corner Capital [Red]
+2449	0	Spaceship Corner Capital [Green]
+2450	0	Spaceship Corner Capital [Yellow]
+2451	0	Spaceship Corner Capital [Blue]
+2452	0	Spaceship Corner Midsection [White]
+2453	0	Spaceship Corner Midsection [Black]
+2454	0	Spaceship Corner Midsection [Purple]
+2455	0	Spaceship Corner Midsection [Pink]
+2456	0	Spaceship Corner Midsection [Red]
+2457	0	Spaceship Corner Midsection [Green]
+2458	0	Spaceship Corner Midsection [Yellow]
+2459	0	Spaceship Corner Midsection [Blue]
+2460	0	Spaceship Corner Foundation [White]
+2461	0	Spaceship Corner Foundation [Black]
+2462	0	Spaceship Corner Foundation [Purple]
+2463	0	Spaceship Corner Foundation [Pink]
+2464	0	Spaceship Corner Foundation [Red]
+2465	0	Spaceship Corner Foundation [Green]
+2466	0	Spaceship Corner Foundation [Yellow]
+2467	0	Spaceship Corner Foundation [Blue]
+2468	0	Spaceship Capital [White]
+2469	0	Spaceship Capital [Black]
+2470	0	Spaceship Capital [Purple]
+2471	0	Spaceship Capital [Pink]
+2472	0	Spaceship Capital [Red]
+2473	0	Spaceship Capital [Green]
+2474	0	Spaceship Capital [Yellow]
+2475	0	Spaceship Capital [Blue]
+2476	0	Spaceship Foundation [White]
+2477	0	Spaceship Foundation [Black]
+2478	0	Spaceship Foundation [Purple]
+2479	0	Spaceship Foundation [Pink]
+2480	0	Spaceship Foundation [Red]
+2481	0	Spaceship Foundation [Green]
+2482	0	Spaceship Foundation [Yellow]
+2483	0	Spaceship Foundation [Blue]
+2484	0	Plumberry Tree
+2485	0	¿
+2486	0	¿
+2487	0	¿
+2488	0	¿
+2489	0	¿
+2490	0	Builder’s Bell
+2491	0	Brazier
+2492	0	Candlestick
+2493	0	Ice Lolly
+2494	0	Plumberry Tree
+2495	0	Plumberry Tree
+2496	0	Plumberry Tree
+2497	0	Plumberry Tree
+2498	0	Plumberry Tree
+2499	0	Great Sabrecat Statue
+2500	0	Knight Abhorrent Statue
+2501	0	Ghost Statue
+2502	0	Liquid Metal Soup
+2503	0	Merman Model
+2504	0	Medal King Slime’s Crown
+2505	0	Pocus Poppet Statue
+2506	0	Goodybag Statue
+2507	0	¿
+2508	0	Berserker Statue
+2509	0	Lush Leaves
+2510	0	¿Gold Lock
+2511	0	¿
+2512	0	Plumberry Tree
+2513	0	Plumberry Tree
+2514	0	¿
+2515	0	¿
+2516	0	¿
+2517	0	¿Ship
+2518	0	¿
+2519	0	¿
+2520	0	¿
+2521	0	¿
+2522	0	¿
+2523	0	Snowman
+2524	0	Plumberry Tree
+2525	0	Plumberry Tree
+2526	0	Plumberry Tree
+2527	0	Porched Window [White]
+2528	0	Porched Window [Black]
+2529	0	Porched Window [Purple]
+2530	0	Porched Window [Pink]
+2531	0	Porched Window [Red]
+2532	0	Porched Window [Green]
+2533	0	Porched Window [Yellow]
+2534	0	Porched Window [Blue]
+2535	0	Arched Window [White]
+2536	0	Arched Window [Black]
+2537	0	Arched Window [Purple]
+2538	0	Arched Window [Pink]
+2539	0	Arched Window [Red]
+2540	0	Arched Window [Green]
+2541	0	Arched Window [Yellow]
+2542	0	Arched Window [Blue]
+2543	0	Builder’s Workbench LvMAX
+2544	0	Plumberry Tree
+2545	0	Plumberry Tree
+2546	0	Plumberry Tree
+2547	0	Plumberry Tree
+2548	0	Rubber Ring [White]
+2549	0	Rubber Ring [Black]
+2550	0	Rubber Ring [Purple]
+2551	0	Rubber Ring [Pink]
+2552	0	Rubber Ring [Red]
+2553	0	Rubber Ring [Green]
+2554	0	Rubber Ring [Yellow]
+2555	0	Rubber Ring [Blue]
+2556	0	Slimespawn
+2557	0	Plumberry Tree
+2558	0	Plumberry Tree
+2559	0	Plumberry Tree
+2560	0	Plumberry Tree
+2561	0	Plumberry Tree
+2562	0	Plumberry Tree
+2563	0	Mason’s Workstation
+2564	0	¿Green Garden Tablet Lv1
+2565	0	¿Green Garden Tablet Lv2
+2566	0	¿Cerulean Steppe Tablet Lv1
+2567	0	¿Cerulean Steppe Tablet Lv2
+2568	0	¿Scarlet Sands Tablet Lv1
+2569	0	¿Scarlet Sands Tablet Lv2
+2570	0	Holyhock Sprout 
+2571	0	Holyhock Bud
+2572	0	Holyhock
+2573	0	¿Dead Plant
+2574	0	¿Dead Plant on pole
+2575	0	Leaves
+2576	0	¿
+2577	0	Plumberry Tree
+2578	0	Pet Bowl [White]
+2579	0	Pet Bowl [Black]
+2580	0	Pet Bowl [Purple]
+2581	0	Pet Bowl [Pink]
+2582	0	Pet Bowl [Red]
+2583	0	Pet Bowl [Green]
+2584	0	Pet Bowl [Yellow]
+2585	0	Pet Bowl [Blue]
+2586	0	Stone Handrail [White]
+2587	0	Stone Handrail [Black]
+2588	0	Stone Handrail [Purple]
+2589	0	Stone Handrail [Pink]
+2590	0	Stone Handrail [Red]
+2591	0	Stone Handrail [Green]
+2592	0	Stone Handrail [Yellow]
+2593	0	Stone Handrail [Blue]
+2594	0	Rustic Door [White]
+2595	0	Rustic Door [Black]
+2596	0	Rustic Door [Purple]
+2597	0	Rustic Door [Pink]
+2598	0	Rustic Door [Red]
+2599	0	Rustic Door [Green]
+2600	0	Rustic Door [Yellow]
+2601	0	Rustic Door [Blue]
+2602	0	Saloon Door [White]
+2603	0	Saloon Door [Black]
+2604	0	Saloon Door [Purple]
+2605	0	Saloon Door [Pink]
+2606	0	Saloon Door [Red]
+2607	0	Saloon Door [Green]
+2608	0	Saloon Door [Yellow]
+2609	0	Saloon Door [Blue]
+2610	0	Castle Belvedere [White]
+2611	0	Castle Belvedere [Black]
+2612	0	Castle Belvedere [Purple]
+2613	0	Castle Belvedere [Pink]
+2614	0	Castle Belvedere [Red]
+2615	0	Castle Belvedere [Green]
+2616	0	Castle Belvedere [Yellow]
+2617	0	Castle Belvedere [Blue]
+2618	0	Throne Room Door [White]
+2619	0	Throne Room Door [Black]
+2620	0	Throne Room Door [Purple]
+2621	0	Throne Room Door [Pink]
+2622	0	Throne Room Door [Red]
+2623	0	Throne Room Door [Green]
+2624	0	Throne Room Door [Yellow]
+2625	0	Throne Room Door [Blue]
+2626	0	Floating Flower Petals [White]
+2627	0	Floating Flower Petals [Black]
+2628	0	Floating Flower Petals [Purple]
+2629	0	Floating Flower Petals [Pink]
+2630	0	Floating Flower Petals [Red]
+2631	0	Floating Flower Petals [Green]
+2632	0	Floating Flower Petals [Yellow]
+2633	0	Floating Flower Petals [Blue]
+2634	0	Royal Dining Table [White]
+2635	0	Royal Dining Table [Black]
+2636	0	Royal Dining Table [Purple]
+2637	0	Royal Dining Table [Pink]
+2638	0	Royal Dining Table [Red]
+2639	0	Royal Dining Table [Green]
+2640	0	Royal Dining Table [Yellow]
+2641	0	Royal Dining Table [Blue]
+2642	0	Rustic Desk [White]
+2643	0	Rustic Desk [Black]
+2644	0	Rustic Desk [Purple]
+2645	0	Rustic Desk [Pink]
+2646	0	Rustic Desk [Red]
+2647	0	Rustic Desk [Green]
+2648	0	Rustic Desk [Yellow]
+2649	0	Rustic Desk [Blue]
+2650	0	Column Crown [White]
+2651	0	Column Crown [Black]
+2652	0	Column Crown [Purple]
+2653	0	Column Crown [Pink]
+2654	0	Column Crown [Red]
+2655	0	Column Crown [Green]
+2656	0	Column Crown [Yellow]
+2657	0	Column Crown [Blue]
+2658	0	Fierce Fountain [White]
+2659	0	Fierce Fountain [Black]
+2660	0	Fierce Fountain [Purple]
+2661	0	Fierce Fountain [Pink]
+2662	0	Fierce Fountain [Red]
+2663	0	Fierce Fountain [Green]
+2664	0	Fierce Fountain [Yellow]
+2665	0	Fierce Fountain [Blue]
+2666	0	Bench [White]
+2667	0	Bench [Black]
+2668	0	Bench [Purple]
+2669	0	Bench [Pink]
+2670	0	Bench [Red]
+2671	0	Bench [Green]
+2672	0	Bench [Yellow]
+2673	0	Bench [Blue]
+2674	0	Chic Chair [White]
+2675	0	Chic Chair [Black]
+2676	0	Chic Chair [Purple]
+2677	0	Chic Chair [Pink]
+2678	0	Chic Chair [Red]
+2679	0	Chic Chair [Green]
+2680	0	Chic Chair [Yellow]
+2681	0	Chic Chair [Blue]
+2682	0	Princess-Sized Bed [White]
+2683	0	Princess-Sized Bed [Black]
+2684	0	Princess-Sized Bed [Purple]
+2685	0	Princess-Sized Bed [Pink]
+2686	0	Princess-Sized Bed [Red]
+2687	0	Princess-Sized Bed [Green]
+2688	0	Princess-Sized Bed [Yellow]
+2689	0	Princess-Sized Bed [Blue]
+2690	0	Extravagant Table [White]
+2691	0	Extravagant Table [Black]
+2692	0	Extravagant Table [Purple]
+2693	0	Extravagant Table [Pink]
+2694	0	Extravagant Table [Red]
+2695	0	Extravagant Table [Green]
+2696	0	Extravagant Table [Yellow]
+2697	0	Extravagant Table [Blue]
+2698	0	Plant Pot [White]
+2699	0	Plant Pot [Black]
+2700	0	Plant Pot [Purple]
+2701	0	Plant Pot [Pink]
+2702	0	Plant Pot [Red]
+2703	0	Plant Pot [Green]
+2704	0	Plant Pot [Yellow]
+2705	0	Plant Pot [Blue]
+2706	0	Stone Steps [White]
+2707	0	Stone Steps [Black]
+2708	0	Stone Steps [Purple]
+2709	0	Stone Steps [Pink]
+2710	0	Stone Steps [Red]
+2711	0	Stone Steps [Green]
+2712	0	Stone Steps [Yellow]
+2713	0	Stone Steps [Blue]
+2714	0	Magic Door [White]
+2715	0	Magic Door [Black]
+2716	0	Magic Door [Purple]
+2717	0	Magic Door [Pink]
+2718	0	Magic Door [Red]
+2719	0	Magic Door [Green]
+2720	0	Magic Door [Yellow]
+2721	0	Magic Door [Blue]
+2722	0	Wooden Gate [White]
+2723	0	Wooden Gate [Black]
+2724	0	Wooden Gate [Purple]
+2725	0	Wooden Gate [Pink]
+2726	0	Wooden Gate [Red]
+2727	0	Wooden Gate [Green]
+2728	0	Wooden Gate [Yellow]
+2729	0	Wooden Gate [Blue]
+2730	0	Steel Doors [White]
+2731	0	Steel Doors [Black]
+2732	0	Steel Doors [Purple]
+2733	0	Steel Doors [Pink]
+2734	0	Steel Doors [Red]
+2735	0	Steel Doors [Green]
+2736	0	Steel Doors [Yellow]
+2737	0	Steel Doors [Blue]
+2738	0	Bold Banner [White]
+2739	0	Bold Banner [Black]
+2740	0	Bold Banner [Purple]
+2741	0	Bold Banner [Pink]
+2742	0	Bold Banner [Red]
+2743	0	Bold Banner [Green]
+2744	0	Bold Banner [Yellow]
+2745	0	Bold Banner [Blue]
+2746	0	Big Bold Banner [White]
+2747	0	Big Bold Banner [Black]
+2748	0	Big Bold Banner [Purple]
+2749	0	Big Bold Banner [Pink]
+2750	0	Big Bold Banner [Red]
+2751	0	Big Bold Banner [Green]
+2752	0	Big Bold Banner [Yellow]
+2753	0	Big Bold Banner [Blue]
+2754	0	Plumberry Tree
+2755	0	Buggy Buggy LV1
+2756	0	Buggy Buggy LV2
+2757	0	N04H
+2758	0	Plumberry Tree
+2759	0	¿
+2760	0	Large Castle Tile [White]
+2761	0	Large Castle Tile [Black]
+2762	0	Large Castle Tile [Purple]
+2763	0	Large Castle Tile [Pink]
+2764	0	Large Castle Tile [Red]
+2765	0	Large Castle Tile [Green]
+2766	0	Large Castle Tile [Yellow]
+2767	0	Large Castle Tile [Blue]
+2768	0	Plumberry Tree
+2769	0	Pot
+2770	0	Plumberry Tree
+2771	0	Plumberry Tree
+2772	0	Plumberry Tree
+2773	0	Plumberry Tree
+2774	0	Plumberry Tree
+2775	0	Magnetic Block
+2776	0	Medicinal Shrub
+2777	0	Community Chest
+2778	0	Plumberry Tree
+2779	0	Plumberry Tree
+2780	0	Plumberry Tree
+2781	0	Plumberry Tree
+2782	0	Plumberry Tree
+2783	0	Plumberry Tree
+2784	0	¿
+2785	0	Plumberry Tree
+2786	0	Celebratory Soup
+2787	0	Ornate Adornment
+2788	0	Lattice Wall
+2789	0	Lattice Wall [White]
+2790	0	Lattice Wall [Black]
+2791	0	Lattice Wall [Purple]
+2792	0	Lattice Wall [Pink]
+2793	0	Lattice Wall [Red]
+2794	0	Lattice Wall [Green]
+2795	0	Lattice Wall [Yellow]
+2796	0	Lattice Wall [Blue]
+2797	0	Hanging Picture
+2798	0	Hanging Picture
+2799	0	Hanging Picture
+2800	0	Hanging Picture
+2801	0	Hanging Picture
+2802	0	Hanging Picture
+2803	0	Hanging Picture
+2804	0	Hanging Picture
+2805	0	Hanging Picture
+2806	0	Hanging Picture
+2807	0	Hanging Picture
+2808	0	Rice Sack
+2809	0	Rice Dumpling Arrangement
+2810	0	Rope Ladder
+2811	0	Stone Lantern
+2812	0	Rice Ball Arrangement
+2813	0	Paper Lantern
+2814	0	Big Bronze Bell
+2815	0	Samurai Sword Collection
+2816	0	Paper Lantern [White]
+2817	0	Paper Lantern [Black]
+2818	0	Paper Lantern [Purple]
+2819	0	Paper Lantern [Pink]
+2820	0	Paper Lantern [Red]
+2821	0	Paper Lantern [Green]
+2822	0	Paper Lantern [Yellow]
+2823	0	Paper Lantern [Blue]
+2824	0	Pine Sapling
+2825	0	Pine Seed
+2826	0	Pine Tree
+2827	0	0
+2828	0	0
+2829	0	¿Dead Plant
+2830	0	¿Dead Plant on pole
+2831	0	Paper Sliding Door
+2832	0	Monster Monument
+2833	0	Toasty Table
+2834	0	Wooden Sliding Door
+2835	0	Waterwheel
+2836	0	Bamboo Base
+2837	0	Bamboo Stem
+2838	0	Bamboo Canopy
+2839	0	Bamboo Shot
+2840	0	Indefinite Donking Device
+2841	0	Wooden Cabinet
+2842	0	Flat Tegulae Tiling
+2843	0	Pitched Tegulae Tiling
+2844	0	Tegulae Outer Corner Tiling
+2845	0	Tegulae Inner Corner Tiling
+2846	0	Ridge Tegulae Tiling
+2847	0	Carved Mural
+2848	0	Gruesome Gargoyle
+2849	0	Fancy Futon
+2850	0	Coffee Table
+2851	0	Sandals
+2852	0	Paper Sliding Door [White]
+2853	0	Paper Sliding Door [Black]
+2854	0	Paper Sliding Door [Purple]
+2855	0	Paper Sliding Door [Pink]
+2856	0	Paper Sliding Door [Red]
+2857	0	Paper Sliding Door [Green]
+2858	0	Paper Sliding Door [Yellow]
+2859	0	Paper Sliding Door [Blue]
+2860	0	Fancy Futon [White]
+2861	0	Fancy Futon [Black]
+2862	0	Fancy Futon [Purple]
+2863	0	Fancy Futon [Pink]
+2864	0	Fancy Futon [Red]
+2865	0	Fancy Futon [Green]
+2866	0	Fancy Futon [Yellow]
+2867	0	Fancy Futon [Blue]
+2868	0	Carved Mural [White]
+2869	0	Carved Mural [Black]
+2870	0	Carved Mural [Purple]
+2871	0	Carved Mural [Pink]
+2872	0	Carved Mural [Red]
+2873	0	Carved Mural [Green]
+2874	0	Carved Mural [Yellow]
+2875	0	Carved Mural [Blue]
+2876	0	Waterwheel [White]
+2877	0	Waterwheel [Black]
+2878	0	Waterwheel [Purple]
+2879	0	Waterwheel [Pink]
+2880	0	Waterwheel [Red]
+2881	0	Waterwheel [Green]
+2882	0	Waterwheel [Yellow]
+2883	0	Waterwheel [Blue]
+2884	0	Toasty Table [White]
+2885	0	Toasty Table [Black]
+2886	0	Toasty Table [Purple]
+2887	0	Toasty Table [Pink]
+2888	0	Toasty Table [Red]
+2889	0	Toasty Table [Green]
+2890	0	Toasty Table [Yellow]
+2891	0	Toasty Table [Blue]
+2892	0	Red Seagrass
+2893	0	Anemone
+2894	0	Flame-Grilled Fish
+2895	0	Pillar Coral
+2896	0	Netting
+2897	0	Seagrass
+2898	0	Basalt Blob
+2899	0	Marine Monument
+2900	0	Fancy Fresh Fish Platter
+2901	0	Ward of Erdrick
+2902	0	White Anemone
+2903	0	Black Anemone
+2904	0	Purple Anemone
+2905	0	Pink Anemone
+2906	0	Red Anemone
+2907	0	Green Anemone
+2908	0	Yellow Anemone
+2909	0	Blue Anemone
+2910	0	Plumberry Tree
+2911	0	Floor Lampe
+2912	0	Fansi Dor
+2913	0	Fansi Lait
+2914	0	Lampe Lait
+2915	0	Lampe Holden
+2916	0	Lampe Basen
+2917	0	Linken Lampe
+2918	0	Biig Dor
+2919	0	Wooden Blind Headrail
+2920	0	Wooden Blind Body
+2921	0	Walle Lampe
+2922	0	Plumberry Tree
+2923	0	Plumberry Tree
+2924	0	Kaffe Tabel
+2925	0	Trendy Triptych
+2926	0	Wooden Lampe
+2927	0	Chopping Board
+2928	0	Plate Of Pancakes
+2929	0	Coloured Cup
+2930	0	Fansi Tabel
+2931	0	Basic Basin
+2932	0	¿Dead Plant
+2933	0	¿Dead Plant on pole
+2934	0	Chaer
+2935	0	Gift-Wrapped Gift
+2936	0	Sofa
+2937	0	Double Bed
+2938	0	Fansi Dor [White]
+2939	0	Fansi Dor [Black]
+2940	0	Fansi Dor [Purple]
+2941	0	Fansi Dor [Pink]
+2942	0	Fansi Dor [Red]
+2943	0	Fansi Dor [Green]
+2944	0	Fansi Dor [Yellow]
+2945	0	Fansi Dor [Blue]
+2946	0	Coloured Cup [White]
+2947	0	Coloured Cup [Black]
+2948	0	Coloured Cup [Purple]
+2949	0	Coloured Cup [Pink]
+2950	0	Coloured Cup [Red]
+2951	0	Coloured Cup [Green]
+2952	0	Coloured Cup [Yellow]
+2953	0	Coloured Cup [Blue]
+2954	0	Chaer [White]
+2955	0	Chaer [Black]
+2956	0	Chaer [Purple]
+2957	0	Chaer [Pink]
+2958	0	Chaer [Red]
+2959	0	Chaer [Green]
+2960	0	Chaer [Yellow]
+2961	0	Chaer [Blue]
+2962	0	Fansi Tabel [White]
+2963	0	Fansi Tabel [Black]
+2964	0	Fansi Tabel [Purple]
+2965	0	Fansi Tabel [Pink]
+2966	0	Fansi Tabel [Red]
+2967	0	Fansi Tabel [Green]
+2968	0	Fansi Tabel [Yellow]
+2969	0	Fansi Tabel [Blue]
+2970	0	Biig Dor [White]
+2971	0	Biig Dor [Black]
+2972	0	Biig Dor [Purple]
+2973	0	Biig Dor [Pink]
+2974	0	Biig Dor [Red]
+2975	0	Biig Dor [Green]
+2976	0	Biig Dor [Yellow]
+2977	0	Biig Dor [Blue]
+2978	0	Wooden Blind Headrail [White]
+2979	0	Wooden Blind Headrail [Black]
+2980	0	Wooden Blind Headrail [Purple]
+2981	0	Wooden Blind Headrail [Pink]
+2982	0	Wooden Blind Headrail [Red]
+2983	0	Wooden Blind Headrail [Green]
+2984	0	Wooden Blind Headrail [Yellow]
+2985	0	Wooden Blind Headrail [Blue]
+2986	0	Wooden Blind Body [White]
+2987	0	Wooden Blind Body [Black]
+2988	0	Wooden Blind Body [Purple]
+2989	0	Wooden Blind Body [Pink]
+2990	0	Wooden Blind Body [Red]
+2991	0	Wooden Blind Body [Green]
+2992	0	Wooden Blind Body [Yellow]
+2993	0	Wooden Blind Body [Blue]
+2994	0	Classy Couch
+2995	0	Bubbly Bath
+2996	0	Sofa [White]
+2997	0	Sofa [Black]
+2998	0	Sofa [Purple]
+2999	0	Sofa [Pink]
+3000	0	Sofa [Red]
+3001	0	Sofa [Green]
+3002	0	Sofa [Yellow]
+3003	0	Sofa [Blue]
+3004	0	Long-Stemmed Rose
+3005	0	Basic Bunk
+3006	0	Alarm Clock
+3007	0	Tower of Towels
+3008	0	Omletti Spaghetti
+3009	0	Iron Pillar
+3010	0	Angled Window
+3011	0	Tartan Bed
+3012	0	Cooking Pot
+3013	0	Alarm Clock [White]
+3014	0	Alarm Clock [Black]
+3015	0	Alarm Clock [Purple]
+3016	0	Alarm Clock [Pink]
+3017	0	Alarm Clock [Red]
+3018	0	Alarm Clock [Green]
+3019	0	Alarm Clock [Yellow]
+3020	0	Alarm Clock [Blue]
+3021	0	Kitchen Counter
+3022	0	Anthurium
+3023	0	Sliding Glass Door
+3024	0	Rigid Rope
+3025	0	Modern Art
+3026	0	Gramophone
+3027	0	Sleek Shelf
+3028	0	Display Hook
+3029	0	Display Frame
+3030	0	Stylish Staircase
+3031	0	High Heels
+3032	0	Display Hook [White]
+3033	0	Display Hook [Black]
+3034	0	Display Hook [Purple]
+3035	0	Display Hook [Pink]
+3036	0	Display Hook [Red]
+3037	0	Display Hook [Green]
+3038	0	Display Hook [Yellow]
+3039	0	Display Hook [Blue]
+3040	0	Display Frame [White]
+3041	0	Display Frame [Black]
+3042	0	Display Frame [Purple]
+3043	0	Display Frame [Pink]
+3044	0	Display Frame [Red]
+3045	0	Display Frame [Green]
+3046	0	Display Frame [Yellow]
+3047	0	Display Frame [Blue]
+3048	0	Stylish Staircase [White]
+3049	0	Stylish Staircase [Black]
+3050	0	Stylish Staircase [Purple]
+3051	0	Stylish Staircase [Pink]
+3052	0	Stylish Staircase [Red]
+3053	0	Stylish Staircase [Green]
+3054	0	Stylish Staircase [Yellow]
+3055	0	Stylish Staircase [Blue]
+3056	0	Wooden Pillar
+3057	0	Trendy Triptych
+3058	0	Trendy Triptych
+3059	0	Trendy Triptych
+3060	0	Trendy Triptych
+3061	0	Trendy Triptych
+3062	0	Trendy Triptych
+3063	0	Trendy Triptych
+3064	0	Trendy Triptych
+3065	0	Trendy Triptych
+3066	0	Trendy Triptych
+3067	0	Modern Art
+3068	0	Modern Art
+3069	0	Modern Art
+3070	0	Modern Art
+3071	0	Modern Art
+3072	0	Modern Art
+3073	0	Modern Art
+3074	0	Modern Art
+3075	0	Modern Art
+3076	0	Modern Art
+3077	0	Cast Iron Door
+3078	0	Chic Sunbrella
+3079	0	Distinguished Deckchair
+3080	0	Classy Canopy
+3081	0	Chic Sunbrella [White]
+3082	0	Chic Sunbrella [Black]
+3083	0	Chic Sunbrella [Purple]

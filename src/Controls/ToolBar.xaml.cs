@@ -1,26 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Security.RightsManagement;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using DQB2ChunkEditor.Models;
-using DQB2ChunkEditor.Windows;
-using static System.Net.WebRequestMethods;
 
 namespace DQB2ChunkEditor.Controls
 {
+    public class IslandData
+    {
+        public ushort IslandNumber { get; private set; }
+        public short ChunkCount { get; private set; }
+        public short VitrualChunkCount { get; private set; }
+        public uint ItemCount { get; private set; }
+        public uint VirtualItemCount { get; private set; }
+        public uint SeaLevel { get; private set; }
+        public void UpdateIslandData() { 
+            IslandNumber = ChunkEditor.Island;
+            ChunkCount = ChunkEditor.ChunkCount;
+            VitrualChunkCount = ChunkEditor.VirtualChunkCount; 
+            ItemCount = ChunkEditor.TemporalItemCount;
+            VirtualItemCount = ChunkEditor.VirtualItemCount;
+            SeaLevel = ChunkEditor.TemporalSeaLevel;
+        }
+    }
     /// <summary>
     /// Interaction logic for ToolBar.xaml
     /// </summary>
@@ -31,10 +34,13 @@ namespace DQB2ChunkEditor.Controls
         public ushort tool = 0;
         public Cursor paintCursor;
         public event Action<List<BlockTileSquare>,short> ReplaceBlocksCommand;
+        public event Action<ObservableProperty<TileData>> ReturnSelectedTileData;
         public event Action<ObservableProperty<Tile>> ReturnSelectedTile;
-        public event Action AreaRemovalCommand;
+        public event Action<bool> AreaRemovalCommand;
         public event Action<bool> PrintOutCommand;
         public TabList menuList;
+        public ObservableProperty<IslandData> IslandDataOb { get; private set; } = new() { Value = new() };
+
         public ToolBar()
         {
             InitializeComponent();
@@ -54,6 +60,7 @@ namespace DQB2ChunkEditor.Controls
                 Pencil.Visibility = Visibility.Collapsed;
                 Replace.Visibility = Visibility.Collapsed;
                 Gloves.Visibility = Visibility.Collapsed;
+                IslandData.Visibility = Visibility.Collapsed;
             }
 
 
@@ -65,6 +72,7 @@ namespace DQB2ChunkEditor.Controls
             Pencil.Visibility = Visibility.Collapsed;
             Replace.Visibility = Visibility.Collapsed;
             Gloves.Visibility = Visibility.Collapsed;
+            IslandData.Visibility = Visibility.Collapsed;
         }
         private void Pencil_Check(object sender, RoutedEventArgs e)
         {
@@ -74,7 +82,9 @@ namespace DQB2ChunkEditor.Controls
             Pencil.Visibility = Visibility.Visible;
             Replace.Visibility = Visibility.Collapsed;
             Gloves.Visibility = Visibility.Collapsed;
+            IslandData.Visibility = Visibility.Collapsed;
         }
+
         private void Replace_Check(object sender, RoutedEventArgs e)
         {
             tool = 3;
@@ -83,6 +93,7 @@ namespace DQB2ChunkEditor.Controls
             Pencil.Visibility = Visibility.Collapsed;
             Replace.Visibility = Visibility.Visible;
             Gloves.Visibility = Visibility.Collapsed;
+            IslandData.Visibility = Visibility.Collapsed;
         }
         private void Gloves_Check(object sender, RoutedEventArgs e)
         {
@@ -92,6 +103,19 @@ namespace DQB2ChunkEditor.Controls
             Pencil.Visibility = Visibility.Collapsed;
             Replace.Visibility = Visibility.Collapsed;
             Gloves.Visibility = Visibility.Visible;
+            IslandData.Visibility = Visibility.Collapsed;
+        }
+        private void Island_Check(object sender, RoutedEventArgs e)
+        {
+            tool = 5;
+            Mouse.OverrideCursor = null;
+            IslandDataOb.Value.UpdateIslandData();
+            IslandDataOb.NotifyValue();
+            Select.Visibility = Visibility.Collapsed;
+            Pencil.Visibility = Visibility.Collapsed;
+            Replace.Visibility = Visibility.Collapsed;
+            Gloves.Visibility = Visibility.Collapsed;
+            IslandData.Visibility = Visibility.Visible;
         }
         private void Replace1_Click(object sender, RoutedEventArgs e)
         {
@@ -113,7 +137,7 @@ namespace DQB2ChunkEditor.Controls
             var i = sender as BlockTile;
             if (i.Tile.Value != null)
             {
-                menuList.FavouriteList.SelectedToList(i.Tile);
+                menuList.FavouriteList.SelectedToList(i.Tile.Value);
             }
         }
         private void Replace2_Click(object sender, RoutedEventArgs e)
@@ -124,11 +148,11 @@ namespace DQB2ChunkEditor.Controls
                 SelectBlocks1.IsChecked = false;
             }
         }
-        public void AddToList(ObservableProperty<Tile> tile)
+        public void AddToList(TileData tile)
         {
             if (SelectBlocks2.IsChecked == true)
             {
-                NewBlock.Tile.Value = tile.Value;
+                NewBlock.Tile.Value = tile;
             }
             else
             {
@@ -146,7 +170,8 @@ namespace DQB2ChunkEditor.Controls
         }
         private void AreaRemoval_Check(object sender, RoutedEventArgs e)
         {
-            AreaRemovalCommand?.Invoke();
+            AreaRemovalCommand?.Invoke(false);
+            AreaRemovalCommand?.Invoke(true);
         }
         private void PrintOut_Check(object sender, RoutedEventArgs e)
         {
@@ -159,12 +184,16 @@ namespace DQB2ChunkEditor.Controls
         }
         private void LoadCustomCursor()
         {
-            var cursorImagePath = "pack://application:,,,/Images/Cursor/Paste.cur";
+            var cursorImagePath = "pack://application:,,,/Images/Cursor/paste.cur";
             paintCursor = new Cursor(Application.GetResourceStream(new Uri(cursorImagePath)).Stream);
         }
-        private void OnSelectedTileUpdate(ObservableProperty<Tile> tile)
+        private void OnSelectedTileUpdate(TileData tile)
         {
             menuList.FavouriteList.SelectedToList(tile);
+        }
+        private void OnSelectedTileUpdate(ItemInstance tile)
+        {
+            menuList.FavouriteList.SelectedToList(tile.TileData);
         }
         private void Grab_OnClick(object sender, RoutedEventArgs e)
         {
@@ -180,6 +209,21 @@ namespace DQB2ChunkEditor.Controls
                 Grab.IsChecked = false;
                 Place.IsChecked = true;
             }
+        }
+
+        private void Refresh_Island_Data(object sender, RoutedEventArgs e)
+        {
+            IslandDataOb.Value.UpdateIslandData();
+            IslandDataOb.NotifyValue();
+        }
+
+        private void FirstArea_Click(object sender, RoutedEventArgs e)
+        {
+            AreaRemovalCommand?.Invoke(false);
+        }
+        private void SecondArea_Click(object sender, RoutedEventArgs e)
+        {
+            AreaRemovalCommand?.Invoke(true);
         }
     }
 }
