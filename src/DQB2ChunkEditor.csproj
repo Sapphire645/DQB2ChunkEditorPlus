@@ -9,11 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\BlockExtra.txt" />
+    <None Remove="Data\Blocks.txt" />
+    <None Remove="Data\Item.ods" />
+    <None Remove="Data\ItemData.ods" />
+    <None Remove="Data\Items.txt" />
+    <None Remove="Data\ItemToJson.txt" />
     <None Remove="Data\Open.png" />
     <None Remove="Data\Save.png" />
+    <None Remove="Data\SeaLevel.txt" />
+    <None Remove="Data\Tiles.txt" />
+    <None Remove="Data\ToJson.py" />
+    <None Remove="Images\Arrow.png" />
     <None Remove="Images\Brush.png" />
     <None Remove="Images\Clock.png" />
-    <None Remove="Images\Cursor\Paste.cur" />
+    <None Remove="Images\CopyTool.png" />
+    <None Remove="Images\Cursor\paste.cur" />
+    <None Remove="Images\DQB2ilsand.png" />
     <None Remove="Images\Drain.png" />
     <None Remove="Images\Export.png" />
     <None Remove="Images\Flat.png" />
@@ -35,6 +47,8 @@
     <None Remove="Images\Maps\STGDAT09.png" />
     <None Remove="Images\Maps\STGDAT10.png" />
     <None Remove="Images\Maps\STGDAT14.png" />
+    <None Remove="Images\ObjectIcon\-0001.png" />
+    <None Remove="Images\ObjectIcon\0000.png" />
     <None Remove="Images\ObjectIcon\0001.png" />
     <None Remove="Images\ObjectIcon\0002.png" />
     <None Remove="Images\ObjectIcon\0003.png" />
@@ -630,6 +644,44 @@
     <None Remove="Images\ObjectIcon\1473.png" />
     <None Remove="Images\ObjectIcon\1474.png" />
     <None Remove="Images\ObjectIcon\1475.png" />
+    <None Remove="Images\ObjectIcon\1488.png" />
+    <None Remove="Images\ObjectIcon\1843.png" />
+    <None Remove="Images\ObjectIcon\1965.png" />
+    <None Remove="Images\ObjectIcon\1971.png" />
+    <None Remove="Images\ObjectIcon\1972.png" />
+    <None Remove="Images\ObjectIcon\1973.png" />
+    <None Remove="Images\ObjectIcon\1976.png" />
+    <None Remove="Images\ObjectIcon\2105.png" />
+    <None Remove="Images\ObjectIcon\2106.png" />
+    <None Remove="Images\ObjectIcon\2107.png" />
+    <None Remove="Images\ObjectIcon\2166.png" />
+    <None Remove="Images\ObjectIcon\2167.png" />
+    <None Remove="Images\ObjectIcon\2168.png" />
+    <None Remove="Images\ObjectIcon\2169.png" />
+    <None Remove="Images\ObjectIcon\2170.png" />
+    <None Remove="Images\ObjectIcon\2171.png" />
+    <None Remove="Images\ObjectIcon\2172.png" />
+    <None Remove="Images\ObjectIcon\2175.png" />
+    <None Remove="Images\ObjectIcon\2250.png" />
+    <None Remove="Images\ObjectIcon\2251.png" />
+    <None Remove="Images\ObjectIcon\2280.png" />
+    <None Remove="Images\ObjectIcon\2281.png" />
+    <None Remove="Images\ObjectIcon\2282.png" />
+    <None Remove="Images\ObjectIcon\2283.png" />
+    <None Remove="Images\ObjectIcon\2284.png" />
+    <None Remove="Images\ObjectIcon\2285.png" />
+    <None Remove="Images\ObjectIcon\2286.png" />
+    <None Remove="Images\ObjectIcon\2287.png" />
+    <None Remove="Images\ObjectIcon\2288.png" />
+    <None Remove="Images\ObjectIcon\2289.png" />
+    <None Remove="Images\ObjectIcon\2290.png" />
+    <None Remove="Images\ObjectIcon\2422.png" />
+    <None Remove="Images\ObjectIcon\2423.png" />
+    <None Remove="Images\ObjectIcon\2424.png" />
+    <None Remove="Images\ObjectIcon\2425.png" />
+    <None Remove="Images\ObjectIcon\2426.png" />
+    <None Remove="Images\ObjectIcon\2427.png" />
+    <None Remove="Images\OBJECTSHEET.sai2" />
     <None Remove="Images\Paste.png" />
     <None Remove="Images\Pencil.png" />
     <None Remove="Images\Replace.png" />
@@ -675,20 +727,32 @@
     <None Remove="Images\Weather\28.png" />
     <None Remove="Images\Weather\29.png" />
     <None Remove="Images\Weather\30.png" />
+    <None Remove="Images\YLayer.png" />
+    <None Remove="ITEM.py" />
+    <None Remove="Sortiing.py" />
+    <Compile Remove="EXTRADATA\**" />
+    <EmbeddedResource Remove="EXTRADATA\**" />
+    <None Remove="EXTRADATA\**" />
     <None Remove="Images\Blocks\*.png" />
     <None Remove="Images\Tiles\*.png" />
+    <Page Remove="EXTRADATA\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Data\SeaLevel.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\Arrow.png" />
     <Resource Include="Images\Clock.png" />
-    <Resource Include="Images\Cursor\Paste.cur" />
+    <Resource Include="Images\CopyTool.png" />
+    <Resource Include="Images\Cursor\paste.cur" />
+    <Resource Include="Images\DQB2ilsand.png" />
     <Resource Include="Images\Drain.png" />
     <Resource Include="Images\Export.png" />
     <Resource Include="Images\Flat.png" />
     <Resource Include="Images\Gratitude.png" />
     <Resource Include="Images\icon.ico" />
     <Resource Include="Images\Icon.png" />
-    <Resource Include="Images\Icon.sai2" />
     <Resource Include="Images\Import.png" />
     <Resource Include="Images\Info.png" />
     <Resource Include="Images\Loading.png" />
@@ -720,6 +784,8 @@
     <Resource Include="Images\Maps\STGDAT14.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\ObjectIcon\-0001.png" />
+    <Resource Include="Images\ObjectIcon\0000.png" />
     <Resource Include="Images\ObjectIcon\0001.png" />
     <Resource Include="Images\ObjectIcon\0002.png" />
     <Resource Include="Images\ObjectIcon\0003.png" />
@@ -1315,18 +1381,49 @@
     <Resource Include="Images\ObjectIcon\1473.png" />
     <Resource Include="Images\ObjectIcon\1474.png" />
     <Resource Include="Images\ObjectIcon\1475.png" />
+    <Resource Include="Images\ObjectIcon\1488.png" />
+    <Resource Include="Images\ObjectIcon\1843.png" />
+    <Resource Include="Images\ObjectIcon\1965.png" />
+    <Resource Include="Images\ObjectIcon\1971.png" />
+    <Resource Include="Images\ObjectIcon\1972.png" />
+    <Resource Include="Images\ObjectIcon\1973.png" />
+    <Resource Include="Images\ObjectIcon\1976.png" />
+    <Resource Include="Images\ObjectIcon\2105.png" />
+    <Resource Include="Images\ObjectIcon\2106.png" />
+    <Resource Include="Images\ObjectIcon\2107.png" />
+    <Resource Include="Images\ObjectIcon\2166.png" />
+    <Resource Include="Images\ObjectIcon\2167.png" />
+    <Resource Include="Images\ObjectIcon\2168.png" />
+    <Resource Include="Images\ObjectIcon\2169.png" />
+    <Resource Include="Images\ObjectIcon\2170.png" />
+    <Resource Include="Images\ObjectIcon\2171.png" />
+    <Resource Include="Images\ObjectIcon\2172.png" />
+    <Resource Include="Images\ObjectIcon\2175.png" />
+    <Resource Include="Images\ObjectIcon\2250.png" />
+    <Resource Include="Images\ObjectIcon\2251.png" />
+    <Resource Include="Images\ObjectIcon\2280.png" />
+    <Resource Include="Images\ObjectIcon\2281.png" />
+    <Resource Include="Images\ObjectIcon\2282.png" />
+    <Resource Include="Images\ObjectIcon\2283.png" />
+    <Resource Include="Images\ObjectIcon\2284.png" />
+    <Resource Include="Images\ObjectIcon\2285.png" />
+    <Resource Include="Images\ObjectIcon\2286.png" />
+    <Resource Include="Images\ObjectIcon\2287.png" />
+    <Resource Include="Images\ObjectIcon\2288.png" />
+    <Resource Include="Images\ObjectIcon\2289.png" />
+    <Resource Include="Images\ObjectIcon\2290.png" />
+    <Resource Include="Images\ObjectIcon\2422.png" />
+    <Resource Include="Images\ObjectIcon\2423.png" />
+    <Resource Include="Images\ObjectIcon\2424.png" />
+    <Resource Include="Images\ObjectIcon\2425.png" />
+    <Resource Include="Images\ObjectIcon\2426.png" />
+    <Resource Include="Images\ObjectIcon\2427.png" />
     <Resource Include="Images\Open.png" />
     <Resource Include="Images\Paste.png" />
     <Resource Include="Images\Pencil.png" />
     <Resource Include="Images\Replace.png" />
     <Resource Include="Images\Save.png" />
     <Resource Include="Images\Saving.png" />
-    <Resource Include="Images\Screenshot.png" />
-    <Resource Include="Images\ScreenshotFill.png" />
-    <Resource Include="Images\ScreenshotPlus.png" />
-    <Resource Include="Images\ScreenshotPlus2.png" />
-    <Resource Include="Images\ScreenshotPlus3.png" />
-    <Resource Include="Images\ScreenshotReplace.png" />
     <Resource Include="Images\Select.png" />
     <Resource Include="Images\SelectionTool.png" />
     <Resource Include="Images\Temporal.png" />
@@ -1375,10 +1472,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Data\BlockExtra.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Blocks.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Items.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\icon.ico" />
     <Resource Include="Images\Maps\STGDAT01.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\YLayer.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -1386,7 +1493,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Controls\ReducedListHorizontal.xaml.cs">
+    <Compile Update="Controls\Lists\GlovedList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Lists\ReducedListHorizontal.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -1396,9 +1506,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Data\Items.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Data\Item.ods">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Data\item.txt">
@@ -1411,9 +1518,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Data\Weather.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Data\Witem.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

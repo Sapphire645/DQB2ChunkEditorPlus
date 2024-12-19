@@ -41,6 +41,7 @@
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="4*"/>
           <ColumnDefinition Width="4*"/>
+          <ColumnDefinition Width="0.4*"/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0" DockPanel.Dock="Left">
               <Grid.RowDefinitions>
@@ -67,22 +68,31 @@
                 </Grid>
 
               </Viewbox>
-              <StackPanel Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal" Margin="0,5,0,5" HorizontalAlignment="Center">
-                <TextBlock Text="Chunk" Width="50" TextAlignment="Center" />
-                <Button Name="AddChunk" Width="21" FontWeight="Bold" Click="AddChunk_OnClick">+</Button>
-                <Border Style="{StaticResource BorderStyle}">
+              <StackPanel Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Right">
+                <TextBlock Height="20" Text="Chunk" Width="50" TextAlignment="Center" />
+                <Button Height="20" Name="AddChunk" Width="21" FontWeight="Bold" Click="AddChunk_OnClick">+</Button>
+                <Border Height="20" Style="{StaticResource BorderStyle}">
                   <TextBox Name="ChunkInput" Text="{Binding Path=ChunkValue.Value, RelativeSource={RelativeSource AncestorType=Window}}" Width="30" TextAlignment="Center" KeyDown="TrySetChunk"/>
                 </Border>
-                <Button Name="SubChunk" Width="20" FontWeight="Bold" Click="SubChunk_OnClick">-</Button>
+                <Button Name="SubChunk"  Height="20" Width="20" FontWeight="Bold" Click="SubChunk_OnClick">-</Button>
                 <TextBlock Width="10"/>
-                <TextBlock Text="Layer" Width="50" TextAlignment="Center" />
-                <Button Name="AddLayer" Width="20" FontWeight="Bold" Click="AddLayer_OnClick">+</Button>
-                <Border Style="{StaticResource BorderStyle}">
-                  <TextBox Name="LayerInput" Text="{Binding Path=LayerValue.Value, RelativeSource={RelativeSource AncestorType=Window}}" Width="30" TextAlignment="Center" KeyDown="TrySetLayer"/>
+                <Button Name="VChunkLeft" Width="15" Content="&lt;" Height="20" FontWeight="Bold" Click="VirtualChunkChange" Background="White" Padding="0,0,0,0"/>
+                <StackPanel Orientation="Vertical">
+                  <Button Name="VChunkUp" Width="20" Height="15" FontWeight="Bold" Click="VirtualChunkChange" Padding="0,0,0,0" Background="White">^</Button>
+                  <Button Name="VChunkDown" Width="20" Height="15" FontWeight="Bold" Click="VirtualChunkChange" Padding="0,0,0,0" Background="White" FontSize="10">v</Button>
+                </StackPanel>
+                <Button Name="VChunkRight" Width="15" Content=">" Height="20" FontWeight="Bold" Click="VirtualChunkChange" Background="White" Padding="0,0,0,0"/>
+
+                <TextBlock Text="Layer" Width="40" Height="20" TextAlignment="Center" Margin="30,0,0,0" />
+                <Button Name="AddLayer" Width="20" Height="20" FontWeight="Bold" Click="AddLayer_OnClick">+</Button>
+                <Border  Height="20" Style="{StaticResource BorderStyle}">
+                  <TextBox Name="LayerInput" Text="{Binding Path=LayerValue.Value, Mode=OneWay, RelativeSource={RelativeSource AncestorType=Window}}" Width="30" TextAlignment="Center" TextChanged="LayerTextChange"/>
                 </Border>
-                <Button Name="SubLayer" Width="20" FontWeight="Bold" Click="SubLayer_OnClick">-</Button>
+                <Button  Height="20" Name="SubLayer" Width="20" FontWeight="Bold" Click="SubLayer_OnClick">-</Button>
+                <Button Height="20" Content="Confirm" Name="ConfirmLayer" Padding="5,0,5,0" Background="White" Click="ConfirmOnClick"/>
               </StackPanel>
             </Grid>
+            <control:LayerHeight x:Name="YLayerControl" Grid.Column="2" HorizontalAlignment="Left" ></control:LayerHeight>
           </Grid>
         </TabItem>
         <TabItem Header="Value Editors">

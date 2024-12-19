@@ -19,7 +19,10 @@ public class ObservableProperty<T> : INotifyPropertyChanged
             NotifyPropertyChanged(nameof(Value));
         }
     }
-
+    public void NotifyValue()
+    {
+        NotifyPropertyChanged(nameof(Value));
+    }
     public event PropertyChangedEventHandler? PropertyChanged;
 
     internal void NotifyPropertyChanged(string propertyName)
