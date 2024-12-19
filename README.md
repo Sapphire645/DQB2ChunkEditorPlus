@@ -25,8 +25,15 @@ Do not try to set unidentified blocks (the ones that make the selection say '-1 
 - 'Replace block' tool that will replace every instance of that block in the map for a different one. If there is a selection active with the Pencil it will only affect the selected area.
 - New info added: What items do the blocks drop and the hammer requirement of the blocks. 'Used' property added as well (Not accurate)
 - Added support for editing Gratitude Points, Time and all 30 Weathers (Not fully tested, gratitude does not work)
+- Editing Virtual Chunk Grid (Move chunks around)
+- Change text of signs and salutation stations
+- Objects are recognized. Database is incomplete as of now.
 
-## Overhaul! (Avaliable as prerelease)
+## Overhaul! 
+## Current Release 2.5:
+
+<img src="./src/Images/Screenshots/25obj.png" data-canonical-src="./src/Images/Screenshots/25obj.png" width="479" height="258" /><img src="./src/Images/Screenshots/25grid.png" data-canonical-src="./src/Images/Screenshots/25grid.png" width="479" height="258" />
+
 The newest 2.4 release will overhaul most of my old code. Here's some screenshots
 
 <img src="./src/Images/Screenshots/Overhaul1.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" /><img src="./src/Images/Screenshots/Overhaul2.png" data-canonical-src="./src/Images/ScreenshotPlus.png" width="479" height="258" />
