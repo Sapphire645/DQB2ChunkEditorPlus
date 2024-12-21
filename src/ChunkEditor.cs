@@ -559,6 +559,7 @@ public static class ChunkEditor
     {
         byte[] ChunkBytes = new byte[ChunkCount * ChunkSize];
         byte[] NewUncompressedBytes = new byte[BlockStart + ChunkCount * ChunkSize];
+        VirtualChunkCount = ChunkCount;
         for (int i=0; i < ChunkGridList.Count; i++)
         {
             SetChunkFromGrid(i, ChunkGridList[i]);
