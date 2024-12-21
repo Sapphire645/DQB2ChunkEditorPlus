@@ -12,6 +12,7 @@ using System.Linq;
 using System.Windows.Media.Imaging;
 using System.Reflection;
 using System.Windows.Documents;
+using System.Diagnostics.Metrics;
 
 
 namespace DQB2ChunkEditor;
@@ -49,6 +50,7 @@ public static class ChunkEditor
     public static uint VirtualItemCount { get; private set; } = 0;
     public static uint TemporalItemCount { get; private set; } = 0;
     public static uint TemporalSeaLevel { get; private set; } = 0;
+    private static bool ChunkCountHasChanged = false;
 
     private static List<List<(uint, ushort)>> ChunkItems; //chunk, layer.
 
@@ -83,8 +85,22 @@ public static class ChunkEditor
         }
         LoadFileCommon(filename);
     }
+    private static void SaveFileExtra()
+    {
+        var chunkBytes = new byte[2];
+        chunkBytes = BitConverter.GetBytes(ChunkCount);
+        _uncompressedBytes[0x1451af] = chunkBytes[0];
+        _uncompressedBytes[0x1451B0] = chunkBytes[1];
+        chunkBytes = BitConverter.GetBytes(VirtualChunkCount);
+        _uncompressedBytes[0x24e7c5] = chunkBytes[0];
+        _uncompressedBytes[0x24e7c6] = chunkBytes[1];
+        chunkBytes = BitConverter.GetBytes(VirtualItemCount);
+        _uncompressedBytes[0x24e7cD] = chunkBytes[0];
+        _uncompressedBytes[0x24e7cE] = chunkBytes[1];
+    }
     private static void LoadFileCommon(string filename)
     {
+        ChunkCountHasChanged = false;
         var chunkBytes = new byte[2];
         chunkBytes[0] = _uncompressedBytes[0x1451af];
         chunkBytes[1] = _uncompressedBytes[0x1451B0];
@@ -110,6 +126,17 @@ public static class ChunkEditor
                 break;
             }
         }
+        short RealChunkCount = 0;
+        for (short i = 0; i < 64 * 64; i++) // layers are 32x32
+        {
+            var val = GetChunkFromGrid(i);
+            if (val != 0xFFFF)
+            {
+                RealChunkCount = (short)(val + 1);
+            }
+        }
+        ChunkCount = RealChunkCount;
+        VirtualChunkCount = RealChunkCount;
     }
     public static void ImportFile(string filename)
     {
@@ -134,7 +161,6 @@ public static class ChunkEditor
 
     private static void readExtra()
     {
-        
         //extra
         var GratitudeBytes = new byte[4];
         GratitudeBytes[0] = _uncompressedBytes[0xC0FDC - HeaderLength];
@@ -152,35 +178,26 @@ public static class ChunkEditor
         Weather = _uncompressedBytes[0xC1064 - HeaderLength];
     }
 
-    private static void SaveFileExtra()
-    {
-        var chunkBytes = new byte[2];
-        chunkBytes = BitConverter.GetBytes(ChunkCount);
-        _uncompressedBytes[0x1451af] = chunkBytes[0];
-        _uncompressedBytes[0x1451B0] = chunkBytes[1];
-        chunkBytes = BitConverter.GetBytes(VirtualChunkCount);
-        _uncompressedBytes[0x24e7c5] = chunkBytes[0];
-        _uncompressedBytes[0x24e7c6] = chunkBytes[1];
-        chunkBytes = BitConverter.GetBytes(VirtualItemCount);
-        _uncompressedBytes[0x24e7cD] = chunkBytes[0];
-        _uncompressedBytes[0x24e7cE] = chunkBytes[1];
-    }
+
     public static void SaveFile()
     {
         byte[] compressedBytes;
         SaveFileExtra();
 
-        using (var input = new MemoryStream(_uncompressedBytes))
-        {
-            using (var output = new MemoryStream())
+        if (ChunkCountHasChanged)
+            compressedBytes = ZlibStream.CompressBuffer(_uncompressedBytes);
+        else
+            using (var input = new MemoryStream(_uncompressedBytes))
             {
-                using (var zlib = new System.IO.Compression.ZLibStream(output, System.IO.Compression.CompressionLevel.Optimal))
+                using (var output = new MemoryStream())
                 {
-                    input.CopyTo(zlib);
-                    compressedBytes = output.ToArray();
+                    using (var zlib = new System.IO.Compression.ZLibStream(output, System.IO.Compression.CompressionLevel.Optimal))
+                    {
+                        input.CopyTo(zlib);
+                        compressedBytes = output.ToArray();
+                    }
                 }
             }
-        }
         var outputFileBytes = new byte[HeaderLength + compressedBytes.Length];
 
         Array.Copy(_headerBytes, outputFileBytes, HeaderLength);
@@ -498,9 +515,10 @@ public static class ChunkEditor
                 TemporalItemCount++;
                 a.ChunkGrid = (short)j[0];
 
-                foreach(var ch in a.VirtualChunks())
-                    foreach (var Yc in a.Ycoords())
-                        ChunkItems.ElementAt((int)GetChunkFromGrid(ch)).Add((i, Yc));
+                foreach (var ch in a.VirtualChunks())
+                    if (GetChunkFromGrid(ch) < ChunkItems.Count())
+                        foreach (var Yc in a.Ycoords())
+                            ChunkItems.ElementAt((int)GetChunkFromGrid(ch)).Add((i, Yc));
             }
         }
     }
@@ -557,25 +575,33 @@ public static class ChunkEditor
     }
     public static void ChunkGridEdit( List<uint> ChunkGridList, List<uint> ChunkGridListOld, short ChunkCount)
     {
+        VirtualChunkCount = ChunkCount;
+        ChunkEditor.ChunkCount = ChunkCount;
+        ChunkCountHasChanged = true;
         byte[] ChunkBytes = new byte[ChunkCount * ChunkSize];
         byte[] NewUncompressedBytes = new byte[BlockStart + ChunkCount * ChunkSize];
-        VirtualChunkCount = ChunkCount;
+        ushort counter = 0;
         for (int i=0; i < ChunkGridList.Count; i++)
         {
-            SetChunkFromGrid(i, ChunkGridList[i]);
             if (ChunkGridList[i] != 0xFFFF)
             {
-                if(ChunkGridListOld[i] != 0xFFFF)
+                SetChunkFromGrid(i, counter);
+                if (ChunkGridListOld[i] != 0xFFFF)
                 { //copy the old chunk reference to the new chunk reference
-                    Array.Copy(_uncompressedBytes, BlockStart + (ChunkGridListOld[i] * ChunkSize), ChunkBytes, (ChunkGridList[i] * ChunkSize), ChunkSize);
+                    Array.Copy(_uncompressedBytes, BlockStart + (ChunkGridListOld[i] * ChunkSize), ChunkBytes, (counter * ChunkSize), ChunkSize);
                 }
                 else
                 {
                     for(int j = 0; j < LayerSize; j +=2)
                     {
-                        ChunkBytes[ChunkGridList[i] * ChunkSize + j] = 1; //set bedrock
+                        ChunkBytes[counter * ChunkSize + j] = 1; //set bedrock
                     }
                 }
+                counter++;
+            }
+            else
+            {
+                SetChunkFromGrid(i, 0xFFFF);
             }
         }
         Array.Copy(_uncompressedBytes, NewUncompressedBytes, BlockStart);

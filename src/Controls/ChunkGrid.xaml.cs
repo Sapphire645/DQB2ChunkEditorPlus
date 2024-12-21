@@ -30,6 +30,7 @@ namespace DQB2ChunkEditor.Controls
         private List<uint> ChunkGridList = new List<uint>();
         private List<uint> ChunkGridListOld = new List<uint>();
         private ObservableProperty<short> ChunkCount = new ObservableProperty<short>();
+        private uint RealChunkCount;
 
         private bool editing = false;
         private uint[] ints;
@@ -57,6 +58,7 @@ namespace DQB2ChunkEditor.Controls
                 for (short i = 0; i < 64 * 64; i++) // layers are 32x32
                 {
                     var val = ChunkEditor.GetChunkFromGrid(i);
+                    
                     if ((i / 64) >= (ints[0] - 1) && (i / 64) <= (ints[1] + 1) && (i % 64) >= (ints[2] - 1) && (i % 64) <= (ints[3] + 1))
                     {
                         var button = new Button()
@@ -75,6 +77,7 @@ namespace DQB2ChunkEditor.Controls
                         }
                         else
                         {
+                            RealChunkCount = val + 1;
                             button.Content = val;
                         }
                         MapGrid.Children.Add(button);
@@ -92,7 +95,7 @@ namespace DQB2ChunkEditor.Controls
         {
             try
             {
-                ChunkCount.Value = ChunkEditor.VirtualChunkCount;
+                ChunkCount.Value = (short)RealChunkCount;
                 ChunkGridList.Clear();
                 ChunkGridListOld.Clear();
                 ImageBackground.Source = null;

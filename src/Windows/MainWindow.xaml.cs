@@ -246,10 +246,11 @@ public partial class MainWindow : Window
             }
             foreach (var item in CurrentObjectsList)
             {
+                var VChunk = ChunkEditor.GetGridFromChunk(chunk);
                 //item.Id = (short)((LayerTile)LayerTiles.Children[item.PosX + (item.PosZ * 32)]).Tile.Value.Id;
-                if (item.Chunk != chunk)
+                if (item.ChunkGrid != VChunk)
                 {
-                    if(item.Chunk -1 == chunk)
+                    if(item.ChunkGrid - 1 == VChunk)
                     {
                         foreach (var Z in item.Zcoords(false))
                         {
@@ -262,7 +263,6 @@ public partial class MainWindow : Window
                     }
                     else
                     {
-                        var VChunk = ChunkEditor.GetGridFromChunk(chunk);
                         if(item.ChunkGrid == VChunk - 64)
                         {
                             foreach (var Z in item.Zcoords(true))
