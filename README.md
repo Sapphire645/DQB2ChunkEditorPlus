@@ -1,3 +1,10 @@
+# UPDATE!
+**This program is deprecated and not currently in active development.**
+
+**Chunk Editor+ has been refactored and turned into [DQB2's Island Editor](https://github.com/Sapphire645/DQB2IslandEditor)**
+
+**For an updated Chunk Editor, go to [DQB2IslandEditor](https://github.com/Sapphire645/DQB2IslandEditor)**
+# End update
 Many thanks to Mugafo (https://github.com/Mugafo/DQB2ChunkEditor) and his work! Without him this fork wouldn't exist. Many many thanks.
 
 And of course to turtle-insect (https://github.com/turtle-insect/DQB2), the one who paved the way in DQB2 technical knowledge.
